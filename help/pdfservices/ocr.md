@@ -8,7 +8,7 @@ thumbnail: KT-6677.jpg
 kt: 6677
 keywords: 英雄
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: c1937561d607f1eabbc1921d6090858abb13f0d3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 2%
@@ -29,9 +29,11 @@ ht-degree: 2%
 
 請使用下方的快速入門教學課程，建立您的API認證、下載範例檔案，並設定您的環境。
 
-[PDF Services 快速入門 API 和 JAVA ](gettingstartedjava.md) [ 開始使用 PDF Services API 和 .Net ](gettingstartednet.md) [ 開始使用 PDF Services API 和 Node.js
+[PDF Services API 和 JAVA 快速入門](gettingstartedjava.md)
 
-](createpdffromhtml.md)
+[PDF Services API和 .Net 快速入門](gettingstartednet.md)
+
+[PDF Services API 和 Node.js 快速入門](createpdffromhtml.md)
 
 ## 執行範例檔案中提供的 OCR 範例
 

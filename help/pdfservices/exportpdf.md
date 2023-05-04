@@ -7,7 +7,7 @@ level: Beginner
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: aa5c88fb5725a3d1c50d5c6b73fce7add629b08d
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 2%
@@ -34,9 +34,11 @@ Adobe PDF服務API使用 API 將 PDF 檔案轉換為 MS Office、文字和影像
 
 使用下列快速入門教學課程，建立您的API認證、下載範例檔案，並設定您的環境。
 
-[PDF Services 快速入門 API 和 JAVA ](gettingstartedjava.md) [ 開始使用 PDF Services API 和 .Net ](gettingstartednet.md) [ 開始使用 PDF Services API 和 Node.js
+[PDF Services API 和 JAVA 快速入門](gettingstartedjava.md)
 
-](createpdffromhtml.md)
+[PDF Services API和 .Net 快速入門](gettingstartednet.md)
+
+[PDF Services API 和 Node.js 快速入門](createpdffromhtml.md)
 
 ## 步驟 2：使用範例檔案執行轉存 pdf 作業
 
