@@ -18,11 +18,11 @@ ht-degree: 1%
 
 ![使用案例主打橫幅](assets/UseCaseInvoicesHero.jpg)
 
-當業務蓬勃發展，但是在準備所有發票時，生產效率卻下降，這很好。 手動產生髮票非常耗時，而且您也可能會面臨錯誤、可能損失金錢或以錯誤金額憤怒客戶的風險。
+當業務蓬勃發展，但是在準備所有發票時，生產效率卻下降，這很好。 手動產生髮票非常耗時，而且您還可能會面臨錯誤、可能損失金錢或以錯誤金額憤怒客戶的風險。
 
 例如，Danielle 在一家醫療供應公司的 ](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html) 會計部門 [ ](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html) 工作 [ 。這是月底，因此她從多個不同的系統中提取資訊，再次檢查資訊的準確性，並設定發票格式。 在完成所有工作之後，她終於準備好將檔轉換為 PDF （如此一來，任何人都可以檢視檔而不購買特定軟體），並將他們的個人化發票傳送給每位客戶。
 
-即使每月開信已完成，Danielle 也無法逸出這些發票。 有些客戶的帳單週期不是每月，所以她總是為某人建立發票。 客戶有時會編輯發票並欠款。 Danielle 接著耗費時間疑難排解此發票不相匹配的問題。 在這個速率下，她需要聘雇助理來跟進所有工作！
+即使每月開信已完成，Danielle 也無法逸出這些發票。 有些客戶的帳單週期不是月，所以她總是為某人建立發票。 客戶有時會編輯發票並欠款。 Danielle 接著耗費時間疑難排解此發票不相匹配的問題。 在這個速率下，她需要聘雇助理來跟進所有工作！
 
 Danielle 需要一種快速準確地產生髮票的方法，無論是在月底批次開啟，或是在其他時間臨時取得。 理想情況下，若她能保護這些發票不受編輯影響，就不必擔心疑難排解不相匹配的金額。
 
@@ -76,7 +76,7 @@ JSON 檔包含客戶詳細資料和訂單資訊。 使用此結構化檔以建�
 
 ## 建立發票範本
 
-Adobe檔產生API希望 Microsoft Word 架構的範本和 JSON 檔建立動態 PDF 或 Word 檔。 為您的開票應用程式建立 Microsoft Word 範本，並使用 [ 免費的 Document Generation Tagger 增益集 ](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) 來產生範本標籤。 安裝增益集，然後在 Microsoft Word 中開啟索引標籤。
+Adobe檔產生API希望 Microsoft Word 架構的範本和 JSON 檔建立動態 PDF 或 Word 檔。 為開啟應用程式建立 Microsoft Word 範本，並使用 [ 免費的 Document Generation Tagger 增益集 ](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) 來產生範本標籤。 安裝增益集，然後在 Microsoft Word 中開啟索引標籤。
 
 ![檔世代 Tagger 增益集的螢幕擷圖](assets/invoices_1.png)
 
@@ -84,9 +84,9 @@ Adobe檔產生API希望 Microsoft Word 架構的範本和 JSON 檔建立動態 P
 
 ![Document Generation Tagger Author 範本螢幕擷圖](assets/invoices_2.png)
 
-在 Microsoft Word 檔中，開始寫入發票範本。 離開您必須插入動態資料的游標，然後從Adobe增益集視窗中選取標籤。 按一下 **「插入文字** 」，讓Adobe檔產生 Tagger 增益集可以產生和插入標籤。 若要進行個人化，讓我們插入客戶名稱和電子郵件。
+在 Microsoft Word 檔中，開始寫入發票範本。 離開您必須插入動態資料的游標，然後從Adobe增益集視窗中選取標籤。 按一下 **「插入文字** 」，這樣Adobe檔產生 Tagger 增益集就可以產生和插入標籤。 若要進行個人化，讓我們插入客戶名稱和電子郵件。
 
-現在，繼續處理每張新發票所變更的資料。 選取 **** 增益集的「進階」索引標籤。 若要查看根據客戶訂購的產品產生動態表格的可用選項，請按一下「 **表格」和「清單」** 。
+現在，繼續處理每張新發票所變更的資料。 選取 **** 增益集的「進階」索引標籤。 若要查看根據客戶訂購的產品產生動態表格的可用選項，請按一下「 **表格和清單」** 。
 
 從第一個下拉式清單中選 **取「順序** 」。 在第二個下拉式清單中，選取此表格的欄。 在此教學課程中，選取物件演算表格的所有三欄。
 
@@ -227,7 +227,7 @@ async function applyPassword(password, inputFile, outputFile) {
 
 Danielle 可以自動產生髮票，而且不必擔心客戶會編輯發票，她就不需要雇用助理來協助手動工作。 她可利用自己的額外時間，在帳戶中節省應付檔案的費用。
 
-現在您已經看到它有多簡單，您可以使用其他Adobe工具來在您的網站上內嵌發票來擴充這個簡單應用程式。 例如，因此客戶可以隨時檢視其發票或結餘。 [Adobe PDF內嵌API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 可供免費使用。 您甚至可以前往人力資源或銷售部門，協助自動化他們的合約並收集電子簽名。
+現在您已經看到它有多簡單，您可以使用其他Adobe工具，在您的網站上內嵌發票，展開這個簡單應用程式。 例如，因此客戶可以隨時檢視其發票或結餘。 [Adobe PDF內嵌API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 可供免費使用。 您甚至可以前往人力資源或銷售部門，協助自動化他們的合約並收集電子簽名。
 
 若要探索所有的可能性，並開始建立您專屬的便利應用程式，請建立免費 [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 帳戶立即開始使用。享受六個月免費試用，然後 [ 按即 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 付費
 業務規模化時，每份檔交易只要 $0.05。

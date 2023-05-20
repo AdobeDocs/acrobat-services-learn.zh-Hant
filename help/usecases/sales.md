@@ -78,7 +78,7 @@ ht-degree: 2%
 
 ## 使用 API
 
-前往 [!DNL Acrobat Services] API [ 首頁 ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) 。 若要開始使用 [!DNL Acrobat Services] API，您需要應用程式的認證。 往下捲動，然後選取 **「開始免費試** 用」以建立認證。 您可以免費使用這些服務 [ 6 個月，每次檔交易只需支付 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) $0.05，因此只需支付所需的費用。
+前往 [!DNL Acrobat Services] API [ 首頁 ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) 。 若要開始使用 [!DNL Acrobat Services] API，您需要應用程式的認證。 往下捲動，然後選取 **「開始免費試** 用」以建立認證。 您可以免費使用這些服務 [ 6 個月，每次 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 檔交易只需支付 $0.05，因此只需支付所需的費用。
 
 選取 **「PDF 服務」API** 做您選擇的服務，並填入如下所示的其他詳細資料。
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
 首先，請建立一個名為 auto-doc\**的空白資料夾。\*\* 在檔案夾中，執行下列命令以初始化 Node.js 專案： `npm init` 。 為您的專案命名「自動檔」 *。*
 
-在檔案夾中 。/PDFToolsDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples，有一個名為 pdftools-api-credentials.json 的檔案。 將它和 private.key 移至自動檔資料夾。 其中包含您的API認證。 此外，在自動資料夾中，建立一個名為「resources」的子檔案夾。 它包含每次產生銷售方案時從用戶端收到的 JSON 格式資料。 在同一個檔案夾中，儲存 Microsoft Word 中的銷售提案範本。
+在檔案夾中 。/PDFToolsDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples，有一個名為 pdftools-api-credentials.json 的檔案。 將它和 private.key 移至自動檔資料夾。 其中包含您的API認證。 此外，在自動資料夾中，建立名為「resources」的子檔案夾。 它包含每次產生銷售方案時從用戶端收到的 JSON 格式資料。 在同一個檔案夾中，儲存 Microsoft Word 中的銷售提案範本。
 
 現在您可以施展魔法了！ 由於您在本教學課程中使用 Node.js，因此必須安裝 Node.js [!DNL Acrobat Services] SDK。 若要這麼做，請在「自動檔」資料夾中，執行「@adobe/documentservices-pdftools-node-sdk」
 

@@ -42,7 +42,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >若要安裝 Word 增益集，您必須具有在 Microsoft 365 中安裝增益集的許可權。 如果您沒有許可權，請聯絡您的 Microsoft 365 管理員。
+   >若要安裝 Word 增益集，您必須具備在 Microsoft 365 中安裝增益集的許可權。 如果您沒有許可權，請聯絡您的 Microsoft 365 管理員。
 
 ## 您的資料
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 }
 ```
 
-在資料中，會提供有關客戶、其名稱、簽署者、他們所處的狀態等等的資訊。 此外，有關公司正在產生合約的相關資訊區段和用於包含合約特定區段的條件旗標。
+在資料中，會提供客戶、其名稱、簽署者、其狀態等相關資訊。 此外，有關公司正在產生合約的相關資訊區段和用於包含合約特定區段的條件旗標。
 
 ## 將基本磁碟區標新增至檔
 
@@ -145,7 +145,7 @@ Adobe檔產生API也可讓您在頁首和頁尾以及簽名標題需要前往的
 
 ## 預覽產生的檔
 
-您可以直接在 Microsoft Word 內根據範例 JSON 資料預覽產生的檔。
+您可以直接在 Microsoft Word 中根據範例 JSON 資料預覽產生的檔。
 
 1. 在「 *檔產生記錄器」* 中，選取「 **[!UICONTROL 產生檔」]** 。
 1. 第一次系統會提示您使用Adobe ID登入。 選 **[!UICONTROL 取「登入]** 」並填寫提示，以使用您的認證登入。
@@ -162,7 +162,7 @@ Adobe檔產生API也可讓您在頁首和頁尾以及簽名標題需要前往的
 
 ## 為每個狀態新增條件條款
 
-在下一節中，您僅根據輸入資料條件設定要包含的特定區段。 在範例檔中，第 4 和第 5 節僅與特定狀態相關。 如果是這種情況，只有在客戶處於該狀態時，才應包含特定狀態的條款。 此外，如果已移除 Microsoft Word 中的編號，則不應包含該區段。 使用「檔產生」API條件式內容功能標記此內容。
+在下一個區段中，您僅根據輸入資料條件設定要包含的特定區段。 在範例檔中，第 4 和第 5 節僅與特定狀態相關。 如果是這種情況，只有在客戶處於該狀態時，才應包含特定狀態的條款。 此外，如果已移除 Microsoft Word 中的編號，則不應包含該區段。 使用「檔產生」API條件式內容功能標記此內容。
 
 ![州特定文字的螢幕擷圖](assets/automatelegal_13.png)
 
@@ -222,7 +222,7 @@ Adobe檔產生API也可讓您在頁首和頁尾以及簽名標題需要前往的
 
 如同條件式區段，您也可以在符合特定條件時包含特定句子。 舉例來說，美國加州和華盛頓的退貨政策不同。
 
-1. 在 3.1 節中，選取第一句：「在華盛頓特區購買時，必須在原始交易後的 30 天內透過郵件傳回客戶，以取得全額退款。」
+1. 在第 3.1 節中，選取第一句：「在華盛頓特區購買時，必須在原始交易後的 30 天內透過郵件傳回客戶，以取得全額退款。」
 1. 在「 *[!UICONTROL 檔產生記錄器」]* 中，選取「進 **[!UICONTROL 階」]** 。
 1. 擴充 **[!UICONTROL 條件式內容]** 。
 1. 在「內容」類型下 *[!UICONTROL 方，選取&#x200B;**[!UICONTROL 「片語」]**。]*
@@ -366,7 +366,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## 取得Acrobat Sign 帳戶
 
-如果您沒有 Acrobat Sign 帳戶，請註冊開發人員帳戶並在這裡 ](https://developer.adobe.com/adobesign-api/) 檢閱檔 [ ，然後選取「 **開發人員帳戶註冊」** 。系統會提示您填寫表單並接收驗證電子郵件。 執行此操作後，系統會將您導向網站設定密碼和帳戶，然後登入該網站Acrobat Sign。
+如果您沒有 Acrobat Sign 帳戶，請註冊開發人員帳戶並在這裡 ](https://developer.adobe.com/adobesign-api/) 檢閱檔 [ ，然後選取「 **開發人員帳戶註冊」** 。系統會提示您填寫表單並接收驗證電子郵件。 執行此操作後，系統會將您導向網站設定密碼和帳戶，然後在該網站上登入 Acrobat Sign。
 
 ## 從網頁介面傳送合約
 
@@ -550,7 +550,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
   }
 ```
 
-更新變更時，收到通知的效率更高的方法是透過 Webhook 取得詳細資訊，這裡提供了 [ ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) Webhook 事件 [ ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookevents.html) 的完整清單。
+更新變更時，收到通知的效率更高的方法是透過 Webhook 取得詳細資訊，這裡可以進一步 [ ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) 瞭解，這裡 ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookevents.html) 提供了 [ 可用的 Webhook 事件完整清單。
 
 ## 儲存已簽署的檔
 

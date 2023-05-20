@@ -1,6 +1,6 @@
 ---
 title: 概述
-description: 專為搭配Adobe檔產生API所設計的Adobe一代 Tagger 總覽
+description: 專為搭配 Adobe 檔產生API而設計Adobe一代 Tagger 總覽
 type: Tutorial
 role: Developer
 level: Beginner

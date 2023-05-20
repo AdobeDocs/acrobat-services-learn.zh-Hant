@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## 產生API認證
 
-先註冊「Adobe PDF服務」API免費試用版。 前往 Adobe ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 網站，然後按一下 *「建立新認證* 」下方 *的開始使用* 按鈕。 [ ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [免費試用版提供 1，000 筆檔交易，可在 6 個月內使用。 在下一頁 （請參閱下方） 中選擇服務 （PDF Services API），設定認證名稱 （例如 HRDocumentWFCredentials），然後輸入說明。
+先註冊「Adobe PDF服務」API免費試用版。 前往 Adobe ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 網站，然後按一下 *「建立新認證」下方* 的「 *開始使用」* 按鈕。 [ ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [免費試用版提供 1，000 筆檔交易，可在 6 個月內使用。 在下一頁 （請參閱下方） 中選擇服務 （PDF Services API），設定認證名稱 （例如 HRDocumentWFCredentials），然後輸入說明。
 
 選取語言 （此範例為 JAVA），然後勾選 *「建立個人化程式碼範例」* 。 最後一個步驟可確保程式碼範例已包含您所使用的預先填入的 pdftools-api-credentials.json 檔案，以及要在API中驗證應用程式的私人金鑰。
 
@@ -92,7 +92,7 @@ ht-degree: 2%
 
 ## 演算網頁表單
 
-若要渲染網頁表單，請使用顯示個人資料表單的控制器修改應用程式，並處理張貼表單的程式。 因此，請先使用「PersonForm」模型類別修改應用程式：
+若要渲染網頁表單，請使用顯示個人資料表單的控制器修改應用程式，並處理張貼表單的作業。 因此，請先使用「PersonForm」模型類別修改應用程式：
 
 ```
 package com.hr.docsigning;
@@ -205,7 +205,7 @@ public class PersonController {
 
 若要實現此目標，請先從 Adobe [ 的 Dynamic HTML ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 範例建立 PDF 開始。 透過分析該範例程式碼，您會看到動態 HTML 欄位的人口程式可以依照以下方式運作。
 
-首先，您必須準備具有靜態和動態內容的 HTML 頁面。 動態元件會使用 JavaScript 進行更新。 亦即 PDF 服務API將 JSON 物件插入您的 HTML 中。
+首先，您必須準備具有靜態和動態內容的 HTML 頁面。 動態元件會使用 JavaScript 進行更新。 亦即 PDF 服務API將 JSON 物件插入您的 HTML。
 
 接著，您可以使用 HTML 檔案載入時叫用的JavaScript功能取得 JSON 屬性。 此JavaScript功能會更新選取的 DOM 元素。 以下範例會填入跨範圍元素，並按住人員的資料 （請參閱隨附程式碼的 src\\main\resources\\contract\\index.html）：
 
@@ -267,7 +267,7 @@ public String checkPersonInfo(@Valid PersonForm personForm,
 
 此 `CreateContract` 方法會設定認證並從 HTML 建立 PDF。 若要傳遞和填入合約中人員的資料，請使用 `setCustomOptionsAndPersonData` 輔助程式。 此方法會從表單擷取人員的資料，然後透過上述的 JSON 物件將資料傳送至產生的 PDF。
 
-同時， `setCustomOptionsAndPersonData` 說明如何透過停用頁首和頁尾來控制 PDF 外觀。 完成這些步驟後，您將 PDF 檔案儲存為 output/contract.pdf，最後刪除先前產生的檔案。
+同時， `setCustomOptionsAndPersonData` 說明如何透過停用頁首和頁尾來控制 PDF 外觀。 完成這些步驟後，您會將 PDF 檔案儲存為 output/contract.pdf，最後刪除先前產生的檔案。
 
 ```
 private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
@@ -597,8 +597,8 @@ System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 
 ## 後續步驟
 
-如同您所見，透過運用快速星號，您可以實作簡單的網頁表單，在 JAVA 中使用 Adobe PDF Services API 建立核准的 PDF。 Adobe PDF API 可順暢整合至您現有的用戶端應用程式。
+如同所見，透過運用快速星號，您可以實作簡單的網頁表單，在 JAVA 中使用 Adobe PDF Services API 建立核准的 PDF。 Adobe PDF API 可順暢整合至您現有的用戶端應用程式。
 
-再舉個例子，您可以建立表單收件者可以遠端安全地簽署表格。 當您需要多個簽名時，您甚至可以自動將表格傳送給工作流程中的一系列人員。 您的員工入職流程已改善，人力資源部門會愛您。
+更進一步地，您可以建立表單收件者可以遠端安全地簽署表格。 當您需要多個簽名時，您甚至可以自動將表格傳送給工作流程中的一系列人員。 您的員工入職流程已改善，人力資源部門會愛您。
 
 請參閱 [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/) 現今在您的應用程式中新增各種 PDF 功能。

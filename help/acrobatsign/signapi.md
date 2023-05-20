@@ -18,13 +18,13 @@ ht-degree: 2%
 
 ![使用案例主打橫幅](assets/UseCaseStartedHero.jpg)
 
-[Acrobat Sign API ](https://www.adobe.io/apis/documentcloud/sign.html) 是提升您管理已簽署合約方式的好方法。 開發人員可以輕鬆地將其系統與 Sign API整合，其提供可靠、輕鬆的方式上傳檔、傳送檔以索取簽名、傳送提醒及收集電子簽名。
+[Acrobat Sign API ](https://www.adobe.io/apis/documentcloud/sign.html) 是提升您管理已簽署合約方式的絕佳方式。 開發人員可以輕鬆地將其系統與 Sign API整合，其提供可靠、輕鬆的方式上傳檔、傳送檔以索取簽名、傳送提醒及收集電子簽名。
 
 ## 您可以學習哪些內容
 
 此實作教學課程說明開發人員如何使用 Sign API來增強建立 [!DNL Adobe Acrobat Services] 的應用程式和工作流程 。 [!DNL Acrobat Services] 包含 [ 「Adobe PDF服務」API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) 、 [ 「內嵌API Adobe PDF ](https://www.adobe.io/apis/documentcloud/viesdk) 」（免費） 和 [ 「Adobe檔產生API」 ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) 。
 
-更具體地說，瞭解如何將 Acrobat Sign API加入您的應用程式，以收集簽名和其他資訊，例如保險表單上的員工資訊。 使用包含簡化 HTTP 要求和回應的一般步驟。 您可以使用您最愛的語言實作這些要求。 您可以使用 API 組合 [[!DNL Acrobat Services]  建立 PDF、將其上傳至 Sign API為 [ 暫時性 ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 檔，並使用合約或 [ Widget ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流程請求使用者 ](https://www.adobe.io/apis/documentcloud/dcsdk/) 簽名。
+更具體地說，瞭解如何將 Acrobat Sign API加入您的應用程式，以收集簽名和其他資訊，例如保險表單上的員工資訊。 使用包含簡化 HTTP 要求和回應的一般步驟。 您可以使用您最愛的語言實作這些要求。 您可以使用 API 組合 [[!DNL Acrobat Services]  建立 PDF、將 API ](https://www.adobe.io/apis/documentcloud/dcsdk/) 上傳至 Sign API做為 [ 暫時性 ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 檔，並使用合約或 [ Widget ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流程請求使用者簽名。
 
 ## 建立 PDF 檔
 
@@ -195,7 +195,7 @@ Adobe Sign可讓您建立不同的流程來準備檔以供簽署或收集資料�
 
 ![已選取「網頁表單」Acrobat「簽署管理」標籤的螢幕擷圖](assets/GSASAPI_3.png)
 
-按一下 **「編輯** 」以開啟檔編輯頁面。 可預先定義的欄位位於右側面板。
+按一下 **「編輯** 」以開啟檔編輯頁面。 可用的預先定義欄位位於右側面板。
 
 ![Acrobat簽署表格編寫環境的螢幕擷圖](assets/GSASAPI_4.png)
 
@@ -211,7 +211,7 @@ Adobe Sign可讓您建立不同的流程來準備檔以供簽署或收集資料�
 
 [HTTPs://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3...babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
 
-**複製網頁表單內嵌程式碼：複製此程式碼** 並貼到您的 HTML 中，藉此將合約新增至您的網站。
+**複製網頁表單內嵌程式碼：複製此程式碼** 並貼到您的 HTML 中，將合約新增至您的網站。
 
 例如：
 
@@ -239,11 +239,11 @@ overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
 
 ![簽名螢幕擷圖](assets/GSASAPI_10.png)
 
-使用者按一下「套 **** 用」時，Adobe指示使用者開啟電子郵件並確認簽名。 在確認到達之前，簽名會持續等待。
+當使用者按一下「套 **** 用」時，Adobe指示他們開啟電子郵件並確認簽名。 在確認到達之前，簽名會持續等待。
 
 ![再執行一個步驟的螢幕擷圖](assets/GSASAPI_11.png)
 
-這項驗證新增了多因素驗證，並增強了簽署程式的安全性。
+這項驗證新增了多因素驗證，並強化了簽署程式的安全性。
 
 ![確認訊息的螢幕擷圖](assets/GSASAPI_12.png)
 
@@ -386,7 +386,7 @@ Accept: application/json
 
 您可以根據您在最後一節呼叫 `/agreements/{agreementId}/members` 端點後收到的合約成員資訊，向尚未簽署合約的所有參與者發出電子郵件提醒。
 
-端點POST要求會 `/agreements/{agreementId}/reminders` 為參數所識別之合約的 `agreementId` 指定參與者建立提醒。
+端點POST要求會 `/agreements/{agreementId}/reminders` 為參數所識別 `agreementId` 之合約的指定參與者建立提醒。
 
 ```
 POST /agreements/{agreementId}/reminders HTTP/1.1
@@ -435,7 +435,7 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 Acrobat Sign API可讓您管理檔、網頁表單和合約。 使用網頁表單和合約所建立的簡化但完整的工作流程會以一般方式完成，供開發人員使用任何語言實作。
 
-如需 Sign API運作方式的概覽，您可以在API使用開發人員指南 ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md) 中 [ 尋找範例。本檔內含有關整篇文章所遵循許多步驟的簡短文章，以及其他相關主題。
+如需 Sign API運作方式的概覽，請參閱API使用開發人員指南 ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md) 中的 [ 範例。本檔內含有關整篇文章所遵循許多步驟的簡短文章，以及其他相關主題。
 
 Acrobat Sign API可透過多個單一和多使用者電子簽名計畫 ](https://acrobat.adobe.com/tw/zh-Hant/sign/pricing/plans.html) 層級 [ 取得，因此您可以選擇最符合您需求的價格模型。既然您知道將 Sign API整合到應用程式中有多麼簡單，您可能對其他功能感興趣，例如 [ 推播式程式模型 Acrobat Sign Webhook ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md) 。 Webhook 可讓您註冊 HTTP Acrobat URL，讓 Sign API在發生事件時執行POST回呼要求，而不必要求您的應用程式經常執行檢查。 Webhook 透過即時和即時更新為您的應用程式提供支援，以支援強大的程式設計。
 

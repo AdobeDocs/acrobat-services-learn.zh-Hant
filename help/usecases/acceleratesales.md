@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 從資料產生合約和銷售訂單
 
-根據特定標準，銷售合約、合約和其他檔差異很大。 例如，銷售合約可能僅包含以獨特範例為基礎的特定條款，例如位於特定國家/地區或狀態，或是合約中包含某些產品。 手動建立這些檔或維護許多不同的範本版本可以顯著提高與手動審核變更相關的法律成本。
+根據特定標準，銷售合約、合約和其他檔差異很大。 例如，銷售合約可能僅包含以獨特範例為基礎的特定條款，例如位於特定國家/地區或狀態，或是合約中包含某些產品。 手動建立這些檔或維護許多不同的範本版本，可顯著提高與手動審核變更相關的法律費用。
 
 [Adobe檔產生API ](https://developer.adobe.com/document-services/apis/doc-generation/) 可讓您從CRM或其他資料系統獲取資料，根據該資料動態產生銷售檔。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >若要安裝 Word 增益集，您必須具有在 Microsoft 365 中安裝增益集的許可權。 如果您沒有許可權，請聯絡您的 Microsoft 365 管理員。
+   >若要安裝 Word 增益集，您必須具備在 Microsoft 365 中安裝增益集的許可權。 如果您沒有許可權，請聯絡您的 Microsoft 365 管理員。
 
 ## 您的資料
 
@@ -145,7 +145,7 @@ ht-degree: 0%
 
 ## 預覽產生的檔
 
-您可以直接在 Microsoft Word 內根據範例 JSON 資料預覽產生的檔。
+您可以直接在 Microsoft Word 中根據範例 JSON 資料預覽產生的檔。
 
 1. 在「 *檔產生記錄器」* 面板中，選取「 **[!UICONTROL 產生檔」]** 。 第一次系統會提示您使用Adobe ID登入。 選 **[!UICONTROL 取「登入]** 」並填寫提示，以使用您的認證登入。
 
@@ -193,7 +193,7 @@ ht-degree: 0%
 此程式會插入計算標籤，以提供值總和。 您可以使用 JSONata 計算進行更進階計算。 例如：
 
 * 次 全 切除： `${{expr($sum(referencesOrder.totalPaymentDue.price))}}`
-計算 referenceOrder.totalPaymentDue.price 的加總。
+計算 referenceOrder.totalPaymentDue.price 的總和。
 
 * 營業稅： `${{expr($sum(referencesOrder.totalPaymentDue.price)*0.08)}}`
 計算價格，再乘以 8%計算稅金。
@@ -255,12 +255,12 @@ ht-degree: 0%
 
 ## 新增 Acrobat Sign 標籤
 
-Adobe Acrobat Sign 可讓您擷取檔上的電子簽名。 Acrobat Sign 可讓您輕鬆地在網頁介面中拖放欄位，但也可以使用「文字標籤」來控制簽名和其他欄位位置。 您可以使用 Adobe 產生 Tagger 檔，輕鬆放置這些文字標籤欄位。
+Adobe Acrobat Sign 可讓您擷取檔上的電子簽名。 Acrobat Sign 可讓您輕鬆地在網頁介面中拖放欄位，但也可以使用「文字標籤」控制簽名和其他欄位位置。 您可以使用 Adobe 產生 Tagger 檔，輕鬆放置這些文字標籤欄位。
 
 1. 導覽至範例檔中需要簽名的位置。
 1. 在需要簽名的位置插入游標。
 1. 在「Adobe *[!UICONTROL 世代記錄器]* 」面板中，選 **[!UICONTROL 取「Adobe Sign]** 」。
-1. 在「 *[!UICONTROL 指定收件者數目]* 」欄位中，設定收件者數量 （此範例為單一）。
+1. 在「 *[!UICONTROL 指定收件者數目]* 」欄位中，設定收件者數量 （此範例即為單一）。
 1. 在「 *[!UICONTROL 收件者」欄位中]* ，選取 **[!UICONTROL 「簽署者-1」]** 。
 1. 在「字 *[!UICONTROL 段]* 」類型中，選取「 **[!UICONTROL 簽名」]** 。
 1. 選取 **[!UICONTROL 「插入Adobe Sign文字標籤」]** 。
@@ -348,7 +348,7 @@ documentMergeOperation.execute(executionContext)
 * 如果有大型影像，請壓縮 PDF
 * 在檔上Capture電子簽名
 
-若要進一步瞭解其他可用的動作，請查看範例檔案中 /src 檔案夾中的腳本。 您也可以檢閱不同動作的檔，進一步瞭解。
+若要深入瞭解其他可用的動作，請查看範例檔案中 /src 檔案夾中的腳本。 您也可以檢閱不同動作的檔，進一步瞭解。
 
 ## 其他使用案例
 
@@ -356,7 +356,7 @@ documentMergeOperation.execute(executionContext)
 
 * 使用Adobe PDF嵌入API在網站上內嵌白皮書和其他內容，同時衡量和收集關於檢視情形的分析
 * 使用 Acrobat Sign 在產生的合約上擷取電子簽名
-* 使用 Adobe PDF Extract 擷取從 PDF 檔擷取合約資料API
+* 使用 Adobe PDF Extract 擷取 PDF 檔中的合約資料API
 
 ## 進一步學習
 

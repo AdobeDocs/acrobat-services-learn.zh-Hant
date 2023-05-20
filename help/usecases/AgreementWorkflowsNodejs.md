@@ -210,7 +210,7 @@ logger.info('converting to ${destinationName}')
 
 ## 將其他檔案類型轉換為 PDF
 
-檔工具組會將其他格式轉換為 PDF，例如靜態 HTML （另一種常見的檔案類型）。 工具組接受封裝為 .zip 檔案的 HTML 檔案，並在同一個 .zip 檔案中包含檔參照的所有資源 （CSS 檔案、影像和其他檔案）。 HTML 檔案本身必須命名為 index.html，並放置在 .zip 檔案的根目錄中。
+檔工具組會將其他格式轉換為 PDF，例如靜態 HTML （另一種常見的檔案類型）。 工具組接受封裝為 .zip 檔的 HTML 檔案，並在同一個 .zip 檔案中包含檔參照的所有資源 （CSS 檔案、影像和其他檔案）。 HTML 檔案本身必須命名為 index.html，並放置在 .zip 檔案的根目錄中。
 
 若要轉換包含 HTML 的 .zip 檔案，請使用下列程式碼：
 
@@ -285,7 +285,7 @@ combineOperation.execute(executionContext)
 
 ## 顯示 PDF 檔
 
-您已在 PDF 檔案上執行數次作業，但最終，您的使用者必須檢視檔。 您可以使用 Adobe 的 PDF 嵌入API將檔嵌入網頁中。
+您已在 PDF 檔案上執行數次作業，但最終，您的使用者必須檢視檔。 您可以使用 Adobe 的 PDF 嵌入API，將檔嵌入網頁中。
 
 在顯示 PDF 的頁面上，新增元素 `<div />` 以按住檔並提供 ID。 您很快就會使用此 ID。 在網頁中，納入 `<script />` Adobe JavaScript資料庫的參考：
 

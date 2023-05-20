@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![PDF 嵌入API橫幅](../assets/pdfextracthero.jpg)
 
-使用由 Adobe Sensei 機器學習支援的網頁服務，解鎖任何 PDF 的結構和內容元素。
+使用由 Adobe Sensei 機器學習支援的網頁服務來解鎖任何 PDF 的結構和內容元素。
 
 >[!NOTE]
 >

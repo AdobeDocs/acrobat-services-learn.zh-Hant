@@ -167,7 +167,7 @@ ht-degree: 2%
 
 #### 合併資料
 
-使用「 *從 Word 範本產生檔」* 動作，您可以使用動態內容，將資料從此流程中任何不同的變數合併到檔中。
+使用「 *從 Word 範本產生檔」* 動作，您可以使用動態內容，將資料從之前流程中任何不同變數中將資料合併到檔中。
 
 將下方的 JSON 資料複製到「 **合併資料」** 欄位：
 
@@ -213,7 +213,7 @@ ht-degree: 2%
 
 ### 試用流程
 
-![Microsoft Power Automate 中的「執行流程」畫面提示輸入](assets/runFlowParameters.png)
+![Microsoft Power Automate 中的執行流程畫面提示輸入](assets/runFlowParameters.png)
 
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 「測試」]** 。
@@ -222,7 +222,7 @@ ht-degree: 2%
 1. 輸入「名字」、「 *姓氏* 」 *和* 「薪資」的值 ** 。
 1. 選取「 **[!UICONTROL 執行流程」]** 。
 
-您現在會在 OneDrive 資料夾中看到從 Word 檔產生的 PDF。 在 OneDrive 中開啟 PDF 檔時，您會看到資料已合併到文字標籤位置。
+您現在會在 OneDrive 資料夾中看到從 Word 檔產生的 PDF。 當您在 OneDrive 中開啟 PDF 檔時，您會看到資料已合併到文字標籤位置。
 
 
 ## 第 3 部分：將 PDF 合併為單一 PDF

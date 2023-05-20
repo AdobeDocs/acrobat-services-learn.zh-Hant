@@ -1,6 +1,6 @@
 ---
 title: 新增影像標籤
-description: 瞭解如何使用 Adobe Document Generation Tagger 將影像標籤新增至 Microsoft Word 範本，使用「Adobe產生檔」將影像動態推送至檔API
+description: 瞭解如何使用 Adobe Document Generation Tagger 將影像標籤新增至 Microsoft Word 範本，以使用「Adobe產生檔」將影像動態推送至檔API
 type: Tutorial
 role: Developer
 level: Beginner

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ![使用案例主打橫幅](assets/UseCaseReportHero.jpg)
 
-金融、教育、行銷和其他產業都使用 PDF 與客戶和利益相關者共用資料。 PDF 可讓您輕鬆共用豐富的檔，並提供表格、圖形和互動式內容，一種所有人都能檢視的格式。 [!DNL Adobe Acrobat Services] API 可協助這些公司從 Microsoft Word、Microsoft Excel、圖形和其他多樣化的檔案格式產生可共用的 PDF 報告。
+金融、教育、行銷和其他產業都使用 PDF 與客戶和利益相關者共用資料。 PDF 讓您輕鬆共用豐富的檔，並提供表格、圖形和互動式內容，這種格式每個人都能檢視。 [!DNL Adobe Acrobat Services] API 可協助這些公司從 Microsoft Word、Microsoft Excel、圖形和其他多樣化的檔案格式產生可共用的 PDF 報告。
 
 假設您 [ 經營著一家社交媒體追蹤公司 ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) 。 您的客戶會登入受密碼保護的網站，以檢視他們的行銷活動分析。 通常，他們想將這些統計資料與其高階主管、臨時組織、捐助者或其他利益相關者分享。 可下載的 PDF 檔是客戶共用數位、圖表等的絕佳方式。
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->使用密碼保護您的 URL，或在 npm 開始使用護照套件，在驗證和授權層後面保護您的應用程式。
+>使用密碼保護您的 URL，或從下午 npm 開始使用護照套件，在驗證和授權層後面保護您的應用程式。
 
 當管理員選取並上傳檔案時，該檔案會移至其他人可存取的公用儲存庫。 您使用相同的儲存庫從管理頁面發佈檔，並列出可供客戶使用的行銷報告。 此程式碼為：
 
@@ -77,7 +77,7 @@ res.status(500).render("crash", { error: error });
 
 ## 選取報告
 
-在使用者方面，您有一份表單供客戶在社交媒體行銷活動報告中選取要加入的檔。 簡單來說，在範例頁面上，僅顯示檔案名稱和選取檔的核取方塊。 客戶可以選取單一報告或多個報告，以合併到單一 PDF 檔中。
+在使用者方面，您有一份表單供客戶在社交媒體行銷活動報告中選取要包含的檔。 簡單來說，在範例頁面上，僅顯示檔案名稱和選取檔的核取方塊。 客戶可以選取單一報告或多個報告，以合併到單一 PDF 檔中。
 
 若要獲得更進階的使用者介面，您也可以在這裡顯示報告的預覽。
 
@@ -210,12 +210,12 @@ res.status(500).render("crash", { error: error });
 
 此程式碼會為多個輸入檔產生編譯報告。 唯一新增的 `combinePdf` 功能是使用 PDF 檔案路徑名稱清單並傳回單一輸出 PDF 的方法。
 
-現在，您的社交媒體儀表板客戶可以從其帳戶中選取相關報告，並將其下載為一份便利的 PDF。 此儀表板可讓客戶以普遍容易開啟的格式顯示管理活動及其他利害關係人、其行銷活動的成功與資料、表格和圖表。
+現在，您的社交媒體儀表板客戶可以從其帳戶中選取相關報告，並將其下載為一份便利的 PDF。 此儀表板可讓他們以普遍容易開啟的格式顯示管理活動及其他利害關係人、其行銷活動的成功與資料、表格和圖表。
 
 ## 後續步驟
 
 本實作教學課程介紹如何使用 PDF Services API，協助客戶輕鬆分享 PDF 以下載相關報告。 您建立了 Node.js 應用程式，展示 PDF Services API PDF 報告和閱讀服務的功能。 應用程式示範了您的客戶如何下載單一報告檔，或將多個檔合併併合並為單一 PDF 報告。
 
-這個Adobe提供的應用程式可協助您的 [ 社交媒體儀表板客戶 ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) 取得和分享所需的報告，而不必擔心收件者是否都在其裝置上安裝了 Microsoft Office 或其他軟體。 您可以在自己的應用程式中使用相同的技術，協助使用者檢視、合併和下載檔案。 或者，查看Adobe許多其他 API 來新增和追蹤簽名等。
+此Adobe提供的應用程式可協助社交媒體 [ 儀表板客戶 ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) 取得及分享所需的報告，而不必擔心收件者是否都已在其裝置上安裝 Microsoft Office 或其他軟體。 您可以在自己的應用程式中使用相同的技術，協助使用者檢視、合併和下載檔案。 或者，查看Adobe許多其他 API 來新增和追蹤簽名等。
 
-若要開始使用，請申請免費 [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 帳戶，然後為您的員工和客戶建立引人入勝的報告體驗。免費使用您的帳戶 6 個月，然後 [ 隨著行銷工作擴展，可隨即付費 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) ，每份檔交易只需 \$0.05。
+若要開始使用，請申請免費 [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 帳戶，然後為您的員工和客戶建立引人入勝的報告體驗。免費使用帳戶 6 個月，然後 [ 隨著行銷工作擴展，可隨即付費 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) ，每份檔交易只需 \$0.05。

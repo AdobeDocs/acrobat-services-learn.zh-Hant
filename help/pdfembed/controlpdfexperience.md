@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 控制您的 PDF 線上體驗並收集分析結果
 
-您的組織會在您的網站上發佈 PDF 嗎？ 瞭解如何使用Adobe PDF嵌入API來控制外觀、啟用共同作業，以及收集有關使用者與 PDF 互動的分析，包括花費在頁面和搜尋上的時間。 若要開始此 4 部分的實作教學課程，請選 *取「開始使用 PDF 嵌入」API* 。
+您的組織會在您的網站上發佈 PDF 嗎？ 瞭解如何使用Adobe PDF嵌入API來控制外觀、啟用共同作業，以及收集有關使用者如何與 PDF 互動的分析，包括花費在頁面和搜尋上的時間。 若要開始此 4 部分的實作教學課程，請選 *取「開始使用 PDF 嵌入」API* 。
 
 <table style="table-layout:fixed">
 <tr>
@@ -147,7 +147,7 @@ ht-degree: 0%
 
    您會看到用戶端 ID 變數存在。
 
-1. 在雙引號之間貼上您的客戶認證，將用戶端 ID 設定為您的認證。
+1. 在雙引號之間貼上客戶認證，將用戶端 ID 設定為您的認證。
 
 1. 返回開發人員沙箱程式碼預覽。
 
@@ -161,7 +161,7 @@ ht-degree: 0%
 
 1. 前往程式碼編輯器，然後開啟 **[!UICONTROL Web]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]** 檔案。
 
-1. 將腳本程式碼貼到 `<head>` 第 18 行的檔案中，並加上注釋：「 **TODO：練習 1： 插入內嵌API SCRIPT 標籤」** 。
+1. 將腳本程式碼貼到 `<head>` 第 18 行的檔案中，並加上注釋：「 **TODO： 練習 1： 插入內嵌API SCRIPT 標籤」** 。
 
    ![貼上腳本程式碼的位置螢幕擷取](assets/ControlPDF_13.png)
 
@@ -246,7 +246,7 @@ PDF 內嵌API中有許多不同的JavaScript事件可供使用。 您可以從 [
    );
    ```
 
-1. 在 index.html **中尋找您先前新增的代碼區段 ，其看起來如下所示，並在此程式碼** 之後附加至上方：
+1. 在 index.html **中尋找您先前新增的程式碼區段 ，其看起來如下所示，並在此程式碼** 之後附加至上方：
 
    ![貼上程式碼位置的螢幕擷圖](assets/ControlPDF_19.png)
 
@@ -258,7 +258,7 @@ PDF 內嵌API中有許多不同的JavaScript事件可供使用。 您可以從 [
 
 ### 新增切換開關以擷取事件
 
-現在您已經有將事件輸出到 console.log，讓我們根據哪些事件變更行為。 若要這麼做，您將使用切換範例。
+現在您已經有將事件輸出到 console.log，讓我們根據哪些事件變更行為。 若要執行此操作，您將使用切換範例。
 
 1. 導覽至 **snippets/eventsSwitch.js** ，然後複製教學課程程式碼中的檔案內容。
 
@@ -276,7 +276,7 @@ PDF 內嵌API中有許多不同的JavaScript事件可供使用。 您可以從 [
 
 >[!IMPORTANT]
 >
->您的網頁必須已經Adobe Analytics載入頁眉中的頁面。
+>您的網頁必須已經有Adobe Analytics載入頁眉中的頁面。
 
 如果您已在 [ 網頁上啟用Adobe Analytics，請流覽至Adobe Analytics檔 ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) 並進行審核。 依照指示設定 reportSuite。
 

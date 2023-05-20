@@ -100,7 +100,7 @@ app.use(express.static(path.join(__dirname, '/node_modules/font-awesome')));
 
 ![PDF 縮圖螢幕擷圖](assets/ddp_3.png)
 
-現在，開啟 \\rout\index.js 檔案，其中包含路由首頁的邏輯。 若要使用 data.json 檔案中的白皮書資料，您必須載入 Node.js 模組，負責存取和與檔案系統互動。 然後，依照下列方式，在 \\路由\index.js 檔案的第一行中宣告 `fs` 常數：
+現在，開啟 \\rout\index.js 檔案，其中包含路由首頁的邏輯。 若要使用 data.json 檔案的白皮書資料，您必須載入 Node.js 模組，負責存取和與檔案系統互動。 然後，依照下列方式，在 \\路由\index.js 檔案的第一行中宣告 `fs` 常數：
 
 ```
 const fs = require('fs');
@@ -125,7 +125,7 @@ res.render('index', { title: 'Embedding PDF', papers: papers });
 
 ![白皮書縮圖螢幕擷圖](assets/ddp_4.png)
 
-在下一個區段中，請將網站美化及使用 [ PDF 內嵌API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 來將 PDF 檔顯示至網頁。 PDF 內嵌API是免費的 — 您只需要取得API認證即可。
+在下一個區段中，請參閱增強網站，並使用 [ PDF 內嵌API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 來將 PDF 檔顯示至網頁。 PDF 內嵌API是免費的 — 您只需要取得API認證即可。
 
 ## 取得 PDF 內嵌API認證
 
@@ -368,7 +368,7 @@ showFullScreen: true
 });
 ```
 
-然後，修改 \\views\\in-in.ejs，以便您的網頁顯示來自後端的旗標值。
+然後，修改 \\views\\in-in.ejs，這樣您的網頁就可以呈現來自後端的旗標值。
 
 ```
 embedMode: "IN_LINE",
@@ -550,11 +550,11 @@ console.log(event);
 
 ## 後續步驟
 
-[!DNL Acrobat Services] API 可透過以 PDF 為中心的工作流程，協助開發人員輕鬆解決數位出版難題。 您已看到如何建立節點網頁應用程式範例來顯示白皮書集合。 然後取得 [ 免費API憑證 ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) ，並建立對白皮書的有限存取權，白皮書可以顯示在四 [ 種內嵌模式 ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) 之一。
+[!DNL Acrobat Services] API 可透過以 PDF 為中心的工作流程，協助開發人員輕鬆解決數位出版難題。 您已看到如何建立節點網頁應用程式範例來顯示白皮書集合。 然後，取得 [ 免費API憑證 ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) ，並建立對白皮書的有限存取權，白皮書可在四 [ 種內嵌模式 ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) 中其中一種顯示。
 
 整合此工作流程有助於假設的 [ 行銷人員 ](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html) 收集潛在客戶聯絡資訊，作為白皮書下載的交換，並檢視與 PDF 互動人員的統計資料。 您可以將這些功能整合到您的網站中，以推動和監控使用者參與度。
 
-如果您是 Angular 或 React 開發人員，您可能喜歡嘗試 [ 其他範例 ](https://github.com/adobe/pdf-embed-api-samples) ，包括如何將 PDF 內嵌API與 React 和 Angular 專案整合。
+如果您是 Angular 或 React 開發人員，您可能喜歡嘗試 [ 其他範例 ](https://github.com/adobe/pdf-embed-api-samples) ，包括如何將 PDF 內嵌API與 React 和Angular專案整合。
 
 Adobe可讓您以創新的解決方案建立端對端客戶體驗。 免費試Adobe PDF [ 嵌入API ](https://www.adobe.io/apis/documentcloud/viesdk) 。 若要探索您還可以做什麼，請嘗試Adobe PDF服務API [ 按即 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) [ 付費的試用 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 。
 

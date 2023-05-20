@@ -179,7 +179,7 @@ ht-degree: 0%
     <div>
     <a href="FinanceWorkflowsJava.md"><strong>在 JAVA 中管理財務檔工作流程</strong></a>
     </div>
-    <em>[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 財務檔資料的所有必要工具、服務和功能</em>
+    <em>[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 金融檔資料的所有必要工具、服務和功能</em>
     <br>
   </td>
   <td>

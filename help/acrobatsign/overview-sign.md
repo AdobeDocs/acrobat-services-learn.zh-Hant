@@ -53,7 +53,7 @@ Acrobat Sign 的 API 可讓您建立應用程式，並將 Acrobat Sign UI和功�
 
 ## Acrobat簽署內嵌快速入門手冊
 
-瞭解如何開始將 Acrobat Sign 的 OEM 版本內嵌到您的應用程式中。 本指南是專為 OEM 合作夥伴所設計，此合作夥伴正在其應用程式內建立和嵌入簽名程式。
+瞭解如何開始將 Acrobat Sign 的 OEM 版本內嵌到您的應用程式中。 本指南是專為 OEM 合作夥伴所設計，這些合作夥伴正在其應用程式內建立和嵌入簽名程式。
 
 <table style="table-layout:fixed">
 <tr>

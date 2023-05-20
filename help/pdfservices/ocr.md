@@ -23,7 +23,7 @@ ht-degree: 2%
 
 開發人員只需幾分鐘即可開始使用，並準備好執行為 OCR 提供的範例檔案。
 
-本教學課程介紹如何使用 Node.js、JAVA 和 .Net 語言的範例檔案，API OCR 作業執行第一個 PDF Services 的基本知識。
+本教學課程介紹如何使用 Node.js、JAVA 和 .Net 語言的範例檔案，API OCR 作業執行第一個 PDF 服務的基本知識。
 
 ## 步驟 1：建立認證並設定環境
 

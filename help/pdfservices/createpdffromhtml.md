@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ![製作 PDF 主圖影像](assets/createpdffromhtml_hero.jpg)
 
-新的「Adobe PDF服務」API讓開發人員能自由地挑選並選擇多個功能強大的 PDF 處理服務，以滿足複雜的業務工作流程需求，讓檔工作流程數位化從未如此簡單。 透過這些隨時可用的雲端網路服務，可以簡化複雜的架構、實施策略和技術升級。
+新的「Adobe PDF服務」API讓開發人員可以自由地挑選和選擇多個強大的 PDF 處理服務，以滿足複雜的業務工作流程需求，讓檔工作流程數位化檔工作流程從未如此簡單。 透過這些隨時可用的雲端網路服務，可以簡化複雜的架構、實施策略和技術升級。
 
-在 PDF 服務API中，有幾個可用服務可以建立和操作 PDF，或從 PDF 轉存為 MS Office 和其他格式。
+在 PDF 服務API中，有數項可用服務可用來建立和操作 PDF，或從 PDF 轉存為 MS Office 和其他格式。
 
 * 從靜態或動態 HTML、MS Word、PowerPoint、Excel 等格式建立 PDF 檔案
 * Export PDF MS Word、PowerPoint、Excel 等
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 如果您選擇「建立個人化程式碼範例」選項，就不必手動將用戶端 ID 新增至程式碼範例檔案，也可以略過下一步，直接前往下方的「執行程式碼範例」區段。
 
-如果您未選擇「建立個人化程式碼範例」選項，則必須從 Adobe.io Console 複製用戶端 ID （API 金鑰）：
+如果您未選擇「建立個人化程式碼範例」選項，則必須從 Adobe.io Console 複製用戶端 ID （API 鍵）：
 
 ![程式碼範例](assets/codesample.png)
 

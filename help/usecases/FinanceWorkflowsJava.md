@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 設定
 
-[!DNL Adobe Acrobat Services] 使用驗證系統控制資源存取。 若要存取服務，您必須向組織或應用程式的Adobe索取API金鑰。 如果您有API鍵，請繼續執行下一節。 若要建立新的API鍵，請造訪 [ 網站中的快速入 ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 門 [!DNL Acrobat Services] 。 您可以使用免費試用版建立金鑰，其中提供最多 6 個月的 1，000 筆檔交易額度。
+[!DNL Adobe Acrobat Services] 使用驗證系統控制資源存取。 若要存取服務，您必須向組織或應用程式Adobe索取API金鑰。 如果您有API鍵，請繼續執行下一節。 若要建立新的API鍵，請造訪 [ 網站中的快速入 ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 門 [!DNL Acrobat Services] 。 您可以使用免費試用版建立金鑰，其中提供最多 6 個月的 1，000 筆檔交易額度。
 
 若要依照本教學課程操作，您需要兩組API鍵：
 
@@ -186,7 +186,7 @@ ProtectPDFOperation operation = ProtectPDFOperation.createNew(options);
 </script>
 ```
 
-此腳本會載入 PDF 檔，並可讓檢視者為檔加上批註和加上注釋。 以下是此「嵌入」API的視圖，如 Firefox 所示：
+此腳本會載入 PDF 檔，並讓檢視者為檔加上批註和加上注釋。 以下是此「嵌入」API的視圖，如 Firefox 所示：
 
 ![Firefox 中 PDF 檔的螢幕擷圖](assets/FAWJ_2.png)
 

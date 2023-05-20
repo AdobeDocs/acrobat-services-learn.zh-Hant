@@ -63,10 +63,10 @@ Pdf。 此外，您還可以執行更進階的作業，例如合併多個報告�
 
 ## 將檔轉換為 PDF
 
-學生可以將任何類型的單一或多份檔轉換為 PDF，例如 Microsoft Word、Excel 和 PowerPoint，以及其他常用的文字和圖像檔案類型。 學習入口網站使用 PDF Services 來執行將檔案轉換為 PDF 的作業。
+學生可以將任何類型的單一或多份檔轉換為 PDF，例如 Microsoft Word、Excel 和 PowerPoint，以及其他常用的文字和圖像檔案類型。 學習入口網站會使用 PDF Services 來執行將檔案轉換為 PDF 的作業。
 
 若要建立自己的學習入口網站，您必須先建立自己的認證。 [註冊 ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 至
-免費使用 PDF Services API 6 個月及最多 1，000 筆檔交易。 之後，當班級開始執行作業時， [ 即用即付 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 每份檔交易只要 \$0.05。
+免費使用 PDF Services API 6 個月及最多 1，000 筆檔交易。 之後，當班級開始作業時， [ 即用即付 ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 每份檔交易只要 \$0.05。
 
 當學生從儀表板中選取檔時，他們會看到以下內容：
 
@@ -194,7 +194,7 @@ adobeDCView.registerCallback(
 
 ![網頁瀏覽器主控台的螢幕擷圖](assets/edu_6.png)
 
-此螢幕擷取顯示學生開啟作業檔案，他們讀取第一頁 —他們不是捲動到其他頁面，或檔只有一頁 - 然後他們下載了檔案。 您可以收集這些度量，以執行分析和研究學生的行為。
+此螢幕擷取顯示學生開啟了作業檔案，並閱讀了第一頁 —他們不是捲動到其他頁面，或檔只有一頁 — 然後他們下載了檔案。 您可以收集這些度量，以執行分析和研究學生的行為。
 
 此外， [ Adobe Analytics與 PDF 內嵌API整合，因此如果您已訂閱 Adobe Analytics ](https://business.adobe.com/products/analytics/adobe-analytics.html) 套件，則可以在訂閱中發佈指標。 若要在Adobe Analytics中發佈指標，您只需要將套件 ID 傳遞至 PDF 內嵌API建構器。 （請注意，您必須使用 PDF 內嵌API憑證，而非API憑證使用 PDF Services）。
 

@@ -127,7 +127,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
 
 ## 將影像轉換為文字並壓縮 PDF
 
-現在，使用光學字元辨識 （OCR） 將影像轉換為文字，然後壓縮結果。 您可以使用類似于 CreatePDF 操作的 OCR 和 CompressPDF 操作來執行此操作。 將下列專案新增至路由檔案中，位於 `router.post` ：
+現在，使用光學字元辨識 （OCR） 將影像轉換為文字，然後壓縮結果。 您可以使用類似于 CreatePDF 操作的 OCR 和 CompressPDF 操作來進行此操作。 將下列專案新增至路由檔案中，位於 `router.post` ：
 
 ```
   const name = req.body.name;
@@ -251,7 +251,7 @@ router.get('/job/:id', async function(req, res, next) {
     script(src='/javascripts/embed-pdf.js')
 ```
 
-第一個腳本是Adobe的檢視 SDK，可讓您輕鬆嵌入 PDF。 第二個腳本是行內單行，可將 window.embedUrl 的值設定為 Express 路由處理常式所提供的 PDF URL。 請依照下列方式自行建立第三個腳本：
+第一個腳本是Adobe的檢視 SDK，可讓您輕鬆嵌入 PDF。 第二個腳本是行內單行，可將 window.embedUrl 的值設定為 Express 路由處理常式提供的 PDF URL。 請依照下列方式自行建立第三個腳本：
 
 ```
   document.addEventListener("adobe_dc_view_sdk.ready", function () {
@@ -273,7 +273,7 @@ router.get('/job/:id', async function(req, res, next) {
 
 ## 後續步驟
 
-本實作教學課程介紹如何使用 Node.js [!DNL Acrobat Services] ，將上傳 [ 的求職訊轉換 ](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) 為 PDF 格式。 產生的 PDF 接著會嵌入網頁中。 現在您可以將相同的功能新增至您的網站，讓雇主更容易上傳工作說明、手冊等，以便求職者尋找。 這些功能可協助每個人找到找到理想工作所需的資訊。
+本實作教學課程介紹如何使用 Node.js [!DNL Acrobat Services] ，將上傳 [ 的發 ](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) 文轉換為 PDF 格式。 產生的 PDF 接著會嵌入網頁中。 現在您可以將相同的功能新增至您的網站，讓雇主更容易上傳工作說明、手冊等，以便求職者尋找。 這些功能可協助每個人找到找到理想工作所需的資訊。
 
 [!DNL Acrobat Services] 協助您新增關鍵檔案處理功能至您的網站或應用程式。 如果您想深入瞭解這些 API 的功能，請參閱以下快速入端檔：
 

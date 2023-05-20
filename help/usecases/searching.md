@@ -18,13 +18,13 @@ ht-degree: 1%
 
 ![使用案例主打橫幅](assets/UseCaseSearchingHero.jpg)
 
-組織通常必須將其硬拷貝檔和掃描的檔案數位化。 請考慮此 [ 情況 ](https://docs.google.com/document/d/11jZdVQAw-3fyE3Y-sIqFFTlZ4m02LsCC/edit) 。 一家法務公司已掃描數千份法律合約，用來建立數位檔案。 他們想要判斷其中任何一份法律合約是否有特定條款或是必須修改補充。 出於合規性目的，需要精確性。 解決方案是盤點數位檔，使文字可搜尋，並建立尋找此類資訊的索引。
+組織通常必須將其硬本檔和掃描的檔案數位化。 請考慮此 [ 情況 ](https://docs.google.com/document/d/11jZdVQAw-3fyE3Y-sIqFFTlZ4m02LsCC/edit) 。 一家法務公司已掃描數千份法律合約，用來建立數位檔案。 他們想要判斷其中任何一份法律合約是否有特定條款或是必須修改補充。 出於合規性目的，需要精確性。 解決方案是盤點數位檔，使文字可搜尋，並建立尋找此類資訊的索引。
 
-對於大多陣列織而言，建立數位檔案以擷取編輯或下游作業資訊的挑戰是一場噩夢。
+對於大多陣列織而言，建立數位檔案以擷取編輯資訊或下游作業的挑戰是一場噩夢。
 
 ## 您可以學習哪些內容
 
-此實作教學課程探討了 API 的功能，以及如何 [!DNL Adobe Acrobat Services] 輕鬆地用來封存和數位化檔。 您可以建立 Express NodeJS 應用程式，然後整合 [!DNL Acrobat Services] API 進行封存、數位化和檔轉換，藉此探索這些功能。
+此實作教學課程探索 API 的功能，以及如何 [!DNL Adobe Acrobat Services] 輕鬆地用來封存和數位化檔。 您可以建立 Express NodeJS 應用程式，然後整合 [!DNL Acrobat Services] API 進行封存、數位化和檔轉換，藉此探索這些功能。
 
 若要遵循，您需要 [ 安裝 Node.js ](https://nodejs.org/) ，並基本瞭解 Node.js 和 [ ES6 語法 ](https://www.w3schools.com/js/js_es6.asp) 。
 
@@ -65,7 +65,7 @@ search.hbs
 index.js
 ```
 
-您使用 MongoDB 做為此應用程式的資料庫。 因此，若要進行設定，請將預設資料庫設定置入 config/檔案夾中，方法是將下方的程式碼片段貼入此資料夾的 default.json 檔案中，然後新增資料庫的URL。
+您使用 MongoDB 做為此應用程式的資料庫。 因此，若要進行設定，請將預設資料庫設定放置在 config/檔案夾中，方法是將下方的程式碼片段貼入此資料夾的 default.json 檔案中，然後新增資料庫的URL。
 
 ```
 ### config/default.json and config/dev.json
@@ -132,9 +132,9 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 * Adobe檔產生API
 
-這些 API 透過一組雲端網路服務自動產生、控制和轉換 PDF 內容。
+這些 API 透過一套雲端網路服務自動產生、控制和轉換 PDF 內容。
 
-若要取得註冊及完成工作流程所需的 [ ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) 認證。 PDF 內嵌API可供免費使用。 PDF 服務API和檔產生API六個月免費。 試用期結束後，您只需 [ ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 支付 $0.05 美元，每份檔交易只要 0.05 美元。 您只需隨著公司成長而付費，並處理更多合約。
+若要取得註冊及完成工作流程所需的 [ ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) 認證。 PDF 內嵌API可供免費使用。 PDF 服務API和檔產生API六個月免費。 試用結束時，您只需 [ ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 支付 $0.05 美元，每份檔交易只要 0.05 美元。 您只需隨著公司成長而付費，並且處理更多合約。
 
 ![建立認證的螢幕擷圖](assets/searching_1.png)
 
@@ -218,7 +218,7 @@ module.exports = { createPDF, createPDFPost };
 
 ## 使用文字辨識
 
-光學字元辨識 （OCR） 可將影像和掃描的檔轉換為可搜尋的檔案。 您可以將 API、影像和掃描的檔轉換為 [!DNL Acrobat Services] 可搜尋的 PDF。 執行 OCR 操作後，檔案就會變成可編輯和搜尋的檔案。 您可以將檔案內容儲存在資料存放區，以便進行索引和其他用途。
+光學字元辨識 （OCR） 可將影像和掃描的檔轉換為可搜尋的檔案。 您可以將 API、影像和掃描的檔轉換為 [!DNL Acrobat Services] 可搜尋的 PDF。 執行 OCR 操作後，檔案便會變成可編輯和搜尋。 您可以將檔案內容儲存在資料存放區，以便進行索引和其他用途。
 
 請記得，搜尋掃描檔並建立索引對許多組織來說至關重要，因為對於檔案管理和資訊處理至關重要。 OCR 功能消除了這些挑戰。
 
@@ -320,7 +320,7 @@ module.exports = { makeOCR, makeOCRPost };
 
 現在建立兩個功能：讓OCR 顯示上傳的表單，然後製作用於處理上傳檔的OCRPost。 將原始表格儲存到資料庫，然後將變形的表格儲存到應用程式的輸出檔案夾。
 
-轉換檔案之前，每個情況下都會載入 pdftools-api-credentials.json 檔案中Adobe提供的認證。
+轉換檔案前，每個情況下都會載入 pdftools-api-credentials.json 檔案中Adobe提供的認證。
 
 >[!NOTE]
 >
@@ -401,7 +401,7 @@ res.render('search', { response })
 module.exports = { search, searchPost, downloadPDF };
 ```
 
-現在，請實作下載功能，以啟用下載從使用者搜尋傳回的檔。
+現在可實作下載功能，以啟用下載從使用者搜尋傳回的檔。
 
 ## 下載檔案
 

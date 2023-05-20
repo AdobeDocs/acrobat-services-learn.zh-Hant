@@ -83,7 +83,7 @@ ht-degree: 3%
 
 ### 建立認證後即可存取
 
-如果您已建立認證並錯置下載的認證，您可以在 Adobe Developer Console 中 [ 再次擷取憑證 ](https://developer.adobe.com/console) 。
+如果您已建立認證且錯置下載的認證，您可以在 Adobe Developer Console 中 [ 再次擷取憑證 ](https://developer.adobe.com/console) 。
 
 1. 登入 [ Adobe Developer Console ](https://developer.adobe.com/console) 後，先找到專案並選取專案。
 1. 在「認證」下 *方的左側選單中，選取「**服務帳戶 （JWT）」**：*
@@ -108,7 +108,7 @@ ht-degree: 3%
 
 ![PA 儀表板，初始視圖](assets/credentials_8.png)
 
-如本教學課程一開始所述，建立新流程、新增步驟，並尋找「Adobe PDF服務」。 選取動作，您可能會收到要求付費帳戶的警告。
+如本教學課程一開始所述，建立新流程、新增步驟，並尋找「Adobe PDF服務」。 選取動作，您可能會收到進階帳戶的警告。
 
 ![進階帳戶警告](assets/credentials_9.png)
 

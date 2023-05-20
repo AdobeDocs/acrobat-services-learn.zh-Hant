@@ -56,9 +56,9 @@ API建立 PDF Services 認證時，請選取「 **建立個人化程式碼範例
 
 ## 設定專案和相依性
 
-設定您的 Node.js 和 Express 專案，從名為「public」的檔案夾中提供靜態檔案。 您可以根據自己的偏好設定專案方式。 若要快速開始使用，您可以使用 [ Express 應用程式產生器 ](https://expressjs.com/en/starter/generator.html) 。 或者，如果您想要讓事情保持簡單，您可以 [ 從頭 ](https://expressjs.com/en/starter/hello-world.html) 開始，將程式碼保存在單一JavaScript檔案中。 在上方連結的範例專案中，您使用一個檔案的方法，並將所有程式碼保留在 index.js 中。
+設定您的 Node.js 和 Express 專案，從名為「public」的檔案夾中提供靜態檔案。 您可以根據自己的偏好設定專案方式。 若要快速開始使用，您可以使用 [ Express 應用程式產生器 ](https://expressjs.com/en/starter/generator.html) 。 或者，如果您想要讓事情保持簡單，您可以 [ 從頭 ](https://expressjs.com/en/starter/hello-world.html) 開始，將程式碼保存在單一JavaScript檔案中。 在上方連結的範例專案中，您使用的是一個檔案的方法，並將您的所有程式碼保留在 index.js 中。
 
-`pdftools-api-credentials.json`將個人化程式碼範例中的檔案複製 `private.key` 到專案的根目錄。此外，如果有 .gitignore 檔案，請將其新增至 .gitignore 檔案，這樣您的認證檔案就不會意外傳送至儲存庫。
+`pdftools-api-credentials.json`將個人化程式碼範例中的檔案和 `private.key` 檔案複製到專案的根目錄。此外，如果有 .gitignore 檔案，請將其新增至 .gitignore 檔案，這樣您的認證檔案就不會意外傳送至儲存庫。
 
 接著，執行 `npm install @adobe/documentservices-pdftools-node-sdk` Node.js SDK for PDF Services。 匯入此模組，並在其他相依性匯入後，于您的程式碼 （範例專案中的 index.js） 內建立API認證物件：
 
@@ -280,7 +280,7 @@ app.get( "/download/:file", function( req, res ){
   </script>
 ```
 
-針對可將指定 PDF 檔案載入 div 元素內的內嵌檢視的 adobe_dc_view_sdk.ready 事件新增檔事件聽眾。 使用 PDF 內嵌API認證中的用戶端 ID。 您想要啟用注釋和批註，因此請將檢視嵌FULL_WINDOW模式，然後將 showAnnotationsTools 選項設為 true。
+針對可將指定 PDF 檔案載入 div 元素內的內嵌檢視的 adobe_dc_view_sdk.ready 事件新增檔事件聽眾。 使用 PDF 內嵌API認證中的用戶端 ID。 您想要啟用注釋和批註，所以請將檢視嵌FULL_WINDOW模式，然後將 showAnnotationsTools 選項設為 true。
 
 ```
   document.addEventListener( "adobe_dc_view_sdk.ready", () => { 
@@ -350,7 +350,7 @@ app.get( "/download/:file", function( req, res ){
   } );
 ```
 
-針對將內容上傳至 /儲存端點的 SAVE_API 註冊 PDF 檢視回呼。 您可以變更 autoSaveFrequency 值，讓應用程式在計時器上自動儲存變更，並在完成時將其他中繼資料加入目前內嵌的檔案 （如需要）。
+針對將內容上傳至 /儲存端點的 SAVE_API 註冊 PDF 檢視回呼。 您可以變更 autoSaveFrequency 值，讓您的應用程式在計時器上自動儲存變更，並在完成時將其他中繼資料加入目前內嵌的檔案 （如需要）。
 
 ```
   adobeDCView.registerCallback(
@@ -388,7 +388,7 @@ app.get( "/download/:file", function( req, res ){
 
 ## 合併 PDF 檔案
 
-PDF 組合程式碼就像 PDF 建立程式碼，但使用「CombineFiles」操作，然後將每個檔案新增為輸入。
+PDF 組合程式碼就像 PDF 建立程式碼，但使用 CombineFiles 操作，然後將每個檔案新增為輸入。
 
 ```
   function combineFilesToPDF( files, outputFilename, callback ) {

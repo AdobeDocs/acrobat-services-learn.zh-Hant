@@ -25,10 +25,10 @@ ht-degree: 1%
 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage) 是一組與使用檔 （不只是 PDF） 相關的 API。 廣義而言，此服務套件分為三個主要類別：
 
 * 首先是 [ 「PDF 服務 ](https://developer.adobe.com/document-services/apis/pdf-services/) 」工具集。 這些是處理 PDF 和其他檔的「公用程式」方法。 這些服務包括轉換 PDF、執行 OCR 和優化、合併和分割 PDF 等等。 它是檔處理功能的工具箱。
-* [PDF Extract API ](https://developer.adobe.com/document-services/apis/pdf-extract/) 使用強大的 AI/ML 技術來分析 PDF，並傳回關於內容的驚人詳細資訊。 這包括文字、樣式和位置資訊，還可以傳回 CSV/XLS 格式的表格資料以及擷取影像。
+* [PDF Extract API ](https://developer.adobe.com/document-services/apis/pdf-extract/) 使用強大的 AI/ML 技術來分析 PDF，並傳回關於內容的驚人細節。 這包括文字、樣式和位置資訊，還可以傳回 CSV/XLS 格式的表格資料以及擷取影像。
 * 最後， [ 「檔產生」API ](https://developer.adobe.com/document-services/apis/doc-generation/) 允許開發人員將 Microsoft Word 當作「範本」，與其資料 （從任何來源） 混合，並產生動態的個人化檔 （PDF 和 Word）。
 
-開發人員可以 [ 註冊 ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 並免費試用所有這些服務。 該 [!DNL Acrobat Services] 平臺使用基於 REST 的API，但也支援 Node、JAVA、.NET 和 Python 的 SDK （目前僅支援 Extract）。
+開發人員可以 [ 註冊 ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 並免費試用所有這些服務。 該 [!DNL Acrobat Services] 平臺使用基於 REST 的API，但也支援節點、JAVA、.NET 和 Python 的 SDK （目前僅支援 Extract）。
 
 開發人員雖然不是API，但也可以使用免費 [ 的 PDF 內嵌API ](https://developer.adobe.com/document-services/apis/pdf-embed/) ，透過網頁檢視檔時能提供一致且靈活的體驗。
 
@@ -199,12 +199,12 @@ combineFilesOperation.execute(executionContext)
 
 本檔可以儲存為 PDF，並使用上述相同方法，將所有檔合併在一起。 此程式建立一個連貫一致的套件，其中包含個人化的賀詞、標準的公司檔，以及可供簽署的最終頁面。
 
-範本可以上傳至 Acrobat Sign 儀表板，然後用於新合約。 使用 REST API，即可將這份檔傳送給准的員工，以索取他們的簽名。
+範本可以上傳至 Acrobat Sign 儀表板，然後用於新合約。 使用 REST API 即可將這份檔傳送給准的員工，以索取他們的簽名。
 
 ![已簽署檔的螢幕擷圖](assets/onboarding_11.png)
 
 ## 自己體驗
 
-本文中描述的所有內容現在都可以進行測試。 API [!DNL Adobe Acrobat Services] [ 免費試 ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 用版目前為您提供六個月內 1，000 次免費請求。 Acrobat Sign 的 [ 免費試 ](https://www.adobe.com/sign.html#sign_free_trial) 用版可讓您傳送加上浮水印的合約做為測試用途。
+本文所述的一切專案現在都可以進行測試。 API [!DNL Adobe Acrobat Services] [ 免費試 ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 用版目前為您提供六個月內 1，000 次免費請求。 Acrobat Sign 的 [ 免費試 ](https://www.adobe.com/sign.html#sign_free_trial) 用版可讓您傳送加上浮水印的合約做為測試用途。
 
 有問題嗎?支援 [ 論壇 ](https://community.adobe.com/t5/document-services-apis/ct-p/ct-Document-Cloud-SDK) 每天由Adobe開發人員及支援人員監控。 為了獲得更多靈感，請務必觀看下一 [ 集「剪紙片段 ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) 」。 定期舉行現場會議，與客戶發表新聞、示範和討論。
