@@ -7,9 +7,9 @@ type: Tutorial
 thumbnail: KT-10202.jpg
 kt: 10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 98dc9f98f660b43d2ca0780b51624bf3be71c853
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2876'
 ht-degree: 1%
 
 ---
@@ -494,7 +494,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
 
 一旦您有合約 ID，就可以傳送合約狀態。
 
-1. 展開 **[!UICONTROL GET /agreements/{agreementId}]** 。
+1. 展開 **[!UICONTROL GET /agreements/ {agreementId}]** 。
 1. 由於您可能需要額外的 OAUTH 範圍，請再次選 **[!UICONTROL 取「OAUTH-ACCESS-TOKEN」]** 。
 1. 將上一個API呼叫回應的 agreementId 複製到 agreementId 欄位。
 1. 選取 **[!UICONTROL 「試用！」]** 。
@@ -550,13 +550,13 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
   }
 ```
 
-更新變更時，收到通知的效率更高的方法是透過 Webhook 取得詳細資訊，這裡可以進一步 [ ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) 瞭解，這裡 ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookevents.html) 提供了 [ 可用的 Webhook 事件完整清單。
+更新變更時，收到通知的效率更高的方法是透過 Webhook，您可以在這裡 ] 深入瞭解 [ （HTTPs://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html。
 
 ## 儲存已簽署的檔
 
 簽署檔後，可以使用 GET /agreements/combinedDocument 檔案擷取檔。
 
-1. 展開 **[!UICONTROL GET /agreements/{agreementId}/combinedDocument]** 。
+1. 展開 **[!UICONTROL GET /agreements/ {agreementId} combinedDocument]** 。
 1. 將 agreementId ]**設定**[!UICONTROL  為 *上一個API呼叫所提供的 agreementId* 。
 1. 選取 **[!UICONTROL 「試用！」]** 。
 
