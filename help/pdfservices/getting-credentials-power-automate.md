@@ -5,9 +5,9 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-10382.jpg
-kt: 10382
+jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 3%
@@ -29,6 +29,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 > 如果您要登入試用版，則必須使用Adobe ID而非Enterprise ID。 如果您目前不是 Adobe PDF Services API的訂閱者，並嘗試使用您的Enterprise ID登入，您可能會收到許可權錯誤，因為您的企業沒有許可權在 API 使用 Adobe PDF Services。 因此，建議您使用免費的個人Adobe ID。
+>
 
 1. 登入後，系統會提示您選取新認證的名稱。 輸入您的 *認證名稱* 。
 1. 選取核取方塊以同意開發人員條款。

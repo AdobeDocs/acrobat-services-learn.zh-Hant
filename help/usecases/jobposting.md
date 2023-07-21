@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
-kt: 8092
+jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -199,7 +199,7 @@ BYTEA NOT NULL);
   result.writeToStream(writableStream);
 ```
 
-若要寫入內容，請建立可寫入的StreamBuffer。 在完成事件後，就可以執行 SQL 查詢了。 節點-postgres 套件會自動將緩衝區參數轉換為 BYTEA 格式。 查詢會將使用者重新導向 /job/{id}，這是稍後建立的端點。
+若要寫入內容，請建立可寫入的StreamBuffer。 在完成事件後，就可以執行 SQL 查詢了。 節點-postgres 套件會自動將緩衝區參數轉換為 BYTEA 格式。 查詢會將使用者重新導向 /job/ {id} ，這是稍後建立的端點。
 
 對於 PDF 內嵌API，您還需要傳回 PDF 內容的端點：
 
@@ -220,7 +220,7 @@ BYTEA NOT NULL);
 
 ## 嵌入 PDF
 
-現在建立 /job/{id} 端點，這會顯示包含要求的工作發文名稱和內嵌 PDF 的範本。
+現在建立 /job/ {id} 端點，這會顯示包含所要求的工作發文名稱和內嵌 PDF 的範本。
 
 ```
 router.get('/job/:id', async function(req, res, next) {

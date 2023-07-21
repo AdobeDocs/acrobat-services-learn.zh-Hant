@@ -5,9 +5,9 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-6673.jpg
-kt: 6673
+jira: KT-6673
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -110,6 +110,6 @@ PDF 服務API [ 檔](https://www.adobe.com/go/pdftoolsapi_doc)
 * [如有關于授權和定價的問題，請聯絡我們 ](https://www.adobe.com/go/pdftoolsapi_requestform)
 
 * 相關文章:
-   [新的 PDF 服務API為檔工作流程提供更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [新的 PDF 服務API為檔工作流程提供更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-   [7 月版  [!DNL Adobe Acrobat Services] ：PDF 內嵌與 PDF 服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [7 月版  [!DNL Adobe Acrobat Services] ：PDF 內嵌與 PDF 服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8089.jpg
-kt: 8089
+jira: KT-8089
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 2%
@@ -136,7 +136,7 @@ Adobe Sign可讓您建立不同的流程來準備檔以供簽署或收集資料�
   }
 ```
 
-您可以建立網頁表單，其狀態如下 `DRAFT` ，或 `AUTHORING` 在表格經過您的應用程式管道時變更其狀態。 若要 [ 變更網頁表單狀態，請參閱PUT /widgets/{widgetId}/state ](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) 端點。
+您可以建立網頁表單，其狀態如下 `DRAFT` ，或 `AUTHORING` 在表格經過您的應用程式管道時變更其狀態。 若要 [ 變更網頁表單的狀態，請參閱PUT /widgets/ {widgetId} /state ](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) 端點。
 
 ## 閱讀網頁表單託管URL
 

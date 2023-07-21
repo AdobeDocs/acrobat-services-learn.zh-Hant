@@ -3,11 +3,11 @@ title: Adobe PDF服務API教學課程
 description: Adobe PDF服務總覽頁面API教學課程
 type: Tutorial
 role: Developer
-skill: Beginner, Intermediate, Experienced
+level: Beginner, Intermediate, Experienced
 thumbnail: KT-8116.jpg
-kt: 8116
+jira: KT-8116
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
