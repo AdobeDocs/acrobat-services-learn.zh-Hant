@@ -4,10 +4,11 @@ description: 瞭解如何在 Microsoft Power Automate 中使用 Adobe PDF Servic
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-10379.jpg
 kt: 10379
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 2%
@@ -196,7 +197,6 @@ ht-degree: 2%
 >* [進一步瞭解Adobe檔產生](https://developer.adobe.com/document-services/apis/doc-generation/)
 >* [適用于 Microsoft Word 的 Adobe Document Generation Tagger](https://appsource.microsoft.com/en-US/product/office/WA200002654)
 >* [Adobe檔產生API檔](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)
-
 
 ### 將檔案儲存至 OneDrive
 

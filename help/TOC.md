@@ -3,7 +3,8 @@ user-guide-title: "[!DNL Adobe Acrobat Services]"
 breadcrumb-title: "[!DNL Acrobat Services]"
 user-guide-description: 進一步瞭解 [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
-source-git-commit: 264941900ac1e4778923645cef97a796b0213030
+feature-set: Acrobat Services
+source-git-commit: a43d53151702b9f689815d03226470ab9c44eb77
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 6%
@@ -13,9 +14,9 @@ ht-degree: 6%
 
 # [!DNL Adobe Acrobat Services] API {#tutorials}
 
-+ [概述](overview.md)
++ [概觀](overview.md)
 + PDF 服務API {#pdfservices}
-   + [概述](pdfservices/overview-pdfservices.md)
+   + [概觀](pdfservices/overview-pdfservices.md)
    + [取得 Microsoft Power Automate 認證](pdfservices/getting-credentials-power-automate.md)
    + [在 Microsoft Power Automate 中建立您的第一個流程](pdfservices/create-workflow-power-automate.md)
    + [從 HTML 建立 PDF](pdfservices/createpdffromhtml.md)
@@ -24,7 +25,7 @@ ht-degree: 6%
    + [開始使用 Adobe PDF Services API 和 .Net](pdfservices/gettingstartednet.md)
    + [將「Adobe PDF服務」API至 OCR PDF 檔案](pdfservices/ocr.md)
 + 檔產生API {#docgen}
-   + [概述](docgen/overview-docgen.md)
+   + [概觀](docgen/overview-docgen.md)
    + 建立範本 {#docgentemplates}
       + [Adobe檔產生索引標籤概覽](docgen/taggeroverview.md)
       + [新增文字標籤](docgen/taggeraddtexttags.md)
@@ -33,12 +34,12 @@ ht-degree: 6%
       + [設定數值計算標籤](docgen/taggercalculations.md)
       + [設定條件式內容](docgen/taggerconditional.md)
 + PDF Extract API {#pdfextract}
-   + [概述](pdfextract/overview-extract.md)
+   + [概觀](pdfextract/overview-extract.md)
 + PDF 嵌入API {#pdfembed}
-   + [概述](pdfembed/overview-embed.md)
+   + [概觀](pdfembed/overview-embed.md)
    + [控制您的 PDF 線上體驗並收集分析結果](pdfembed/controlpdfexperience.md)
 + Acrobat Sign API {#acrobatsign}
-   + [概述](acrobatsign/overview-sign.md)
+   + [概觀](acrobatsign/overview-sign.md)
    + [開始使用 Adobe Sign API](acrobatsign/signapi.md)
    + OEM/嵌入式合作夥伴 {#oem}
       + [註冊開發人員帳戶](acrobatsign/sign-up-developer-account.md)
@@ -47,7 +48,7 @@ ht-degree: 6%
       + [產生存取權杖](acrobatsign/generating-an-access-token.md)
       + [建立暫時性檔](acrobatsign/creating-a-transient-document.md)
 + 使用案例 {#usecases}
-   + [概述](usecases/overview-usecases.md)
+   + [概觀](usecases/overview-usecases.md)
    + [自動化法律工作流程](usecases/automatelegalworkflows.md)
    + [將員工到職流程現代化](usecases/employeeonboarding.md)
    + [加速銷售流程](usecases/acceleratesales.md)

@@ -4,10 +4,11 @@ description: 瞭解如何使用條件式內容自動化法律工作流程
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-10202.jpg
 jira: KT-10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2876'
 ht-degree: 1%
@@ -550,7 +551,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
   }
 ```
 
-更新變更時，收到通知的效率更高的方法是透過 Webhook，您可以在這裡 ] 深入瞭解 [ （https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html。
+更新變更時，收到通知的效率更高的方法是透過 Webhook，您可以在這裡 ] 深入瞭解 [ （HTTPs://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html。
 
 ## 儲存已簽署的檔
 

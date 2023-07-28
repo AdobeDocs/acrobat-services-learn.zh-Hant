@@ -4,11 +4,12 @@ description: 透過 OCR （光學字元辨識），您可以解除鎖定掃描�
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6677.jpg
 jira: KT-6677
 keywords: 英雄
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 2%
