@@ -551,7 +551,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
   }
 ```
 
-更新變更時，收到通知的效率更高的方法是透過 Webhook，您可以在這裡 ] 深入瞭解 [ （HTTPs://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html。
+更新變更時，收到通知的效率更高的方法是透過 Webhook，您可以在這裡 ] 深入瞭解 [ （https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html。
 
 ## 儲存已簽署的檔
 
