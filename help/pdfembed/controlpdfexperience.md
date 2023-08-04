@@ -1,13 +1,14 @@
 ---
 title: 控制您的 PDF 線上體驗和收集Analytics
 description: 在此實作教學課程中，您將瞭解如何使用Adobe PDF嵌入API來控制外觀、啟用共同作業，並收集有關使用者與 PDF 互動的分析，包括花費在頁面和搜尋上的時間
-type: Tutorial
+feature: PDF Embed API
 role: Developer
 level: Intermediate
-thumbnail: KT-7487.jpg
+type: Tutorial
 jira: KT-7487
+thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%

@@ -1,14 +1,14 @@
 ---
 title: 在 JAVA 中管理金融檔工作流程
 description: 「 [!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 財務檔資料的所有必要工具、服務和功能」。
-type: Tutorial
+feature: Use Cases
 role: Developer
 level: Intermediate
-feature: Use Cases
+type: Tutorial
+jira: KT-7482
 thumbnail: KT-7482.jpg
-jria: KT-7482
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%

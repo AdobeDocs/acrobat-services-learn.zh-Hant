@@ -1,14 +1,14 @@
 ---
 title: 使用 PDF Services API 和 Node.js，幾分鐘內即可從 HTML 或 MS Office 建立 PDF
 description: 在 PDF 服務API中，有幾個可用服務可以建立和操作 PDF，或從 PDF 轉存為 MS Office 和其他格式
-type: Tutorial
+feature: PDF Services API
 role: Developer
 level: Beginner
-feature: PDF Services API
-thumbnail: KT-6673.jpg
+type: Tutorial
 jira: KT-6673
+thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
