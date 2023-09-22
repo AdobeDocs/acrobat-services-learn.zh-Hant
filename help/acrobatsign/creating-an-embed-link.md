@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-11073
 thumbnail: KT-11073.jpg
 exl-id: 6fc50cc7-bb65-4d4b-9e4f-3b4a3ab8adab
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 13f708e6c5ec63494181312d2e83c32a54345232
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '69'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ ht-degree: 0%
 >
 >本教學課程是專為 OEM 合作夥伴所設計，這些合作夥伴正在其應用程式內建立及嵌入簽名程式。
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
