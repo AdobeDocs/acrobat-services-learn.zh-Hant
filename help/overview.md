@@ -8,16 +8,14 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '121'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API教學課程
-
-![[!DNL Acrobat Services] 旗幟](assets/acrobatserviceshero.jpg)
 
 [!DNL Adobe Acrobat Services] 有五個主要 API：、 [!DNL Adobe PDF Services API] [!DNL Adobe PDF Embed API] the [!DNL Adobe Document Generation API] 、 [!DNL Adobe PDF Extract API] 和 [!DNL Adobe PDF Accessibility Auto-Tag API] 。 後兩個 API 及其 SDK 會合並 [!DNL Adobe PDF Services API] 為付費產品的一部分。 [!DNL PDF Embed API] 是免費方案。 這些 API 透過一套現代的雲端網路服務自動產生、處理和轉換檔內容。 這些體驗可協助您提供更簡單、更快速和品牌化的體驗，讓您控制檔的使用者互動、簡化 PDF 工作流程，並提升使用率和保留率。 這些教學課程可協助您透過 API 快速打造更簡單、更快速的品牌體驗 [!DNL Adobe Acrobat Services] 。
 

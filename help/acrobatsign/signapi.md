@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2054'
 ht-degree: 2%
 
 ---
 
 # 開始使用 Adobe Sign API
-
-![使用案例主打橫幅](assets/UseCaseStartedHero.jpg)
 
 [Acrobat Sign API ](https://www.adobe.io/apis/documentcloud/sign.html) 是提升您管理已簽署合約方式的絕佳方式。 開發人員可以輕鬆地將其系統與 Sign API整合，其提供可靠、輕鬆的方式上傳檔、傳送檔以索取簽名、傳送提醒及收集電子簽名。
 
@@ -137,7 +135,7 @@ Adobe Sign可讓您建立不同的流程來準備檔以供簽署或收集資料�
   }
 ```
 
-您可以建立網頁表單，其狀態如下 `DRAFT` ，或 `AUTHORING` 在表格經過您的應用程式管道時變更其狀態。 若要 [ 變更網頁表單的狀態，請參閱PUT /widgets/ {widgetId} /state ](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) 端點。
+您可以建立網頁表單，其狀態如下 `DRAFT` ，或 `AUTHORING` 在表格經過您的應用程式管道時變更其狀態。 若要 [ 變更網頁表單的狀態，請參閱PUT /widgets/ {widgetId} /state ](https://secure.na4.adobesign.com/public/docs/restapi/v6#! /widgets/updateWidgetState) 端點。
 
 ## 閱讀網頁表單託管URL
 
