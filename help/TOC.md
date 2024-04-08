@@ -1,6 +1,6 @@
 ---
-user-guide-title: "[!DNL Adobe Acrobat Services]"
-breadcrumb-title: "[!DNL Acrobat Services]"
+user-guide-title: “[!DNL Adobe Acrobat Services]”
+breadcrumb-title: “[!DNL Acrobat Services]”
 user-guide-description: 進一步瞭解 [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
@@ -8,10 +8,10 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 5%
+source-wordcount: '213'
+ht-degree: 3%
 
 ---
 
@@ -24,12 +24,13 @@ ht-degree: 5%
    + [取得 Microsoft Power Automate 認證](pdfservices/getting-credentials-power-automate.md)
    + [在 Microsoft Power Automate 中建立您的第一個流程](pdfservices/create-workflow-power-automate.md)
    + [從 HTML 建立 PDF](pdfservices/createpdffromhtml.md)
-   + [使用 PDF Services API將 PDF 轉存為 Word、PowerPoint 等](pdfservices/exportpdf.md)
-   + [開始使用 Adobe PDF Services API 和 JAVA](pdfservices/gettingstartedjava.md)
+   + [使用 PDF Services API 將 PDF 轉存為 Word、PowerPoint 等](pdfservices/exportpdf.md)
+   + [開始使用 Adobe PDF Services API 和 Java](pdfservices/gettingstartedjava.md)
    + [開始使用 Adobe PDF Services API 和 .Net](pdfservices/gettingstartednet.md)
    + [將「Adobe PDF服務」API至 OCR PDF 檔案](pdfservices/ocr.md)
 + 檔產生API {#docgen}
    + [概觀](docgen/overview-docgen.md)
+   + [自動化文件產生](docgen/automate-doc-gen.md)
    + 建立範本 {#docgentemplates}
       + [Adobe檔產生索引標籤概覽](docgen/taggeroverview.md)
       + [新增文字標籤](docgen/taggeraddtexttags.md)
@@ -41,15 +42,15 @@ ht-degree: 5%
    + [概觀](pdfextract/overview-extract.md)
 + PDF 嵌入API {#pdfembed}
    + [概觀](pdfembed/overview-embed.md)
-   + [控制您的 PDF 線上體驗並收集分析結果](pdfembed/controlpdfexperience.md)
-+ Acrobat Sign API {#acrobatsign}
+   + [控制您的 PDF 在線體驗並收集分析結果](pdfembed/controlpdfexperience.md)
++ Acrobat簽署API {#acrobatsign}
    + [概觀](acrobatsign/overview-sign.md)
    + [開始使用 Adobe Sign API](acrobatsign/signapi.md)
    + OEM/嵌入式合作夥伴 {#oem}
       + [註冊開發人員帳戶](acrobatsign/sign-up-developer-account.md)
       + [建立您的應用程式](acrobatsign/creating-your-application.md)
       + [建立內嵌連結](acrobatsign/creating-an-embed-link.md)
-      + [產生存取權杖](acrobatsign/generating-an-access-token.md)
+      + [產生存取令牌](acrobatsign/generating-an-access-token.md)
       + [建立暫時性檔](acrobatsign/creating-a-transient-document.md)
 + 使用案例 {#usecases}
    + [概觀](usecases/overview-usecases.md)
@@ -65,9 +66,9 @@ ht-degree: 5%
    + [建立和編輯報告](usecases/reportcreation.md)
    + [張貼工作](usecases/jobposting.md)
    + [學生與教師共同作業](usecases/educationcollab.md)
-   + [Node.js 中的合約工作流程](usecases/AgreementWorkflowsNodejs.md)
-   + [JAVA 中的人力資源檔工作流程](usecases/HRAgreementWorkflowsJava.md)
-   + [在 JAVA 中管理財務檔工作流程](usecases/FinanceWorkflowsJava.md)
+   + [Node.js中的合約工作流程](usecases/AgreementWorkflowsNodejs.md)
+   + [Java 中的人力資源檔工作流程](usecases/HRAgreementWorkflowsJava.md)
+   + [在 Java 中管理財務檔工作流程](usecases/FinanceWorkflowsJava.md)
    + [處理發票](usecases/invoices.md)
    + [數位檔發佈](usecases/ddppdfembedapi.md)
 

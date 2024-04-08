@@ -5,12 +5,12 @@ feature: Document Generation API
 role: Developer
 level: Beginner, Intermediate, Experienced
 type: Tutorial
-jira: 7480
+jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,46 @@ ht-degree: 0%
 
 # 檔產生API教學課程
 
-「檔產生」API從 Word 範本和 JSON 資料建立 PDF 和 Word 檔。
+「檔案產生」API從 Word 範本和 JSON 資料建立 PDF 和 Word 檔。
 
 >[!NOTE]
 >
->PDF 服務API包含「檔產生API」。
+>PDF 服務API包含「檔案產生API」。
+
+<table style="table-layout:fixed">
+<tr>
+ <td>
+   <a href="automate-doc-gen.md">
+      <img alt="自動化文件產生" src="assets/automate-doc-gen.png" />
+   </a>
+    <div>
+   <a href="taggeroverview.md"><strong>自動化文件產生</strong></a>
+    </div>
+    <em>瞭解如何自動大規模產生檔</em>
+    <br>
+  </td>
+    <td>
+    <img alt="間隔" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+   <td>
+    <img alt="間隔" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+  </td>
+   <td>
+    <img alt="間隔" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+</tr>
+</table>
 
 ## 建立範本
 
-產生API檔會接受檔範本 （包含範本標籤） 以及輸入資料，以產生最終檔。 系統會根據對應至資料輸入的實際值，將檔範本中的所有範本標籤替換為動態內容，藉此產生最終檔。
+產生API檔會接受檔範本 （包含範本標籤） 以及輸入數據，以產生最終檔。 系統會根據對應至數據輸入的實際值，將文件範本中的所有範本標籤替換為動態內容，藉此產生最終檔。
 
 <table style="table-layout:fixed">
 <tr>
@@ -57,7 +88,7 @@ ht-degree: 0%
     <div>
    <a href="taggeraddimagetags.md"><strong>新增影像標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 將影像標籤新增至 Microsoft Word 範本，以使用「Adobe產生檔」將影像動態推送至檔API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 將影像卷標新增至 Microsoft Word 範本，以使用「Adobe產生檔」將影像動態推送至檔API</em>
     <br>
   </td>
   <td>
@@ -67,7 +98,7 @@ ht-degree: 0%
     <div>
    <a href="taggertables.md"><strong>新增表格和清單標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用「檔產生Adobe」功能，根據資料動態新增表格或清單列API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用「檔案產生Adobe」功能，根據數據動態新增表格或清單列API</em>
     <br>
   </td>
 </tr>
@@ -79,7 +110,7 @@ ht-degree: 0%
     <div>
    <a href="taggercalculations.md"><strong>設定數值計算標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「檔產生預設」Adobe計算彙整或整理資料值API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「文件產生預設」Adobe計算匯整或整理數據值API</em>
     <br>
   </td>
   <td>
@@ -89,7 +120,7 @@ ht-degree: 0%
     <div>
    <a href="taggerconditional.md"><strong>設定條件式內容</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定區段，以使用「Adobe產生檔」功能，根據資料動態納入或排除檔區段API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定區段，以使用「Adobe產生檔」功能，根據數據動態納入或排除檔區段API</em>
     <br>
   </td>
   <td>
