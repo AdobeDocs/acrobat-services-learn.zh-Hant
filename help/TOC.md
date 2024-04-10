@@ -8,9 +8,9 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
+source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 3%
    + [將「Adobe PDF服務」API至 OCR PDF 檔案](pdfservices/ocr.md)
 + 檔產生API {#docgen}
    + [概觀](docgen/overview-docgen.md)
-   + [自動化文件產生](docgen/automate-doc-gen.md)
+   + [自動產生檔](docgen/automate-doc-gen.md)
    + 建立範本 {#docgentemplates}
       + [Adobe檔產生索引標籤概覽](docgen/taggeroverview.md)
       + [新增文字標籤](docgen/taggeraddtexttags.md)
@@ -40,6 +40,7 @@ ht-degree: 3%
       + [設定條件式內容](docgen/taggerconditional.md)
 + PDF Extract API {#pdfextract}
    + [概觀](pdfextract/overview-extract.md)
+   + [自動化內容擷取](pdfextract/automate-content-extraction.md)
 + PDF 嵌入API {#pdfembed}
    + [概觀](pdfembed/overview-embed.md)
    + [控制您的 PDF 在線體驗並收集分析結果](pdfembed/controlpdfexperience.md)
