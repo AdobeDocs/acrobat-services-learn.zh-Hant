@@ -8,9 +8,9 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
+source-git-commit: 073dc25717c22ef238bc81338223945b9fee2ef7
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '226'
 ht-degree: 3%
 
 ---
@@ -38,6 +38,9 @@ ht-degree: 3%
       + [新增表格和清單標籤](docgen/taggertables.md)
       + [設定數值計算標籤](docgen/taggercalculations.md)
       + [設定條件式內容](docgen/taggerconditional.md)
++ PDF 輔助功能自動標記API {#pdfaccessibility}
+   + [概觀](pdfaccessibility/overview-accessibility.md)
+   + [自動標記具備輔助功能的檔](pdfaccessibility/automatically-add-tags.md)
 + PDF Extract API {#pdfextract}
    + [概觀](pdfextract/overview-extract.md)
    + [自動化內容擷取](pdfextract/automate-content-extraction.md)
