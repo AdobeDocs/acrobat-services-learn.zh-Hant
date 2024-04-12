@@ -6,7 +6,7 @@ role: Developer
 level: Beginner
 type: Tutorial
 jira: KT-15033
-source-git-commit: a1090dba32fd8085c1bb6d21d2d1237fb6f49301
+source-git-commit: cdbefd8bd0d4b65e0d34e5bbf74065f80faf20e1
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
