@@ -8,16 +8,16 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: c130591ed32bb1aab457556938fc994756e8b04a
+source-git-commit: eee88418f6d94c1f35ba05b23ab7fea6a5f54847
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '128'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API教學課程
 
-[!DNL Adobe Acrobat Services]有六個主要 API：、[!DNL Adobe PDF Services API]、the[!DNL Adobe PDF Embed API]、[!DNL Adobe Document Generation API]、the[!DNL Adobe PDF Accessibility Auto-Tag API][!DNL Adobe PDF Extract API]、和 [!DNL Adobe PDF Accessibility Auto-Tag API]。后兩個 API 及其 SDK 會合併 [!DNL Adobe PDF Services API] 為付費產品的一部分。 [!DNL PDF Embed API] 是免費方案。 這些 API 透過一套現代的雲端網路服務自動產生、處理和轉換文件內容。 這些體驗可協助您提供更簡單、更快速和品牌化的體驗，讓您控制檔的使用者互動、簡化 PDF 工作流程，並提升使用率和保留率。 這些教學課程可協助您透過 API 快速打造更簡單、更快速的品牌體驗 [!DNL Adobe Acrobat Services] 。
+[!DNL Adobe Acrobat Services]有六個主要 API：、[!DNL Adobe PDF Services API]、the、、[!DNL Adobe PDF Extract API]和 [!DNL Adobe PDF Accessibility Auto-Tag API]。[!DNL Adobe PDF Electronic Seal API][!DNL Adobe Document Generation API][!DNL Adobe PDF Embed API]后兩個 API 及其 SDK 會合併 [!DNL Adobe PDF Services API] 為付費產品的一部分。 [!DNL PDF Embed API] 是免費方案。 這些 API 透過一套現代的雲端網路服務自動產生、處理和轉換文件內容。 這些體驗可協助您提供更簡單、更快速和品牌化的體驗，讓您控制檔的使用者互動、簡化 PDF 工作流程，並提升使用率和保留率。 這些教學課程可協助您透過 API 快速打造更簡單、更快速的品牌體驗 [!DNL Adobe Acrobat Services] 。
 
 <table style="table-layout:fixed">
 <tr>
@@ -44,6 +44,11 @@ ht-degree: 2%
 </tr>
 <tr>
   <td>
+   <a href="pdfelectronicseal/overview-electronic-seal.md">
+      <img alt="PDF 電子封印API" src="assets/PDFElectronicSeal.png" />
+   </a>
+  </td>
+ <td>
    <a href="pdfembed/overview-embed.md">
       <img alt="開始使用 Adobe PDF 工具 API 和 Java" src="assets/pdfembedcard.png" />
    </a>
@@ -57,11 +62,6 @@ ht-degree: 2%
    <a href="usecases/overview-usecases.md">
       <img alt="[!DNL Adobe Acrobat Services] API使用案例" src="assets/usecasescard.png" />
    </a>
-  </td>
-  <td>
-    <img alt="間隔" src="assets/GrayBanner_Placeholder.png" />
-    <div>
-    <br>
   </td>
 </tr>
 </table>
