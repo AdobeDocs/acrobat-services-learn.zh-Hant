@@ -1,6 +1,6 @@
 ---
-title: JAVA 中的人力資源檔工作流程
-description: 「 [!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的 HR 網頁應用程式中」
+title: Java 中的人力資源檔工作流程
+description: 「[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的 HR 網頁應用程式中」
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,20 +10,20 @@ thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 2%
+source-wordcount: '1777'
+ht-degree: 0%
 
 ---
 
-# JAVA 中的人力資源檔工作流程
+# Java 中的人力資源檔工作流程
 
 ![使用案例主打橫幅](assets/UseCaseHRHero.jpg)
 
-許多企業需要有關新員工的檔，例如在家工作的員工的工作場所合約。 傳統上，企業以難以管理和儲存的形式來管理這些檔。 切換至電子檔時，PDF 檔案較其他檔案類型更安全且不可修改，是理想選擇。 此外，還支援數位簽章。
+許多企業需要有關新員工的檔，例如在家工作的員工的工作場所合約。 傳統上，企業以難以管理和儲存的形式來管理這些檔。 切換至電子檔時，PDF 檔案較其他文件類型更安全且不可修改，是理想選擇。 此外，還支援數字簽名。
 
 ## 您可以學習哪些內容
 
-在此實作教學課程中，瞭解如何在簡單的 JAVA Spring MVC 應用程式中，透過登出功能，實作網頁型 HR 表單，將工作場所合約儲存為 PDF。
+在此實作教學課程中，瞭解如何在簡單的 Java Spring MVC 應用程式中，透過註銷功能，實作網頁型 HR 表單，將工作場所合約儲存為 PDF。
 
 ## 相關 API 和資源
 
@@ -31,15 +31,15 @@ ht-degree: 2%
 
 * [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
 
-* [專案代碼](https://github.com/dawidborycki/adobe-sign)
+* [項目代碼](https://github.com/dawidborycki/adobe-sign)
 
 ## 產生API認證
 
-先註冊「Adobe PDF服務」API免費試用版。 前往 Adobe ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 網站，然後按一下 *「建立新認證」下方* 的「 *開始使用」* 按鈕。 [ ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [免費試用版提供 1，000 筆檔交易，可在 6 個月內使用。 在下一頁 （請參閱下方） 中選擇服務 （PDF Services API），設定認證名稱 （例如 HRDocumentWFCredentials），然後輸入說明。
+先註冊「Adobe PDF服務」API免費試用版。 前往 Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 網站，然後按兩下&#x200B;*「建立新認證」下方*&#x200B;的「*開始使用」*&#x200B;按鈕。[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [免費試用版提供 1,000 筆檔交易，可在 6 個月內使用。 在下一頁 （請參閱下方） 中選擇服務 （PDF Services API），設定認證名稱 （例如 HRDocumentWFCredentials），然後輸入說明。
 
-選取語言 （此範例為 JAVA），然後勾選 *「建立個人化程式碼範例」* 。 最後一個步驟可確保程式碼範例已包含您所使用的預先填入的 pdftools-api-credentials.json 檔案，以及要在API中驗證應用程式的私人金鑰。
+選取語言 （此範例為 Java），然後勾選 *「建立個人化程式代碼範例」*。 最後一個步驟可確保程式碼範例已包含您所使用的預先填入pdftools-api-credentials.json檔案，以及要在API中驗證應用程式的私鑰。
 
-最後，按一下「 *建立認證」* 按鈕。 這會產生認證，範例會自動開始下載。
+最後，按兩下「 *建立認證」* 按鈕。 這會產生認證，範例會自動開始下載。
 
 ![建立新認證螢幕擷圖](assets/HRWJ_1.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 接下來，執行 `mvn clean install` Maven 目標以建立 jar 檔案。
 
-最後，執行 CombinePDF 範例，如下所示。 此程式碼會在輸出檔案夾內產生 PDF。
+最後，執行 CombinePDF 範例，如下所示。 此程式代碼會在輸出檔案夾內產生 PDF。
 
 ![執行 CombinePDF 範例螢幕擷圖的選單](assets/HRWJ_2.png)
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 授與您建立應用程式的憑證。 本範例使用 Spring Initializr。
 
-首先，設定專案設定以使用 JAVA 8 語言和 Jar 封裝 （請參閱下方螢幕截圖）。
+首先，設定項目設定以使用 Java 8 語言和 Jar 封裝 （請參閱下方螢幕截圖）。
 
 ![Spring Initializr 螢幕擷圖](assets/HRWJ_3.png)
 
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 ![廣告 Spring Web 和 Thymeleaf 的螢幕擷圖](assets/HRWJ_4.png)
 
-建立專案後，前往 pom.xml 檔案，然後使用 pdftools-sdk 和 log4j-slf4j-impl 來補充相依性區段：
+建立專案后，前往pom.xml檔案，然後使用 pdftools-sdk 和 log4j-slf4j-impl 來補充相依性區段：
 
 ```
 <dependencies>
@@ -85,7 +85,7 @@ ht-degree: 2%
 </dependencies>
 ```
 
-然後，將專案的根檔案夾與您下載的範例程式碼一起下載的兩個檔案補充：
+然後，將專案的根檔案夾與您下載的範例程式代碼一起下載的兩個檔案補充：
 
 * pdftools-api-credentials.json
 
@@ -132,9 +132,9 @@ public class PersonForm {
 }
 ```
 
-此類別包含兩個屬性： `firstName` 和 `lastName` 。 此外，使用此簡單的驗證來檢查兩個字元和 30 個字元之間的驗證。
+這個類別包含兩個屬性： `firstName` 和 `lastName`。 此外，使用此簡單的驗證來檢查兩個字元和 30 個字元之間的驗證。
 
-在模型類別中，您可以建立控制器 （請參閱隨附程式碼中的 PersonController.java）：
+在模型類別中，您可以建立控制器 （請參閱隨附程序代碼中的PersonController.java）：
 
 ```
 package com.hr.docsigning;
@@ -200,15 +200,15 @@ public class PersonController {
 
 ## 使用動態內容產生 PDF
 
-現在，在呈現個人資料表格後，動態填入選取的欄位，產生包含虛擬合約的 PDF 檔。 具體而言，您必須將人員資料填入預先建立的合約中。
+現在，在呈現個人資料表格后，動態填入選取的字段，產生包含虛擬合約的 PDF 檔。 具體而言，您必須將人員數據填入預先建立的合約中。
 
-這裡簡單來說，您只有一個頁首、一個子標題和一個字串常數，如下所示：「這份合約準備就緒了 \&lt;full name=&quot;&quot; of=&quot;&quot; the=&quot;&quot; person\=&quot;&quot;>」。&lt;/full>
+這裏簡單來說，您只有一個頁首、一個子標題和一個字符串常數，如下所示：「這份合約準備就緒了 \&lt;full name=&quot;&quot; of=&quot;&quot; the=&quot;&quot; person\=&quot;&quot;>」。&lt;/full>
 
-若要實現此目標，請先從 Adobe [ 的 Dynamic HTML ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 範例建立 PDF 開始。 透過分析該範例程式碼，您會看到動態 HTML 欄位的人口程式可以依照以下方式運作。
+若要實現此目標，請先從 Adobe [的 Dynamic HTML](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 範例建立 PDF 開始。 透過分析該範例程式代碼，您會看到動態 HTML 欄位的人口程式可以依照以下方式運作。
 
-首先，您必須準備具有靜態和動態內容的 HTML 頁面。 動態元件會使用 JavaScript 進行更新。 亦即 PDF 服務API將 JSON 物件插入您的 HTML。
+首先，您必須準備具有靜態和動態內容的 HTML 頁面。 動態元件會使用 JavaScript 進行更新。 亦即 PDF 服務 API 將 JSON 物件插入您的 HTML。
 
-接著，您可以使用 HTML 檔案載入時叫用的JavaScript功能取得 JSON 屬性。 此JavaScript功能會更新選取的 DOM 元素。 以下範例會填入跨範圍元素，並按住人員的資料 （請參閱隨附程式碼的 src\\main\resources\\contract\\index.html）：
+接著，您可以使用 HTML 檔載入時叫用的JavaScript功能取得 JSON 屬性。 此JavaScript功能會更新選取的 DOM 元素。 以下範例會填入跨範圍元素，並按住人員的數據 （請參閱 src\main\resources\\contract\\index.html隨附程式代碼）：
 
 ```
 <html>
@@ -240,7 +240,7 @@ public class PersonController {
 </html>
 ```
 
-然後，您必須將 HTML 壓縮成所有相依JavaScript和 CSS 檔案。 PDF 服務API不接受 HTML 檔案。 反之，它會需要一個 zip 檔案做為輸入。 在此情況下，您可以將壓縮檔儲存在 src\main\resources\\contract\\index.zip 中。
+然後，您必須將 HTML 壓縮成所有相依JavaScript和 CSS 檔案。 PDF 服務API不接受 HTML 檔案。 反之，它會需要一個 zip 檔案做為輸入。 在此情況下，您會將壓縮檔儲存在 src\main\resources\\contract\\index.zip 中。
 
 之後，您可以使用其他處理POST要求的方法來補充 `PersonController` 此方法：
 
@@ -260,15 +260,15 @@ public String checkPersonInfo(@Valid PersonForm personForm,
 
 上述方法會使用提供的個人身分建立 PDF 合約，並呈現合約動作檢視畫面。 後者提供所產生 PDF 的連結和 PDF 的簽署。
 
-現在，讓我們來看看方法的 `CreateContract` 運作方式 （以下列出完整清單）。 此方法主要有兩個欄位：
+現在，讓我們來看看方法的 `CreateContract` 運作方式 （以下列出完整清單）。 此方法主要有兩個字段：
 
-* `LOGGER`，從 log4j 到偵錯任何例外狀況的相關資訊
+* `LOGGER`，從log4j到偵錯任何例外狀況的相關信息
 
 * `contractFilePath`，其中包含產生的 PDF 的檔案路徑
 
-此 `CreateContract` 方法會設定認證並從 HTML 建立 PDF。 若要傳遞和填入合約中人員的資料，請使用 `setCustomOptionsAndPersonData` 輔助程式。 此方法會從表單擷取人員的資料，然後透過上述的 JSON 物件將資料傳送至產生的 PDF。
+此 `CreateContract` 方法會設定認證並從 HTML 建立 PDF。 若要傳遞和填入合約中人員的數據，請使用 `setCustomOptionsAndPersonData` 輔助程式。 此方法會從表單擷取人員的數據，然後透過上述的 JSON 物件將數據傳送至產生的 PDF。
 
-同時， `setCustomOptionsAndPersonData` 說明如何透過停用頁首和頁尾來控制 PDF 外觀。 完成這些步驟後，您會將 PDF 檔案儲存為 output/contract.pdf，最後刪除先前產生的檔案。
+同時， `setCustomOptionsAndPersonData` 說明如何透過停用頁首和頁尾來控制 PDF 外觀。 完成這些步驟后，您將 PDF 檔案儲存為輸出/contract.pdf，最後刪除先前產生的檔案。
 
 ```
 private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
@@ -325,11 +325,11 @@ private static void setCustomOptionsAndPersonData(
 }
 ```
 
-產生合約時，您還可以使用固定的合約條款合併動態的人員特定資料。 若要這麼做，請依照 [ 「從靜態 HTML 建立 PDF」 ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 範例進行。 或者，您也可以 [ 合併兩個 PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html) 。
+產生合約時，您還可以使用固定的合約條款合併動態的人員特定數據。 若要這麼做，請依照 [「從靜態 HTML 建立 PDF」](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 範例進行。 或者，您也可以 [合併兩個 PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html)。
 
 ## 呈現要下載的 PDF 檔案
 
-您現在可以顯示所產生 PDF 的連結，供使用者下載。 若要這麼做，請先建立 contract-actions.html 檔案 （請參閱隨附程式碼的資源/範本 contract-actions.html）：
+您現在可以顯示所產生 PDF 的連結，供用戶下載。 若要這麼做，請先建立contract-actions.html檔案 （請參閱隨附程式碼contract-actions.html資源/範本）：
 
 ```
 <html>
@@ -348,7 +348,7 @@ private static void setCustomOptionsAndPersonData(
 </html>
 ```
 
-然後，您在類別中 `PersonController` 實作 `downloadContract` 方法，如下所示：
+然後，您在類別中`PersonController`實作`downloadContract`方法，如下所示：
 
 ```
 @RequestMapping("/pdf")
@@ -374,27 +374,27 @@ public void downloadContract(HttpServletResponse response)
 
 執行應用程式後，您會獲得下列流程。 第一個畫面會顯示個人資料表格。 若要進行測試，請使用 2 到 30 個字元之間的任何值來填滿：
 
-![資料值螢幕擷圖](assets/HRWJ_6.png)
+![數據值螢幕擷圖](assets/HRWJ_6.png)
 
-按一下「 *送出」* 按鈕後，表單會驗證並根據 HTML （resources/contract/index.html） 產生 PDF。 應用程式會顯示另一個檢視 （合約詳細資料），您可以在其中下載 PDF：
+按兩下「 *送出」* 按鈕後，窗體會驗證並根據 HTML （resources/contract/index.html） 產生 PDF。 應用程式會顯示另一個檢視 （合約詳細數據），您可以在其中下載 PDF：
 
 ![您可以下載 PDF 的螢幕擷圖](assets/HRWJ_7.png)
 
-在網頁瀏覽器中渲染後，PDF 會如下所示。 也就是說，您輸入的個人資料會傳播至 PDF：
+在網頁瀏覽器中渲染后，PDF 會如下所示。 也就是說，您輸入的個人資料會傳播至 PDF：
 
 ![使用個人資料顯示的 PDF 螢幕擷圖](assets/HRWJ_8.png)
 
 ## 啟用簽名和安全性
 
-合約準備就緒後，Adobe Sign可以新增代表核准的數位簽章。 Adobe Sign驗證的運作方式與 OAuth 稍有不同。 現在讓我們瞭解如何將應用程式與 Adobe Sign 整合。 若要這麼做，您必須為應用程式準備存取權杖。 然後，使用 Adobe Sign JAVA SDK 寫入用戶端代碼。
+合約準備就緒后，Adobe Sign可以新增代表核准的數字簽名。 Adobe Sign驗證的運作方式與 OAuth 稍有不同。 現在讓我們瞭解如何將應用程式與 Adobe Sign 整合。 若要這麼做，您必須為應用程式準備存取令牌。 然後，使用 Adobe Sign Java SDK 寫入客戶端代碼。
 
-若要取得授權權杖，您必須執行下列幾個步驟：
+若要取得授權令牌，您必須執行下列幾個步驟：
 
-首先，註冊開發 [ 人員帳戶 ](https://acrobat.adobe.com/tw/zh-Hant/acrobat/contact.html) 。
+首先，註冊開發 [人員帳戶](https://acrobat.adobe.com/tw/zh-Hant/acrobat/contact.html)。
 
-在 Adobe Sign 入口網站中 [ 建立 CLIENT 應用程式 ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) 。
+在 Adobe Sign 入口網站中 [建立 CLIENT 應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 
-依照此處 ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) 和 [ 這裡 ](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp) 所述 [ ，為應用程式設定 OAuth。記下您的用戶端識別碼和用戶端密碼。 然後，您可以作為 `https://www.google.com` 重新導向 URI 和下列範圍：
+依照此處](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述[，為應用程式設定 OAuth。記下您的用戶端識別碼和客戶端密碼。 然後，您可以作為 `https://www.google.com` 重新導向 URI 和下列範圍：
 
 * user_login：self
 
@@ -413,16 +413,16 @@ https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.co
 &scope=user_login:self+agreement_read:account+agreement_write:account+agreement_send:account
 ```
 
-在網頁瀏覽器中輸入上述URL。 系統會將您重新導向至 google.com，且程式碼會以 code&lt;YOUR_CODE\>=\、
-例子：&lt;/YOUR_CODE\>
+在網頁瀏覽器中輸入上述URL。 系統會將您重新導向至 google.com，且程式代碼會以code&lt;YOUR_CODE\>=\、
+例：&lt;/YOUR_CODE\>
 
 ```
 https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobesign.com/&web_access_point=https://secure.eu1.adobesign.com%2F
 ```
 
-記下 \&lt;YOUR_CODE\>和 api_access_point&lt;/YOUR_CODE\>的值。
+記下 \&lt;YOUR_CODE\> 和 api_access_point&lt;/YOUR_CODE\> 的值。
 
-若要傳送提供存取權杖的HTTP POST 要求，請使用用戶端 ID、\&lt;YOUR_CODE\>和api_access_point值。 &lt;/YOUR_CODE\>您可以使用 [ Postman ](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) 或 cURL：
+若要傳送提供存取令牌的HTTP POST 要求，請使用用戶端 ID、\&lt;YOUR_CODE\>和api_access_point值。 &lt;/YOUR_CODE\>您可以使用 [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) 或 cURL：
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -450,13 +450,13 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 }
 ```
 
-記下您的access_token。 您需要授權用戶端代碼。
+記下您的access_token。 您需要授權客戶端代碼。
 
-## 使用 Adobe Sign JAVA SDK
+## 使用 Adobe Sign Java SDK
 
-擁有存取權杖後，您可以將 REST API呼叫傳送給Adobe Sign。 若要簡化此程式，請使用 Adobe Sign JAVA SDK。 來來源程式代碼可在 [ Adobe GitHub 儲存庫取得 ](https://github.com/adobe-sign/AdobeSignJavaSdk) 。
+擁有存取令牌後，您可以將 REST API呼叫傳送給Adobe Sign。 若要簡化此程式，請使用 Adobe Sign Java SDK。 來源程式代碼可在 [Adobe GitHub 儲存庫取得](https://github.com/adobe-sign/AdobeSignJavaSdk)。
 
-若要將此套件與您的應用程式整合，您必須仿製程式碼。 然後建立 Maven 套件 （mvn 套件），然後將下列檔案安裝到專案中 （您可以在 adobe-sign-sdk 資料夾中的隨附程式碼中找到）：
+若要將此套件與您的應用程式整合，您必須仿製程序代碼。 然後建立 Maven 套件 （mvn 套件），然後將下列檔案安裝到專案中 （您可以在 adobe-sign-sdk 資料夾中的隨附程式碼中找到）：
 
 * target/swagger-java-client-1.0.0.jar
 
@@ -464,23 +464,23 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 
 * target/lib/gson-fire-1.8.0.jar
 
-* target/lib/{crest-core-1.3.jar
+* target/lib/hamcrest-core-1.3.jar
 
 * target/lib/junit-4.12.jar
 
 * target/lib/logging-interceptor-2.7.5.jar
 
-* target/lib/okHTTP-2.7.5.jar
+* target/lib/okhttp-2.7.5.jar
 
 * target/lib/okio-1.6.0.jar
 
-* target/lib/swagger-annations-1.5.15.jar
+* target/lib/swagger-annotations-1.5.15.jar
 
-在 IntelliJ IDEA 中，您可以使用 *專案結構 （檔案/專案結構* ） 將這些檔案新增為相依性。
+在 IntelliJ IDEA 中，您可以使用 *專案結構 （檔案/項目結構* ） 將這些檔案新增為相依性。
 
 ## 傳送 PDF 以供簽署
 
-您現在已準備好傳送合約以供簽署。 若要這麼做，請先以另一個與傳送要求的超連結補充 contract-details.html：
+您現在已準備好傳送合約以供簽署。 若要這麼做，請先為contract-details.html加上另一個與傳送要求的超連結：
 
 ```
 <html>
@@ -501,7 +501,7 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 </html>
 ```
 
-然後，您新增另一個控制器， `AdobeSignController` 並在其中實作 `sendContractMethod` （請參閱隨附程式碼）。 此方法的運作方式如下：
+然後，您新增另一個控制器， `AdobeSignController`並在其中實作 `sendContractMethod` （請參閱隨附程序代碼）。 此方法的運作方式如下：
 
 首先，它會用來 `ApiClient` 取得API端點。
 
@@ -522,7 +522,7 @@ BaseUriInfo baseUriInfo = baseUrisApi.getBaseUris(authorization);
 apiClient.setBasePath(baseUriInfo.getApiAccessPoint() + endpointUrl);
 ```
 
-然後，使用 contract.pdf 檔案建立暫時性檔的方法：
+然後，該方法會使用 contract.pdf 檔案來建立暫時性檔：
 
 ```
 // Get PDF file
@@ -539,7 +539,7 @@ TransientDocumentResponse response = transientDocumentsApi.createTransientDocume
 String transientDocumentId = response.getTransientDocumentId();
 ```
 
-接下來，您必須建立合約。 若要這麼做，請使用 contract.pdf 檔案，並將合約狀態設為IN_PROCESS立即傳送檔案。 此外，您也可以選擇電子簽名：
+接下來，您必須建立合約。 若要這麼做，請使用 contract.pdf 檔案，並將合約狀態設為IN_PROCESS，以便立即傳送檔案。 此外，您也可以選擇電子簽名：
 
 ```
 // Create AgreementCreationInfo
@@ -556,7 +556,7 @@ agreementCreationInfo.setName("Contract");
 agreementCreationInfo.setSignatureType(AgreementCreationInfo.SignatureTypeEnum.ESIGN);
 ```
 
-接下來，您將依照下列步驟新增合約收件者。 您正在新增兩個收件者 （請參閱「員工和管理員」區段）：
+接下來，您將依照下列步驟新增合約收件者。 您要新增兩個收件者 （請參閱「員工和管理員」區段）：
 
 ```
 // Provide emails of recipients to whom agreement is be sent
@@ -579,7 +579,7 @@ participantSetInfo.setRole(ParticipantSetInfo.RoleEnum.SIGNER);
 agreementCreationInfo.addParticipantSetsInfoItem(participantSetInfo);
 ```
 
-最後，使用 `createAgreement` 方法從 Adobe Sign JAVA SDK 傳送合約：
+最後，使用 `createAgreement` 方法從 Adobe Sign Java SDK 傳送合約：
 
 ```
 // Create agreement using the transient document.
@@ -590,16 +590,16 @@ AgreementCreationResponse agreementCreationResponse = agreementsApi.createAgreem
 System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 ```
 
-執行此代碼後，您會收到一封電子郵件 （傳送至程式碼中指定的位址，與合約簽名要求一樣 `<email_address>)` 。 電子郵件內含超連結，會引導收件者到Adobe Sign入口網站執行簽署。 您會在 Adobe Sign Developer 入口網站中看到檔 （請參閱下圖），也可以使用 [ getAgreementInfo ](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo) 方法以程式設計方式追蹤簽名程式。
+執行此代碼後，您會收到一封電子郵件 （傳送至程式代碼中指定的位址，與合約簽名要求一樣 `<email_address>)` 。 電子郵件內含超連結，會引導收件者到Adobe Sign入口網站執行簽署。 您會在 Adobe Sign Developer 入口網站中看到檔 （請參閱下圖），也可以使用 [getAgreementInfo](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo) 方法以程式設計方式追蹤簽名程式。
 
-最後，您也可以使用 PDF Services 以密碼保護 PDF，API如這些 [ 範例 ](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf) 所示。
+最後，您也可以使用 PDF Services 以密碼保護 PDF，API如這些 [範例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf)所示。
 
-![合約詳細資料螢幕擷圖](assets/HRWJ_9.png)
+![合約詳細數據螢幕擷圖](assets/HRWJ_9.png)
 
 ## 後續步驟
 
-如同所見，透過運用快速星號，您可以實作簡單的網頁表單，在 JAVA 中使用 Adobe PDF Services API 建立核准的 PDF。 Adobe PDF API 可順暢整合至您現有的用戶端應用程式。
+如同所見，透過運用快速星號，您可以實作簡單的網頁窗體，在 Java 中使用 Adobe PDF Services API 建立核准的 PDF。 Adobe PDF API 可順暢整合至您現有的用戶端應用程式。
 
-更進一步地，您可以建立表單收件者可以遠端安全地簽署表格。 當您需要多個簽名時，您甚至可以自動將表格傳送給工作流程中的一系列人員。 您的員工入職流程已改善，人力資源部門會愛您。
+更進一步地，您可以建立窗體收件者可以遠端安全地簽署表格。 當您需要多個簽名時，您甚至可以自動將表格傳送給工作流程中的一系列人員。 您的員工入職流程已改善，人力資源部門會愛您。
 
-請參閱 [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/) 現今在您的應用程式中新增各種 PDF 功能。
+請參閱 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 現今在您的應用程式中新增各種 PDF 功能。

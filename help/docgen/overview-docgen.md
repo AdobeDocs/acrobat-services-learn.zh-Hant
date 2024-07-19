@@ -73,7 +73,7 @@ ht-degree: 0%
     <div>
    <a href="taggeraddtexttags.md"><strong>新增文字標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 將文字標籤新增至 Microsoft Word 範本，以搭配 Adobe 產生檔API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 將文字標籤新增至 Microsoft Word 範本，以搭配Adobe文件產生API</em>
     <br>
   </td>
   <td>
@@ -83,7 +83,7 @@ ht-degree: 0%
     <div>
    <a href="taggeraddimagetags.md"><strong>新增影像標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 將影像卷標新增至 Microsoft Word 範本，以使用「Adobe產生檔」將影像動態推送至檔API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 將影像卷標新增至 Microsoft Word 範本，使用Adobe產生檔API</em>
     <br>
   </td>
   <td>
@@ -93,7 +93,7 @@ ht-degree: 0%
     <div>
    <a href="taggertables.md"><strong>新增表格和清單標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用「檔案產生Adobe」功能，根據數據動態新增表格或清單列API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用 Adobe「檔案產生」API根據數據動態新增表格或清單列API</em>
     <br>
   </td>
 </tr>
@@ -105,7 +105,7 @@ ht-degree: 0%
     <div>
    <a href="taggercalculations.md"><strong>設定數值計算標籤</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「文件產生預設」Adobe計算匯整或整理數據值API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「檔產生Adobe值」計算數據值的彙整或整數API</em>
     <br>
   </td>
   <td>
@@ -115,7 +115,7 @@ ht-degree: 0%
     <div>
    <a href="taggerconditional.md"><strong>設定條件式內容</strong></a>
     </div>
-    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定區段，以使用「Adobe產生檔」功能，根據數據動態納入或排除檔區段API</em>
+    <em>瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定區段，以使用「文件產生」Adobe以數據動態納入或排除檔區段API</em>
     <br>
   </td>
   <td>

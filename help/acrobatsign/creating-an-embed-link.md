@@ -1,6 +1,6 @@
 ---
 title: 建立內嵌連結
-description: 瞭解如何建立 OAuth 的內嵌連結，這是您的應用程式取得使用者許可權的方法
+description: 瞭解如何建立 OAuth 的內嵌連結，這是您的應用程式取得用戶許可權的方法
 feature: Acrobat Sign API
 role: Developer
 level: Beginner
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 建立內嵌連結
 
-瞭解如何建立 OAuth 的內嵌連結，這是您的應用程式取得使用者許可權的方法。
+瞭解如何建立 OAuth 的內嵌連結，這是您的應用程式取得用戶許可權的方法。
 
 >[!NOTE]
 >

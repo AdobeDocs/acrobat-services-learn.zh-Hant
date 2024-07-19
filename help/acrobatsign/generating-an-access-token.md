@@ -1,6 +1,6 @@
 ---
-title: 產生存取權杖
-description: 瞭解如何產生可與 Acrobat Sign 一起使用的存取權杖API
+title: 產生存取令牌
+description: 瞭解如何產生可與 Acrobat Sign 一起使用的存取令牌API
 feature: Acrobat Sign API
 role: Developer
 level: Beginner
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ---
 
-# 產生存取權杖
+# 產生存取令牌
 
-瞭解如何產生可與 Acrobat Sign API 搭配使用的存取權杖。
+瞭解如何產生可與 Acrobat Sign API 搭配使用的存取令牌。
 
 >[!NOTE]
 >

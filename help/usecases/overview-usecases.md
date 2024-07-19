@@ -1,6 +1,6 @@
 ---
-title: 「 [!DNL Adobe Acrobat Services] API使用案例」
-description: API使用案例總覽頁面  [!DNL Adobe Acrobat Services]
+title: 「[!DNL Adobe Acrobat Services] API使用案例」
+description: API使用案例總覽頁面 [!DNL Adobe Acrobat Services]
 feature: Use Cases
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 透過這些實作使用案例瞭解 API 如何 [!DNL Adobe Acrobat Services] 變更您的業務。
 
-### [!DNL Acrobat Services] API
+### [!DNL Acrobat Services] 蜜蜂屬
 
 <table style="table-layout:fixed">
 <tr>
@@ -52,7 +52,7 @@ ht-degree: 0%
       <div>
       <a href="acceleratesales.md"><strong>加速銷售流程</strong></a>
       </div>
-      <em>瞭解如何整合檔體驗來加速銷售</em>
+      <em>瞭解如何整合文件體驗來加速銷售</em>
       <br>
     </td>
     <td>
@@ -84,7 +84,7 @@ ht-degree: 0%
     <div>
     <a href="legal.md"><strong>管理法律合約</strong></a>
     </div>
-    <em>瞭解如何使用自訂資料輸入自動產生和保護法律檔</em>
+    <em>瞭解如何使用自定義數據輸入自動產生和保護法律檔</em>
     <br>
   </td>
   <td>
@@ -116,7 +116,7 @@ ht-degree: 0%
     <div>
     <a href="reviews.md"><strong>審核和核准</strong></a>
     </div>
-    <em>瞭解如何為跨團隊共同作業建立檔審核和核准工作流程</em>
+    <em>瞭解如何為跨團隊共同作業建立文件審核和核准工作流程</em>
     <br>
   </td>
   <td>
@@ -136,7 +136,7 @@ ht-degree: 0%
     <div>
     <a href="jobposting.md"><strong>張貼工作</strong></a>
     </div>
-    <em>瞭解如何為求職者和雇主開發順暢且一致的網頁體驗</em>
+    <em>瞭解如何為求職者和僱主開發順暢且一致的網頁體驗</em>
     <br>
   </td>
   <td>
@@ -146,39 +146,39 @@ ht-degree: 0%
     <div>
     <a href="educationcollab.md"><strong>學生與教師共同作業</strong></a>
     </div>
-    <em>瞭解如何建立線上學習平臺，讓教師和學生能夠輕鬆地在 PDF 中共用資源</em>
+    <em>瞭解如何建立在線學習平臺，讓教師和學生能夠輕鬆地在 PDF 中共用資源</em>
     <br>
   </td>
 </tr>
 <tr>
   <td>
     <a href="AgreementWorkflowsNodejs.md">
-      <img alt="Node.js 中的合約工作流程" src="assets/AWNjs_thumb.png" />
+      <img alt="Node.js中的合約工作流程" src="assets/AWNjs_thumb.png" />
     </a>
     <div>
-    <a href="AgreementWorkflowsNodejs.md"><strong>Node.js 中的合約工作流程</strong></a>
+    <a href="AgreementWorkflowsNodejs.md"><strong>Node.js中的合約工作流程</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的網頁應用程式中</em>
     <br>
   </td>
   <td>
     <a href="HRAgreementWorkflowsJava.md">
-      <img alt="JAVA 中的人力資源檔工作流程" src="assets/HRWJ_thumb.png" />
+      <img alt="Java 中的人力資源檔工作流程" src="assets/HRWJ_thumb.png" />
     </a>
     <div>
-    <a href="HRAgreementWorkflowsJava.md"><strong>JAVA 中的人力資源檔工作流程</strong></a>
+    <a href="HRAgreementWorkflowsJava.md"><strong>Java 中的人力資源檔工作流程</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的 HR 網頁應用程式中</em>
     <br>
   </td>
   <td>
     <a href="FinanceWorkflowsJava.md">
-      <img alt="在 JAVA 中管理財務檔工作流程" src="assets/FAWJ_thumb.png" />
+      <img alt="在 Java 中管理財務檔工作流程" src="assets/FAWJ_thumb.png" />
     </a>
     <div>
-    <a href="FinanceWorkflowsJava.md"><strong>在 JAVA 中管理財務檔工作流程</strong></a>
+    <a href="FinanceWorkflowsJava.md"><strong>在 Java 中管理財務檔工作流程</strong></a>
     </div>
-    <em>[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 金融檔資料的所有必要工具、服務和功能</em>
+    <em>[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 金融文件數據的所有必要工具、服務和功能</em>
     <br>
   </td>
   <td>

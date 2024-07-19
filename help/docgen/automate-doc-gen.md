@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 自動產生檔
 
-瞭解如何使用 Microsoft Power Automate 中的 Adobe PDF Services Connector 呼叫「文件產生API，自動產生大規模檔。
+瞭解如何使用 Microsoft Power Automate 中的 Adobe PDF Services Connector 呼叫「文件產生API自動產生大規模檔。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428227?hidetitle=true)

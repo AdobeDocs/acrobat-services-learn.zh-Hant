@@ -1,6 +1,6 @@
 ---
-title: 設定數位計算標籤
-description: 瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「檔產生預設」Adobe計算彙整或整理資料值API
+title: 設定數字計算標籤
+description: 瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「檔產生Adobe值」計算數據值的彙整或整數API
 feature: Document Generation API
 role: Developer
 level: Beginner
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # 設定數值計算標籤
 
-瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，以使用「檔產生預設」API計算資料值 Adobe的彙整或整數。
+瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定數位計算標籤，使用「文件產生API」Adobe計算數據值的彙整或整數。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332118?hidetitle=true)

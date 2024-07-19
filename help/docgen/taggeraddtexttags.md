@@ -1,6 +1,6 @@
 ---
 title: 新增文字標籤
-description: 瞭解如何使用 Adobe Document Generation Tagger 將文字標籤新增至 Microsoft Word 範本，以搭配 Adobe 產生檔API
+description: 瞭解如何使用 Adobe Document Generation Tagger 將文字標籤新增至 Microsoft Word 範本，以搭配Adobe文件產生API
 feature: Document Generation API
 role: Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 新增文字標籤
 
-瞭解如何使用 Adobe Document Generation Tagger 將文字標籤新增至 Microsoft Word 範本，以搭配Adobe檔產生API使用。
+瞭解如何使用 Adobe Document Generation Tagger 將文字標籤新增至 Microsoft Word 範本，以搭配Adobe產生檔API使用。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332116?hidetitle=true)

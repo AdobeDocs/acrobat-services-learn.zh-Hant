@@ -1,6 +1,6 @@
 ---
 title: 新增表格和清單標籤
-description: 瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用「檔產生Adobe」功能，根據資料動態新增表格或清單列API
+description: 瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用 Adobe「檔案產生」API根據數據動態新增表格或清單列API
 feature: Document Generation API
 role: Developer
 level: Beginner
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # 新增表格和清單標籤
 
-瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用 Adobe 產生檔API以資料動態新增表格或清單列。
+瞭解如何使用 Adobe Document Generation Tagger 將表格和清單標籤新增至 Microsoft Word 範本，以使用 Adobe「檔案產生API」根據數據動態新增表格或清單列。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332115?hidetitle=true)

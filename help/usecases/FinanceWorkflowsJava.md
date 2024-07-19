@@ -113,7 +113,7 @@ try {
 
 [!DNL Adobe Acrobat Services] 不支援開箱即用處理 Excel 檔，但您仍然可以使用社群架構和資料庫來處理內容。
 
-例如，您可以使用 [Apache POI](https://poi.apache.org/) 在應用程式中 [!DNL Java Spring Boot] 處理 Excel （或其他 Microsoft 檔），或者您也可以在 Excel 檔案上執行其他手動或自動化工作。
+例如，您可以使用 [Apache POI](https://poi.apache.org/) 在應用程式中 [!DNL Java Spring Boot] 處理 Excel （或其他 Microsoft檔），或者您也可以在 Excel 檔案上執行其他手動或自動化工作。
 
 在本範例中，從 PDF 檔開始，您可以擷取這三隻基金的凈資產價值，並顯示在表格中。 您也可以根據您的需求和可用的數據提取其他資訊，例如圖表和表格。 您甚至可以匯入其他來源的數據。
 

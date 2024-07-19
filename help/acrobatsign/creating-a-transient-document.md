@@ -1,6 +1,6 @@
 ---
 title: 建立暫時性檔
-description: 瞭解如何建立可與 Acrobat Sign 一起使用的暫時性檔API
+description: 瞭解如何建立可與 Acrobat Sign 一起使用的暫時性檔 API
 feature: Acrobat Sign API
 role: Developer
 level: Beginner

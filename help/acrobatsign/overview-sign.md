@@ -30,7 +30,7 @@ Acrobat Sign API 可讓您建立應用程式，並將 Acrobat Sign UI 和功能�
     <div>
     <a href="signapi.md"><strong>快速入門</strong></a>
     </div>
-    <em>瞭解如何將 Sign API包含在您的應用程式中，以收集簽名和其他資訊</em>
+    <em>瞭解如何將 Sign API 包含在您的應用程式中，以收集簽名和其他資訊</em>
     <br>
   </td>
   <td>
@@ -51,7 +51,7 @@ Acrobat Sign API 可讓您建立應用程式，並將 Acrobat Sign UI 和功能�
 </tr>
 </table>
 
-## Acrobat簽署內嵌快速入門手冊
+## Acrobat簽署內嵌快速入門指南
 
 瞭解如何開始將 Acrobat Sign 的 OEM 版本內嵌到您的應用程式中。 本指南是專為 OEM 合作夥伴所設計，這些合作夥伴正在其應用程式內建立和嵌入簽名程式。
 
@@ -84,17 +84,17 @@ Acrobat Sign API 可讓您建立應用程式，並將 Acrobat Sign UI 和功能�
     <div>
    <a href="creating-an-embed-link.md"><strong>建立內嵌連結</strong></a>
     </div>
-    <em>瞭解如何建立 OAuth 的內嵌連結，這是您的應用程式取得使用者許可權的方法</em>
+    <em>瞭解如何建立 OAuth 的內嵌連結，這是您的應用程式取得用戶許可權的方法</em>
     <br>
   </td>
   <td>
    <a href="generating-an-access-token.md">
-      <img alt="產生存取權杖" src="assets/Generatingyouraccesstoken_1280.png" />
+      <img alt="產生存取令牌" src="assets/Generatingyouraccesstoken_1280.png" />
    </a>
     <div>
-   <a href="generating-an-access-token.md"><strong>產生存取權杖</strong></a>
+   <a href="generating-an-access-token.md"><strong>產生存取令牌</strong></a>
     </div>
-    <em>瞭解如何產生可與 Acrobat Sign 一起使用的存取權杖API</em>
+    <em>瞭解如何產生可與 Acrobat Sign 一起使用的存取令牌API</em>
     <br>
   </td>
 </tr>
