@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 0%
@@ -39,11 +39,11 @@ ht-degree: 0%
 
    ![認證螢幕擷圖](assets/automatelegal_2.png)
 
-1. 選 **[!UICONTROL 取「取得 Microsoft Word」載入宏]** ，或前往 [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) 進行安裝。
+1. 選 **[!UICONTROL 取「取得 Microsoft Word」載入巨集]** ，或前往 [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) 進行安裝。
 
    >[!NOTE]
    >
-   >若要安裝 Word 載入宏，您必須在 Microsoft 365 內取得安裝載入宏的許可權。 如果您沒有許可權，請聯絡您的Microsoft 365 管理員。
+   >若要安裝 Word 載入巨集，您必須在 Microsoft 365 內取得安裝載入巨集的許可權。 如果您沒有許可權，請聯絡您的Microsoft 365 管理員。
 
 ## 您的數據
 
@@ -551,7 +551,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
   }
 ```
 
-更新變更時，收到通知的效率更高的方法是透過 Webhook，您可以在這裡]深入瞭解 [（https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html。
+更新變更時，收到通知的效率更高的方法是透過 Webhook 取得通知，您可以在這裡](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html)深入[瞭解。
 
 ## 儲存已簽署的檔
 
