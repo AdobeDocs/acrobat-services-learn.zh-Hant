@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: 5758b11b0c47719de250c34eed3c5dbe0b655f03
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -152,31 +152,31 @@ ht-degree: 0%
 </tr>
 <tr>
   <td>
-    <a href="AgreementWorkflowsNodejs.md">
+    <a href="agreementworkflowsnodejs-bubba.md">
       <img alt="Node.js中的合約工作流程" src="assets/AWNjs_thumb.png" />
     </a>
     <div>
-    <a href="AgreementWorkflowsNodejs.md"><strong>Node.js中的合約工作流程</strong></a>
+    <a href="agreementworkflowsnodejs-bubba.md"><strong>Node.js中的合約工作流程</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的網頁應用程式中</em>
     <br>
   </td>
   <td>
-    <a href="HRAgreementWorkflowsJava.md">
+    <a href="hragreementworkflowsjava-bubba.md">
       <img alt="Java 中的人力資源檔工作流程" src="assets/HRWJ_thumb.png" />
     </a>
     <div>
-    <a href="HRAgreementWorkflowsJava.md"><strong>Java 中的人力資源檔工作流程</strong></a>
+    <a href="hragreementworkflowsjava-bubba.md"><strong>Java 中的人力資源檔工作流程</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的 HR 網頁應用程式中</em>
     <br>
   </td>
   <td>
-    <a href="FinanceWorkflowsJava.md">
+    <a href="financeworkflowsjava-bubba.md">
       <img alt="在 Java 中管理財務檔工作流程" src="assets/FAWJ_thumb.png" />
     </a>
     <div>
-    <a href="FinanceWorkflowsJava.md"><strong>在 Java 中管理財務檔工作流程</strong></a>
+    <a href="financeworkflowsjava-bubba.md"><strong>在 Java 中管理財務檔工作流程</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 金融文件數據的所有必要工具、服務和功能</em>
     <br>
