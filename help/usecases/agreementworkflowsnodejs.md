@@ -1,6 +1,6 @@
 ---
 title: Node.js中的合約工作流程
-description: 「[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的網頁應用程式中」
+description: '[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的網頁應用程式中'
 feature: Use Cases
 role: Developer
 level: Beginner
@@ -288,13 +288,13 @@ combineOperation.execute(executionContext)
 
 您已在 PDF 檔案上執行數次作業，但最終，您的使用者必須檢視檔。 您可以使用 Adobe 的 PDF 嵌入 API，將檔案嵌入網頁中。
 
-在顯示 PDF 的頁面上，新增元素 `<div />` 以按住檔並提供 ID。 您很快就會使用此 ID。 在網頁中，納入 `<script />` Adobe JavaScript資料庫的參考：
+在顯示 PDF 的頁面上，新增元素 `<div />` 以按住檔並提供 ID。 您很快就會使用此 ID。 在網頁中，參 `<script />` 照Adobe JavaScript資料庫：
 
 ```
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-您需要的最後一個程式代碼位是載入內嵌API JavaScript Adobe PDF後顯示檔的功能。 當您收到透過 adobe_dc_view\_sdk.ready 事件載入腳本的通知時，請建立新的 AdobeDC.View 物件。 此物件需要您的用戶端 ID 和先前建立之元素的 ID。 在 Adobe Developer](https://console.adobe.io/tw) Console 中[尋找您的用戶端 ID。當您檢視您先前建立認證時所建立的應用程式的設定時，會顯示用戶端 ID。
+您需要的最後一個程式代碼位是載入內嵌Adobe PDF API JavaScript後顯示檔的功能。 當您收到透過 adobe_dc_view\_sdk.ready 事件載入腳本的通知時，請建立新的 AdobeDC.View 物件。 此物件需要您的用戶端 ID 和先前建立之元素的 ID。 在 Adobe Developer](https://console.adobe.io/tw) Console 中[尋找您的用戶端 ID。當您檢視您先前建立認證時所建立的應用程式的設定時，會顯示用戶端 ID。
 
 ![API用戶端金鑰的影像](assets/AWNjs_6.png)
 
@@ -312,7 +312,7 @@ Adobe PDF [「嵌入API」示範](https://documentcloud.adobe.com/view-sdk-demo/
 
 文件準備就緒后，您可以新增數字簽名，使用Adobe Sign進行核准。 此功能的運作方式與您目前使用的功能有些不同。 對於數位簽名，必須將應用程式設定為使用 OAuth 進行用戶驗證。
 
-設定應用程式的第一步是註冊 [應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) ，以便使用 OAuth 進行Adobe Sign。 登入后，請單擊 *「帳戶*」導覽至建立應用程式的畫面，然後開 *啟「Adobe Sign API* 」區段，然後按兩下 *「API應用程式* 」，開啟已註冊的應用程式清單。
+設定應用程式的第一步是註冊 [應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) ，以便使用 OAuth 進行Adobe Sign。 登入后，請單擊 *「帳戶*」導覽至建立應用程式的畫面，然後開 *啟「Adobe Sign API* 」區段，然後按兩下 *「API應用程式* 」，開啟註冊的應用程式清單。
 
 ![註冊應用程式的第一步圖像](assets/AWNjs_9.png)
 

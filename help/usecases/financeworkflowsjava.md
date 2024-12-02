@@ -1,6 +1,6 @@
 ---
 title: 在 Java 中管理金融檔工作流程
-description: 「[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 財務文件數據的所有必要工具、服務和功能」。
+description: '[!DNL Adobe Acrobat Services] 提供處理和擷取 PDF 金融文件數據的所有必要工具、服務和功能'
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -157,7 +157,7 @@ ProtectPDFOperation operation = ProtectPDFOperation.createNew(options);
 
 ## 顯示報告
 
-在產生 PDF 報告後，您可以使用「內嵌API」Adobe PDF在網站上顯示報告。 此JavaScript API可讓網頁開發人員在網頁瀏覽器內以原生方式載入和演算 PDF 檔。
+在產生 PDF 報告後，您可以使用「內嵌API」Adobe PDF在網站上顯示報告。 此JavaScript API可讓網頁開發人員在網頁瀏覽器內以原生方式載入和轉譯 PDF 檔。
 
 >[!NOTE]
 >

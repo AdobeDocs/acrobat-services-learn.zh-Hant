@@ -1,6 +1,6 @@
 ---
 title: Java 中的人力資源檔工作流程
-description: 「[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的 HR 網頁應用程式中」
+description: '[!DNL Adobe Acrobat Services] API 可輕鬆將 PDF 功能整合到您的 HR 網頁應用程式中'
 feature: Use Cases
 role: Developer
 level: Intermediate
