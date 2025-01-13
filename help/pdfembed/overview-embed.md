@@ -8,43 +8,68 @@ type: Tutorial
 jira: KT-8117
 thumbnail: KT-8117.jpg
 exl-id: 2fef89cf-640d-4ff4-9282-070bce8bba78
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: 5b505cc0dfb066e1b5c95698cc10a0b68086f015
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
 # Adobe PDF嵌入API教學課程
 
-PDF 內嵌API是一項免費JavaScript API，可嵌入高精確度的 PDF、啟用共同作業並查看分析。
+PDF 內嵌API是一種免費的JavaScript API，可嵌入高精確度的 PDF、啟用共同作業並查看分析。
 
-<table style="table-layout:fixed">
-<tr>
- <td>
-   <a href="controlpdfexperience.md">
-      <img alt="控制您的 PDF 在線體驗並收集分析結果" src="assets/ControlPDF_thumb.png" />
-   </a>
-    <div>
-   <a href="controlpdfexperience.md"><strong>控制您的 PDF 在線體驗並收集分析結果</strong></a>
+
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Control your PDF online experience and gather analytics">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience" title="控制您的 PDF 在線體驗並收集分析結果" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/media_13220573f1e6c61f8460bec79972ce19fb3af8428.png?width=400&format=webply&optimize=medium" alt="控制您的 PDF 在線體驗並收集分析結果"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience" target="_self" rel="referrer" title="控制您的 PDF 在線體驗並收集分析結果">控制您的 PDF 在線體驗並收集分析結果</a>
+                    </p>
+                    <p class="is-size-6">瞭解如何使用Adobe PDF嵌入API來控制外觀、啟用共同作業，以及收集有關使用者與 PDF 互動的分析，包括花費在頁面和搜尋上的時間</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>瞭解如何使用Adobe PDF嵌入API來控制外觀、啟用共同作業，以及收集有關使用者與 PDF 互動的分析，包括花費在頁面和搜尋上的時間</em>
-    <br>
-  </td>
-  <td>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-embed-api.html">
-      <img alt="像專家一樣在網路上排列 PDF" src="assets/Wrangle_1280.png" />
-   </a>
-    <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-embed-api.html"><strong>像專家一樣在網路上排列 PDF</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Wrangle PDFs on the web like a pro">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
+target = "_self" title="像專家一樣在網路上排列 PDF" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/media_17a03bc364d9d4b68dc970c4d1680c81f187acfb0.png?width=400&format=webply&optimize=medium" alt="像專家一樣在網路上排列 PDF"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
+target = "_self" target="_blank" rel="referrer" title="像專家一樣在網路上排列 PDF">像專家一樣在網路上排列 PDF</a>
+                    </p>
+                    <p class="is-size-6">瞭解如何使用免費Adobe PDF嵌入API，以便更輕鬆地在您的網站中使用 PDF</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
+target = "_self" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Look如何使用免費的Adobe PDF嵌入API，以便更輕鬆地在您的網站中使用 PDF</em>
-    <br>
-  </td>
-  <td>
-    <img alt="間隔" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-</tr>
-</table>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
