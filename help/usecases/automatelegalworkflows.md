@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 0%
@@ -88,7 +88,7 @@ ht-degree: 0%
 ![條款與條件文件的屏幕撷圖](assets/automatelegal_3.png)
 
 1. 在 *Microsoft* Word 中開啟TermsAndConditions.docx範例檔。
-1. 如果已安裝「 [檔案產生」](https://appsource.microsoft.com/en-cy/product/office/WA200002654) 外掛程式，請在功能區中選取「 **[!UICONTROL 檔案產生]** 」。 如果您的功能區未顯示「文件產生」，請依照下列指示操作。
+1. 如果已安裝「 [檔案產生」](https://appsource.microsoft.com/en-cy/product/office/WA200002654) 外掛程式，請在功能區中選取「 **[!UICONTROL 檔案產生]** 」。 如果您的功能區未顯示「文件產生」，請依照下列指示作。
 1. 選 **[!UICONTROL 取開始使用]**。
 1. 將上方寫入的 JSON 範例資料複製到 JSON 數據欄位。
 
@@ -340,7 +340,7 @@ Acrobat Sign 可讓您傳送合約以索取簽名，或嵌入網頁體驗，讓�
 
 您可以變更下列文字行來變更格式。 如果要傳送此檔供他人在 Word 中編輯或合約審核，DOCX 格式會很有説明。
 
-PDF：
+PDF格式：
 
 ```
 options = new documentMergeOptions.DocumentMergeOptions(jsonDataForMerge,
@@ -361,13 +361,13 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## 傳送合約以供簽署
 
-[Adobe Acrobat Sign](https://www.adobe.com/tw/sign.html) 可讓您將合約傳送給一或多個收件者，讓收件者檢視和簽署檔。 除了可傳送檔以供簽署的簡單用戶體驗之外，您還可以使用 REST API 來取得 Word、PDF、HTML 和其他格式，並傳送以索取簽名。
+[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) 可讓您將合約傳送給一或多個收件者，讓收件者檢視和簽署檔。 除了可傳送檔以供簽署的簡單用戶體驗之外，您還可以使用 REST API 來取得 Word、PDF、HTML 和其他格式，並傳送以索取簽名。
 
-以下範例逐步說明如何使用 REST API 檔頁面來取得先前產生的檔並傳送以供簽署。 首先，瞭解如何透過 Acrobat Sign 網頁介面執行此動作，然後使用 REST API 操作。
+以下範例逐步說明如何使用 REST API 檔頁面來取得先前產生的檔並傳送以供簽署。 首先，瞭解如何透過 Acrobat Sign 網頁介面執行此動作，然後使用 REST API作。
 
 ## 取得Acrobat Sign 帳戶
 
-如果您沒有 Acrobat Sign 帳戶，請註冊開發人員帳戶並在這裡](https://developer.adobe.com/adobesign-api/)檢閱檔[，然後選取「**開發人員帳戶註冊」**。系統會提示您填寫表單並接收驗證電子郵件。 執行此操作后，系統會將您導向網站設定密碼和帳戶，然後在該網站上登入 Acrobat Sign。
+如果您沒有 Acrobat Sign 帳戶，請註冊開發人員帳戶並在這裡](https://developer.adobe.com/adobesign-api/)檢閱檔[，然後選取「**開發人員帳戶註冊」**。系統會提示您填寫表單並接收驗證電子郵件。 執行此作後，系統會將您導向網站設定密碼和帳戶，然後在該網站上登入 Acrobat Sign。
 
 ## 從網頁介面傳送合約
 
@@ -432,7 +432,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 然後將持有人字元新增至「 **授權** 」欄位。
 
-若要進一步瞭解如何為 Acrobat Sign 建立授權令牌，您可以依照此](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html)處所述的[步驟操作。
+若要進一步瞭解如何為 Acrobat Sign 建立授權令牌，您可以依照此](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html)處所述的[步驟作。
 
 ## 上傳暫時性檔
 
@@ -573,7 +573,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
 
 * 具密碼的安全檔
 * 如果有大型影像，請壓縮 PDF
-* 若要深入瞭解可用的其他操作，請查看 Adobe PDF Services API 範例檔案中 /src 檔案夾中的腳本。 您也可以檢視可使用之不同動作的文件，進一步瞭解。
+* 若要深入瞭解可用的其他作，請查看 Adobe PDF Services API 範例檔案中 /src 檔案夾中的腳本。 您也可以檢視可使用之不同動作的文件，進一步瞭解。
 
 此外，Acrobat Sign 還提供數種其他功能，例如：
 
@@ -587,7 +587,7 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
 有興趣瞭解更多資訊嗎？ 請參閱其他使用 [!DNL Adobe Acrobat Services]方式：
 
 * 進一步 [了解檔](https://developer.adobe.com/document-services/docs/overview/)
-* 觀看更多有關Adobe Experience League的教學課程
+* 觀看更多有關Adobe Experience League教學課程
 * 使用 /src 檔案夾中的範例腳本，查看如何使用 PDF
 * 關注 [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) 瞭解最新的提示和秘訣
 * [訂閱「紙本剪輯片段」（每月直播串流），](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以瞭解如何使用 [!DNL Adobe Acrobat Services]。

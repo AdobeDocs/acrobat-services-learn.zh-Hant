@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 您可以學習哪些內容
 
-在此實作教學課程中，瞭解如何將 [!DNL Adobe Acrobat Services] API 用於 [!DNL Java Spring Boot] 應用程式。 您可以建立模型檢視控制器 （MVC） 應用程式，從 PDF 檔擷取內容、將其轉換為 Excel 等其他數據格式、合併多個 PDF，以及使用密碼保護資源。 本教學課程說明如何使用 [Adobe PDF 內嵌](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)API，在您的網站上處理和顯示 PDF 檔。
+在此實作教學課程中，瞭解如何將 [!DNL Adobe Acrobat Services] API 用於 [!DNL Java Spring Boot] 應用程式。 您可以建立模型檢視控制器 （MVC） 應用程式，從 PDF 檔擷取內容、將其轉換為 Excel 等其他數據格式、合併多個 PDF，以及使用密碼保護資源。 本教學課程說明如何使用 [Adobe PDF 內嵌](https://developer.adobe.com/document-services/apis/pdf-embed)API，在您的網站上處理和顯示 PDF 檔。
 
 ## 相關 API 和資源
 
@@ -39,17 +39,17 @@ ht-degree: 0%
 
 [!DNL Adobe Acrobat Services] 使用驗證系統控制資源存取。 若要存取服務，您必須向組織或應用程式Adobe索取API密鑰。 如果您有API鍵，請繼續執行下一節。 若要建立新的API鍵，請造訪 [網站中的快速入](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 門 [!DNL Acrobat Services] 。 您可以使用免費試用版建立密鑰，其中提供最多 6 個月的 1,000 筆檔交易額度。
 
-若要依照本教學課程操作，您需要兩組API鍵：
+若要依照本教學課程作，您需要兩組API鍵：
 
 * Adobe PDF 服務 — 用於處理 PDF 檔
 
 * Adobe PDF嵌入API
 
-建立憑證后，複製 PDF Services API認證，並將私鑰複製到資源區段內的 [!DNL Spring Boot] 應用程式。 請在網站上進一步瞭解 [Maven 和 Gradle 資料庫的[!DNL Adobe Acrobat Services]相關性與相依性](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services)。請務必先設定所有必要的套件和資料庫，再繼續進行。
+建立憑證后，複製 PDF Services API認證，並將私鑰複製到資源區段內的 [!DNL Spring Boot] 應用程式。 請在網站上進一步瞭解 [Maven 和 Gradle 資料庫的[!DNL Adobe Acrobat Services]相關性與相依性](https://developer.adobe.com/document-services/docs/overview/pdf-services-api)。請務必先設定所有必要的套件和資料庫，再繼續進行。
 
 ![PDF Services 目錄位置的螢幕擷圖API認證](assets/FAWJ_1.png)
 
-若要設定記錄服務，請造訪 [Adobe檔](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) 並捲動至「記錄」區段。
+若要設定記錄服務，請造訪 [Adobe檔](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) 並捲動至「記錄」區段。
 
 >[!NOTE]
 >
@@ -83,9 +83,9 @@ ExecutionContext executionContext = ExecutionContext.create(credentials);
 
 這些範例都可在 [GitHub 範例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) 存放庫中找到。
 
-接下來， [!DNL Spring Boot]您可以使用字串路徑或上傳檔案的串流取得檔案。 您執行的每個操作都必須初始化，且必須設定輸入檔案路徑。 若是此教學課程，請使用 Blackrock](https://www.blackrock.com/us/individual/products/investment-funds) 公開提供的 PDF 報告[。您可以使用任何其他來源，包括您自己的報告。
+接下來， [!DNL Spring Boot]您可以使用字串路徑或上傳檔案的串流取得檔案。 您執行的每個作都必須初始化，且必須設定輸入檔案路徑。 若是此教學課程，請使用 Blackrock](https://www.blackrock.com/us/individual/products/investment-funds) 公開提供的 PDF 報告[。您可以使用任何其他來源，包括您自己的報告。
 
-首先，從檔案擷取 FileRef 物件。 若要簡化，請依字串路徑專注於檔案。 在下方，您可以建立一項操作，將路徑中的檔案從 PDF 轉換為 Excel：
+首先，從檔案擷取 FileRef 物件。 若要簡化，請依字串路徑專注於檔案。 在下方，您可以建立一項作，將路徑中的檔案從 PDF 轉換為 Excel：
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -96,7 +96,7 @@ FileRef inputPdf = FileRef.createFromLocalFile(INPUT_PDF);
 exportOperation.setInput(inputPdf);
 ```
 
-在此步驟之後，您的程式就可以在 PDF 上執行第一個操作。 接下來，您將執行操作，並在 Excel 工作表中獲得結果：
+在此步驟之後，您的程式就可以在 PDF 上執行第一個作。 接下來，您將執行作，並在 Excel 工作表中獲得結果：
 
 ```
 try {
@@ -117,9 +117,9 @@ try {
 
 在本範例中，從 PDF 檔開始，您可以擷取這三隻基金的凈資產價值，並顯示在表格中。 您也可以根據您的需求和可用的數據提取其他資訊，例如圖表和表格。 您甚至可以匯入其他來源的數據。
 
-以此範例以 Excel 格式產生報告後，您可以使用「Adobe PDF服務」操作，將報告轉換回 PDF 檔並加以保護。
+以此範例以 Excel 格式產生報告後，您可以使用「Adobe PDF服務」作，將報告轉換回 PDF 檔並加以保護。
 
-若要將報告從 Excel 格式轉換為 PDF 檔，請使用下列操作：
+若要將報告從 Excel 格式轉換為 PDF 檔，請使用下列作：
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -143,7 +143,7 @@ try {
 
 此程式代碼會以 Excel 格式從報告產生 PDF 檔。
 
-在將此 PDF 傳送給客戶之前，您可以先使用密碼保護檔案。 建立另一個為您處理此保護的操作， ProtectPDFOperation， 然後使用 ProtectPDFOptions 將密碼新增至檔。
+在將此 PDF 傳送給客戶之前，您可以先使用密碼保護檔案。 建立另一個為您處理此保護的作， ProtectPDFOperation， 然後使用 ProtectPDFOptions 將密碼新增至檔。
 
 ```
 ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
@@ -153,7 +153,7 @@ ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
 ProtectPDFOperation operation = ProtectPDFOperation.createNew(options);
 ```
 
-接著，指定輸入並執行操作。 產生的檔案上應具有密碼，以防止未經授權的存取。
+接著，指定輸入並執行作。 產生的檔案上應具有密碼，以防止未經授權的存取。
 
 ## 顯示報告
 
@@ -195,8 +195,8 @@ PDF 內嵌API提供了預覽 PDF 以及為報告加上批注所需的所有工�
 
 ## 後續步驟
 
-此實作教學課程探討了 API， [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 並討論如何使用這些服務來處理 PDF 數據併產生財務決策報告。 它示範了您如何將 API 整合到您的系統中，並以 [!DNL Java Spring Boot] 範例框架為例，以展示快速處理 PDF 檔有多麼簡單。
+此實作教學課程探討了 API， [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並討論如何使用這些服務來處理 PDF 數據併產生財務決策報告。 它示範了您如何將 API 整合到您的系統中，並以 [!DNL Java Spring Boot] 範例框架為例，以展示快速處理 PDF 檔有多麼簡單。
 
-探索 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 並瞭解 Adobe PDF Services 能為您的業務做些什麼。 若要瞭解 SDK 中可用的更多功能，請查閱 [GitHub 儲存庫](https://github.com/adobe/pdftools-java-sdk-samples)尋找範例，並探索 PDF 內嵌API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)如何[協助您在應用程式中快速顯示 PDF。
+探索 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並瞭解 Adobe PDF Services 能為您的業務做些什麼。 若要瞭解 SDK 中可用的更多功能，請查閱 [GitHub 儲存庫](https://github.com/adobe/pdftools-java-sdk-samples)尋找範例，並探索 PDF 內嵌API](https://developer.adobe.com/document-services/apis/pdf-embed)如何[協助您在應用程式中快速顯示 PDF。
 
-若要輕鬆合併和操作檔，請先為您的金融客戶建立實用的 PDF 報告，首先註冊您的免費 [Adobe開發人員帳戶](https://www.adobe.io/apis/documentcloud/dcsdk/) 。
+若要輕鬆合併和作檔，請先為您的金融客戶建立實用的 PDF 報告，首先註冊您的免費 [Adobe開發人員帳戶](https://developer.adobe.com/document-services/homepage/) 。

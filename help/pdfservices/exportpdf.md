@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6674
 thumbnail: KT-6674.jpg
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe PDF服務API使用 API 將 PDF 檔案轉換為 MS Office、文字和影像。 有許多常見的使用案例可解鎖現有的 PDF 以進行內容編輯和分析，而有了 PDF 服務，API開發人員可以輕鬆地將此功能整合到現有的系統和應用程式中。 將 PDF 檔案轉換為 MS Word，以編輯內容、核准和後續傳送以供簽署，以建立自定義的合約工作流程。 或者將 PDF 內容匯出為 MS Excel 格式，以供發票和財務計算或數據分析。
 
-「轉存」操作支援下列 PDF 檔案轉換：
+「轉存」作支援下列 PDF 檔案轉換：
 
 * PDF 轉換為 Microsoft Word （DOC、DOCX）
 * PDF 轉換為 Microsoft PowerPoint （PPTX）
@@ -105,6 +105,6 @@ SupportedTargetFormats.PPTX
 
 * PDF 服務API [檔](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [PDF 服務常見問題](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) API問題
+* [PDF 服務常見問題](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) API問題
 
 * [如有關於授權和定價的問題，請聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)

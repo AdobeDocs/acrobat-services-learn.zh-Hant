@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: 特色
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: f8a31b8f98d99bf1f3787e0f0f19cc9f26e24d8d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * [PDF 嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [項目代碼](https://github.com/adobe/pdftools-node-sdk-samples)
 
@@ -189,7 +189,7 @@ function convertDocumentToPDF(sourcePath, destinationPath)
 
 您可能會發現有程式代碼的一般圖樣：
 
-程序代碼會建立認證對象和執行內容、初始化某些操作，然後根據執行內容執行操作。 您可以在整個範例程式代碼中看到此模式。
+程序代碼會建立認證對象和執行內容、初始化某些作，然後根據執行內容執行作。 您可以在整個範例程式代碼中看到此模式。
 
 在上傳功能中加入一些內容，將其稱為此功能，用戶上傳的 Word 檔現在會自動轉換為 PDF。
 
@@ -262,7 +262,7 @@ const setCustomOptions = (htmlToPDFOperation) => {
 
 ## 附加頁面
 
-另一個常見的 PDF 檔案操作是將可能具有標準文字的頁面附加至末端，例如條款清單。 檔案工具組可將數份 PDF 檔案合併為單一檔。 如果您有檔案路徑清單 （位於此 `sourceFileList`處），您可以將每個檔案的檔案參考新增到物件以進行合併作業。
+另一個常見的 PDF 檔案作是將可能具有標準文字的頁面附加至末端，例如條款清單。 檔案工具組可將數份 PDF 檔案合併為單一檔。 如果您有檔案路徑清單 （位於此 `sourceFileList`處），您可以將每個檔案的檔案參考新增到物件以進行合併作業。
 
 當執行合併作業時，它會提供包含來源內容的單一檔案。 您可以在物件上使用 `saveAsFile` ，將檔案儲存起來。
 
@@ -294,7 +294,7 @@ combineOperation.execute(executionContext)
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-您需要的最後一個程式代碼位是載入內嵌Adobe PDF API JavaScript後顯示檔的功能。 當您收到透過 adobe_dc_view\_sdk.ready 事件載入腳本的通知時，請建立新的 AdobeDC.View 物件。 此物件需要您的用戶端 ID 和先前建立之元素的 ID。 在 Adobe Developer](https://console.adobe.io/tw) Console 中[尋找您的用戶端 ID。當您檢視您先前建立認證時所建立的應用程式的設定時，會顯示用戶端 ID。
+您需要的最後一個程式代碼位是載入內嵌Adobe PDF API JavaScript後顯示檔的功能。 當您收到透過 adobe_dc_view\_sdk.ready 事件載入腳本的通知時，請建立新的 AdobeDC.View 物件。 此物件需要您的用戶端 ID 和先前建立之元素的 ID。 在 Adobe Developer](https://developer.adobe.com/console/) Console 中[尋找您的用戶端 ID。當您檢視您先前建立認證時所建立的應用程式的設定時，會顯示用戶端 ID。
 
 ![API用戶端金鑰的影像](assets/AWNjs_6.png)
 
@@ -312,7 +312,7 @@ Adobe PDF [「嵌入API」示範](https://documentcloud.adobe.com/view-sdk-demo/
 
 文件準備就緒后，您可以新增數字簽名，使用Adobe Sign進行核准。 此功能的運作方式與您目前使用的功能有些不同。 對於數位簽名，必須將應用程式設定為使用 OAuth 進行用戶驗證。
 
-設定應用程式的第一步是註冊 [應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) ，以便使用 OAuth 進行Adobe Sign。 登入后，請單擊 *「帳戶*」導覽至建立應用程式的畫面，然後開 *啟「Adobe Sign API* 」區段，然後按兩下 *「API應用程式* 」，開啟註冊的應用程式清單。
+設定應用程式的第一步是註冊 [應用程式](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) ，以便使用 OAuth 進行Adobe Sign。 登入后，請單擊 *「帳戶*」導覽至建立應用程式的畫面，然後開 *啟「Adobe Sign API* 」區段，然後按兩下 *「API應用程式* 」，開啟註冊的應用程式清單。
 
 ![註冊應用程式的第一步圖像](assets/AWNjs_9.png)
 
@@ -519,4 +519,4 @@ request(createWebFormRequest, function (error, response) {
 
 若要探索呼叫的必要範圍，或查看呼叫的建置方式，您可以從 [Rest API 檔](https://secure.na4.adobesign.com/public/docs/restapi/v6)建立範例呼叫。 「 [快速星號」](https://github.com/adobe/pdftools-node-sdk-samples) 也會示範 API 處理程式的其他功能和檔案格式 [!DNL Adobe Acrobat Services] 。
 
-您可以在應用程式中新增多種 PDF 功能，讓使用者快速輕鬆地檢視和簽署其檔等。 若要開始，請立即查看 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 。
+您可以在應用程式中新增多種 PDF 功能，讓使用者快速輕鬆地檢視和簽署其檔等。 若要開始，請立即查看 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 。

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6676
 thumbnail: KT-6676.jpg
 exl-id: 4a8f2119-c464-496b-bdc8-35dd387bef25
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 如果您尚未安裝 [Java 8 或更高版本](https://www.oracle.com/java/technologies/javase-downloads.html) ，請安裝。
 1. 執行 `javac -version` 以驗證安裝。
-1. 確認 JDK bin 資料夾包含在 PATH 變數中 （方法會依作業系統而異）。
+1. 確認 JDK bin 資料夾包含在 PATH 變數中 （方法會依作系統而異）。
 1. 如果您尚未安裝 [Maven，請使用您偏好的工具安裝 Maven](https://maven.apache.org/install.html) 。
 
 個人化範例提供從準備到執行的範例程式代碼、嵌入式認證 json 檔案，以及預先設定的連線到相依性的所有功能。
@@ -64,12 +64,12 @@ PDF Services API可將一般工作流程自動化，並將處理負擔轉移至�
 
 * PDF 服務API [檔](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [PDF 服務常見問題](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) API問題
+* [PDF 服務常見問題](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) API問題
 
 * [如有關於授權和定價的問題，請聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)
 
 * 相關文章
 
-  [新的 PDF 服務API為檔工作流程提供更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [新的 PDF 服務API為檔工作流程提供更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
   [7 月版 [!DNL Adobe Acrobat Services]:P DF 內嵌與 PDF 服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

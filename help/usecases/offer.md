@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -19,31 +19,31 @@ ht-degree: 0%
 
 ![使用案例主打橫幅](assets/UseCaseOfferHero.jpg)
 
-員工錄用信函是員工在您的組織中擁有的第一批體驗之一。 因此，您想要確保錄取通知是品牌化的，但是您不需要每次都從頭開始在文字處理器中建立字母。 [!DNL Adobe Acrobat Services]API 提供快速、簡單且有效的方式處理產生和傳送錄用信函給新員工](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)的關鍵部分[。
+員工錄用信函是員工在您的組織中擁有的第一批體驗之一。 因此，您想要確保錄取通知是品牌化的，但是您不需要每次都從頭開始在文字處理器中建立字母。 [!DNL Adobe Acrobat Services]API 提供快速、簡單且有效的方式處理產生和傳送錄用信函給新員工](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)的關鍵部分[。
 
 ## 您可以學習哪些內容
 
-此實作教學課程逐步設定 Node Express 專案，該專案會顯示網頁表單，供使用者填入員工詳細資訊。 這些詳細數據會在網頁上產生 [!DNL Acrobat Services] 工作信函作為 PDF，以供客戶使用Adobe Sign API簽署。
+此實作教學課程逐步設定 Node Express 專案，該專案會顯示網頁表單，供使用者填入員工詳細資訊。 這些詳細數據會透過 [!DNL Acrobat Services] 網頁產生工作信函作為 PDF，並透過Adobe Sign API傳送給客戶以索取簽名。
 
 ## 相關 API 和資源
 
 * [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe檔產生API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe檔產生API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
-* [檔產生Tagger Word載入宏](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)
+* [檔產生Tagger Word載入巨集](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
-* [專案範例](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)
+* [專案範例](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
 ## 快速入門
 
 [](https://nodejs.org/) Node.js是程式設計平臺。隨附一組龐大的資料庫，例如 Express 網頁伺服器。 [下載Node.js](https://nodejs.org/en/download/) 並依照步驟安裝這個絕佳的開放原始碼開發環境。
 
-若要在 Node.js 中使用Adobe檔產生API，請前往 [「文件產生API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) 」網站存取您的帳戶或註冊新的帳戶。 您的帳戶 [可以免費使用 6 個月，每次](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 檔交易只要 $0.05，因此您可以免風險試用，然後只會隨著公司成長支付。
+若要在 Node.js 中使用Adobe檔產生API，請前往 [「文件產生API](https://developer.adobe.com/document-services/apis/doc-generation) 」網站存取您的帳戶或註冊新的帳戶。 您的帳戶 [可以免費使用 6 個月，每次](https://developer.adobe.com/document-services/pricing/main) 檔交易只要 $0.05，因此您可以免風險試用，然後只會隨著公司成長支付。
 
-登入 [Adobe Developer Console](https://console.adobe.io/tw) 後，按兩下「 **[!UICONTROL 建立新專案」]**。 依預設，該專案命名為「專案 1」。 按兩下「 **[!UICONTROL 編輯專案」]** 按鈕，然後將名稱變更為「Offer Letter Generator」。 画面中央是「 **[!UICONTROL 使用您的新專案]** 」區段開始使用」 若要為您的項目啟用安全性，請採取下列步驟：
+登入 [Adobe Developer Console](https://developer.adobe.com/console/) 後，按兩下「 **[!UICONTROL 建立新專案」]**。 依預設，該專案命名為「專案 1」。 按兩下「 **[!UICONTROL 編輯專案」]** 按鈕，然後將名稱變更為「Offer Letter Generator」。 画面中央是「 **[!UICONTROL 使用您的新專案]** 」區段開始使用」 若要為您的項目啟用安全性，請採取下列步驟：
 
 按一下 **「新增API**」。 您會看到一些 API 可供選擇。 在「**[!UICONTROL 依產品篩選」]**&#x200B;區段中，選&#x200B;**[!UICONTROL 取「Document Cloud]**」，然後按兩下一&#x200B;**[!UICONTROL 步。]**
 
@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那裡有許多解封程序代碼。 我們先做主控一部分：、`documentMergeOperation`本區段可讓您擷取 JSON 數據，並將其與 Word 檔範本合併。 您可以在 Adobe 網站上](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade)使用[範例做為參考，但是讓我們建立您自己的簡單範例。開啟 Word 並建立新的空白檔。 您可以根據需要自訂，但至少具有以下功能：
+那裡有許多解封程序代碼。 我們先做主控一部分：、`documentMergeOperation`本區段可讓您擷取 JSON 數據，並將其與 Word 檔範本合併。 您可以在 Adobe 網站上](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)使用[範例做為參考，但是讓我們建立您自己的簡單範例。開啟 Word 並建立新的空白檔。 您可以根據需要自訂，但至少具有以下功能：
 
 親愛的 X，
 
@@ -247,7 +247,7 @@ console.log('Exception encountered while executing operation', err);
 
 歡迎
 
-將檔另存為「OfferLetter-Template.docx」資料夾中名為「resources」的根目錄。 請注意檔中的三個 X。 這些 X 是 JSON 資訊的臨時佔位元。 雖然您可以使用特殊語法來取代這些佔位元，Adobe提供可簡化此任務的 Word 載入宏。 若要安裝載入宏，請前往 Adobe [Document Generation Tagger Word 増載載宏](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) 網站。
+將檔另存為「OfferLetter-Template.docx」資料夾中名為「resources」的根目錄。 請注意檔中的三個 X。 這些 X 是 JSON 資訊的臨時佔位元。 雖然您可以使用特殊語法來取代這些佔位元，Adobe提供可簡化此任務的 Word 載入巨集。 若要安裝載入巨集，請前往 Adobe [Document Generation Tagger Word 増載入巨集](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) 網站。
 
 在 OfferLetter-Template 中，按下新的 **「文件產生」** 按鈕。 側邊面板隨即開啟。 按一下 **「開始使用**」。 系統會為您提供要貼上範例 JSON 數據的文字區域。 從上方將 JSON 的「offer-data」片段複製到文字區域。 其看起來應如下所示：
 
@@ -263,7 +263,7 @@ console.log('Exception encountered while executing operation', err);
 
 現在 Word 範本的標記符合 JSON 格式。 例如， ```{{`offer_letter`.`firstname`}}``` 在 Word 檔的開頭，會被 JSON 數據的「firstname」區段中的值所取代。
 
-回到您的 `generateLetter` 功能。 若要保護 REST 呼叫的安全，請在專案根目錄中建立標題為pdftools-api-credentials.json的新檔案。 貼上下列 JSON 數據，並從開發](https://console.adobe.io/tw)人員控制台的服務帳戶 （JWT） 區段[進行詳細數據調整。
+回到您的 `generateLetter` 功能。 若要保護 REST 呼叫的安全，請在專案根目錄中建立標題為pdftools-api-credentials.json的新檔案。 貼上下列 JSON 數據，並從開發](https://developer.adobe.com/console/)人員控制台的服務帳戶 （JWT） 區段[進行詳細數據調整。
 
 ```
 {
@@ -290,9 +290,9 @@ pdftools-api-credentials.json檔案。 如有希望，您可以在這裡放置�
 
 ## 後續步驟
 
-就是這樣！ 這隻是一個開始。 如果您研究 Word 載入宏「檔案產生」索引標籤的「進階」區段，您會注意到並非所有佔位元標記都來自相關的 JSON 數據。 您也可以新增簽名標籤。 這些標籤可讓您將產生的檔上傳至 [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) ，以傳送給新員工並進行簽署。 閱讀 Adobe Sign API 快速入門，瞭解如何進行。 此程式很類似，因為您使用的是以 JWT 字元保護的 REST 呼叫。
+就是這樣！ 這隻是一個開始。 如果您研究 Word 載入巨集「檔產生」索引標籤標的「進階」區段，您會注意到並非所有佔位元標記都來自相關的 JSON 數據。 您也可以新增簽名標籤。 這些標籤可讓您將產生的檔上傳至 [Adobe Sign](https://www.adobe.com/ca/sign.html) ，以傳送給新員工並進行簽署。 閱讀 Adobe Sign 快速入門API瞭解如何進行。 此程式很類似，因為您使用的是以 JWT 字元保護的 REST 呼叫。
 
-當組織必須 [跨多個地點僱用](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html) 季節性員工時，可以將上述的單一檔範例作為申請的基礎。 如所示，主要流程是透過在線應用程式從求職者獲取數據。 數據用於填入錄用信函的欄位，並傳送以索取電子簽名。
+當組織必須 [跨多個地點僱用](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) 季節性員工時，可以將上述的單一檔範例作為申請的基礎。 如所示，主要流程是透過在線應用程式從求職者獲取數據。 數據用於填入錄用信函的欄位，並傳送以索取電子簽名。
 
-[!DNL Adobe Acrobat Services]可免費使用 6 個月，每[](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)份檔交易只需支付 $0.05，因此您可以隨業務成長嘗試並擴充錄取通知工作流程。開始 [使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-建立您自己的範本， [註冊您的開發人員帳戶](https://www.adobe.io/)。
+[!DNL Adobe Acrobat Services]可免費使用 6 個月，每[](https://developer.adobe.com/document-services/pricing/main)份檔交易只需支付 $0.05，因此您可以隨業務成長嘗試並擴充錄取通知工作流程。開始 [使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+建立您自己的範本， [註冊您的開發人員帳戶](https://developer.adobe.com/)。

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -31,22 +31,22 @@ ht-degree: 1%
 ### 您需要的
 
 * **Adobe PDF服務**的試用或生產憑證
-若要進一步瞭解如何取得及設定 Microsoft Power Automate [認證，請參閱這裡](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/getting-credentials-power-automate.html)。
+若要進一步瞭解如何取得及設定 Microsoft Power Automate [認證，請參閱這裡](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 * **Microsoft Power Automate 搭配進階連接器**
 若要瞭解如何查看 Power Automate [的授權等級，請參閱這裡](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)。
 * **OneDrive**
-OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連接器。
+本教學課程中會使用 OneDrive 儲存連接器，但可以替代任何儲存空間連接器。
 
 ### 範例檔案
 
-有兩個示例文件](assets/sample-assets.zip)需要[解壓縮並上傳到 OneDrive：
+您需要解壓縮並上傳到 OneDrive 的兩 [個範例檔案](assets/sample-assets.zip) ：
 
 * WordDocument01.docx
 * WordDocument02.docx
 
 ### 取得認證
 
-若要完成此教學課程，您需要已在 Microsoft Power Automate for Adobe PDF Services 中設定的認證。 如果您尚未完成此步驟，請參閱 [這裡的](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/getting-credentials-power-automate.html)指示。
+若要完成此教學課程，您需要已在 Microsoft Power Automate for Adobe PDF Services 中設定的認證。 如果您尚未完成此步驟，請參閱 [這裡的](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)指示。
 
 ## 第 1 部分：建立新流程並將 Word 轉換為 PDF
 
@@ -116,7 +116,7 @@ OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連�
 1. 選取 **[!UICONTROL 「測試」]**。
 1. 請手動選 **[!UICONTROL 取]** ，然後「 **[!UICONTROL 儲存與測試」]**。
 1. 選取「**[!UICONTROL 繼續]**」。
-1. 選擇「 **[!UICONTROL 運行流量]**」。。
+1. 選取「 **[!UICONTROL 執行流程」]**。
 
 您現在應該會在 OneDrive 資料夾中看到轉換後的 PDF。
 
@@ -128,14 +128,14 @@ OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連�
 
 ### 檢閱檔範本
 
-從 OneDrive 中的範例檔開啟 *WordDocument02_.docx* 。 Word 檔包含幾個不同的文本標記，這些標記表示將數據填充到檔中的位置。
+*在 OneDrive 中開啟範例檔案的WordDocument02_.docx*。Word 檔包含數個不同的文字標籤，代表數據填入檔的位置。
 
-### 將參數新增至觸發器
+### 新增參數以觸發
 
-若要將動態數據推送到檔中，需要為觸發器創建一些參數以提示輸入值。
+若要將動態數據推入檔，您需要為觸發程式建立幾個參數，以提示值。
 
-1. 編輯流時，選擇 **[!UICONTROL 手動觸發流]** 以展開操作。
-1. 選擇「 **[!UICONTROL 添加輸入]**」。
+1. 編輯流程時，選 **[!UICONTROL 取「手動觸發流程]** 」以展開動作。
+1. 選取 **[!UICONTROL 「新增輸入」]**。
 1. 選取 **[!UICONTROL 「文字」]**。
 1. 為欄位 *命名名字*。
 
@@ -153,14 +153,14 @@ OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連�
 1. 在 Power Automate 中，選取 + **[!UICONTROL 新步驟]**。
 1. 在搜尋列中Search *用 OneDrive* 。
 1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
-1. *Search搜尋欄中的獲取文件內容*。
-1. 在“ **[!UICONTROL 檔案]** ”欄位中，選擇“檔案夾”圖示以導航到 *OneDrive 中的WordDocument02.docx* 檔。
+1. *Search在搜尋列中取得檔案內容*。
+1. 在「 **[!UICONTROL 檔案」]** 欄位中，選取「檔案夾」圖示，即可在 OneDrive 中導覽至 *WordDocument02.docx* 檔案。
 
-![從 Power Automate 中的 OneDrive 獲取文件內容操作Microsoft](assets/getFileContentAction02.png)
+![在 Microsoft Power Automate 中從 OneDrive 取得檔案內容動作](assets/getFileContentAction02.png)
 
 ### 從範本產生檔
 
-1. 在「電源自動化」中，選擇「 **[!UICONTROL + 新步驟]**」。
+1. 在 Power Automate 中，選取 **[!UICONTROL + 新步驟]**。
 1. *Search搜尋列中的「Adobe PDF服務*」。
 1. 選 **[!UICONTROL 取「Adobe PDF服務」]**。
 1. **[!UICONTROL 從 Word 範本動作中選取「產生檔」]**。
@@ -227,11 +227,11 @@ OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連�
 
 ## 第 3 部分：將 PDF 合併為單一 PDF
 
-現在您已經生成了 Word 檔並將其轉換為 PDF，下一部分是將多個 PDF 檔組合在一起。
+現在您已經產生 Word 檔並將其轉換為 PDF，接下來的部分就是將多份 PDF 檔合併在一起。
 
 >[!NOTE]
 >
->在前面的操作中，您將檔的副本另存為 OneDrive 中的檔。 若要使用合併 PDF 等工具，您不需要將檔案儲存至 OneDrive。 相反地，您可以將輸出直接從一個動作傳遞到下一個動作，這比在每個動作之後儲存到 OneDrive 要好。 但為了進行示範，您將這些檔案儲存至 OneDrive。
+>在先前的動作中，您將檔副本儲存為 OneDrive 中的檔案。 若要使用合併 PDF 等工具，您不需要將檔案儲存至 OneDrive。 相反地，您可以將輸出直接從一個動作傳遞到下一個動作，這比在每個動作之後儲存到 OneDrive 要好。 但為了進行示範，您將這些檔案儲存至 OneDrive。
 
 ### 新增「合併 PDF」步驟
 
@@ -242,21 +242,21 @@ OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連�
 1. 在「 **[!UICONTROL 合併 PDF 檔名]** 」字段中，輸入所需的檔名 （即&#x200B;*CombinedDocument.pdf*）。
 1. 在「**[!UICONTROL 檔案內容 -1]**」字段中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板，從&#x200B;**[!UICONTROL 「將 Word 轉換為 PDF」步驟插入 *PDF]**檔案內容*&#x200B;值。
 1. 若要新增下一份檔，請選取 **+ [!UICONTROL 新增專案]**。
-1. 在“**[!UICONTROL 檔案內容 - 2]**”字段中，使用“**[!UICONTROL 動態內容]**”面板&#x200B;**[!UICONTROL 從“從 Word 生成文件”步驟插入&#x200B;*Output 檔案“]**內容”範本*&#x200B;值。
+1. 在「**[!UICONTROL 檔案內容 - 2]**」字段中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板，從 *Word 範本步驟「產生檔」中插入&#x200B;**[!UICONTROL 「輸出檔案內容]**」值*。
 
-![在 Power Automate Microsoft 合併 PDF 動作](assets/mergePDFAction.png)
+![Power Automate 中的「合併 PDF」動作Microsoft](assets/mergePDFAction.png)
 
 ### 將合併的 PDF 儲存至 OneDrive
 
 文件合併后，您可以將檔案儲存回 OneDrive。
 
 1. 在 Power Automate 中，選取 **+ [!UICONTROL 新步驟]**。
-1. *Search搜尋欄中的 OneDrive*。
-1. 通過選擇 **[!UICONTROL OneDrive for 企業]** 或 **[!UICONTROL OneDrive]**，選擇你的工作或個人 OneDrive 帳戶。
-1. *Search搜尋列中的建立檔案*。
-1. 選擇建立 **[!UICONTROL 檔]**。
-1. 在「 **[!UICONTROL 檔案夾路徑]** 」欄位中，選擇資料夾圖示以指定在 OneDrive 中儲存檔的位置。
-1. 在檔案 **[!UICONTROL 名稱]** 欄位中，設置文件的名稱。 由於輸出為 PDF，您的檔名必須以.pdf結尾。
+1. 在搜尋列中Search *用 OneDrive* 。
+1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
+1. *Search搜尋列中的「建立檔案*」。
+1. 選取「 **[!UICONTROL 建立檔案」]**。
+1. 在「 **[!UICONTROL 檔案夾路徑]** 」欄位中，選取檔案夾圖示，以指定在 OneDrive 中儲存盤案的位置。
+1. 在「 **[!UICONTROL 檔名」]** 欄位中，設定檔名。 由於輸出為 PDF，您的檔名必須以.pdf結尾。
 1. 在「**[!UICONTROL 檔案內容」]**&#x200B;欄位中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板插入&#x200B;*「**[!UICONTROL 合併 PDF」步驟中的]**PDF 檔案內容*&#x200B;值。
 
    ![Microsoft Power Automate 的流程概觀](assets/flowOverviewSavedMergedDocument.png)
@@ -310,7 +310,7 @@ OneDrive 儲存 連接器用于此教學課程，但可以替換任何儲存連�
 
 ## 後續步驟
 
-在此教學課程中，您將 Word 檔案轉換為 PDF、根據資料產生檔、將文件合併在一起，並以密碼進行保護。 若要深入瞭解，請參閱 Microsoft Power Automate 中的 Adobe PDF Services 連接器中的其他一些操作：
+在此教學課程中，您將 Word 檔案轉換為 PDF、根據資料產生檔、將文件合併在一起，並以密碼進行保護。 若要深入瞭解，請參閱 Microsoft Power Automate 中的 Adobe PDF Services 連接器中的其他一些作：
 
 * 檢視 Microsoft Power Automate 中可用的預先建立範本。
 * 從 Adobe [Tech Blog 上的文章](https://medium.com/adobetech/tagged/microsoft-power-automate) 中學習。

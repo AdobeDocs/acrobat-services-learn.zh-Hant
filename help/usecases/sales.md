@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 銷售提案是企業贏取客戶旅程的第一步。 就像一切一樣，第一印象是最後。 因此，您與客戶的第一次互動會設定他們對您的業務的期望。 您的提案必須簡潔、準確且方便。
 
-合約和提案在其文件結構中包含不同類型的數據。 它們包含動態數據 （用戶端名稱、報價量等等） 和靜態數據 （如公司功能、團隊基本數據和標準 SOW 條款）。 建立範本檔 （例如銷售提案） 通常涉及單調的工作，例如手動取代樣板範本中的項目細節。 在此教學課程中，您可以使用動態數據和工作流程，建立有效的銷售提案](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html)建立程式[。
+合約和提案在其文件結構中包含不同類型的數據。 它們包含動態數據 （用戶端名稱、報價量等等） 和靜態數據 （如公司功能、團隊基本數據和標準 SOW 條款）。 建立範本檔 （例如銷售提案） 通常涉及單調的工作，例如手動取代樣板範本中的項目細節。 在此教學課程中，您可以使用動態數據和工作流程，建立有效的銷售提案](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)建立程式[。
 
 ## 您可以學習哪些內容
 
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 * [npm](https://www.npmjs.com/get-npm)
 
-* [[!DNL Acrobat Services] 蜜蜂屬](https://www.adobe.io/apis/documentcloud/dcsdk/)
+* [[!DNL Acrobat Services] 蜜蜂屬](https://developer.adobe.com/document-services/homepage/)
 
-* [Adobe檔產生API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe檔產生API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [Adobe檔產生記錄器](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 有些表單指定只能讓您將數據匯出為CSV檔案。 因此，您可能會發現將產生的CSV檔案轉換](http://csvjson.com/csv2json)為 JSON 檔案很有用[。
 
-靜態數據會在每一個銷售提案中重複使用。 因此，您可以使用 Microsoft Word 中的銷售提案範本來提供靜態文字。 您可以使用此 [範本，但您可以建立自己的範本](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)或使用 [Adobe範本](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)。
+靜態數據會在每一個銷售提案中重複使用。 因此，您可以使用 Microsoft Word 中的銷售提案範本來提供靜態文字。 您可以使用此 [範本，但您可以建立自己的範本](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)或使用 [Adobe範本](https://developer.adobe.com/document-services/apis/doc-generation)。
 
 現在，您需要一些能同時使用 JSON 格式的用戶端動態數據和 Microsoft Word 範本中的靜態文字來為客戶提出獨特的銷售建議。 API [!DNL Acrobat Services] 可用來合併兩者併產生可簽署的 PDF。
 
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 ## 使用標籤
 
-開啟您的銷售提案範本，然後選取「 **插入」索** 引標籤。 在「 **囑載入宏」** 群組中，選取「 **取得載入宏」**。 然後，選 **Adobe文件產生載入宏** 」加以新增。 新增後，您會在「首頁&#x200B;**」索引標籤的**「Adobe」群組中&#x200B;**看到「**&#x200B;檔世代記錄」。
+開啟您的銷售提案範本，然後選取「 **插入」索** 引標籤。 在「 **囑載入巨集」** 群組中，選取「 **取得載入巨集」**。 然後，選 **Adobe文件產生載入巨集** 」加以新增。 新增後，您會在「首頁&#x200B;**」索引標籤的**「Adobe」群組中&#x200B;**看到「**&#x200B;檔世代記錄」。
 
 在「**Adobe群組的「首頁**」索&#x200B;**引標籤上**，選取&#x200B;**「檔產生**」以開始標記檔。實用的示範影片會出現在視窗右側的面板中。
 
-![Word 內 Document Tagger 載入宏的螢幕擷圖](assets/sales_1.png)
+![Word 內 Document Tagger 載入巨集的螢幕擷圖](assets/sales_1.png)
 
 選 **取開始使用**。 接著，系統會要求您提供範例數據。 如以下所示，貼上或上傳表格回應 JSON 檔案。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## 使用 API
 
-前往 [!DNL Acrobat Services] API [首頁](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)。 若要開始使用 [!DNL Acrobat Services] API，您需要應用程式的認證。 往下卷動，然後選取 **「開始免費試** 用」以建立認證。 您可以免費使用這些服務 [6 個月，每次](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 檔交易只需支付 $0.05，因此只需支付所需的費用。
+前往 [!DNL Acrobat Services] API [首頁](https://developer.adobe.com/document-services/apis/doc-generation)。 若要開始使用 [!DNL Acrobat Services] API，您需要應用程式的認證。 往下卷動，然後選取 **「開始免費試** 用」以建立認證。 您可以免費使用這些服務 [6 個月，每次](https://developer.adobe.com/document-services/pricing/main) 檔交易只需支付 $0.05，因此只需支付所需的費用。
 
 選取 **「PDF 服務」API** 做您選擇的服務，並填入如下所示的其他詳細數據。
 
@@ -137,12 +137,12 @@ console.log('Exception encountered while executing operation', err);
 
 此程序代碼會在您使用 [!DNL Acrobat Services]的標記建立的協助下，從Microsoft窗體取得 JSON 檔案。 然後，將數據與您在 Microsoft Word 中建立的銷售提案範本合併，產生全新的 PDF。 PDF 會儲存在新建立的檔案中。/輸出資料夾。
 
-此外，程式代碼會使用 [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html) 讓兩家公司簽署產生的銷售方案。 請參閱此部落格文章，深入瞭解此API。
+此外，程式代碼會使用 [Adobe Sign API](https://developer.adobe.com/adobesign-api/) 讓兩家公司簽署產生的銷售方案。 請參閱此部落格文章，深入瞭解此API。
 
 ## 後續步驟
 
-您一開始是一個效率低下、冗長乏味的過程，需要自動化。 您從手動為每個客戶建立檔，到建立簡化的工作流程來自動化和簡化 [銷售提案流程](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html)。
+您一開始是一個效率低下、冗長乏味的過程，需要自動化。 您從手動為每個客戶建立檔，到建立簡化的工作流程來自動化和簡化 [銷售提案流程](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)。
 
 使用「Microsoft窗體」時，您的客戶會收到重要數據，這些數據會包含在其獨特的提案中。 您在 Microsoft Word 中建立了銷售提案範本，以提供您每次都不想重新建立的靜態文字。 然後，您使用 [!DNL Acrobat Services] API 合併來自表單和範本的數據，以更有效率的方式為客戶建立銷售提案 PDF。
 
-此實作教學課程僅能一窺這些 API 是否可行。 若要探索更多解決方案，請造 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 訪 API 頁面。 所有工具均可免費使用 6 個月。 然後，根據「現成付費」計劃，每份檔只需[](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)支付 $0.05 美元，因此您只需隨著團隊增加更多潛在客戶而付費至銷售管線。
+此實作教學課程僅能一窺這些 API 是否可行。 若要探索更多解決方案，請造 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 訪 API 頁面。 所有工具均可免費使用 6 個月。 然後，根據「現成付費」計劃，每份檔只需[](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，因此您只需隨著團隊增加更多潛在客戶而付費至銷售管線。

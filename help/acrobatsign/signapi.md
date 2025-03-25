@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # 開始使用 Adobe Sign API
 
-[Acrobat Sign API](https://www.adobe.io/apis/documentcloud/sign.html) 是提升您管理已簽署合約方式的絕佳方式。 開發人員可以輕鬆地將其系統與 Sign API整合，其提供可靠、輕鬆的方式上傳檔、傳送檔以索取簽名、傳送提醒及收集電子簽名。
+[Acrobat Sign API](https://developer.adobe.com/adobesign-api/) 是提升您管理已簽署合約方式的絕佳方式。 開發人員可以輕鬆地將其系統與 Sign API整合，其提供可靠、輕鬆的方式上傳檔、傳送檔以索取簽名、傳送提醒及收集電子簽名。
 
 ## 您可以學習哪些內容
 
-此實作教學課程說明開發人員如何使用 Sign API 來增強建立 [!DNL Adobe Acrobat Services]的應用程式和工作流程 。 [!DNL Acrobat Services] 包含 [「Adobe PDF服務」API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)、 [「內嵌API Adobe PDF](https://www.adobe.io/apis/documentcloud/viesdk) 」（免費） 和 [「Adobe檔產生API」](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)。
+此實作教學課程說明開發人員如何使用 Sign API 來增強建立 [!DNL Adobe Acrobat Services]的應用程式和工作流程 。 [!DNL Acrobat Services] 包含 [「Adobe PDF服務」API](https://developer.adobe.com/document-services/apis/pdf-services)、 [「內嵌API Adobe PDF](https://developer.adobe.com/document-services/apis/pdf-embed/) 」（免費） 和 [「Adobe檔產生API」](https://developer.adobe.com/document-services/apis/doc-generation)。
 
-更具體地說，瞭解如何將 Acrobat Sign API 加入您的應用程式，以收集簽名和其他資訊，例如保險窗體上的員工資訊。 使用包含簡化 HTTP 要求和回應的一般步驟。 您可以使用您最愛的語言實作這些要求。 您可以使用 API 組合 [[!DNL Acrobat Services] 建立 PDF、將 API](https://www.adobe.io/apis/documentcloud/dcsdk/) 上傳至 Sign API 做為 [暫時性](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 檔，並使用合約或 [Widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流程請求使用者簽名。
+更具體地說，瞭解如何將 Acrobat Sign API 加入您的應用程式，以收集簽名和其他資訊，例如保險窗體上的員工資訊。 使用包含簡化 HTTP 要求和回應的一般步驟。 您可以使用您最愛的語言實作這些要求。 您可以使用 API 組合 [[!DNL Acrobat Services] 建立 PDF、將 API](https://developer.adobe.com/document-services/homepage/) 上傳至 Sign API 做為 [暫時性](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) 檔，並使用合約或 [Widget](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流程請求使用者簽名。
 
 ## 建立 PDF 檔
 
-首先建立 Microsoft Word 範本並儲存為 PDF。 或者，您可以使用「文件產生API自動執行管道，上傳在 Word 中建立的範本，然後產生 PDF 檔。 Document Generation API 為一部分 [!DNL Acrobat Services]， [免費試用 6 個月，每份檔只需](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)支付或 $0.05 美元。
+首先建立 Microsoft Word 範本並儲存為 PDF。 或者，您可以使用「文件產生API自動執行管道，上傳在 Word 中建立的範本，然後產生 PDF 檔。 Document Generation API 為一部分 [!DNL Acrobat Services]， [免費試用 6 個月，每份檔只需](https://developer.adobe.com/document-services/pricing/main)支付或 $0.05 美元。
 
 此範例中，範本只是一份簡單的檔，其中有幾個簽署者字段可供填寫。 立即命名字段，然後在此教學課程中插入實際欄位。
 
@@ -276,7 +276,7 @@ Company Name","","","2021-03-07 19:32:59"
 
 將文件傳送給指定的收件者進行簽署或核准會建立合約。 您可以使用 API 追蹤狀態和合約完成。
 
-您可以使用[暫時性檔、[資料庫檔](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL來建立合約。此範例中，合約是以合約為基礎 `transientDocumentId`，就像先前建立的網頁窗體一樣。
+您可以使用[暫時性檔、[資料庫檔](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL來建立合約。此範例中，合約是以合約為基礎 `transientDocumentId`，就像先前建立的網頁窗體一樣。
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -434,10 +434,10 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 Acrobat Sign API可讓您管理檔、網頁表單和合約。 使用網頁表單和合約所建立的簡化但完整的工作流程會以一般方式完成，供開發人員使用任何語言實作。
 
-如需 Sign API運作方式的概覽，請參閱API使用開發人員指南](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md)中的[範例。本檔內含有關整篇文章所遵循許多步驟的簡短文章，以及其他相關主題。
+如需 Sign API運作方式的概覽，請參閱API使用開發人員指南](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/api_usage.md)中的[範例。本檔內含有關整篇文章所遵循許多步驟的簡短文章，以及其他相關主題。
 
-Acrobat Sign API可透過多個單一和多使用者電子簽名計畫](https://acrobat.adobe.com/tw/zh-Hant/sign/pricing/plans.html)層級[取得，因此您可以選擇最符合您需求的價格模型。既然您知道將 Sign API整合到應用程式中有多麼簡單，您可能對其他功能感興趣，例如 [推播式程式模型 Acrobat Sign Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md)。 Webhook 可讓您註冊 HTTP Acrobat URL，讓 Sign API 在發生事件時執行POST回呼要求，而不必要求您的應用程式經常執行檢查。 Webhook 透過即時和即時更新為您的應用程式提供支援，以支援強大的程序設計。
+Acrobat Sign API可透過多個單一和多使用者電子簽名計畫](https://acrobat.adobe.com/tw/zh-Hant/sign/pricing/plans.html)層級[取得，因此您可以選擇最符合您需求的價格模型。既然您知道將 Sign API整合到應用程式中有多麼簡單，您可能對其他功能感興趣，例如 [推播式程式模型 Acrobat Sign Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)。 Webhook 可讓您註冊 HTTP Acrobat URL，讓 Sign API 在發生事件時執行POST回呼要求，而不必要求您的應用程式經常執行檢查。 Webhook 透過即時和即時更新為您的應用程式提供支援，以支援強大的程序設計。
 
-查看六個月免費Adobe PDF [服務API試用期結束后的按即付費價格](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，以及免費的Adobe PDF內嵌API。
+查看六個月免費Adobe PDF [服務API試用期結束后的按即付費價格](https://developer.adobe.com/document-services/pricing/main)，以及免費的Adobe PDF內嵌API。
 
 若要在應用程式加入自動建立檔案與簽署檔案等令人興奮的功能，請開始使用 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。

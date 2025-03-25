@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 當使用多個用戶的網站時，設計確保人人享有順暢體驗的體驗至關重要。
 
-想像下列情況：您有一個網站可讓 [僱主上傳工作貼文](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html)。 對於求職者，可以輕鬆地以一致的格式輕鬆檢視發文相關的所有檔。 但是，僱主可以方便地以任何發生的檔格式附加資訊。 為了為這兩種類型的使用者提供便利，您可以自動將所有已上傳的文件轉換為 PDF，並將其內嵌到張貼中。
+想像下列情況：您有一個網站可讓 [僱主上傳工作貼文](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting)。 對於求職者，可以輕鬆地以一致的格式輕鬆檢視發文相關的所有檔。 但是，僱主可以方便地以任何發生的檔格式附加資訊。 為了為這兩種類型的使用者提供便利，您可以自動將所有已上傳的文件轉換為 PDF，並將其內嵌到張貼中。
 
 ## 您可以學習哪些內容
 
@@ -37,13 +37,13 @@ ht-degree: 0%
 
 ## 建立Adobe API認證
 
-首先，您必須[建立Adobe PDF嵌入API的認證](https://www.adobe.com/go/dcsdks_credentials) （免費使用） 和 Adobe PDF Services API （6 個月免費，然後[](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)按您付費，每份檔交易只要 \$0.05）。API建立 PDF Services 認證時，請選取「建立個人化程式代碼範例」選項。 儲存 ZIP 檔案並解壓縮 pdftools-api-credentials.json，然後將private.key到 Node.js Express 專案的根目錄。
+首先，您必須[建立Adobe PDF嵌入API的認證](https://www.adobe.com/go/dcsdks_credentials) （免費使用） 和 Adobe PDF Services API （6 個月免費，然後[](https://developer.adobe.com/document-services/pricing/main)按您付費，每份檔交易只要 \$0.05）。API建立 PDF Services 認證時，請選取「建立個人化程式代碼範例」選項。 儲存 ZIP 檔案並解壓縮 pdftools-api-credentials.json，然後將private.key到 Node.js Express 專案的根目錄。
 
-您也需要可自由使用的內嵌API API鍵。 從 [專案](https://console.adobe.io/projects)，移至您建立的專案。 然後，按一下 **「新增至專案」** ，然後選取 **「API」**。 最後，按兩下 **「PDF 嵌入」API**。
+您也需要可自由使用的內嵌API API鍵。 從 [專案](https://developer.adobe.com/console/projects)，移至您建立的專案。 然後，按一下 **「新增至專案」** ，然後選取 **「API」**。 最後，按兩下 **「PDF 嵌入」API**。
 
 指定 PDF 內嵌API的網域。 API機碼必須公開 （在瀏覽器所執行的程式代碼中尋找）。 指定網域可確保其他網域中的其他人無法使用API鍵。
 
-您無法將「localhost」當做網域使用。 指定網域 （例如「testing.local」），然後編輯電腦上的 hosts 檔案，將該網域重新導向至您的電腦 127.0.0.1。 然後，您可以在localhost：3000測試應用程式，而不必在test.local：3000進行測試。 完成後，請在項目頁面上找到 PDF 內嵌API API鍵。
+您無法將「localhost」當做網域使用。 指定網域 （例如「testing.local」），然後編輯電腦上的 hosts 檔案，將該網域重新導向至 127.0.0.1您的電腦。 然後，您可以在localhost：3000測試應用程式，而不必在test.local：3000進行測試。 完成後，請在項目頁面上找到 PDF 內嵌API API鍵。
 
 ## 新增上傳表單和處理程式
 
@@ -95,7 +95,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   const { Readable } = require('stream');
 ```
 
-直接在匯入中，您可以載入API認證並建立 [執行內容](https://www.javascripttutorial.net/javascript-execution-context/)。 由於您可以針對不同的操作重複使用執行情境，因此只做一次是有意義的操作。
+直接在匯入中，您可以載入API認證並建立 [執行內容](https://www.javascripttutorial.net/javascript-execution-context/)。 由於您可以針對不同的作重複使用執行情境，因此只做一次是有意義的作。
 
 ```
   const credentials = PDFToolsSdk.Credentials
@@ -122,13 +122,13 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   return res.send('success!');
 ```
 
-大部分作業都採用相同的四個步驟。 首先，使用適當類別的建立新方法初始化作業類型。 然後，建立操作的輸入，也就是 FileRef。 後續作業可略過此步驟，因為作業結果也是 FileRef。 對於此初始操作，請從上傳檔案的位元組建立 FileRef。 第三，您必須將輸入指派給操作。 最後，操作會執行，執行內容會當做執行方法中的參數。 此方法會傳回「承諾」，讓您等著結果。
+大部分作業都採用相同的四個步驟。 首先，使用適當類別的建立新方法初始化作業類型。 然後，建立作的輸入，也就是 FileRef。 後續作業可略過此步驟，因為作業結果也是 FileRef。 對於此初始作，請從上傳檔案的位元組建立 FileRef。 第三，您必須將輸入指派給作。 最後，作會執行，執行內容會當做執行方法中的參數。 此方法會傳回「承諾」，讓您等著結果。
 
 程式代碼會將傳回的 PDF 儲存至檔案，並傳送簡單的「成功」回應至瀏覽器。 檔名的「日期」部分會保證唯一的檔名。 如果目的地檔案存在，saveAsFile 會傳回錯誤。
 
 ## 將影像轉換為文字並壓縮 PDF
 
-現在，使用光學字元識別 （OCR） 將影像轉換為文字，然後壓縮結果。 您可以使用類似於 CreatePDF 操作的 OCR 和 CompressPDF 操作來進行此操作。 將下列專案新增至路由檔案中，位於 `router.post`：
+現在，使用光學字元識別 （OCR） 將影像轉換為文字，然後壓縮結果。 您可以使用類似於 CreatePDF作的 OCR 和 CompressPDF作來進行此作。 將下列專案新增至路由檔案中，位於 `router.post`：
 
 ```
   const name = req.body.name;
@@ -153,7 +153,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   return res.send('success!');
 ```
 
-僅需執行此操作一次，因為其結果為 FileRef，程式代碼可傳遞至 setInput。
+僅需執行此作一次，因為其結果為 FileRef，程式代碼可傳遞至 setInput。
 
 有比將檔案儲存在硬碟上並返回過度簡化的 HTTP 回應更好的替代方案。 請改為將 PDF 儲存在資料庫中，並顯示使用 Adobe 的免費 PDF 內嵌API嵌入 PDF 的網頁。 如此一來，僱主的求職貼文或手冊便會顯示在網站上，供求職者尋找和檢視，並包含公司標誌和其他設計元素。
 
@@ -274,7 +274,7 @@ router.get('/job/:id', async function(req, res, next) {
 
 ## 後續步驟
 
-這個實作教學課程介紹如何使用 Node.js [!DNL Acrobat Services] 來將上傳 [的發](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) 文轉換為 PDF 的不同格式。 產生的 PDF 接著會嵌入網頁中。 現在您可以將相同的功能新增至您的網站，讓僱主更容易上傳工作說明、手冊等，以便求職者尋找。 這些功能可協助每個人找到找到理想工作所需的資訊。
+這個實作教學課程介紹如何使用 Node.js [!DNL Acrobat Services] 來將上傳 [的發](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting) 文轉換為 PDF 的不同格式。 產生的 PDF 接著會嵌入網頁中。 現在您可以將相同的功能新增至您的網站，讓僱主更容易上傳工作說明、手冊等，以便求職者尋找。 這些功能可協助每個人找到找到理想工作所需的資訊。
 
 [!DNL Acrobat Services] 協助您新增關鍵檔處理功能至您的網站或應用程式。 如果您想深入瞭解這些 API 的功能，請參閱以下快速入端檔：
 
@@ -282,4 +282,4 @@ router.get('/job/:id', async function(req, res, next) {
 
 * [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-若要開始將方便使用的文件處理功能新增至您的網站， [請註冊免費試用版](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF內嵌API一律免費使用，Adobe PDF Services API為六個月免費，每筆檔交易只要 \$0.05，因此您可以 [隨著業務成長隨時隨地付費](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 。
+若要開始將方便使用的文件處理功能新增至您的網站， [請註冊免費試用版](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF內嵌API一律免費使用，Adobe PDF Services API為六個月免費，每筆檔交易只要 \$0.05，因此您可以 [隨著業務成長隨時隨地付費](https://developer.adobe.com/document-services/pricing/main) 。

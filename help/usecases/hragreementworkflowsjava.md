@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [項目代碼](https://github.com/dawidborycki/adobe-sign)
 
@@ -392,9 +392,9 @@ public void downloadContract(HttpServletResponse response)
 
 首先，註冊開發 [人員帳戶](https://acrobat.adobe.com/tw/zh-Hant/acrobat/contact.html)。
 
-在 Adobe Sign 入口網站中 [建立 CLIENT 應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
+在 Adobe Sign 入口網站中 [建立 CLIENT 應用程式](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 
-依照此處](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述[，為應用程式設定 OAuth。記下您的用戶端識別碼和客戶端密碼。 然後，您可以作為 `https://www.google.com` 重新導向 URI 和下列範圍：
+依照此處](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述[，為應用程式設定 OAuth。記下您的用戶端識別碼和客戶端密碼。 然後，您可以作為 `https://www.google.com` 重新導向 URI 和下列範圍：
 
 * user_login：self
 
@@ -602,4 +602,4 @@ System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 
 更進一步地，您可以建立窗體收件者可以遠端安全地簽署表格。 當您需要多個簽名時，您甚至可以自動將表格傳送給工作流程中的一系列人員。 您的員工入職流程已改善，人力資源部門會愛您。
 
-請參閱 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 現今在您的應用程式中新增各種 PDF 功能。
+請參閱 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 現今在您的應用程式中新增各種 PDF 功能。

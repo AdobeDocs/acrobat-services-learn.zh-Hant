@@ -1,6 +1,6 @@
 ---
 title: 在幾分鐘內使用 PDF Services API 和Node.js從 HTML 或 MS Office 建立 PDF
-description: 在 PDF 服務 API 中，有幾個可用服務可以建立和操作 PDF，或從 PDF 轉存為 MS Office 和其他格式
+description: 在 PDF 服務 API 中，有幾個可用服務可以建立和作 PDF，或從 PDF 轉存為 MS Office 和其他格式
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6673
 thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 新的「Adobe PDF服務」API讓開發人員可以自由地挑選和選擇多個強大的 PDF 處理服務，以滿足複雜的業務工作流程需求，讓檔工作流程數位化檔工作流程從未如此簡單。 透過這些隨時可用的雲端網路服務，可以簡化複雜的架構、實施策略和技術升級。
 
-在 PDF 服務 API 中，有數項可用服務可用來建立和操作 PDF，或從 PDF 轉存為 MS Office 和其他格式。
+在 PDF 服務 API 中，有數項可用服務可用來建立和作 PDF，或從 PDF 轉存為 MS Office 和其他格式。
 
 * 從靜態或動態 HTML、MS Word、PowerPoint、Excel 等格式建立 PDF 檔案
 * Export PDF MS Word、PowerPoint、Excel 等
@@ -106,11 +106,11 @@ C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/cre
 
 PDF 服務API [檔](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [PDF 服務常見問題](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) API問題
+* [PDF 服務常見問題](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) API問題
 
 * [如有關於授權和定價的問題，請聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)
 
 * 相關文章：
-  [新的 PDF 服務API為檔工作流程提供更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [新的 PDF 服務API為檔工作流程提供更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
   [7 月版 [!DNL Adobe Acrobat Services]:P DF 內嵌與 PDF 服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

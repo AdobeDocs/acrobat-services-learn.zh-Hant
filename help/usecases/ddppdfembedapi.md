@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 電子文件無處不在──實際上，全球可能 [有數萬億份 PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) ，而且這個數位每天都在增加。 透過在網頁中嵌入 PDF 查看器，您可以讓使用者檢視檔，而無需重新設計您的 HTML 和 CSS 或妨礙使用者存取您的網站。
 
-讓我們探索熱門場景。 公司在其網站上](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)張貼[白皮書
+讓我們探索熱門場景。 公司在其網站上](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)張貼[白皮書
 以提供其應用程式和服務的情境。網站的營銷人員希望更好地了解使用者如何與基於 PDF 的內容互動，並將其與網頁和品牌整合。 他們決定將白皮書發佈為 [封閉式內容](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.)，控制誰可以下載。
 
 ## 您可以學習哪些內容
 
-在此實作教學課程中，瞭解如何使用 [免費且易於使用的Adobe PDF嵌入API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)，在網頁中顯示嵌入的 PDF 檔。 這些範例會使用一些JavaScript、Node.js、Express.js、HTML 和 CSS。 您可以在 GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) 上[檢視完整的項目代碼。
+在此實作教學課程中，瞭解如何使用 [免費且易於使用的Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)，在網頁中顯示嵌入的 PDF 檔。 這些範例會使用一些JavaScript、Node.js、Express.js、HTML 和 CSS。 您可以在 GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) 上[檢視完整的項目代碼。
 
 ## 相關 API 和資源
 
@@ -126,7 +126,7 @@ res.render('index', { title: 'Embedding PDF', papers: papers });
 
 ![白皮書縮圖螢幕擷圖](assets/ddp_4.png)
 
-在下一個區段中，請參閱增強網站，並使用 [PDF 內嵌API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 來將 PDF 文件顯示至網頁。 PDF 內嵌API是免費的 — 您只需要取得API認證即可。
+在下一個區段中，請參閱增強網站，並使用 [PDF 內嵌API](https://developer.adobe.com/document-services/apis/pdf-embed) 來將 PDF 文件顯示至網頁。 PDF 內嵌API是免費的 — 您只需要取得API認證即可。
 
 ## 取得 PDF 內嵌API認證
 
@@ -547,16 +547,16 @@ console.log(event);
 
 ![程式代碼螢幕擷圖](assets/ddp_16.png)
 
-您可以將這些數據傳送至 [Adobe Analytics](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=view) 或其他分析工具。
+您可以將這些數據傳送至 [Adobe Analytics](https://developer.adobe.com/document-services/docs/overview/pdf-embed-api) 或其他分析工具。
 
 ## 後續步驟
 
 [!DNL Acrobat Services] API 可透過以 PDF 為中心的工作流程，協助開發人員輕鬆解決數位出版難題。 您已看到如何建立節點網頁應用程式範例來顯示白皮書集合。 然後，取得 [免費API憑證](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) ，並建立對白皮書的有限存取權，白皮書可在四 [種內嵌模式](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)中其中一種顯示。
 
-整合此工作流程有助於假設的 [營銷人員](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html) 收集潛在客戶聯絡資訊，作為白皮書下載的交換，並檢視與 PDF 互動人員的統計數據。 您可以將這些功能整合到您的網站中，以推動和監控用戶參與度。
+整合此工作流程有助於假設的 [營銷人員](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing) 收集潛在客戶聯絡資訊，作為白皮書下載的交換，並檢視與 PDF 互動人員的統計數據。 您可以將這些功能整合到您的網站中，以推動和監控用戶參與度。
 
 如果您是 Angular 或 React 開發人員，您可能喜歡嘗試 [其他範例](https://github.com/adobe/pdf-embed-api-samples) ，包括如何將 PDF 內嵌API與 React 和Angular專案整合。
 
-Adobe可讓您以創新的解決方案建立端對端客戶體驗。 免費試Adobe PDF [嵌入API](https://www.adobe.io/apis/documentcloud/viesdk) 。 若要探索您還可以做什麼，請嘗試Adobe PDF服務API [按即](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[付費的試用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)。
+Adobe可讓您以創新的解決方案建立端對端客戶體驗。 免費試Adobe PDF [嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed/) 。 若要探索您還可以做什麼，請嘗試Adobe PDF服務API [按即](https://developer.adobe.com/document-services/pricing/main)[付費的試用](https://developer.adobe.com/document-services/pricing/main)。
 
 [立即開始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Adobe Acrobat Services] API。

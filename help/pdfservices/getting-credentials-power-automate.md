@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 1%
@@ -116,7 +116,7 @@ ht-degree: 1%
 
 如上方螢幕截圖所示，您可以切換到工作帳戶或設定新的組織帳戶。 擁有後，您就可以新增「Adobe PDF服務」動作。
 
-如需深入瞭解如何建立第一個具備 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]的功能，請參閱 [在 Microsoft Power Automate](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/create-workflow-power-automate.html) 中建立您的第一個工作流程。
+如需深入瞭解如何建立第一個具備 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]的功能，請參閱 [在 Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) 中建立您的第一個工作流程。
 
 ## 其他資源
 

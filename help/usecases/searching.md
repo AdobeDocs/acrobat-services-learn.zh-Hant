@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -135,7 +135,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 這些 API 透過一套雲端網路服務自動產生、控制和轉換 PDF 內容。
 
-若要取得註冊及完成工作流程所需的[](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)認證。PDF 內嵌API可供免費使用。 PDF 服務API和文件產生API六個月免費。 試用結束時，您只需[](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)支付 $0.05 美元，每份檔交易只要 0.05 美元。您只需隨著公司成長而付費，並且處理更多合約。
+若要取得註冊及完成工作流程所需的[](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)認證。PDF 內嵌API可供免費使用。 PDF 服務API和文件產生API六個月免費。 試用結束時，您只需[](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，每份檔交易只要 0.05 美元。您只需隨著公司成長而付費，並且處理更多合約。
 
 ![建立認證的螢幕擷圖](assets/searching_1.png)
 
@@ -219,7 +219,7 @@ module.exports = { createPDF, createPDFPost };
 
 ## 使用文字辨識
 
-光學字元識別 （OCR） 可將影像和掃描的文件轉換為可搜尋的檔案。 您可以將 API、影像和掃描的檔案轉換為 [!DNL Acrobat Services] 可搜尋的 PDF。 執行 OCR 操作後，檔案便會變成可編輯和搜尋。 您可以將檔案內容儲存在數據存放區，以便進行索引和其他用途。
+光學字元識別 （OCR） 可將影像和掃描的文件轉換為可搜尋的檔案。 您可以將 API、影像和掃描的檔案轉換為 [!DNL Acrobat Services] 可搜尋的 PDF。 執行 OCR作後，檔案便會變成可編輯和搜尋。 您可以將檔案內容儲存在數據存放區，以便進行索引和其他用途。
 
 請記得，搜尋掃描檔並建立索引對許多組織來說至關重要，因為對於檔案管理和資訊處理至關重要。 OCR 功能消除了這些挑戰。
 
@@ -229,7 +229,7 @@ module.exports = { createPDF, createPDFPost };
 
 ![用來上傳檔案的窗體螢幕擷圖](assets/searching_3.png)
 
-現在，若要操控上傳的 PDF 並執行一些 OCR 操作，請將下方的代碼段新增至控制器/makeOCRController.js檔案。 此程式代碼會在已上傳的檔案上實作 OCR 程式，然後將檔案儲存在應用程式的檔案系統中。
+現在，若要控上傳的 PDF 並執行一些 OCR作，請將下方的代碼段新增至控制器/makeOCRController.js檔案。 此程式代碼會在已上傳的檔案上實作 OCR 程式，然後將檔案儲存在應用程式的檔案系統中。
 
 ```
 const fs = require('fs')
@@ -431,4 +431,4 @@ res.download(download.link);
 既然您已十分瞭解如何使用 [!DNL Acrobat Services] API，便可進一步發揮實務技能。 您可以仿製此教學課程所使用的儲存庫，並嘗試一些您剛學到的技能。 更進一步，您可以嘗試重建此應用程式，同時探索 API 的 [!DNL Acrobat Services] 無限可能。
 
 準備好在自己的應用程式中啟用檔共享和審核了嗎？ 註冊您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-開發人員帳戶。 享受六個月免費試用，然後[](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)隨著業務成長，以每份檔交易只要 \$0.05 付費。
+開發人員帳戶。 享受六個月免費試用，然後[](https://developer.adobe.com/document-services/pricing/main)隨著業務成長，以每份檔交易只要 \$0.05 付費。

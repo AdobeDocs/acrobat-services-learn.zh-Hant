@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 金融、教育、行銷和其他產業都使用 PDF 與客戶和利益相關者共享數據。 PDF 讓您輕鬆共用豐富的檔，並提供表格、圖形和互動式內容，這種格式每個人都能檢視。 [!DNL Adobe Acrobat Services] API 可協助這些公司從 Microsoft Word、Microsoft Excel、圖形和其他不同檔格式產生可共用的 PDF 報告。
 
-假設您 [經營著一家社交媒體追蹤公司](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html)。 您的客戶會登入受密碼保護的網站，以檢視他們的營銷活動分析。 通常，他們想將這些統計數據與其高階主管、臨時組織、捐助者或其他利益相關者分享。 可下載的 PDF 檔是客戶共用數位、圖表等的絕佳方式。
+假設您 [經營著一家社交媒體追蹤公司](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)。 您的客戶會登入受密碼保護的網站，以檢視他們的營銷活動分析。 通常，他們想將這些統計數據與其高階主管、臨時組織、捐助者或其他利益相關者分享。 可下載的 PDF 檔是客戶共用數位、圖表等的絕佳方式。
 
-透過將 [PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) 整合到您的網站，您就可以隨時隨地為每位客戶產生 PDF 報告。 您可以建立 PDF，然後將它們合併為一份便利的單一報告，供客戶下載並傳遞給相關人員。
+透過將 [PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services) 整合到您的網站，您就可以隨時隨地為每位客戶產生 PDF 報告。 您可以建立 PDF，然後將它們合併為一份便利的單一報告，供客戶下載並傳遞給相關人員。
 
 ## 您可以學習哪些內容
 
@@ -92,19 +92,19 @@ res.status(500).render("crash", { error: error });
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-在開始之前，您必須先擁有API憑證， [Adobe免費試用](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)。 免費使用您的 [!DNL Acrobat Services] 帳戶 [6 個月，每次](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 檔交易只要 \$0.05，直接付款。
+在開始之前，您必須先擁有API憑證， [Adobe免費試用](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)。 免費使用您的 [!DNL Acrobat Services] 帳戶 [6 個月，每次](https://developer.adobe.com/document-services/pricing/main) 檔交易只要 \$0.05，直接付款。
 
 下載封存盤案，並擷取 JSON 檔案以取得認證和私鑰。 在範例專案中，您將檔案放置在 src 目錄中。
 
 ![src 目錄螢幕擷圖](assets/report_4.png)
 
-現在您已設定認證，就可以寫入 PDF 轉換工作。 對於此示範，您有兩個必須在應用程式中執行的操作：
+現在您已設定認證，就可以寫入 PDF 轉換工作。 對於此示範，您有兩個必須在應用程式中執行的作：
 
 * 將原始檔案轉換為 PDF 檔案
 
 * 在單一報告中合併多個 PDF 檔案
 
-整體程式與執行任何操作的程式相似。 唯一的差異是您使用的服務。 在下列程式代碼中，將原始檔案轉換為 PDF 檔案：
+整體程式與執行任何作的程式相似。 唯一的差異是您使用的服務。 在下列程式代碼中，將原始檔案轉換為 PDF 檔案：
 
 ```
 async function createPdf(rawFile, outputPdf) {
@@ -217,6 +217,6 @@ res.status(500).render("crash", { error: error });
 
 本實作教學課程介紹如何使用 PDF Services API，協助客戶輕鬆分享 PDF 以下載相關報告。 您建立了Node.js應用程式，展示 PDF Services API PDF 報告和閱讀服務的功能。 應用程式示範了您的客戶如何下載單一報告檔，或將多個檔案合併並合併為單一 PDF 報告。
 
-這個Adobe提供的應用程式可協助您的 [社交媒體儀錶板客戶](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) 取得及分享所需的報告，而不必擔心收件者是否都已在其裝置上安裝 Microsoft Office 或其他軟體。 您可以在自己的應用程式中使用相同的技術，協助用戶檢視、合併和下載檔。 或者，查看Adobe許多其他 API 來新增和追蹤簽名等。
+這個Adobe提供的應用程式可協助您的 [社交媒體儀錶板客戶](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation) 取得及分享所需的報告，而不必擔心收件者是否都已在其裝置上安裝 Microsoft Office 或其他軟體。 您可以在自己的應用程式中使用相同的技術，協助用戶檢視、合併和下載檔。 或者，查看Adobe許多其他 API 來新增和追蹤簽名等。
 
-若要開始使用，請申請免費 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 帳戶，然後為您的員工和客戶建立引人入勝的報告體驗。 免費使用帳戶 6 個月，然後 [隨著行銷工作擴展，可隨即付費](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) ，每份檔交易只需 \$0.05。
+若要開始使用，請申請免費 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 帳戶，然後為您的員工和客戶建立引人入勝的報告體驗。 免費使用帳戶 6 個月，然後 [隨著行銷工作擴展，可隨即付費](https://developer.adobe.com/document-services/pricing/main) ，每份檔交易只需 \$0.05。

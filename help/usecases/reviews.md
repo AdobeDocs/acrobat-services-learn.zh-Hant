@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![使用案例主打橫幅](assets/UseCaseReviewsHero.jpg)
 
-在 COVID-19 疫情期間，許多公司需要進行遠端跨團隊協作， [共用和審核數位檔](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) 會為團隊和跨職能資源帶來一系列挑戰。
+在 COVID-19 疫情期間，許多公司需要進行遠端跨團隊協作， [共用和審核數位檔](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) 會為團隊和跨職能資源帶來一系列挑戰。
 
 這些挑戰包括以不同的檔格式共享檔、有效檢閱和註釋內容，以及與最近的編輯進行同步。 [!DNL Adobe Acrobat Services] API 的設計是為了讓應用程式開發人員為使用者解決這些挑戰。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 建立Adobe API認證
 
-在啟動程式代碼之前，您必須 [為「嵌入API」和「Adobe PDF服務」API建立Adobe PDF認證](https://www.adobe.com/go/dcsdks_credentials) 。 PDF 內嵌API可供免費使用。 PDF Services API六個月免費使用，然後您就可以轉換為 [依即付費計劃](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) ，每份檔交易只要 \$0.05。
+在啟動程式代碼之前，您必須 [為「嵌入API」和「Adobe PDF服務」API建立Adobe PDF認證](https://www.adobe.com/go/dcsdks_credentials) 。 PDF 內嵌API可供免費使用。 PDF Services API六個月免費使用，然後您就可以轉換為 [依即付費計劃](https://developer.adobe.com/document-services/pricing/main) ，每份檔交易只要 \$0.05。
 
 API建立 PDF 服務認證時，請選取「 **建立個人化程式代碼範例** 」選項，然後選取語言的Node.js。 儲存 ZIP 檔案並解壓縮 pdftools-api-credentials.json，然後將private.key到 Node.js Express 專案的根目錄。
 
@@ -101,7 +101,7 @@ API建立 PDF 服務認證時，請選取「 **建立個人化程式代碼範例
 
 在檔工作流程的第一部分，用戶必須上傳要共享的檔。 若要啟用此功能，您可以新增上傳功能，並將不同檔檔格式合併到 PDF 中，為審核程式做準備。
 
-首先，根據 [PDF Services API 的範例片段，建立將文件轉換為 PDF 的功能](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)。 此範例也顯示了許多其他重要功能的片段，包括光學字元識別 （OCR）、密碼保護和移除以及壓縮。
+首先，根據 [PDF Services API 的範例片段，建立將文件轉換為 PDF 的功能](https://developer.adobe.com/document-services/apis/pdf-services)。 此範例也顯示了許多其他重要功能的片段，包括光學字元識別 （OCR）、密碼保護和移除以及壓縮。
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -389,7 +389,7 @@ app.get( "/download/:file", function( req, res ){
 
 ## 合併 PDF 檔案
 
-PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles 操作，然後將每個檔案新增為輸入。
+PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles作，然後將每個檔案新增為輸入。
 
 ```
   function combineFilesToPDF( files, outputFilename, callback ) {
@@ -443,8 +443,8 @@ PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles 操作
 
 ## 後續步驟
 
-本實作教學課程展示了 API 如何[!DNL Acrobat Services]將檔共享和審核工作流程](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html)整合[到網頁應用程式中。此應用程式可讓遠端工作人員共用檔案並與團隊成員共同作業，這對在家工作的員工和承包商特別有説明。
+本實作教學課程展示了 API 如何[!DNL Acrobat Services]將檔共享和審核工作流程](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)整合[到網頁應用程式中。此應用程式可讓遠端工作人員共用檔案並與團隊成員共同作業，這對在家工作的員工和承包商特別有説明。
 
 您可以使用這些技術在您的應用程式中啟用共同作業，或探索 [PDF Services Node SDK 範例](https://github.com/adobe/pdftools-node-sdk-samples) 和 [PDF 內嵌API在 GitHub 上的範](https://github.com/adobe/pdf-embed-api-samples) 例，以獲得關於如何使用 Adobe API 的靈感。
 
-準備好在自己的應用程式中啟用檔共享和審核了嗎？ 註冊您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 開發人員帳戶。 免費存取Adobe PDF嵌入」，並享有其他 API 的六個月免費試用版。 試用之後，您可以 [隨即付費](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) ，隨著業務成長，每份檔交易只要 \$0.05。
+準備好在自己的應用程式中啟用檔共享和審核了嗎？ 註冊您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 開發人員帳戶。 免費存取Adobe PDF嵌入」，並享有其他 API 的六個月免費試用版。 試用之後，您可以 [隨即付費](https://developer.adobe.com/document-services/pricing/main) ，隨著業務成長，每份檔交易只要 \$0.05。

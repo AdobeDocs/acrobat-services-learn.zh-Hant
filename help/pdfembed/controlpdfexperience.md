@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1489'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ht-degree: 0%
 **您需要的**
 
 * 教學課程資源 [下載](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
-* [Adobe ID在這裡取得](https://accounts.adobe.com/tw/)
+* [Adobe ID在這裡取得](https://account.adobe.com/)
 * 網頁伺服器 （Node JS、PHP 等）
 * HTML/JavaScript/CSS 的工作知識
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ### 取得認證
 
-1. 前往 Adobe.io [網站](https://www.adobe.io/)。
+1. 前往 Adobe.io [網站](https://developer.adobe.com/)。
 1. 按兩下「建立引人入勝的文件體驗」底下的「 **[!UICONTROL 進一步]** 瞭解」。
 
    ![「深入瞭解」按鈕的螢幕擷圖](assets/ControlPDF_1.png)
@@ -108,13 +108,13 @@ ht-degree: 0%
 
 ## 第 2 部分：將 PDF 內嵌API新增至網頁 {#part2}
 
-第 2 部分中，您將瞭解如何輕鬆地將 PDF 嵌入 API 入網頁。 您將透過使用 Adobe PDF Embed API 線上示範來建立我們的程式代碼來完成此操作。
+第 2 部分中，您將瞭解如何輕鬆地將 PDF 嵌入 API 入網頁。 您將透過使用 Adobe PDF Embed API 在線示範來建立我們的程式代碼來完成此作。
 
 ### 取得練習代碼
 
 我們建立了可供您使用的程序代碼。 雖然您可以使用自己的程序代碼，但示範將會採用教學課程資源的情境。 在此](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下載範例代碼[。
 
-1. 前往 [[!DNL Adobe Acrobat Services] 網站](https://www.adobe.io/apis/documentcloud/dcsdk/)。
+1. 前往 [[!DNL Adobe Acrobat Services] 網站](https://developer.adobe.com/document-services/homepage/)。
 
    ![網站螢幕 [!DNL Adobe Acrobat Services] 擷圖](assets/ControlPDF_6.png)
 
@@ -218,7 +218,7 @@ ht-degree: 0%
 
 PDF 內嵌API中有許多不同的JavaScript事件可供使用。 您可以從 [!DNL Adobe Acrobat Services] 檔案存取這些檔案。
 
-1. 瀏覽至 [文件](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) 網站。
+1. 瀏覽至 [文件](https://developer.adobe.com/document-services/docs/overview) 網站。
 1. 檢閱API中提供的不同事件類型。 這些都有助於參考，而且對未來的專案也有益。
 
    ![參考指南的螢幕擷圖](assets/ControlPDF_17.png)
@@ -259,7 +259,7 @@ PDF 內嵌API中有許多不同的JavaScript事件可供使用。 您可以從 [
 
 ### 新增切換開關以擷取事件
 
-現在您已經將事件輸出為console.log，讓我們根據哪些事件變更行為。 若要執行此操作，您將使用切換範例。
+現在您已經將事件輸出為console.log，讓我們根據哪些事件變更行為。 若要執行此作，您將使用切換範例。
 
 1. 導覽至 **片段/eventsSwitch.js** 並複製教學課程程序代碼中的檔案內容。
 
@@ -326,4 +326,4 @@ Adobe PDF內嵌API提供與 Adobe Analytics 的立即整合。 不過，由於�
 
 ## 其他資源
 
-如需其他資源，請參閱 [此處](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)。
+如需其他資源，請參閱 [此處](https://developer.adobe.com/document-services/docs/overview)。

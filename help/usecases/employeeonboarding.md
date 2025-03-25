@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ## 什麼是 Acrobat Sign？
 
-[Acrobat Sign](https://www.adobe.com/tw/sign.html) 是電子簽名服務的世界領導者。 您可以使用各種不同的工作流程 （包括多個簽名） 傳送檔以索取簽名。 Acrobat Sign 也支援需要簽名和其他資訊的工作流程。 具備靈活撰寫系統的強大儀錶板支援所有這些功能。
+[Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) 是電子簽名服務的世界領導者。 您可以使用各種不同的工作流程 （包括多個簽名） 傳送檔以索取簽名。 Acrobat Sign 也支援需要簽名和其他資訊的工作流程。 具備靈活撰寫系統的強大儀錶板支援所有這些功能。
 
-與此 [!DNL Acrobat Services]功能一 [樣，Acrobat Sign 提供免費試](https://www.adobe.com/sign.html#sign_free_trial) 用版，可讓開發人員透過儀錶板和易於使用的 REST 架構API來測試簽署程式。
+與此 [!DNL Acrobat Services]功能一 [樣，Acrobat Sign 提供免費試](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) 用版，可讓開發人員透過儀錶板和易於使用的 REST 架構API來測試簽署程式。
 
 ## 入門案例
 
@@ -58,7 +58,7 @@ Adobe的檔 [產生](https://developer.adobe.com/document-services/apis/doc-gene
 
 ![初始文件的螢幕擷圖](assets/onboarding_1.png)
 
-文件產生的工作原理是將「令牌」新增至以數據取代的 Word 檔中。 雖然可以手動輸入這些字元，但有一個 [Microsoft Word 載入宏](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin/) 可讓您更輕鬆地做到這一點。 開啟檔案可讓作者定義可在檔中使用的標籤或數據集。
+文件產生的工作原理是將「令牌」新增至以數據取代的 Word 檔中。 雖然可以手動輸入這些字元，但有一個 [Microsoft Word 載入巨集](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin/) 可讓您更輕鬆地做到這一點。 開啟檔案可讓作者定義可在檔中使用的標籤或數據集。
 
 ![檔記錄器螢幕擷圖](assets/onboarding_2.png)
 
@@ -136,13 +136,13 @@ documentMergeOperation.execute(executionContext)
     });
 ```
 
-簡言之，程式代碼會設定認證、建立操作對象並設定輸入和選項，然後呼叫操作。 最後，它會將結果儲存為 PDF。 （結果也可以輸出為 Word。）
+簡言之，程式代碼會設定認證、建立作物件並設定輸入和選項，然後呼叫作。 最後，它會將結果儲存為 PDF。 （結果也可以輸出為 Word。）
 
 Document Generation 支援更複雜的使用案例，包括具有完全動態表格和影像的功能。 如需詳細資訊， [請參閱檔](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) 。
 
 ## 執行 PDF 作業
 
-PDF [Services API](https://developer.adobe.com/document-services/apis/pdf-services/) 提供大量處理 PDF 的「公用程式」操作。 這些工作包括：
+PDF [Services API](https://developer.adobe.com/document-services/apis/pdf-services/) 提供大量處理 PDF 的「公用程式」作。 這些工作包括：
 
 * 從 Office 檔建立 PDF
 * 將 PDF 轉存為 Office 檔
@@ -153,7 +153,7 @@ PDF [Services API](https://developer.adobe.com/document-services/apis/pdf-servic
 * 透過壓縮或線性化優化 PDF
 * 取得 PDF 屬性
 
-若是這種情況，「文件產生」呼叫的結果必須與標準 PDF 合併。 這個操作對於 SDK 相當簡單。 以下是Node.js範例：
+若是這種情況，「文件產生」呼叫的結果必須與標準 PDF 合併。 這個作對於 SDK 相當簡單。 以下是Node.js範例：
 
 ```js
 const PDFServicesSdk = require('@adobe/pdfservices-node-sdk');
@@ -188,13 +188,13 @@ combineFilesOperation.execute(executionContext)
     });
 ```
 
-此程式代碼會處理兩個 PDF、合併它們，並將結果儲存為新的 PDF。 簡單又簡單！ [如需可執行操作的範例，請參閱檔](https://developer.adobe.com/document-services/docs/overview/pdf-services-api/)。
+此程式代碼會處理兩個 PDF、合併它們，並將結果儲存為新的 PDF。 簡單又簡單！ [如需可執行作的範例，請參閱檔](https://developer.adobe.com/document-services/docs/overview/pdf-services-api/)。
 
 ## 簽署程式
 
-在入職程序的最後一站，員工必須簽署合約，告知他們已閱讀並同意其中定義的所有政策。 [Acrobat Sign](https://www.adobe.com/tw/sign.html) 支援許多不同的工作流程和整合，包括透過 [API自動執行的工作](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html)流程和整合。 從廣義而言，案例的最終部分可以如下所示完成：
+在入職程序的最後一站，員工必須簽署合約，告知他們已閱讀並同意其中定義的所有政策。 [Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) 支援許多不同的工作流程和整合，包括透過 [API自動執行的工作](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html)流程和整合。 從廣義而言，案例的最終部分可以如下所示完成：
 
-首先，設計包含需要簽署的表單的檔。 有多種執行方法，包括在使用者控制面板中Adobe Sign設計的視覺效果。 另一個選項是使用「檔案產生 Word」載入宏為您插入標籤。 此範例要求簽署和日期。
+首先，設計包含需要簽署的表單的檔。 有多種執行方法，包括在使用者控制面板中Adobe Sign設計的視覺效果。 另一個選項是使用「檔案產生 Word」載入巨集為您插入標籤。 此範例要求簽署和日期。
 
 ![使用 Sign 標籤的文件螢幕擷圖](assets/onboarding_10.png)
 
@@ -206,6 +206,6 @@ combineFilesOperation.execute(executionContext)
 
 ## 自己體驗
 
-本文所述的一切項目現在都可以進行測試。 API [!DNL Adobe Acrobat Services] [免費試](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 用版目前為您提供六個月內 1,000 次免費請求。 Acrobat Sign 的 [免費試](https://www.adobe.com/sign.html#sign_free_trial) 用版可讓您傳送加上浮水印的合約做為測試用途。
+本文所述的一切項目現在都可以進行測試。 API [!DNL Adobe Acrobat Services] [免費試](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 用版目前為您提供六個月內 1,000 次免費請求。 Acrobat Sign 的 [免費試](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) 用版可讓您傳送加上浮水印的合約做為測試用途。
 
-有疑問嗎？ 支援 [論壇](https://community.adobe.com/t5/document-services-apis/ct-p/ct-Document-Cloud-SDK) 每天由Adobe開發人員及支援人員監控。 為了獲得更多靈感，請務必觀看下一 [集「剪紙片段](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) 」。 定期舉行現場會議，與客戶發表新聞、示範和討論。
+有問題嗎？支援 [論壇](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) 每天由Adobe開發人員及支援人員監控。 為了獲得更多靈感，請務必觀看下一 [集「剪紙片段](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) 」。 定期舉行現場會議，與客戶發表新聞、示範和討論。
