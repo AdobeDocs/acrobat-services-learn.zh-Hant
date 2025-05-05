@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解如何使用 AI 自動標記無障礙環境。 自動標記可降低達到合規性所需的時間和成本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446270?hidetitle=true&captions=chi_hant)

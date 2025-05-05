@@ -23,4 +23,4 @@ ht-degree: 0%
 >
 >本教學課程是專為 OEM 合作夥伴所設計，這些合作夥伴正在其應用程式內建立及嵌入簽名程式。
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445419?hidetitle=true&captions=chi_hant){transcript=true}
