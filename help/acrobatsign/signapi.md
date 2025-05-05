@@ -276,7 +276,7 @@ Company Name","","","2021-03-07 19:32:59"
 
 將文件傳送給指定的收件者進行簽署或核准會建立合約。 您可以使用 API 追蹤狀態和合約完成。
 
-您可以使用[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)暫時性檔、[資料庫檔](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)或URL來建立合約。此範例中，合約是以合約為基礎 `transientDocumentId`，就像先前建立的網頁窗體一樣。
+您可以使用[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)暫時性檔、[資料庫檔](https://helpx.adobe.com/tw/sign/kb/how-to-send-an-agreement-through-REST-API.html)或URL來建立合約。此範例中，合約是以合約為基礎 `transientDocumentId`，就像先前建立的網頁窗體一樣。
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1

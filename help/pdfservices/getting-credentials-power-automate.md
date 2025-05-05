@@ -116,7 +116,7 @@ ht-degree: 1%
 
 如上方螢幕截圖所示，您可以切換到工作帳戶或設定新的組織帳戶。 擁有後，您就可以新增「Adobe PDF服務」動作。
 
-如需深入瞭解如何建立第一個具備 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]的功能，請參閱 [在 Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) 中建立您的第一個工作流程。
+如需深入瞭解如何建立第一個具備 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]的功能，請參閱 [在 Microsoft Power Automate](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) 中建立您的第一個工作流程。
 
 ## 其他資源
 

@@ -31,7 +31,7 @@ ht-degree: 1%
 ### 您需要的
 
 * **Adobe PDF服務**&#x200B;的試用或生產憑證
-若要進一步瞭解如何取得及設定 Microsoft Power Automate [認證，請參閱這裡](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
+若要進一步瞭解如何取得及設定 Microsoft Power Automate [認證，請參閱這裡](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 * **Microsoft Power Automate 搭配進階連接器**
 若要瞭解如何查看 Power Automate [的授權等級，請參閱這裡](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)。
 * **OneDrive**
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ### 取得認證
 
-若要完成此教學課程，您需要已在 Microsoft Power Automate for Adobe PDF Services 中設定的認證。 如果您尚未完成此步驟，請參閱 [這裡的](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)指示。
+若要完成此教學課程，您需要已在 Microsoft Power Automate for Adobe PDF Services 中設定的認證。 如果您尚未完成此步驟，請參閱 [這裡的](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)指示。
 
 ## 第 1 部分：建立新流程並將 Word 轉換為 PDF
 

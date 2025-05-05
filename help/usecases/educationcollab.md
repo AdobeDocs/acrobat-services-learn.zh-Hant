@@ -171,7 +171,7 @@ PDF 內嵌API使用的認證與 PDF Services API不同，因此您必須 [建立
 
 教師和學校必須了解學生如何使用在線平臺。 這可協助教師為學生提供資源，協助學生在作業上表現更好。 PDF 嵌入API整合了可用於衡量所有事件的分析，例如使用者開啟、閱讀和關閉檔時。 透過 PDF 服務 API，教師還可以停用列印、下載和檔案修改作業，以維護學術完整性。
 
-如果您擁有 [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/) 授權，則可以使用其 [開箱即用的整合](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回呼將您的 PDF 服務與其他分析提供者 （例如 [Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)） 整合。
+如果您擁有 [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/) 授權，則可以使用其 [開箱即用的整合](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回呼將您的 PDF 服務與其他分析提供者 （例如 [Google](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)） 整合。
 
 若要啟用檔事件的度量，請使用 `registerCallback` Adobe DC 檢視實例的方法附加事件處理器。 您可以在主控台顯示基本度量，例如開啟檔或閱讀頁面。 您也可以將指標儲存在記錄中，或在其他分析商店中發佈。
 
