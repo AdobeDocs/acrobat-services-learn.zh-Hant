@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ### 您需要的
 
-* **Adobe PDF服務**的試用或生產憑證
+* **Adobe PDF服務**&#x200B;的試用或生產憑證
 若要進一步瞭解如何取得及設定 Microsoft Power Automate [認證，請參閱這裡](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 * **Microsoft Power Automate 搭配進階連接器**
 若要瞭解如何查看 Power Automate [的授權等級，請參閱這裡](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)。
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ### 建立流程
 
-在此部分中，您可以使用即時流程在 Microsoft Power Automate](https://flow.microsoft.com/zh-tw/) 中[建立新流程、新增參數、從 OneDrive 取得檔案，以及將檔案轉換為 PDF。
+在此部分中，您可以使用即時流程在 Microsoft Power Automate[&#128279;](https://flow.microsoft.com/zh-tw/) 中建立新流程、新增參數、從 OneDrive 取得檔案，以及將檔案轉換為 PDF。
 
 1. 導覽至 [Microsoft Power Automate](https://flow.microsoft.com/zh-tw/) ，並使用您的認證登入。
 1. 在側邊欄中，選取「 **[!UICONTROL 建立」]**。
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 1. 在 [Power Automate](https://flow.microsoft.com/zh-tw/) 中，選取 **[!UICONTROL + 新步驟]**。
 1. 在搜尋列中Search *用 OneDrive* 。
-1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
+1. 選取「商務用 OneDrive」或「OneDrive **&#x200B;**&#x200B;[!UICONTROL 」，選擇您的工作或個人 OneDrive &#x200B;]&#x200B;**帳戶**。
 1. *Search在搜尋列中取得檔案內容*。
 1. 在「 **[!UICONTROL 檔案」]** 欄位中，選取「檔案夾」圖示，即可在 OneDrive 中導覽至 *WordDocument01.docx* 檔案。
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 1. 在 [「Microsoft Power Automate](https://flow.microsoft.com/zh-tw/) 中，選取 **[!UICONTROL + 新步驟]**。
 1. 在搜尋列中Search *用 OneDrive* 。
-1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
+1. 選取「商務用 OneDrive」或「OneDrive **&#x200B;**&#x200B;[!UICONTROL 」，選擇您的工作或個人 OneDrive &#x200B;]&#x200B;**帳戶**。
 1. *Search在搜尋列中取得檔案內容*。
 1. *Search搜尋列中的「建立檔案*」。
 1. 選取「 **[!UICONTROL 建立檔案」]**。
@@ -152,7 +152,7 @@ ht-degree: 1%
 
 1. 在 Power Automate 中，選取 + **[!UICONTROL 新步驟]**。
 1. 在搜尋列中Search *用 OneDrive* 。
-1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
+1. 選取「商務用 OneDrive」或「OneDrive **&#x200B;**&#x200B;[!UICONTROL 」，選擇您的工作或個人 OneDrive &#x200B;]&#x200B;**帳戶**。
 1. *Search在搜尋列中取得檔案內容*。
 1. 在「 **[!UICONTROL 檔案」]** 欄位中，選取「檔案夾」圖示，即可在 OneDrive 中導覽至 *WordDocument02.docx* 檔案。
 
@@ -185,7 +185,7 @@ ht-degree: 1%
 
    ![在 JSON 中產生含有數據標籤的檔](assets/generateDocumentJSONAction.png)
 
-1. 重複「姓&#x200B;****&#x200B;氏」和「薪資&#x200B;]**」字段的**[!UICONTROL &#x200B;步驟 7 至 8。
+1. 重複「姓&#x200B;**&#x200B;**&#x200B;氏」和「薪資&#x200B;**」字段的**&#x200B;步驟 7 至 8。
 1. 在「**[!UICONTROL 範本檔案內容]**」字段中，使用「**[!UICONTROL 動態內容]**」面板插入&#x200B;**[!UICONTROL 「取得檔案內容」步驟中的&#x200B;*「檔案內容]**」值*。
 
 ![在 Power Automate 中透過 Word 範本動作產生檔，並完成所有值](assets/generateDocumentJSONActionCompleted.png)
@@ -204,7 +204,7 @@ ht-degree: 1%
 
 1. 在 Power Automate 中，選取 **+ [!UICONTROL 新步驟]**。
 1. 在搜尋列中Search *用 OneDrive* 。
-1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
+1. 選取「商務用 OneDrive」或「OneDrive **&#x200B;**&#x200B;[!UICONTROL 」，選擇您的工作或個人 OneDrive &#x200B;]&#x200B;**帳戶**。
 1. *Search搜尋列中的「建立檔案*」。
 1. 選取「 **[!UICONTROL 建立檔案」]**。
 1. 在「 **[!UICONTROL 檔案夾路徑]** 」欄位中，選取檔案夾圖示，以指定在 OneDrive 中儲存盤案的位置。
@@ -240,7 +240,7 @@ ht-degree: 1%
 1. 選 **[!UICONTROL 取「Adobe PDF服務」]**。
 1. 選取「 **[!UICONTROL 合併 PDF」]** 動作。
 1. 在「 **[!UICONTROL 合併 PDF 檔名]** 」字段中，輸入所需的檔名 （即&#x200B;*CombinedDocument.pdf*）。
-1. 在「**[!UICONTROL 檔案內容 -1]**」字段中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板，從&#x200B;**[!UICONTROL 「將 Word 轉換為 PDF」步驟插入 *PDF]**檔案內容*&#x200B;值。
+1. 在「**[!UICONTROL 檔案內容 -1]**」字段中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板，從&#x200B;**[!UICONTROL 「將 Word 轉換為 PDF」步驟插入 *PDF]**&#x200B;檔案內容*&#x200B;值。
 1. 若要新增下一份檔，請選取 **+ [!UICONTROL 新增專案]**。
 1. 在「**[!UICONTROL 檔案內容 - 2]**」字段中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板，從 *Word 範本步驟「產生檔」中插入&#x200B;**[!UICONTROL 「輸出檔案內容]**」值*。
 
@@ -252,12 +252,12 @@ ht-degree: 1%
 
 1. 在 Power Automate 中，選取 **+ [!UICONTROL 新步驟]**。
 1. 在搜尋列中Search *用 OneDrive* 。
-1. 選取「商務用 OneDrive」或「OneDrive ]****[!UICONTROL 」，選擇您的工作或個人 OneDrive ]**帳戶**[!UICONTROL 。
+1. 選取「商務用 OneDrive」或「OneDrive **&#x200B;**&#x200B;[!UICONTROL 」，選擇您的工作或個人 OneDrive &#x200B;]&#x200B;**帳戶**。
 1. *Search搜尋列中的「建立檔案*」。
 1. 選取「 **[!UICONTROL 建立檔案」]**。
 1. 在「 **[!UICONTROL 檔案夾路徑]** 」欄位中，選取檔案夾圖示，以指定在 OneDrive 中儲存盤案的位置。
 1. 在「 **[!UICONTROL 檔名」]** 欄位中，設定檔名。 由於輸出為 PDF，您的檔名必須以.pdf結尾。
-1. 在「**[!UICONTROL 檔案內容」]**&#x200B;欄位中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板插入&#x200B;*「**[!UICONTROL 合併 PDF」步驟中的]**PDF 檔案內容*&#x200B;值。
+1. 在「**[!UICONTROL 檔案內容」]**&#x200B;欄位中，使用&#x200B;**[!UICONTROL 「動態內容]**」面板插入&#x200B;*「**[!UICONTROL 合併 PDF」步驟中的]**&#x200B;PDF 檔案內容*&#x200B;值。
 
    ![Microsoft Power Automate 的流程概觀](assets/flowOverviewSavedMergedDocument.png)
 
@@ -288,14 +288,14 @@ ht-degree: 1%
 1. 選取「 **[!UICONTROL 保護 PDF 免於檢視]** 」動作。
 1. 在「 **[!UICONTROL 檔名」]** 欄位中，將名稱設定為您要的名稱，只要名稱結尾為.pdf擴展名即可。
 1. 將「 **[!UICONTROL 密碼]** 」欄位設定為您指定的密碼以開啟檔案。
-1. 在「**[!UICONTROL 檔案內容」]**&#x200B;欄位中，使用「**[!UICONTROL 動態內容]**」面板插入&#x200B;*「**[!UICONTROL 合併 PDF」步驟中的]**PDF 檔案內容*&#x200B;值。
+1. 在「**[!UICONTROL 檔案內容」]**&#x200B;欄位中，使用「**[!UICONTROL 動態內容]**」面板插入&#x200B;*「**[!UICONTROL 合併 PDF」步驟中的]**&#x200B;PDF 檔案內容*&#x200B;值。
 
 ### 更新儲存至 OneDrive
 
 檔受保護后，您可以將檔案儲存回 OneDrive。 此範例中，您要更新現有的 **「建立檔案 3** 」動作，並新增「 *檔案內容」* 值。
 
-1. 在「建立檔案 3 ]**」動作的**[!UICONTROL 「檔案內容&#x200B;]**」欄位中**[!UICONTROL &#x200B;選取游標。
-1. 使用「**[!UICONTROL 動態內容]**」面板&#x200B;*插入「保護 PDF 免於檢視&#x200B;**」步驟中的**PDF 檔案內容*&#x200B;值。
+1. 在「建立檔案 3 **」動作的**&#x200B;[!UICONTROL 「檔案內容&#x200B;]&#x200B;**」欄位中**&#x200B;選取游標。
+1. 使用「**[!UICONTROL 動態內容]**」面板&#x200B;*插入「保護 PDF 免於檢視&#x200B;**」步驟中的**&#x200B;PDF 檔案內容*&#x200B;值。
 
 ### 試用流程
 

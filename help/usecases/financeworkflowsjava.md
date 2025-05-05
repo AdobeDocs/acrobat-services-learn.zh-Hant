@@ -83,7 +83,7 @@ ExecutionContext executionContext = ExecutionContext.create(credentials);
 
 這些範例都可在 [GitHub 範例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) 存放庫中找到。
 
-接下來， [!DNL Spring Boot]您可以使用字串路徑或上傳檔案的串流取得檔案。 您執行的每個作都必須初始化，且必須設定輸入檔案路徑。 若是此教學課程，請使用 Blackrock](https://www.blackrock.com/us/individual/products/investment-funds) 公開提供的 PDF 報告[。您可以使用任何其他來源，包括您自己的報告。
+接下來， [!DNL Spring Boot]您可以使用字串路徑或上傳檔案的串流取得檔案。 您執行的每個作都必須初始化，且必須設定輸入檔案路徑。 若是此教學課程，請使用 Blackrock[&#128279;](https://www.blackrock.com/us/individual/products/investment-funds) 公開提供的 PDF 報告。您可以使用任何其他來源，包括您自己的報告。
 
 首先，從檔案擷取 FileRef 物件。 若要簡化，請依字串路徑專注於檔案。 在下方，您可以建立一項作，將路徑中的檔案從 PDF 轉換為 Excel：
 
@@ -197,6 +197,6 @@ PDF 內嵌API提供了預覽 PDF 以及為報告加上批注所需的所有工�
 
 此實作教學課程探討了 API， [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並討論如何使用這些服務來處理 PDF 數據併產生財務決策報告。 它示範了您如何將 API 整合到您的系統中，並以 [!DNL Java Spring Boot] 範例框架為例，以展示快速處理 PDF 檔有多麼簡單。
 
-探索 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並瞭解 Adobe PDF Services 能為您的業務做些什麼。 若要瞭解 SDK 中可用的更多功能，請查閱 [GitHub 儲存庫](https://github.com/adobe/pdftools-java-sdk-samples)尋找範例，並探索 PDF 內嵌API](https://developer.adobe.com/document-services/apis/pdf-embed)如何[協助您在應用程式中快速顯示 PDF。
+探索 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並瞭解 Adobe PDF Services 能為您的業務做些什麼。 若要瞭解 SDK 中可用的更多功能，請查閱 [GitHub 儲存庫](https://github.com/adobe/pdftools-java-sdk-samples)尋找範例，並探索 PDF 內嵌API[&#128279;](https://developer.adobe.com/document-services/apis/pdf-embed)如何協助您在應用程式中快速顯示 PDF。
 
 若要輕鬆合併和作檔，請先為您的金融客戶建立實用的 PDF 報告，首先註冊您的免費 [Adobe開發人員帳戶](https://developer.adobe.com/document-services/homepage/) 。

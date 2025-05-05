@@ -21,12 +21,12 @@ ht-degree: 0%
 
 電子文件無處不在──實際上，全球可能 [有數萬億份 PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) ，而且這個數位每天都在增加。 透過在網頁中嵌入 PDF 查看器，您可以讓使用者檢視檔，而無需重新設計您的 HTML 和 CSS 或妨礙使用者存取您的網站。
 
-讓我們探索熱門場景。 公司在其網站上](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)張貼[白皮書
+讓我們探索熱門場景。 公司在其網站上[&#128279;](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)張貼白皮書
 以提供其應用程式和服務的情境。網站的營銷人員希望更好地了解使用者如何與基於 PDF 的內容互動，並將其與網頁和品牌整合。 他們決定將白皮書發佈為 [封閉式內容](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.)，控制誰可以下載。
 
 ## 您可以學習哪些內容
 
-在此實作教學課程中，瞭解如何使用 [免費且易於使用的Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)，在網頁中顯示嵌入的 PDF 檔。 這些範例會使用一些JavaScript、Node.js、Express.js、HTML 和 CSS。 您可以在 GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) 上[檢視完整的項目代碼。
+在此實作教學課程中，瞭解如何使用 [免費且易於使用的Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)，在網頁中顯示嵌入的 PDF 檔。 這些範例會使用一些JavaScript、Node.js、Express.js、HTML 和 CSS。 您可以在 GitHub[&#128279;](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) 上檢視完整的項目代碼。
 
 ## 相關 API 和資源
 
@@ -293,7 +293,7 @@ res.render('in-line', { title: paper.title, paper: paper });
 module.exports = router;
 ```
 
-在實時示範](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)中[再次Look，自動產生 PDF 內嵌API代碼。從左側面板按兩下 **「內行** 」：
+在實時示範[&#128279;](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)中再次Look，自動產生 PDF 內嵌API代碼。從左側面板按兩下 **「內行** 」：
 
 ![即時 PDF 內嵌API示範的螢幕擷圖](assets/ddp_8.png)
 
@@ -557,6 +557,6 @@ console.log(event);
 
 如果您是 Angular 或 React 開發人員，您可能喜歡嘗試 [其他範例](https://github.com/adobe/pdf-embed-api-samples) ，包括如何將 PDF 內嵌API與 React 和Angular專案整合。
 
-Adobe可讓您以創新的解決方案建立端對端客戶體驗。 免費試Adobe PDF [嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed/) 。 若要探索您還可以做什麼，請嘗試Adobe PDF服務API [按即](https://developer.adobe.com/document-services/pricing/main)[付費的試用](https://developer.adobe.com/document-services/pricing/main)。
+Adobe可讓您以創新的解決方案建立端對端客戶體驗。 免費試Adobe PDF [嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed/) 。 若要探索您還可以做什麼，請嘗試Adobe PDF服務API [按即](https://developer.adobe.com/document-services/pricing/main) [付費的試用](https://developer.adobe.com/document-services/pricing/main)。
 
 [立即開始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Adobe Acrobat Services] API。

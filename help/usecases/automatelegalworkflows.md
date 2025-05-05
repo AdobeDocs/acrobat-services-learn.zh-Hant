@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 將基本標籤新增至檔
 
-此案例會使用可在此](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true)處下載[的條款與條件文件。
+此案例會使用可在此[&#128279;](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true)處下載的條款與條件文件。
 
 ![條款與條件文件的屏幕撷圖](assets/automatelegal_3.png)
 
@@ -270,7 +270,7 @@ Acrobat Sign 可讓您傳送合約以索取簽名，或嵌入網頁體驗，讓�
 1. 將欄位類型設為「日期」。
 1. 選取 **[!UICONTROL 「插入Adobe Sign文字標籤」]**。
 
-放置的日期標籤較長： `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`。 Acrobat Sign 文字標籤必須維持在同一行，這與「文件產生」卷標不同。 和`:format()``font()`參數是選用的，所以對於這個情況，我們可以將標籤縮短到 `{{Date 3_es_:signer1:date}}`。
+放置的日期標籤較長： `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`。 Acrobat Sign 文字標籤必須維持在同一行，這與「文件產生」卷標不同。 和`:format()` `font()`參數是選用的，所以對於這個情況，我們可以將標籤縮短到 `{{Date 3_es_:signer1:date}}`。
 
 重複「公司簽名&#x200B;*」區段上方的*&#x200B;步驟。執行此動作時，您必須將「收件者」欄位變更為 **「簽署者 2**」，否則所有簽名字段都會指派給同一人。
 
@@ -367,7 +367,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## 取得Acrobat Sign 帳戶
 
-如果您沒有 Acrobat Sign 帳戶，請註冊開發人員帳戶並在這裡](https://developer.adobe.com/adobesign-api/)檢閱檔[，然後選取「**開發人員帳戶註冊」**。系統會提示您填寫表單並接收驗證電子郵件。 執行此作後，系統會將您導向網站設定密碼和帳戶，然後在該網站上登入 Acrobat Sign。
+如果您沒有 Acrobat Sign 帳戶，請註冊開發人員帳戶並在這裡[&#128279;](https://developer.adobe.com/adobesign-api/)檢閱檔，然後選取「**開發人員帳戶註冊」**。系統會提示您填寫表單並接收驗證電子郵件。 執行此作後，系統會將您導向網站設定密碼和帳戶，然後在該網站上登入 Acrobat Sign。
 
 ## 從網頁介面傳送合約
 
@@ -379,7 +379,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
    ![收件者欄位的螢幕擷圖](assets/automatelegal_29.png)
 
-1. 設定「合約名稱&#x200B;]**」和**[!UICONTROL 「**[!UICONTROL 訊息」]**。
+1. 設定「合約名稱&#x200B;**」和**「**[!UICONTROL 訊息」]**。
 1. 選取 **[!UICONTROL 「新增檔案]** 」，然後從您的計算機上傳產生的檔案。
 1. 選取&#x200B;**[!UICONTROL 「預覽和新增簽名欄位」]**。
 1. 選取「**[!UICONTROL 下一步]**」。
@@ -432,7 +432,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 然後將持有人字元新增至「 **授權** 」欄位。
 
-若要進一步瞭解如何為 Acrobat Sign 建立授權令牌，您可以依照此](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html)處所述的[步驟作。
+若要進一步瞭解如何為 Acrobat Sign 建立授權令牌，您可以依照此[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html)處所述的步驟作。
 
 ## 上傳暫時性檔
 
@@ -551,14 +551,14 @@ transientDocumentId ** 用於參照暫時儲存在 Acrobat Sign 中的檔，以�
   }
 ```
 
-更新變更時，收到通知的效率更高的方法是透過 Webhook 取得通知，您可以在這裡](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html)深入[瞭解。
+更新變更時，收到通知的效率更高的方法是透過 Webhook 取得通知，您可以在這裡[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html)深入瞭解。
 
 ## 儲存已簽署的檔
 
 簽署檔后，可以使用 GET /agreements/combinedDocument 檔案擷取檔。
 
 1. 展開 **[!UICONTROL GET /agreements/{agreementId}combinedDocument]**。
-1. 將 agreementId ]**設定**[!UICONTROL &#x200B;為&#x200B;*上一個API呼叫所提供的 agreementId*。
+1. 將 agreementId **設定**&#x200B;為&#x200B;*上一個API呼叫所提供的 agreementId*。
 1. 選取 **[!UICONTROL 「試用！」]**。
 
 您可使用 attachSupportingDocuments 和 attachAuditReport 參數來設定附加稽核報告或支援檔的其他參數。

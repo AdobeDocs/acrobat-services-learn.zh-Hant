@@ -74,4 +74,4 @@ ht-degree: 0%
 ## 歸 因
 
 本行為準則改編自 [ 貢獻者公約 ](https://contributor-covenant.org) 1.4 版。
-適用 HTTPs://contributor-covenant.org/version/1/4 [](https://contributor-covenant.org/version/1/4/)
+適用 https://contributor-covenant.org/version/1/4 [&#128279;](https://contributor-covenant.org/version/1/4/)

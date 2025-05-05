@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 您可以學習哪些內容
 
-此實作教學課程逐步介紹使用 [!DNL Adobe Acrobat Services] SDK [及其Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) 將這些功能新增至工作張貼網站的Node.js範例。 這會建立網站，方便使用，而且對求職者和求職者都更具吸引力。 以下是[完整的](https://github.com/contentlab-io/adobe_job_posting)[項目代碼](https://github.com/contentlab-io/adobe_job_posting)，以防您在閱讀時遵循。
+此實作教學課程逐步介紹使用 [!DNL Adobe Acrobat Services] SDK [及其Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) 將這些功能新增至工作張貼網站的Node.js範例。 這會建立網站，方便使用，而且對求職者和求職者都更具吸引力。 以下是[完整的](https://github.com/contentlab-io/adobe_job_posting) [項目代碼](https://github.com/contentlab-io/adobe_job_posting)，以防您在閱讀時遵循。
 
 首先，請設定簡單的 Express 架構Node.js網頁應用程式。 [Express](https://expressjs.com/) 是極簡主義的網頁應用程式架構，提供路由和範本等功能。 應用程式的程式代碼可在 GitHub 上 [使用](https://github.com/contentlab-io/adobe_job_posting)。 此外，請安裝 [PostgreSQL 資料庫](https://www.postgresql.org/) 並將其設定為儲存 PDF。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 建立Adobe API認證
 
-首先，您必須[建立Adobe PDF嵌入API的認證](https://www.adobe.com/go/dcsdks_credentials) （免費使用） 和 Adobe PDF Services API （6 個月免費，然後[](https://developer.adobe.com/document-services/pricing/main)按您付費，每份檔交易只要 \$0.05）。API建立 PDF Services 認證時，請選取「建立個人化程式代碼範例」選項。 儲存 ZIP 檔案並解壓縮 pdftools-api-credentials.json，然後將private.key到 Node.js Express 專案的根目錄。
+首先，您必須[建立Adobe PDF嵌入API的認證](https://www.adobe.com/go/dcsdks_credentials) （免費使用） 和 Adobe PDF Services API （6 個月免費，然後[&#128279;](https://developer.adobe.com/document-services/pricing/main)按您付費，每份檔交易只要 \$0.05）。API建立 PDF Services 認證時，請選取「建立個人化程式代碼範例」選項。 儲存 ZIP 檔案並解壓縮 pdftools-api-credentials.json，然後將private.key到 Node.js Express 專案的根目錄。
 
 您也需要可自由使用的內嵌API API鍵。 從 [專案](https://developer.adobe.com/console/projects)，移至您建立的專案。 然後，按一下 **「新增至專案」** ，然後選取 **「API」**。 最後，按兩下 **「PDF 嵌入」API**。
 

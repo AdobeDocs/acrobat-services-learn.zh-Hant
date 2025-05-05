@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 項目設定
 
-首先，為應用程式設定資料夾結構。 您可以在這裡](https://github.com/agavitalis/AdobeDocumentAPI.git)擷取源碼[。
+首先，為應用程式設定資料夾結構。 您可以在這裡[&#128279;](https://github.com/agavitalis/AdobeDocumentAPI.git)擷取源碼。
 
 ## 目錄結構
 
@@ -135,19 +135,19 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 這些 API 透過一套雲端網路服務自動產生、控制和轉換 PDF 內容。
 
-若要取得註冊及完成工作流程所需的[](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)認證。PDF 內嵌API可供免費使用。 PDF 服務API和文件產生API六個月免費。 試用結束時，您只需[](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，每份檔交易只要 0.05 美元。您只需隨著公司成長而付費，並且處理更多合約。
+若要取得註冊及完成工作流程所需的[&#128279;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)認證。PDF 內嵌API可供免費使用。 PDF 服務API和文件產生API六個月免費。 試用結束時，您只需[&#128279;](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，每份檔交易只要 0.05 美元。您只需隨著公司成長而付費，並且處理更多合約。
 
 ![建立認證的螢幕擷圖](assets/searching_1.png)
 
 完成註冊后，程式代碼範例會下載到您的計算機，其中包含您的API認證。 擷取此程式代碼範例，並將private.key和pdftools-api-credentials.json檔案放置在應用程式的根目錄。
 
-現在，使用應用程式根目錄中的終端機執行命令，即可Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) ` npm install --save @adobe/documentservices-pdftools-node-sdk ` 安裝 [PDF Services。
+現在，使用應用程式根目錄中的終端機執行命令，即可Node.js SDK[&#128279;](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) ` npm install --save @adobe/documentservices-pdftools-node-sdk ` 安裝 PDF Services。
 
 ## 建立 PDF
 
 [!DNL Acrobat Services] 支援從 Microsoft Office 檔 （Word、Excel 和 PowerPoint） 建立 PDF，以及其他 [支援的檔格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) ，例如 .txt、.rtf、.bmp、.jpg、.gif、.tiff 和 .png。
 
-若要從支援的檔案格式建立 PDF 檔，請使用此表單來上傳檔。 您可以在 GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) 上[存取表格的 HTML 和 CSS 檔案。
+若要從支援的檔案格式建立 PDF 檔，請使用此表單來上傳檔。 您可以在 GitHub[&#128279;](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) 上存取表格的 HTML 和 CSS 檔案。
 
 ![網頁窗體的螢幕擷圖](assets/searching_2.png)
 
@@ -361,7 +361,7 @@ module.exports = mongoose.model("document", DocumentSchema);
 
 現在您可以實作簡單的搜尋功能，讓使用者執行一些簡單的文字搜尋。 您也可以新增下載功能來啟用 PDF 檔案的下載。
 
-此功能需要簡單的表單和卡片才能顯示搜尋結果。 您可以在 GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) 上[找到表格和卡片的設計。
+此功能需要簡單的表單和卡片才能顯示搜尋結果。 您可以在 GitHub[&#128279;](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) 上找到表格和卡片的設計。
 
 下方的螢幕擷圖會說明搜尋功能和搜尋結果。 您可以下載任何搜尋結果。
 
@@ -431,4 +431,4 @@ res.download(download.link);
 既然您已十分瞭解如何使用 [!DNL Acrobat Services] API，便可進一步發揮實務技能。 您可以仿製此教學課程所使用的儲存庫，並嘗試一些您剛學到的技能。 更進一步，您可以嘗試重建此應用程式，同時探索 API 的 [!DNL Acrobat Services] 無限可能。
 
 準備好在自己的應用程式中啟用檔共享和審核了嗎？ 註冊您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-開發人員帳戶。 享受六個月免費試用，然後[](https://developer.adobe.com/document-services/pricing/main)隨著業務成長，以每份檔交易只要 \$0.05 付費。
+開發人員帳戶。 享受六個月免費試用，然後[&#128279;](https://developer.adobe.com/document-services/pricing/main)隨著業務成長，以每份檔交易只要 \$0.05 付費。

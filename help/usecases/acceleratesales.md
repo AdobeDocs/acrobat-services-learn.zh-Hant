@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ## 將基本標籤新增至檔
 
-本案例會使用可在此下載的[](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true)「銷售訂單」檔。
+本案例會使用可在此下載的[&#128279;](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true)「銷售訂單」檔。
 
 ![銷售訂單範例文件螢幕擷圖](assets/accsales_3.png)
 
@@ -188,7 +188,7 @@ ht-degree: 0%
 1. 在「選取計算類型」下&#x200B;*[!UICONTROL 方，選擇&#x200B;**[!UICONTROL 「匯總」]**。]*
 1. 在「選取類型」下&#x200B;*[!UICONTROL 方，選擇「**[!UICONTROL 加總」]**。]*
 1. 在「選取記錄」下&#x200B;*[!UICONTROL 方，選擇&#x200B;**[!UICONTROL 「參考排序」]**。]*
-1. 在「*[!UICONTROL 選取要執行匯總]的專案」**下方，選擇 **[!UICONTROL totalPaymentsDue.price]**。
+1. 在「*[!UICONTROL 選取要執行匯總]的專案」**下方，選擇 &#x200B;** [!UICONTROL totalPaymentsDue.price]**。
 1. 選取「 **[!UICONTROL 插入計算」]**。
 
 此程式會插入計算標籤，以提供值總和。 您可以使用 JSONata 計算進行更進階計算。 例如：

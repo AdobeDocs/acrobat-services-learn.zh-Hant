@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 您可以學習哪些內容
 
-在此實作教學課程中，探索在檔中產生自定義輸入欄位中的 API](https://developer.adobe.com/document-services/apis/doc-generation) 功能[[!DNL Adobe Acrobat Services] 。同時，探索如何輕鬆將這些產生的文件轉換為受保護的可攜式檔格式 （PDF），以防止數據處理。
+在此實作教學課程中，探索在檔中產生自定義輸入欄位中的 API[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation) 功能[!DNL Adobe Acrobat Services] 。同時，探索如何輕鬆將這些產生的文件轉換為受保護的可攜式檔格式 （PDF），以防止數據處理。
 
 探索將合約轉換為 PDF 時，本教學課程包含一些程序設計。 若要有效Microsoft作， [請在計算機上安裝 Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx) 和 [Node.js](https://nodejs.org/) 。 也建議您基本瞭解Node.js和 [ES6語法](https://www.w3schools.com/js/js_es6.asp) 。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 建立範本檔
 
-您可以使用 Microsoft Word 應用程式或下載Adobe的 [Word 範](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)例來建立法律檔。 不過，不需使用 Adobe Document Generation Tagger 載](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)入巨集 （[針對 Microsoft Word） 使用輔助工具，就不容易自定義輸入內容並進行數字簽署。
+您可以使用 Microsoft Word 應用程式或下載Adobe的 [Word 範](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)例來建立法律檔。 不過，不需使用 Adobe Document Generation Tagger 載[&#128279;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)入巨集 （針對 Microsoft Word） 使用輔助工具，就不容易自定義輸入內容並進行數字簽署。
 
 Document Generation Tagger 是 Microsoft Word 載入巨集，專為使用標籤使檔自定義作業順暢進行。 其可在文件範本中建立動態字段，並以 JSON 數據動態填滿。
 
@@ -75,7 +75,7 @@ Document Generation Tagger 是 Microsoft Word 載入巨集，專為使用標籤�
 
 ![Word 中 Adobe Document Generation Tagger 載入巨集的螢幕擷圖](assets/legal_2.png)
 
-這會顯示引導您的影片。 您可以觀看或直接前往標記字段，方法是按兩下 **開始使用**。 按兩下開始使用&#x200B;****&#x200B;後，上傳窗體會隨即顯示。單擊 **「上傳 JSON 檔案** 」，然後選取您剛建立的 JSON 檔案。 讀入完成後，按兩下 **「產生標籤** 」產生標籤。
+這會顯示引導您的影片。 您可以觀看或直接前往標記字段，方法是按兩下 **開始使用**。 按兩下開始使用&#x200B;**&#x200B;**&#x200B;後，上傳窗體會隨即顯示。單擊 **「上傳 JSON 檔案** 」，然後選取您剛建立的 JSON 檔案。 讀入完成後，按兩下 **「產生標籤** 」產生標籤。
 
 在匯入併產生標籤后，您可以將這些標籤新增至檔。 若要新增游標，請將游標放在您希望標籤出現的確切位置。 然後從「文件產生」標籤API，然後按下「 **插入文字」**。 下方的螢幕擷取會概述此程式。
 
@@ -99,7 +99,7 @@ Document Generation Tagger 是 Microsoft Word 載入巨集，專為使用標籤�
 
 ## 項目設定
 
-首先，設定 Node.js 應用程式的檔案夾結構。 在此範例中，請呼叫這個簡單的應用程式 AdobeLegalContractAPI。 您可以在這裡](https://github.com/agavitalis/adobe_legal_contracts.git)擷取源碼[。
+首先，設定 Node.js 應用程式的檔案夾結構。 在此範例中，請呼叫這個簡單的應用程式 AdobeLegalContractAPI。 您可以在這裡[&#128279;](https://github.com/agavitalis/adobe_legal_contracts.git)擷取源碼。
 
 ### 目錄結構
 
@@ -175,7 +175,7 @@ npm install express body-parser morgan multer hbs path config mongoose
 
 在這些代碼段中，您安裝了應用程式相依性，包括檢視的「控制欄」範本引擎。
 
-此教學課程的主要重點在於使用 [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/) 將檔案轉換為 PDF。 因此，建立此Node.js應用程式的步驟不成問題。 不過，您可以在 GitHub](https://github.com/agavitalis/adobe_legal_contracts.git) 上[擷取完整的工作Node.js應用程式代碼。
+此教學課程的主要重點在於使用 [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/) 將檔案轉換為 PDF。 因此，建立此Node.js應用程式的步驟不成問題。 不過，您可以在 GitHub[&#128279;](https://github.com/agavitalis/adobe_legal_contracts.git) 上擷取完整的工作Node.js應用程式代碼。
 
 ## 將 API 整合 [!DNL Adobe Acrobat Services] 至Node.js應用程式
 
@@ -203,7 +203,7 @@ Adobe檔產生API啟用轉換為 Word 檔案或 PDF。 例如，您可以使用 
 
 若要使用可用的檔案格式來建立 PDF 檔案，您可使用以下格式上傳檔，以便使用 [!DNL Acrobat Services]。
 
-所設計上傳表格會顯示在下方的螢幕擷取畫面中，您可以在 GitHub](https://github.com/agavitalis/adobe_legal_contracts.git) 上[存取 HTML 和 CSS 檔案。
+所設計上傳表格會顯示在下方的螢幕擷取畫面中，您可以在 GitHub[&#128279;](https://github.com/agavitalis/adobe_legal_contracts.git) 上存取 HTML 和 CSS 檔案。
 
 ![窗體上傳的螢幕擷圖](assets/legal_7.png)
 
@@ -284,7 +284,7 @@ module.exports = { createPDF, createPDFPost };
 
 這些功能會將已轉換的 PDF 檔案儲存在檢視/輸出目錄中，您可以將檔案下載到電腦。
 
-您也可以使用免費的 PDF 內嵌API來預覽已轉換的 PDF 檔案。 使用 PDF 內嵌 API，您可以在這裡](https://www.adobe.com/go/dcsdks_credentials)產生 Adobe 認證 [（與您的[!DNL Acrobat Services]認證不同），並註冊允許的網域以存取 API。請依照程式作，併為您的應用程式產生 PDF 內嵌API認證。 您也可以在這裡觀看示範 [，您可以從中](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)輕鬆產生程序代碼，快速入門。
+您也可以使用免費的 PDF 內嵌API來預覽已轉換的 PDF 檔案。 使用 PDF 內嵌 API，您可以在這裡[&#128279;](https://www.adobe.com/go/dcsdks_credentials)產生 Adobe 認證 （與您的[!DNL Acrobat Services]認證不同），並註冊允許的網域以存取 API。請依照程式作，併為您的應用程式產生 PDF 內嵌API認證。 您也可以在這裡觀看示範 [，您可以從中](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)輕鬆產生程序代碼，快速入門。
 
 返回應用程式，在應用程式的檢視檔案夾中建立 list.hbs 和 preview.hbs 檔案，然後分別將下方的代碼段貼到 list.hbs 和 preview.hbs 檔案中。
 

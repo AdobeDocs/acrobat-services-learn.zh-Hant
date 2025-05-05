@@ -84,9 +84,9 @@ ht-degree: 0%
 
 1. 按兩下 **[!UICONTROL 導開始使用]** 列中的「開始使用」。
 
-   您可以在具有 API 開始使用中&#x200B;**看到一個選項，以**&#x200B;建立新認證或&#x200B;**管理現有認證****。** [!DNL Acrobat Services]
+   您可以在具有 API 開始使用中&#x200B;**看到一個選項，以**&#x200B;建立新認證或&#x200B;**管理現有認證**&#x200B;**。** [!DNL Acrobat Services]
 
-1. 按兩下&#x200B;**[!UICONTROL 「建立新認證」下方**[!UICONTROL &#x200B;的「]**開始使用」]**&#x200B;按鈕。
+1. 按兩下&#x200B;**[!UICONTROL 「建立新認證」下方**&#x200B;[!UICONTROL &#x200B;的「]&#x200B;**開始使用」]**&#x200B;按鈕。
 
    ![開始使用按鈕屏幕擷圖](assets/ControlPDF_2.png)
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ### 取得練習代碼
 
-我們建立了可供您使用的程序代碼。 雖然您可以使用自己的程序代碼，但示範將會採用教學課程資源的情境。 在此](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下載範例代碼[。
+我們建立了可供您使用的程序代碼。 雖然您可以使用自己的程序代碼，但示範將會採用教學課程資源的情境。 在此[&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下載範例代碼。
 
 1. 前往 [[!DNL Adobe Acrobat Services] 網站](https://developer.adobe.com/document-services/homepage/)。
 

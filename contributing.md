@@ -15,7 +15,7 @@ ht-degree: 0%
 
 本專案遵循Adobe [ 行為 ](code-of-conduct.md) 準則。 參與、
 您應遵守本程式碼。 如有不可接受的行為，請向
-[ ](mailto:Grp-opensourceoffice@adobe.com) Grp-opensourceoffice@adobe.com。
+[&#128279;](mailto:Grp-opensourceoffice@adobe.com) Grp-opensourceoffice@adobe.com。
 
 ## 貢獻者指南檔
 

@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 產生API認證
 
-先註冊「Adobe PDF服務」API免費試用版。 前往 Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 網站，然後按兩下&#x200B;*「建立新認證」下方*&#x200B;的「*開始使用」*&#x200B;按鈕。[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [免費試用版提供 1,000 筆檔交易，可在 6 個月內使用。 在下一頁 （請參閱下方） 中選擇服務 （PDF Services API），設定認證名稱 （例如 HRDocumentWFCredentials），然後輸入說明。
+先註冊「Adobe PDF服務」API免費試用版。 前往 Adobe[&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 網站，然後按兩下&#x200B;*「建立新認證」下方*&#x200B;的「*開始使用」*&#x200B;按鈕。[&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 免費試用版提供 1,000 筆檔交易，可在 6 個月內使用。 在下一頁 （請參閱下方） 中選擇服務 （PDF Services API），設定認證名稱 （例如 HRDocumentWFCredentials），然後輸入說明。
 
 選取語言 （此範例為 Java），然後勾選 *「建立個人化程式代碼範例」*。 最後一個步驟可確保程式碼範例已包含您所使用的預先填入pdftools-api-credentials.json檔案，以及要在API中驗證應用程式的私鑰。
 
@@ -394,7 +394,7 @@ public void downloadContract(HttpServletResponse response)
 
 在 Adobe Sign 入口網站中 [建立 CLIENT 應用程式](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 
-依照此處](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述[，為應用程式設定 OAuth。記下您的用戶端識別碼和客戶端密碼。 然後，您可以作為 `https://www.google.com` 重新導向 URI 和下列範圍：
+依照此處[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述，為應用程式設定 OAuth。記下您的用戶端識別碼和客戶端密碼。 然後，您可以作為 `https://www.google.com` 重新導向 URI 和下列範圍：
 
 * user_login：self
 

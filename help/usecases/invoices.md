@@ -21,7 +21,7 @@ ht-degree: 0%
 
 當業務蓬勃發展，但是在準備所有發票時，生產效率卻下降，這很好。 手動產生發票非常耗時，而且您還可能會面臨錯誤、可能損失金錢或以錯誤金額憤怒客戶的風險。
 
-例如，Danielle 在一家醫療供應公司的](https://developer.adobe.com/document-services/use-cases/financial/invoices)會計部門[](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作[。這是月底，因此她從多個不同的系統中提取資訊，再次檢查資訊的準確性，並設定發票格式。 在完成所有工作之後，她終於準備好將檔轉換為 PDF （如此一來，任何人都可以檢視檔而不購買特定軟體），並將他們的個人化發票傳送給每位客戶。
+例如，Danielle 在一家醫療供應公司的[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)會計部門[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作。這是月底，因此她從多個不同的系統中提取資訊，再次檢查資訊的準確性，並設定發票格式。 在完成所有工作之後，她終於準備好將檔轉換為 PDF （如此一來，任何人都可以檢視檔而不購買特定軟體），並將他們的個人化發票傳送給每位客戶。
 
 即使每月開信已完成，Danielle 也無法逸出這些發票。 有些客戶的帳單週期不是月，所以她總是為某人建立發票。 客戶有時會編輯發票並欠款。 Danielle 接著耗費時間疑難解答此發票不相匹配的問題。 在這個速率下，她需要聘雇助理來跟進所有工作！
 
@@ -31,7 +31,7 @@ Danielle 需要一種快速準確地產生發票的方法，無論是在月底�
 
 在此實作教學課程中，瞭解如何使用 Adobe 產生檔API自動產生發票、以密碼保護 PDF，以及向每位客戶傳送發票。 只需要對 Node.js、JavaScript、Express.js、HTML 和 CSS 略知一下。
 
-GitHub](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation) 提供此專案的[完整程序代碼。您必須使用範本和 Raw 資料資料資料夾來設定公開目錄。 在生產中，您必須從外部API擷取數據。 您也可以探索這個應用程式的封存版本，其中包含範本資源。
+GitHub[&#128279;](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation) 提供此專案的完整程序代碼。您必須使用範本和 Raw 資料資料資料夾來設定公開目錄。 在生產中，您必須從外部API擷取數據。 您也可以探索這個應用程式的封存版本，其中包含範本資源。
 
 ## 相關 API 和資源
 
@@ -87,7 +87,7 @@ Adobe檔產生API預期會有Microsoft Word 型範本和 JSON 檔建立動態 PD
 
 在您的 Microsoft Word 檔內，開始撰寫發票範本。 離開您必須插入動態數據的游標，然後從Adobe載入巨集視窗中選取標籤。 按兩下 **「插入文字** 」，這樣Adobe文件產生Tagger載入巨集就可以產生和插入標籤。 若要進行個人化，讓我們插入客戶名稱和電子郵件。
 
-現在，繼續處理每張新發票所變更的數據。 選取&#x200B;****&#x200B;載入巨集的「進階」索引標籤。若要查看根據客戶訂購的產品產生動態表格的可用選項，請按兩下「 **表格和清單」** 。
+現在，繼續處理每張新發票所變更的數據。 選取&#x200B;**&#x200B;**&#x200B;載入巨集的「進階」索引標籤。若要查看根據客戶訂購的產品產生動態表格的可用選項，請按兩下「 **表格和清單」** 。
 
 從第一個下拉式清單中選 **取「順序** 」。 在第二個下拉式清單中，選取此表格的欄。 在此教學課程中，選取物件演算表格的所有三欄。
 
@@ -224,7 +224,7 @@ async function applyPassword(password, inputFile, outputFile) {
 
 ## 後續步驟
 
-在此實作教學課程中，您建立了一個簡單應用程式，協助 Danielle 進行開信](https://developer.adobe.com/document-services/use-cases/financial/invoices)處理[。使用 PDF Services API 和 Document Generation SDK，您會用 JSON 檔中的客戶訂單資訊填入Microsoft Word 範本，建立 PDF 發票。 然後，使用 PDF Services 的密碼保護服務 [API以密碼保護每份](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)檔。
+在此實作教學課程中，您建立了一個簡單應用程式，協助 Danielle 進行開信[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)處理。使用 PDF Services API 和 Document Generation SDK，您會用 JSON 檔中的客戶訂單資訊填入Microsoft Word 範本，建立 PDF 發票。 然後，使用 PDF Services 的密碼保護服務 [API以密碼保護每份](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)檔。
 
 Danielle 可以自動產生發票，而且不必擔心客戶會編輯發票，她就不需要僱用助理來協助手動工作。 她可利用自己的額外時間，在帳戶中節省應付檔案的費用。
 

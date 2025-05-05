@@ -21,7 +21,7 @@ ht-degree: 0%
 
 銷售提案是企業贏取客戶旅程的第一步。 就像一切一樣，第一印象是最後。 因此，您與客戶的第一次互動會設定他們對您的業務的期望。 您的提案必須簡潔、準確且方便。
 
-合約和提案在其文件結構中包含不同類型的數據。 它們包含動態數據 （用戶端名稱、報價量等等） 和靜態數據 （如公司功能、團隊基本數據和標準 SOW 條款）。 建立範本檔 （例如銷售提案） 通常涉及單調的工作，例如手動取代樣板範本中的項目細節。 在此教學課程中，您可以使用動態數據和工作流程，建立有效的銷售提案](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)建立程式[。
+合約和提案在其文件結構中包含不同類型的數據。 它們包含動態數據 （用戶端名稱、報價量等等） 和靜態數據 （如公司功能、團隊基本數據和標準 SOW 條款）。 建立範本檔 （例如銷售提案） 通常涉及單調的工作，例如手動取代樣板範本中的項目細節。 在此教學課程中，您可以使用動態數據和工作流程，建立有效的銷售提案[&#128279;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)建立程式。
 
 ## 您可以學習哪些內容
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 現在您已安裝工具，就可以開始解決問題。 這些提案具有每位客戶特有的靜態內容和動態內容。 瓶頸會發生，因為每次提交建議時，兩種數據類型都是必要的。 輸入靜態文字非常耗時，因此您將自動執行該文字，並且只能手動處理來自每個客戶端的動態數據。
 
-首先，在 Microsoft Forms](https://www.office.com/launch/forms?auth=1) （或您偏好的表格建立器） 中[建立數據擷取表單。此表單適用於新增至銷售方案的用戶端動態數據。 填寫此表單時會提出問題，向客戶取得所需的詳細數據，例如：公司名稱、日期、位址、專案範圍、定價和其他註釋。 若要建立自己的表單，請使用此 [窗體] （https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy）。 目標是讓潛在用戶端填寫窗體，然後將其回應匯出為 JSON 檔案，這些檔案會傳遞至工作流程的下一部分。
+首先，在 Microsoft Forms[&#128279;](https://www.office.com/launch/forms?auth=1) （或您偏好的表格建立器） 中建立數據擷取表單。此表單適用於新增至銷售方案的用戶端動態數據。 填寫此表單時會提出問題，向客戶取得所需的詳細數據，例如：公司名稱、日期、位址、專案範圍、定價和其他註釋。 若要建立自己的表單，請使用此 [窗體] （https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy）。 目標是讓潛在用戶端填寫窗體，然後將其回應匯出為 JSON 檔案，這些檔案會傳遞至工作流程的下一部分。
 
-有些表單指定只能讓您將數據匯出為CSV檔案。 因此，您可能會發現將產生的CSV檔案轉換](http://csvjson.com/csv2json)為 JSON 檔案很有用[。
+有些表單指定只能讓您將數據匯出為CSV檔案。 因此，您可能會發現將產生的CSV檔案轉換[&#128279;](http://csvjson.com/csv2json)為 JSON 檔案很有用。
 
 靜態數據會在每一個銷售提案中重複使用。 因此，您可以使用 Microsoft Word 中的銷售提案範本來提供靜態文字。 您可以使用此 [範本，但您可以建立自己的範本](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)或使用 [Adobe範本](https://developer.adobe.com/document-services/apis/doc-generation)。
 
@@ -145,4 +145,4 @@ console.log('Exception encountered while executing operation', err);
 
 使用「Microsoft窗體」時，您的客戶會收到重要數據，這些數據會包含在其獨特的提案中。 您在 Microsoft Word 中建立了銷售提案範本，以提供您每次都不想重新建立的靜態文字。 然後，您使用 [!DNL Acrobat Services] API 合併來自表單和範本的數據，以更有效率的方式為客戶建立銷售提案 PDF。
 
-此實作教學課程僅能一窺這些 API 是否可行。 若要探索更多解決方案，請造 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 訪 API 頁面。 所有工具均可免費使用 6 個月。 然後，根據「現成付費」計劃，每份檔只需[](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，因此您只需隨著團隊增加更多潛在客戶而付費至銷售管線。
+此實作教學課程僅能一窺這些 API 是否可行。 若要探索更多解決方案，請造 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 訪 API 頁面。 所有工具均可免費使用 6 個月。 然後，根據「現成付費」計劃，每份檔只需[&#128279;](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，因此您只需隨著團隊增加更多潛在客戶而付費至銷售管線。

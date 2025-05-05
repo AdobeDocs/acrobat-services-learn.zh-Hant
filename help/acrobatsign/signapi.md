@@ -198,7 +198,7 @@ Adobe Sign可讓您建立不同的流程來準備檔以供簽署或收集數據�
 
 ![Acrobat簽署表格編寫環境的螢幕擷圖](assets/GSASAPI_4.png)
 
-編輯器可讓您拖放文字和簽名字段。 新增所有必要欄位后，即可調整字段大小及對齊以修飾表單。 最後，按兩下「儲存&#x200B;****」以建立表格。
+編輯器可讓您拖放文字和簽名字段。 新增所有必要欄位后，即可調整字段大小及對齊以修飾表單。 最後，按兩下「儲存&#x200B;**&#x200B;**」以建立表格。
 
 ![已新增表單域的Acrobat Sign 表格編寫環境螢幕擷圖](assets/GSASAPI_5.png)
 
@@ -238,7 +238,7 @@ overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
 
 ![簽名螢幕擷圖](assets/GSASAPI_10.png)
 
-當使用者按兩下「套&#x200B;****&#x200B;用」時，Adobe指示他們開啟電子郵件並確認簽名。在確認到達之前，簽名會持續等待。
+當使用者按兩下「套&#x200B;**&#x200B;**&#x200B;用」時，Adobe指示他們開啟電子郵件並確認簽名。在確認到達之前，簽名會持續等待。
 
 ![再執行一個步驟的螢幕擷圖](assets/GSASAPI_11.png)
 
@@ -276,7 +276,7 @@ Company Name","","","2021-03-07 19:32:59"
 
 將文件傳送給指定的收件者進行簽署或核准會建立合約。 您可以使用 API 追蹤狀態和合約完成。
 
-您可以使用[暫時性檔、[資料庫檔](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL來建立合約。此範例中，合約是以合約為基礎 `transientDocumentId`，就像先前建立的網頁窗體一樣。
+您可以使用[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)暫時性檔、[資料庫檔](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)或URL來建立合約。此範例中，合約是以合約為基礎 `transientDocumentId`，就像先前建立的網頁窗體一樣。
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -434,9 +434,9 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 Acrobat Sign API可讓您管理檔、網頁表單和合約。 使用網頁表單和合約所建立的簡化但完整的工作流程會以一般方式完成，供開發人員使用任何語言實作。
 
-如需 Sign API運作方式的概覽，請參閱API使用開發人員指南](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/api_usage.md)中的[範例。本檔內含有關整篇文章所遵循許多步驟的簡短文章，以及其他相關主題。
+如需 Sign API運作方式的概覽，請參閱API使用開發人員指南[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/api_usage.md)中的範例。本檔內含有關整篇文章所遵循許多步驟的簡短文章，以及其他相關主題。
 
-Acrobat Sign API可透過多個單一和多使用者電子簽名計畫](https://acrobat.adobe.com/tw/zh-Hant/sign/pricing/plans.html)層級[取得，因此您可以選擇最符合您需求的價格模型。既然您知道將 Sign API整合到應用程式中有多麼簡單，您可能對其他功能感興趣，例如 [推播式程式模型 Acrobat Sign Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)。 Webhook 可讓您註冊 HTTP Acrobat URL，讓 Sign API 在發生事件時執行POST回呼要求，而不必要求您的應用程式經常執行檢查。 Webhook 透過即時和即時更新為您的應用程式提供支援，以支援強大的程序設計。
+Acrobat Sign API可透過多個單一和多使用者電子簽名計畫[&#128279;](https://acrobat.adobe.com/tw/zh-Hant/sign/pricing/plans.html)層級取得，因此您可以選擇最符合您需求的價格模型。既然您知道將 Sign API整合到應用程式中有多麼簡單，您可能對其他功能感興趣，例如 [推播式程式模型 Acrobat Sign Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)。 Webhook 可讓您註冊 HTTP Acrobat URL，讓 Sign API 在發生事件時執行POST回呼要求，而不必要求您的應用程式經常執行檢查。 Webhook 透過即時和即時更新為您的應用程式提供支援，以支援強大的程序設計。
 
 查看六個月免費Adobe PDF [服務API試用期結束后的按即付費價格](https://developer.adobe.com/document-services/pricing/main)，以及免費的Adobe PDF內嵌API。
 

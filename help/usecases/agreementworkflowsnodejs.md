@@ -294,7 +294,7 @@ combineOperation.execute(executionContext)
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-您需要的最後一個程式代碼位是載入內嵌Adobe PDF API JavaScript後顯示檔的功能。 當您收到透過 adobe_dc_view\_sdk.ready 事件載入腳本的通知時，請建立新的 AdobeDC.View 物件。 此物件需要您的用戶端 ID 和先前建立之元素的 ID。 在 Adobe Developer](https://developer.adobe.com/console/) Console 中[尋找您的用戶端 ID。當您檢視您先前建立認證時所建立的應用程式的設定時，會顯示用戶端 ID。
+您需要的最後一個程式代碼位是載入內嵌Adobe PDF API JavaScript後顯示檔的功能。 當您收到透過 adobe_dc_view\_sdk.ready 事件載入腳本的通知時，請建立新的 AdobeDC.View 物件。 此物件需要您的用戶端 ID 和先前建立之元素的 ID。 在 Adobe Developer[&#128279;](https://developer.adobe.com/console/) Console 中尋找您的用戶端 ID。當您檢視您先前建立認證時所建立的應用程式的設定時，會顯示用戶端 ID。
 
 ![API用戶端金鑰的影像](assets/AWNjs_6.png)
 

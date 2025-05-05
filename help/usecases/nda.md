@@ -77,7 +77,7 @@ Microsoft Word 範本取決於 JSON 模型，所以請先建立該範本。 在�
 
 您可以將免費的 [Document Generation Tagger 載入巨集](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) 安裝至 Microsoft Word。 如果您屬於組織，您可以要求您的 Microsoft Office 管理員為所有人安裝免費載入巨集。
 
-安裝載入巨集後，您可以在「首頁」索引標籤下方的「Adobe」類別中找到載入巨集。 若要開啟索引標籤，請選取&#x200B;****「產生檔」：
+安裝載入巨集後，您可以在「首頁」索引標籤下方的「Adobe」類別中找到載入巨集。 若要開啟索引標籤，請選取&#x200B;**&#x200B;**「產生檔」：
 
 ![Word 中「文件產生」載入巨集的螢幕擷圖](assets/nda_1.png)
 
@@ -93,7 +93,7 @@ Microsoft Word 範本取決於 JSON 模型，所以請先建立該範本。 在�
 
 ## 建立標籤
 
-隨意建立範本或將現有範本](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)匯[入 Microsoft Word。在您設定檔后，按兩下載入巨集中的對應字元，即可將標籤新增至每個欄位。
+隨意建立範本或將現有範本[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)匯入 Microsoft Word。在您設定檔后，按兩下載入巨集中的對應字元，即可將標籤新增至每個欄位。
 
 Microsoft Word 檔案中的下列範本：
 
@@ -181,7 +181,7 @@ res.status(500).render("crash", { error: error });
 
 [!DNL Adobe Acrobat Services] API 會插入內容以建立 PDF 檔。 如果沒有這些工具，您可能需要編寫程式代碼來處理 Office 檔，並使用原始 PDF 檔案格式。 透過「Adobe PDF服務」的協助，您可以透過單API呼叫來執行所有這些步驟。
 
-現在使用 [Adobe Sign API](https://developer.adobe.com/adobesign-api/) 來請求 NDA 的簽名，並將最終的已簽署檔傳送給所有相關方。 Adobe Sign使用 Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md) 通知您[。聽此 Webhook 的話，您可以摻取 NDA 的狀態。
+現在使用 [Adobe Sign API](https://developer.adobe.com/adobesign-api/) 來請求 NDA 的簽名，並將最終的已簽署檔傳送給所有相關方。 Adobe Sign使用 Webhook[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md) 通知您。聽此 Webhook 的話，您可以摻取 NDA 的狀態。
 
 如需對Adobe Sign程式的更深入說明， [請參閱檔](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) 或閱讀此深入部落格文章。
 
@@ -190,4 +190,4 @@ res.status(500).render("crash", { error: error });
 在此實作教學課程中，使用 Adobe Document Generation Tagger 以使用 Microsoft Word 範本和 JSON 數據檔動態產生 PDF 檔。 載入巨集協助 [自動建立為每一方自定義的 NDA](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation) ，然後使用 Sign 收集簽名API。
 
 您可以使用這些技術動態建立您自己的 NDA 或其他檔，讓團隊有時間專注於高效率的工作。 探索 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services) 尋找適合您語言和所選運行時間的 API 和 SDK，以便您可以將 PDF 功能直接新增到應用程式，以快速建立 PDF 檔。 [立即開始](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)六個月免費試用
-[](https://developer.adobe.com/document-services/pricing/main)每次檔交易只要 $0.05 即可直接付費。
+[&#128279;](https://developer.adobe.com/document-services/pricing/main)每次檔交易只要 $0.05 即可直接付費。

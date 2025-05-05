@@ -330,7 +330,7 @@ app.get( "/download/:file", function( req, res ){
 
 ## 儲存檔回饋
 
-使用者對文件發表評論后，他們按兩下「儲存 **」。**&#x200B;依預設，按一下「儲存&#x200B;****」會下載更新後的 PDF 檔案。變更此動作以更新伺服器上目前的 PDF 檔案。
+使用者對文件發表評論后，他們按兩下「儲存 **」。**&#x200B;依預設，按一下「儲存&#x200B;**&#x200B;**」會下載更新後的 PDF 檔案。變更此動作以更新伺服器上目前的 PDF 檔案。
 
 `/save`在上傳/草稿資料夾中，將端點新增至覆寫 PDF 檔案的伺服器程式代碼：
 
@@ -443,7 +443,7 @@ PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles作，�
 
 ## 後續步驟
 
-本實作教學課程展示了 API 如何[!DNL Acrobat Services]將檔共享和審核工作流程](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)整合[到網頁應用程式中。此應用程式可讓遠端工作人員共用檔案並與團隊成員共同作業，這對在家工作的員工和承包商特別有説明。
+本實作教學課程展示了 API 如何[!DNL Acrobat Services]將檔共享和審核工作流程[&#128279;](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)整合到網頁應用程式中。此應用程式可讓遠端工作人員共用檔案並與團隊成員共同作業，這對在家工作的員工和承包商特別有説明。
 
 您可以使用這些技術在您的應用程式中啟用共同作業，或探索 [PDF Services Node SDK 範例](https://github.com/adobe/pdftools-node-sdk-samples) 和 [PDF 內嵌API在 GitHub 上的範](https://github.com/adobe/pdf-embed-api-samples) 例，以獲得關於如何使用 Adobe API 的靈感。
 

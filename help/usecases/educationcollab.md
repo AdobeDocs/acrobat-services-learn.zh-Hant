@@ -21,7 +21,7 @@ ht-degree: 0%
 
 教育機構使用 PDF 檔與學生共用學習數據。 PDF 為教師提供可互換的檔格式。
 
-將[Adobe PDF服務API和[內](https://developer.adobe.com/document-services/apis/pdf-services)嵌Adobe PDF內嵌API](https://developer.adobe.com/document-services/apis/pdf-embed)整合到應用程式中，為師生提供了一個教學與學習的單一平臺。例如，您的應用程式可讓學生對其作業和報表提出問題，以及共同處理群組作業。
+將[&#128279;](https://developer.adobe.com/document-services/apis/pdf-embed)Adobe PDF服務API和[內](https://developer.adobe.com/document-services/apis/pdf-services)嵌Adobe PDF內嵌API整合到應用程式中，為師生提供了一個教學與學習的單一平臺。例如，您的應用程式可讓學生對其作業和報表提出問題，以及共同處理群組作業。
 
 系統會正式提供 SDK，讓Node.js存取 PDF Services API。 這可讓您將 Microsoft Word 或 Microsoft Excel 等文件轉換為
 PDF格式。 此外，您還可以執行更進階的作業，例如合併多個報告、重新排列頁面以及保護 PDF。 如需詳細資訊，請參閱 [產品檔](https://developer.adobe.com/document-services/homepage/)。
@@ -163,7 +163,7 @@ PDF 內嵌API使用的認證與 PDF Services API不同，因此您必須 [建立
 
 在上面的螢幕擷取中，使用者被標示為「訪客」，但您可以為使用者（例如學生和教師） 設定基本數據。
 
-當學生套用批注時，PDF 內嵌API會沿著上方橫幅顯示「 **儲存** 」按鈕。 儲存會將批註新增至檔案。 嘗試單擊「儲存&#x200B;****」，查看檔案在報告中內嵌批注的儲存方式。
+當學生套用批注時，PDF 內嵌API會沿著上方橫幅顯示「 **儲存** 」按鈕。 儲存會將批註新增至檔案。 嘗試單擊「儲存&#x200B;**&#x200B;**」，查看檔案在報告中內嵌批注的儲存方式。
 
 學生可以使用批注來提出問題或分享他們對學習材料的評論。
 
@@ -211,8 +211,8 @@ var adobeDCView = new AdobeDC.View({
 
 ## 後續步驟
 
-此實作教學課程檢視了如何使用 PDF Services API 和 PDF 內嵌API建立學習入口網站，促進學生與教師](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)之間的有效[共同作業。透過這個入口網站，教師可以上傳任何格式的學習數據，並使用 PDF Services 將學習數據轉換為 PDF API。 然後，學生就可以使用 PDF 內嵌API來預覽這些 PDF。
+此實作教學課程檢視了如何使用 PDF Services API 和 PDF 內嵌API建立學習入口網站，促進學生與教師[&#128279;](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)之間的有效共同作業。透過這個入口網站，教師可以上傳任何格式的學習數據，並使用 PDF Services 將學習數據轉換為 PDF API。 然後，學生就可以使用 PDF 內嵌API來預覽這些 PDF。
 
 現在您已經知道如何為 PDF 報告加上批注、封存批注並追蹤 PDF 報告的使用，您可以在自己的專案中開始實作這些解決方案。
 
-您可以使用 [!DNL Adobe Acrobat Services] API 在您的網站上建立使用者友好型的互動式 PDF 體驗。 享受免費使用 Adobe PDF Services API 6 個月，然後只需[](https://developer.adobe.com/document-services/pricing/main)付費 （透過 AWS 或直接合約），每份檔交易只要 \$0.05。免費使用Adobe PDF嵌入」，且沒有時間限制。 建立免費帳戶以 [立即開始](https://www.adobe.com/go/dcsdks_credentials) 使用。
+您可以使用 [!DNL Adobe Acrobat Services] API 在您的網站上建立使用者友好型的互動式 PDF 體驗。 享受免費使用 Adobe PDF Services API 6 個月，然後只需[&#128279;](https://developer.adobe.com/document-services/pricing/main)付費 （透過 AWS 或直接合約），每份檔交易只要 \$0.05。免費使用Adobe PDF嵌入」，且沒有時間限制。 建立免費帳戶以 [立即開始](https://www.adobe.com/go/dcsdks_credentials) 使用。
