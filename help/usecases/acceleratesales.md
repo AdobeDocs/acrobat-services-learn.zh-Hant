@@ -1,6 +1,6 @@
 ---
-title: 加速銷售流程
-description: 瞭解如何整合文件體驗以加速銷售 [!DNL Adobe Acrobat Services]
+title: 加快銷售流程
+description: 瞭解如何通過將文檔體驗與 [!DNL Adobe Acrobat Services]整合來加快銷售
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,50 +8,51 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
-# 加速銷售流程
+# 加快銷售流程
 
-![使用案例主打橫幅](assets/UseCaseAccelerateSalesHero.jpg)
+![使用案例英雄橫幅](assets/UseCaseAccelerateSalesHero.jpg)
 
-從白皮書到合約，整個購買旅程中需要大量檔。 在此教學課程中，瞭解如何 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/) 整合整個旅程中的文件體驗，以協助加速銷售。
+從白皮書到合同和協定，在整個購買過程中都需要大量文檔。 在本教程中，瞭解[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/)如何在整個過程中整合文檔體驗，以幫助加快銷售。
 
-## 從數據產生合約和銷售訂單
+## 根據資料生成協定和銷售訂單
 
-根據特定標準，銷售合約、合約和其他文件差異很大。 例如，銷售合約可能僅包含以獨特範例為基礎的特定條款，例如位於特定國家/地區或狀態，或是合約中包含某些產品。 手動建立這些檔或維護許多不同的範本版本，可顯著提高與手動審核變更相關的法律費用。
+銷售協定、合同和其他文檔可能會因特定標準而有很大差異。 例如，銷售協定可能只包括基於唯一標準的某些條款，例如位於特定國家或州，或包括某些產品作為協定的一部分。 手動建立這些文檔或維護許多不同的模板變體會顯著增加與手動複查更改相關的法律成本。
 
-[Adobe檔產生API](https://developer.adobe.com/document-services/apis/doc-generation/) 可讓您從CRM或其他數據系統獲取數據，根據該數據動態產生銷售檔。
+[Adobe文檔生成API](https://developer.adobe.com/document-services/apis/doc-generation/)允許您從CRM或其他資料系統獲取資料，以基於該資料動態生成銷售文檔。
 
-## 取得認證
+## 獲取憑據
 
-首先，註冊免費Adobe PDF服務認證：
+首先註冊免費Adobe PDF服務憑據：
 
-1. 流覽 [這裡](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 以註冊您的認證。
-1. 使用您的Adobe ID登入。
-1. 設定您的認證名稱 （例如「銷售合約示範」）。
+1. 在[此處](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)導航以註冊您的憑據。
+1. 使用您的Adobe ID登錄。
+1. 設定憑據名稱（例如，銷售協定演示）。
 
-   ![設定認證名稱的螢幕擷圖](assets/accsales_1.png)
+   ![設定憑據名稱的螢幕快照](assets/accsales_1.png)
 
-1. 選擇一種語言來下載您的範例程式代碼 （例如Node.js）。
-1. 核取「同意 **[!UICONTROL 開發人員條款」]**。
-1. 選取 **[!UICONTROL 「建立認證」]**。檔案隨即下載至您的計算機，其中包含範例檔案、pdfservices-api-credentials.json和private.key以進行驗證。
+1. 選擇下載示例代碼的語言（例如Node.js）。
+1. 檢查以同意&#x200B;**[!UICONTROL 開發人員條款]**。
+1. 選擇&#x200B;**[!UICONTROL 建立憑據]**。
+將檔案下載到您的電腦，其ZIP檔案包含用於驗證的示例檔案、pdfservices-api-credentials.json和private.key。
 
-   ![認證螢幕擷圖](assets/accsales_2.png)
+   ![憑據螢幕快照](assets/accsales_2.png)
 
-1. 選 **[!UICONTROL 取「取得 Microsoft Word」載入宏]** ，或前往 [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) 進行安裝。
+1. 選擇&#x200B;**[!UICONTROL 獲取MicrosoftWord載入項]**&#x200B;或轉到[AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654)進行安裝。
 
    >[!NOTE]
    >
-   >若要安裝 Word 載入宏，您必須在 Microsoft 365 內取得安裝載入宏的許可權。 如果您沒有許可權，請聯絡您的Microsoft 365 管理員。
+   >安裝Word載入項需要您有權在Microsoft365中安裝載入項。 如果您沒有權限，請與您的Microsoft365管理員聯繫。
 
-## 您的數據
+## 您的資料
 
-如果您是從特定數據系統提取數據，則必須將該資料輸出為 JSON 數據，或者產生您自己的結構。 此案例會使用預先建立的範例數據集：
+如果從特定資料系統提取資料，則必須將該資料輸出為JSON資料或生成您自己的架構。 此方案使用以下預先建立的示例資料集：
 
 ```
 {
@@ -107,29 +108,29 @@ ht-degree: 0%
 }
 ```
 
-## 將基本標籤新增至檔
+## 將基本標籤添加到文檔
 
-本案例會使用可在此下載的[&#128279;](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true)「銷售訂單」檔。
+此方案使用銷售訂單文檔，可以在[此處下載](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true)。
 
-![銷售訂單範例文件螢幕擷圖](assets/accsales_3.png)
+![示例銷售訂單文檔的螢幕快照](assets/accsales_3.png)
 
-1. 在 *Microsoft* Word 中開啟SalesOrder.docx範例檔。
-1. 如果您已安裝「檔案產生」外掛程式，請選 **[!UICONTROL 取功能區中的檔案產生]** 。 如果您的功能區未顯示「文件產生」，請依照下列指示操作。
-1. 選 **[!UICONTROL 取開始使用]**。
-1. 將上方寫入的 JSON 範例資料複製到 *JSON 數據* 欄位。
+1. 在MicrosoftWord中開啟&#x200B;*SalesOrder.docx*&#x200B;示例文檔。
+1. 如果已安裝文檔生成插件，請在功能區中選擇&#x200B;**[!UICONTROL 文檔生成]**。 如果您在功能區中未看到「文檔生成」，請按照以下說明操作。
+1. 選擇&#x200B;**[!UICONTROL 開始]**。
+1. 將上面寫入的JSON示例資料複製到&#x200B;*JSON資料*&#x200B;欄位。
 
-   ![複製 JSON 資料的螢幕擷圖](assets/accsales_4.png)
+   ![複製JSON資料的螢幕快照](assets/accsales_4.png)
 
-接著，導覽至「檔世代記錄器」面板，將標籤放入檔中。
+接下來，導航到「文檔生成標籤」面板，將標籤放入文檔。
 
-1. 選取您要取代的文字 （例如 *「公司名稱」*）。
-1. 在「 *檔案產生塔格」* 面板中，搜尋「名稱」。
-1. 在標籤清單中，選取公司底下的名稱。
-1. 選取「 **[!UICONTROL 插入文字」]**。
+1. 選擇要替換的文本（例如，*公司名稱*）。
+1. 在&#x200B;*文檔生成標籤*&#x200B;面板中，搜索「名稱」。
+1. 在標籤清單中，選擇「公司」下的名稱。
+1. 選擇&#x200B;**[!UICONTROL 插入文本]**。
 
-   ![插入標籤的螢幕擷圖](assets/accsales_5.png)
+   ![插入標籤的螢幕快照](assets/accsales_5.png)
 
-   這個程式會放置一個叫做標籤， {{company.name}} 因為該標籤位於 JSON 中的路徑下方。
+   此進程放置名為`{{company.name}}`的標籤，因為該標籤位於JSON中的路徑下。
 
    ```
    {
@@ -142,151 +143,152 @@ ht-degree: 0%
    }
    ```
 
-針對檔中的某些其他標籤重複這些動作，例如：「市集」、「城市」、「州立」、「ZIP」等。
+對文檔中的某些附加標籤重複這些操作，如STREET ADDRESS、CITY、STATE、ZIP等。
 
-## 預覽產生的檔
+## 預覽生成的文檔
 
-您可以直接在 Microsoft Word 內，根據範例 JSON 數據預覽產生的檔。
+直接在MicrosoftWord中，您可以基於示例JSON資料預覽生成的文檔。
 
-1. 在「 *檔案產生記錄器」* 面板中，選取「 **[!UICONTROL 產生檔」]**。 第一次系統會提示您使用Adobe ID登入。 選 **[!UICONTROL 取「登入]** 」並填寫提示，以使用您的認證登入。
+1. 在&#x200B;*文檔生成標籤*&#x200B;面板中，選擇&#x200B;**[!UICONTROL 生成文檔]**。 第一次可能會提示您登錄您的Adobe ID。 選擇&#x200B;**[!UICONTROL 登錄]**，並完成提示以使用您的憑據登錄。
 
-   ![如何預覽所產生文件的螢幕擷圖](assets/accsales_6.png)
+   ![如何預覽生成的文檔的螢幕快照](assets/accsales_6.png)
 
-1. 選取「檢視 **[!UICONTROL 檔」]**。
+1. 選擇&#x200B;**[!UICONTROL 查看文檔]**。
 
-   ![檢視檔案按鈕的螢幕擷圖](assets/accsales_7.png)
+   ![「查看文檔」按鈕的螢幕截圖](assets/accsales_7.png)
 
-1. 瀏覽器視窗會隨即開啟，讓您預覽文件結果。
+1. 將開啟一個瀏覽器窗口，允許您預覽文檔結果。
 
-   ![瀏覽器視窗中的文件螢幕擷圖](assets/accsales_8.png)
+   ![瀏覽器窗口中文檔的螢幕快照](assets/accsales_8.png)
 
-您可以在檔案中看到已由原始範例數據資料取代的標籤。
+您可以看到文檔中用原始示例資料中的資料替換的標籤。
 
-![用數據取代標籤的螢幕擷圖](assets/accsales_9.png)
+![用資料替換的標籤螢幕快照](assets/accsales_9.png)
 
-## 將表格新增至範本
+## 將表添加到模板
 
-在下一個狀況中，將產品清單新增至檔中的表格。
+在下一個方案中，將產品清單添加到文檔中的表中。
 
-1. 插入必須放置表格的游標。
-1. 在「 *文件產生記錄器」* 面板中，選取「進 **[!UICONTROL 階」]**。
-1. 展開 **[!UICONTROL 表格和清單]**。
-1. 在「 *表格」記錄* 欄位中，選取 *參考排序*，這是列出所有產品項目的陣列。
-1. 在「選取欄記錄」欄位中，輸入以包含 *描述* 和 *totalPaymentDue.price* 字段。
-1. 選取 **[!UICONTROL 「插入」表格]**。
+1. 將游標插入必須放置表的位置。
+1. 在&#x200B;*文檔生成標籤*&#x200B;面板中，選擇&#x200B;**[!UICONTROL 高級]**。
+1. 展開&#x200B;**[!UICONTROL 表和清單]**。
+1. 在&#x200B;*表記錄*&#x200B;欄位中，選擇&#x200B;*referencesOrder*，該陣列列出所有產品項。
+1. 在「選擇列記錄」欄位中，鍵入以包括&#x200B;*描述*&#x200B;和&#x200B;*totalPaymentDue.price*&#x200B;欄位。
+1. 選擇&#x200B;**[!UICONTROL 插入表]**。
 
-   ![插入表格的螢幕擷圖](assets/accsales_10.png)
+   ![插入表的螢幕快照](assets/accsales_10.png)
 
-編輯表格即可像在 word 中使用任何其他表格一樣，針對樣式、大小和其他參數 Microsoft進行調整。
+編輯表格以調整樣式、大小和其他參數，就像您在MicrosoftWord中調整其它任何表格一樣。
 
-## 新增數值計算
+## 添加數值計算
 
-數字計算可讓您根據資料集合 （例如數位語列） 計算總和和其他計算。 在此情況下，請新增欄位以計算子數據。
+數值計算允許您根據資料集合（如陣列）計算總和和其他計算。 在此方案中，添加一個欄位以計算小計。
 
-1. 選取 *子檔案標題旁的 $0.00* 。
-1. 在「 *[!UICONTROL 檔案產生工具」面板中]* ，展開 **[!UICONTROL 數值計算]**。
-1. 在「選取計算類型」下&#x200B;*[!UICONTROL 方，選擇&#x200B;**[!UICONTROL 「匯總」]**。]*
-1. 在「選取類型」下&#x200B;*[!UICONTROL 方，選擇「**[!UICONTROL 加總」]**。]*
-1. 在「選取記錄」下&#x200B;*[!UICONTROL 方，選擇&#x200B;**[!UICONTROL 「參考排序」]**。]*
-1. 在「*[!UICONTROL 選取要執行匯總]的專案」**下方，選擇 &#x200B;** [!UICONTROL totalPaymentsDue.price]**。
-1. 選取「 **[!UICONTROL 插入計算」]**。
+1. 選擇小計標題旁的&#x200B;*$0.00*。
+1. 在&#x200B;*[!UICONTROL 文檔生成標籤]*&#x200B;面板中，展開&#x200B;**[!UICONTROL 數值計算]**。
+1. 在&#x200B;*[!UICONTROL 選擇計算類型]*&#x200B;下，選擇&#x200B;**[!UICONTROL 聚合]**。
+1. 在&#x200B;*[!UICONTROL 選擇類型]*&#x200B;下，選擇&#x200B;**[!UICONTROL 總和]**。
+1. 在&#x200B;*[!UICONTROL 選擇記錄]*&#x200B;下，選擇&#x200B;**[!UICONTROL ReferencesOrder]**。
+1. 在*[!UICONTROL 選擇要執行聚合的項]**下，選擇&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
+1. 選擇&#x200B;**[!UICONTROL 插入計算]**。
 
-此程式會插入計算標籤，以提供值總和。 您可以使用 JSONata 計算進行更進階計算。 例如：
+此過程插入一個計算標籤，該標籤提供值之和。 可以使用JSONata計算進行更高級的計算。 例如：
 
 * 小計： `${{expr($sum(referencesOrder.totalPaymentDue.price))}}`
-計算 referenceOrder.totalPaymentDue.price 的總和。
+計算referencesOrder.totalPaymentDue.price的總和。
 
-* 營業稅： `${{expr($sum(referencesOrder.totalPaymentDue.price)*0.08)}}`
-計算價格，再乘以 8% 計算稅金。
+* 銷售稅： `${{expr($sum(referencesOrder.totalPaymentDue.price)*0.08)}}`
+計算價格並乘以8%計算稅。
 
-* 到期總計： `${{expr($sum(referencesOrder.totalPaymentDue.price)*1.08)}}`
-將價格和倍數計算為 1.08，以計算分期 + 稅金。
+* 到期總數： `${{expr($sum(referencesOrder.totalPaymentDue.price)*1.08)}}`
+按1.08計算價格和倍數，以計算小計+稅。
 
-## 新增條件條款
+## 添加條件術語
 
-條件區段只允許您在符合特定條件時包含句子或段落。 在這種情況下，僅包含一個區段 （如果符合特定狀態）。
+條件部分允許您僅在滿足特定條件時包含句子或段落。 在此方案中，只有某個節與某個狀態匹配時，才包括該節。
 
-1. 在檔中找到名為 CALIFORNIA PRIVACY STATEMENTS 的&#x200B;**&#x200B;區段。
-1. 使用游標選取區段。
+1. 在文檔中，查找名為&#x200B;*CALIFORNIA PRIVACY STATEMENTS*&#x200B;的部分。
+1. 使用游標選擇節。
 
-   ![選取範圍的螢幕擷圖](assets/accsales_11.png)
+   ![所選內容的螢幕快照](assets/accsales_11.png)
 
-1. 在「 *[!UICONTROL 文件產生記錄器」]*&#x200B;中，選取「進 **[!UICONTROL 階」]**。
-1. 擴充 **[!UICONTROL 條件式內容]**。
-1. 在「 *[!UICONTROL 選取記錄」]* 字段中，搜尋並選取 **[!UICONTROL customer.address.state]**。
-1. 在「 *[!UICONTROL 選取運算元」]* 字段中，選取 **=**。
-1. 在「 *[!UICONTROL 值」欄位中]*，輸入 *CA*。
-1. 選取「 **[!UICONTROL 插入條件」]**。
+1. 在&#x200B;*[!UICONTROL 文檔生成標誌符]*&#x200B;中，選擇&#x200B;**[!UICONTROL 高級]**。
+1. 展開&#x200B;**[!UICONTROL 條件內容]**。
+1. 在&#x200B;*[!UICONTROL 選擇記錄]*&#x200B;欄位中，搜索並選擇&#x200B;**[!UICONTROL customer.address.state]**。
+1. 在&#x200B;*[!UICONTROL 選擇運算子]*&#x200B;欄位中，選擇&#x200B;**=**。
+1. 在&#x200B;*[!UICONTROL 值欄位]*&#x200B;中，鍵入&#x200B;*CA*。
+1. 選擇&#x200B;**[!UICONTROL 插入條件]**。
 
-如果 customer.address.state = CA，「加州」區段只會顯示在產生的檔中。
+如果customer.address.state = CA，則California節僅出現在生成的文檔中。
 
-接著，選取「WASHINGTON 隱私權聲明」區段，然後重複上述步驟，以 WA 取代 CA 值。
+接下來，為WASHINGTON PRIVACY STATEMENTS選擇該部分，並重複上述步驟，將值CA替換為WA。
 
-## 新增動態影像
+## 添加動態映像
 
-檔產生API可讓您動態地從數據插入影像。 當您有不同的子品牌，並且想要變更標誌、肖像影像或影像，使其更符合特定產業的相關性時，這很有用。
+文檔生成API允許您動態地從資料中插入影像。 如果您有不同的子品牌，並且您希望更改徽標、肖像影像或影像，以使它們與特定行業更相關，則此功能非常有用。
 
-影像可透過數據或base64內容中的URL傳遞。 本範例使用URL。
+影像可以通過資料或base64內容中的URL傳遞。 此示例使用URL。
 
-1. 將游標放在要包含影像的位置。
-1. 在「 *[!UICONTROL 文件產生記錄器」]* 面板中，選取「進 **[!UICONTROL 階」]**。
-1. 展開 **[!UICONTROL 影像]**。
-1. 在「 *[!UICONTROL 選取標籤」]* 欄位中，選擇 **[!UICONTROL 標誌]**。
-1. 在 *[!UICONTROL 「選擇性替換文字]* 」欄位中，提供描述 （亦即標誌）。 此程式會插入如下所示的影像佔位元：
+1. 將游標置於要包含影像的位置。
+1. 在&#x200B;*[!UICONTROL 文檔生成標籤]*&#x200B;面板中，選擇&#x200B;**[!UICONTROL 高級]**。
+1. 展開&#x200B;**[!UICONTROL 映像]**。
+1. 在&#x200B;*[!UICONTROL 選擇標籤]*&#x200B;欄位中，選擇&#x200B;**[!UICONTROL 徽標]**。
+1. 在&#x200B;*[!UICONTROL 可選替代文本]*&#x200B;欄位中，提供說明（即徽標）。 此過程將插入一個如下所示的影像佔位符：
 
-   ![佔位元影像的螢幕擷圖](assets/accsales_12.png)
+   ![佔位符影像的螢幕快照](assets/accsales_12.png)
 
-不過，您想要在已在版面中的影像上動態設定影像，您可以執行以下操作：
+但是，您希望動態地在佈局中已存在的映像上設定映像，您可以通過以下方式來執行此操作：
 
-1. 在插入的佔位元影像上按下滑鼠右鍵。
+1. 按一下右鍵插入的佔位符影像。
 
-   ![佔位元影像的螢幕擷圖](assets/accsales_13.png)
+   ![佔位符影像的螢幕快照](assets/accsales_13.png)
 
-1. 選取 **[!UICONTROL 「編輯替換文字」]**。
-1. 在面板中，複製如下所示的文字：
+1. 選擇&#x200B;**[!UICONTROL 編輯Alt文本]**。
+1. 在面板中，複製如下所示的文本：
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
-1. 在您的文件中選擇要成為動態影像的影像。
+1. 在文檔中選擇要動態的其他影像。
 
-   ![檔中新影像的螢幕擷圖](assets/accsales_14.png)
+   ![文檔中新影像的螢幕快照](assets/accsales_14.png)
 
-1. 在影像上按下滑鼠右鍵，然後選取「 **[!UICONTROL 編輯替換文字」]**。
-1. 將值貼入面板中。
+1. 按一下右鍵該影像，然後選擇&#x200B;**[!UICONTROL 編輯替代文字]**。
+1. 將值貼上到面板中。
 
-此程式會將影像替換為數據中標誌變數中的影像。
+此過程用資料中徽標變數中的影像替換影像。
 
-## 新增 Acrobat Sign 標籤
+## 為Acrobat Sign添加標籤
 
-Adobe Acrobat Sign 可讓您擷取檔上的電子簽名。 Acrobat Sign 可讓您輕鬆地在網頁介面中拖放欄位，但也可以使用「文字標籤」控制簽名和其他字段位置。 您可以使用 Adobe 產生 Tagger 檔，輕鬆放置這些文字卷標字段。
+Adobe Acrobat Sign允許您在文檔上捕獲電子簽名。 Acrobat Sign提供了在web介面中拖放欄位的簡單方法，但您也可以使用文本標籤來控制簽名和其他欄位的放置。 使用Adobe文檔生成標籤符，可以輕鬆放置這些文本標籤欄位。
 
-1. 導覽至範例檔中需要簽名的位置。
-1. 在需要簽名的位置插入游標。
-1. 在「Adobe *[!UICONTROL 世代記錄器]* 」面板中，選 **[!UICONTROL 取「Adobe Sign]**」。
-1. 在「 *[!UICONTROL 指定收件者數目]* 」字段中，設定收件者數量 （此範例即為單一）。
-1. 在「 *[!UICONTROL 收件者」欄位中]* ，選取 **[!UICONTROL 「簽署者-1」]**。
-1. 在「欄 *[!UICONTROL 位]* 」類型中，選取「 **[!UICONTROL 簽名」]**。
-1. 選取 **[!UICONTROL 「插入Adobe Sign文字標籤」]**。
+1. 導航到示例文檔中需要簽名的位置。
+1. 在需要簽名的地方插入游標。
+1. 在&#x200B;*[!UICONTROL Adobe文檔生成標籤]*&#x200B;面板中，選擇&#x200B;**[!UICONTROL Adobe Sign]**。
+1. 在&#x200B;*[!UICONTROL 指定收件人數]*&#x200B;欄位中，設定收件人數（在此示例中為1）。
+1. 在&#x200B;*[!UICONTROL 收件人]*&#x200B;欄位中，選擇&#x200B;**[!UICONTROL 簽名者–1]**。
+1. 在&#x200B;*[!UICONTROL 欄位]*&#x200B;類型中，選擇&#x200B;**[!UICONTROL 簽名]**。
+1. 選擇&#x200B;**[!UICONTROL 插入Adobe Sign文本標籤]**。
 
-標籤會插入檔中。
+標籤被插入文檔。
 
-![檔中簽名標籤的螢幕擷圖](assets/accsales_15.png)
+![文檔中籤名標籤的螢幕快照](assets/accsales_15.png)
 
-Acrobat Sign 提供您可放置的其他幾種字段，例如日期字段。
-1. 在「欄 *位* 」類型中，選取「 **[!UICONTROL 日期」]**。
-1. 將游標移至檔中「日期」位置的上方。
-1. 選取 **[!UICONTROL 「插入Adobe Sign文字標籤」]**。
+Acrobat Sign提供了可以放置的其他幾種類型的欄位，如日期欄位。
 
-![檔中日期標籤的螢幕擷圖](assets/accsales_16.png)
+1. 在&#x200B;*欄位*&#x200B;類型中，選擇&#x200B;**[!UICONTROL 日期]**。
+1. 將游標移到文檔中的「日期」位置上方。
+1. 選擇&#x200B;**[!UICONTROL 插入Adobe Sign文本標籤]**。
 
-## 產生您的合約
+![文檔中日期標籤的螢幕快照](assets/accsales_16.png)
 
-您現在已為檔加上標籤，準備就緒。 下一節將逐步瞭解如何使用「文件產生」API為Node.js產生檔範例，但這些範例將適用於任何語言。
+## 生成協定
 
-開啟註冊認證時下載的 pdfservices-node-sdk-samples-master。 這些檔案中應包含pdfservices-api-credentials.json和private.key檔案。
+您現在已標籤文檔，並準備開始使用。 下一節介紹如何使用Node.js的文檔生成API示例生成文檔，但這些示例將以任何語言使用。
 
-1. 開啟「終端機」，使用 npm install 安裝相依性。
-1. 將範例data.json複製到資源資料夾中。
-1. 將 Word 樣本複製到資源資料夾。
-1. 在名為 generate-salesOrder.js 的範例檔案夾的根目錄中建立一個新的檔案。
+開啟註冊憑據時下載的pdfservices-node-sdk-samples-master。 這些檔案中應包含pdfservices-api-credentials.json和private.key檔案。
+
+1. 開啟終端以使用npm install安裝依賴項。
+1. 將示例data.json複製到資源資料夾中。
+1. 將Word模板複製到資源資料夾中。
+1. 在示例資料夾的根目錄中建立名為generate-salesOrder.js的新檔案。
 
 ```
 const PDFServicesSdk = require('@adobe/pdfservices-node-sdk');
@@ -335,42 +337,42 @@ documentMergeOperation.execute(executionContext)
 });
 ```
 
-1. 以 /resources 中的 JSON 檔案名稱取代 `<INSERT JSON FILE>` 。
-1. 以 DOCX 檔案的名稱取代 `<INSERT DOCX>` 。
-1. 若要執行，請使用「終端機」執行節點generate-salesOrder.js。
+1. 將`<INSERT JSON FILE>`替換為/resources中JSON檔案的名稱。
+1. 將`<INSERT DOCX>`替換為DOCX檔案的名稱。
+1. 要運行，請使用終端執行節點generate-salesOrder.js。
 
-輸出檔案應位於 /output 檔案夾，並正確產生檔。
+輸出檔案應位於/output資料夾中，並且文檔生成正確。
 
 ## 更多選項
 
-在產生檔案后，您可以採取其他動作，例如：
+生成文檔後，您可以執行其他操作，如：
 
-* 具密碼的安全檔
-* 如果有大型影像，請壓縮 PDF
-* 在檔上Capture電子簽名
+* 使用密碼保護文檔
+* 如果有大影像，則壓縮PDF
+* 捕獲文檔上的電子簽名
 
-若要深入瞭解其他可用的動作，請查看範例檔案中 /src 檔案夾中的腳本。 您也可以檢閱不同動作的檔，進一步瞭解。
+要瞭解有關其他可用操作的詳細資訊，請查看示例檔案/src資料夾中的指令碼。 您還可以通過查看不同操作的文檔來瞭解更多資訊。
 
 ## 其他使用案例
 
-[!DNL Adobe Acrobat Services] 透過數位檔工作流程，有助於簡化銷售週期的許多部分：
+[!DNL Adobe Acrobat Services]可通過數字文檔工作流幫助簡化銷售週期的許多部分：
 
-* 使用Adobe PDF嵌入API在網站上內嵌白皮書和其他內容，同時衡量和收集關於檢視情形的分析
-* 使用 Acrobat Sign 在產生的合約上擷取電子簽名
-* 使用 Adobe PDF Extract 擷取 PDF 檔中的合約數據API
+* 使用Adobe PDF嵌入API將白皮書和其他內容嵌入網站，同時測量並收集收視量上的分析
+* 使用Acrobat Sign捕獲您生成的協定的電子簽名
+* 使用Adobe PDF提取API從PDF文檔中提取協定資料
 
 ## 進一步學習
 
-有興趣瞭解更多資訊嗎？ 請參閱其他使用 [!DNL Adobe Acrobat Services]方式：
+有興趣學習更多內容嗎？ 請查看其他使用[!DNL Adobe Acrobat Services]的方法：
 
-* 進一步 [了解檔](https://developer.adobe.com/document-services/docs/overview/)
-* 觀看更多有關Adobe Experience League的教學課程
-* 使用 /src 檔案夾中的範例腳本，瞭解如何運用 PDF
-* 關注 [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) 瞭解最新的提示和秘訣
-* [訂閱「紙本剪輯片段」（每月直播串流），](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以瞭解如何使用 [!DNL Adobe Acrobat Services]。
-=======
-* 進一步 [了解檔](https://developer.adobe.com/document-services/docs/overview/)
-* 觀看更多有關Adobe Experience League的教學課程
-* 使用 /src 檔案夾中的範例腳本，瞭解如何運用 PDF
-* 關注 [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) 瞭解最新的提示和秘訣
-* [訂閱「紙本剪輯片段」（每月直播串流），](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以瞭解如何使用[!DNL Adobe Acrobat Services]
+* 從[文檔瞭解更多資訊](https://developer.adobe.com/document-services/docs/overview/)
+* 查看有關Adobe Experience League的更多教程
+* 使用/src資料夾中的示例指令碼查看如何利用PDF
+* 有關最新提示和技巧，請關注[Adobe技術部落格](https://medium.com/adobetech/tagged/adobe-document-cloud)
+* 訂閱[紙片剪輯（每月即時流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以瞭解使用[!DNL Adobe Acrobat Services]的自動化。
+======
+* 從[文檔瞭解更多資訊](https://developer.adobe.com/document-services/docs/overview/)
+* 查看有關Adobe Experience League的更多教程
+* 使用/src資料夾中的示例指令碼查看如何利用PDF
+* 有關最新提示和技巧，請關注[Adobe技術部落格](https://medium.com/adobetech/tagged/adobe-document-cloud)
+* 訂閱[紙片剪輯（每月即時流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以瞭解使用[!DNL Adobe Acrobat Services]的自動化

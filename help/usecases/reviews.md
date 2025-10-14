@@ -1,6 +1,6 @@
 ---
-title: 審核與核准
-description: 瞭解如何為跨團隊共同作業建立文件審核和核准工作流程
+title: 審閱和批准
+description: 瞭解如何構建文檔審閱和批准工作流以實現跨團隊協作
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,60 +8,60 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
 
 ---
 
-# 審核和核准
+# 審查和批准
 
-![使用案例主打橫幅](assets/UseCaseReviewsHero.jpg)
+![使用案例英雄橫幅](assets/UseCaseReviewsHero.jpg)
 
-在 COVID-19 疫情期間，許多公司需要進行遠端跨團隊協作， [共用和審核數位檔](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) 會為團隊和跨職能資源帶來一系列挑戰。
+在COVID-19大流行期間，許多公司都需要遠程跨團隊協作，[共用和審閱數字文檔](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)為團隊和跨職能資源帶來了一系列挑戰。
 
-這些挑戰包括以不同的檔格式共享檔、有效檢閱和註釋內容，以及與最近的編輯進行同步。 [!DNL Adobe Acrobat Services] API 的設計是為了讓應用程式開發人員為使用者解決這些挑戰。
+這些挑戰包括以不同的檔案格式共用文檔、有效地查看和注釋內容，以及與最近的編輯進行同步。 [!DNL Adobe Acrobat Services]個API旨在使應用程式開發人員能夠為其用戶解決這些難題。
 
-## 您可以學習哪些內容
+## 你能學到的
 
-此實作教學課程將說明如何在 Node.js 和 Express 網頁應用程式中建立文件審核和核准工作流程。 若要跟著這個教學課程學習，您需要一些Node.js體驗。
+本操作教程介紹如何在Node.js和Express Web應用程式中構建文檔審閱和批准工作流。 要繼續學完本教程，您需要一些Node.js的經驗。
 
-應用程式具有下列功能：
+該應用程式具有以下功能：
 
-* 將不同檔類型轉換為 PDF
+* 將不同的檔案類型轉換為PDF
 
-* 啟用檔案上傳
+* 啟用檔案上載
 
-* 讓用戶能夠新增註釋和批註
+* 使用戶能夠添加註釋和注釋
 
-* 在註釋中顯示 PDF
+* 顯示PDF和這些注釋
 
-* 啟用使用者配置檔以識別註釋作者
+* 啟用用戶配置檔案以標識注釋作者
 
-* 將檔案合併成用戶可下載的最終 PDF
+* 將檔案合併到用戶可下載的最終PDF中
 
-## 相關 API 和資源
+## 相關API和資源
 
-* [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF 嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [項目代碼](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
-## 建立Adobe API認證
+## 建立AdobeAPI憑據
 
-在啟動程式代碼之前，您必須 [為「嵌入API」和「Adobe PDF服務」API建立Adobe PDF認證](https://www.adobe.com/go/dcsdks_credentials) 。 PDF 內嵌API可供免費使用。 PDF Services API六個月免費使用，然後您就可以轉換為 [依即付費計劃](https://developer.adobe.com/document-services/pricing/main) ，每份檔交易只要 \$0.05。
+在啟動代碼之前，必須[為Adobe PDF嵌入API和Adobe PDF服務API建立憑據](https://www.adobe.com/go/dcsdks_credentials)。 PDF嵌入API可免費使用。 PDF服務API可免費使用6個月，然後您可以以每個文檔交易$0.05的價格切換到[按使用付費計畫](https://developer.adobe.com/document-services/pricing/main)。
 
-API建立 PDF 服務認證時，請選取「 **建立個人化程式代碼範例** 」選項，然後選取語言的Node.js。 儲存 ZIP 檔案並解壓縮 pdftools-api-credentials.json，然後將private.key到 Node.js Express 專案的根目錄。
+為PDF服務API建立憑據時，請選擇&#x200B;**建立個性化代碼示例**&#x200B;選項，然後為語言選擇Node.js。 保存ZIP檔案，並將pdftools-api-credentials.json和private.key解壓到Node.js Express項目的根目錄。
 
-## 設定專案和相依性
+## 設定項目和依賴項
 
-設定您的 Node.js 和 Express 專案，以便從名為「public」的資料夾中提供靜態檔案。 您可以根據自己的偏好設定專案方式。 若要快速開始使用，您可以使用 [Express 應用程式產生器](https://expressjs.com/en/starter/generator.html)。 或者，如果您想要讓事情保持簡單，您可以 [從頭](https://expressjs.com/en/starter/hello-world.html) 開始，將程式代碼保存在單一JavaScript檔案中。 在上述連結的範例專案中，您正在使用一個檔案的方法，並將您的所有程式代碼保留在index.js。
+設定Node.js和Express項目，以從名為「public」的資料夾中提供靜態檔案。 您可以根據首選項設定項目方式。 若要快速啟動並運行，可以使用[Express應用生成器](https://expressjs.com/en/starter/generator.html)。 或者，如果希望保持簡單，可以[從頭開始](https://expressjs.com/en/starter/hello-world.html)，並將代碼保留在單個JavaScript檔案中。 在上面連結的示例項目中，您正在使用單檔案方法，並將所有代碼保留在index.js中。
 
-`pdftools-api-credentials.json`將個人化程式代碼範例中的檔案和`private.key`檔案複製到專案的根目錄。此外，如果有 .gitignore 檔案，請將其新增至 .gitignore 檔案，這樣您的認證檔案就不會意外傳送至儲存庫。
+將`pdftools-api-credentials.json`和`private.key`檔案從個性化代碼示例複製到項目的根目錄。 另外，如果您有.gitignore檔案，請將其添加到該檔案中，這樣您的憑據檔案就不會意外發送到儲存庫。
 
-接下來，執行 `npm install @adobe/documentservices-pdftools-node-sdk` 以安裝適用於 PDF Services 的 Node.js SDK。 在其他相依性匯入后，匯入此模組，並在您的程式代碼內建立API認證物件 （在範例專案中index.js）：
+接下來，運行`npm install @adobe/documentservices-pdftools-node-sdk`以安裝Node.js SDK，用於PDF服務。 導入此模組並在代碼（示例項目中的index.js）內建立API憑據對象，其餘依賴項導入如下：
 
 ```
   const PDFToolsSdk = require( "@adobe/documentservices-pdftools-node-sdk" );
@@ -73,7 +73,7 @@ API建立 PDF 服務認證時，請選取「 **建立個人化程式代碼範例
       .build();
 ```
 
-您的起始程式代碼應如下所示：
+您的起始代碼應如下所示：
 
 ```
   
@@ -95,13 +95,13 @@ API建立 PDF 服務認證時，請選取「 **建立個人化程式代碼範例
   } );
 ```
 
-現在您可以使用 [!DNL Acrobat Services] API 了。
+現在，您已準備好使用[!DNL Acrobat Services]個API。
 
-## 將檔案轉換為 PDF
+## 將檔案轉換為PDF
 
-在檔工作流程的第一部分，用戶必須上傳要共享的檔。 若要啟用此功能，您可以新增上傳功能，並將不同檔檔格式合併到 PDF 中，為審核程式做準備。
+對於文檔工作流的第一部分，最終用戶必須上載要共用的文檔。 要啟用此功能，請添加一個上載函式，並將不同的文檔檔案格式合併到PDF中，以為審閱過程做好準備。
 
-首先，根據 [PDF Services API 的範例片段，建立將文件轉換為 PDF 的功能](https://developer.adobe.com/document-services/apis/pdf-services)。 此範例也顯示了許多其他重要功能的片段，包括光學字元識別 （OCR）、密碼保護和移除以及壓縮。
+首先建立函式，以根據PDF服務API[的](https://developer.adobe.com/document-services/apis/pdf-services)示例代碼段將文檔轉換為PDF。 此示例還顯示了許多其他重要功能的代碼段，包括光學字元識別(OCR)、密碼保護和刪除以及壓縮。
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -123,20 +123,20 @@ function fileToPDF( filename, outputFilename, callback ) {
   }
 ```
 
-您現在可以使用此功能，從已上傳的檔建立 PDF。
+現在，您可以使用此函式從上載的文檔建立PDF。
 
-## 處理檔案上傳
+## 處理檔案上載
 
-接下來，伺服器需要在網頁伺服器上上傳檔案端點，才能接收和處理檔。
+接下來，伺服器需要Web伺服器上的檔案上載終結點來接收和處理文檔。
 
-首先，在上傳檔案夾內建立一個檔案夾，並將其命名為「草稿」。 您可以將已上傳的檔案和轉換後的 PDF 檔案儲存在這裡。 接下來，執行 `npm install express-fileupload` 以安裝 Express-FileUpload 模組，並在程式代碼中將中間件新增至 Express：
+首先，在上載資料夾內建立一個資料夾並將其命名為「草稿」。 您將上載的檔案和轉換的PDF檔案儲存在此處。 接下來，運行`npm install express-fileupload`以安裝Express-FileUpload模組，並在代碼中將中間件添加到Express中：
 
 ```
 const fileUpload = require( "express-fileupload" );
 app.use( fileUpload() );
 ```
 
-現在，新增端 `/upload `點，然後使用相同的文件名將上傳的檔案儲存在 Drafts 檔案夾中。 然後，請呼叫您先前撰寫的功能，以建立同一份檔的 PDF 檔案 （如果尚未採用 PDF 格式）。 您可以根據上傳的原始檔案名稱產生新 PDF 檔案的檔案名稱：
+現在，添加`/upload`終結點，並使用相同的檔案名將上載的檔案保存在草稿資料夾中。 然後，調用您以前編寫的函式以建立同一文檔的PDF檔案(如果該文檔尚未採用PDF格式)。 您可以根據原始上載文檔的名稱為新PDF檔案生成檔案名：
 
 ```
 // Create a PDF file from an uploaded file
@@ -164,9 +164,9 @@ app.post( "/upload", ( req, res ) => {
 } );
 ```
 
-## 建立上傳頁面
+## 建立上載頁
 
-現在，若要從網頁應用程式上傳檔案，請在上傳檔案夾內建立 `index.html` 網頁。 在頁面上，新增檔案上傳表格，將檔案傳送至 /上傳端點：
+現在，要從Web應用程式上載檔案，請在上載資料夾內建立`index.html`個網頁。 在該頁上，添加一個檔案上載表單，該表單將檔案發送到/upload終結點：
 
 ```
 <form ref="uploadForm" 
@@ -178,17 +178,17 @@ app.post( "/upload", ( req, res ) => {
   </form>
 ```
 
-![網頁上傳檔案功能的螢幕擷圖](assets/reviews_1.png)
+![網頁上上載檔案功能的螢幕快照](assets/reviews_1.png)
 
-您現在可以將檔案上傳至 Node.js 伺服器。 伺服器會將檔案儲存在上傳/草稿資料夾內，並在檔案旁邊建立 PDF 格式版本。
+現在，您可以將文檔上載到Node.js伺服器。 伺服器將檔案保存在上載/草稿資料夾內，並在其旁邊建立PDF格式版本。
 
-您現在已準備好嵌入上傳的檔，所以請使用 PDF 內嵌API，讓使用者能夠輕鬆地將註釋和批註新增至檔。
+您現在已準備好嵌入已上載的文檔，因此使用PDF嵌入API使用戶能夠輕鬆地向文檔添加註釋和注釋。
 
-## 列舉 PDF 檔案
+## 枚舉PDF檔案
 
-一般檔工作流程可能涉及多個檔，因此您必須顯示檔案清單，並將每個檔案連結至應用程式中的新檔審核頁面。
+由於典型的文檔工作流可能涉及多個文檔，因此您必須顯示文檔清單並將每個文檔連結到應用程式中的新文檔審閱頁面。
 
-首先，在伺服器代碼內新增 /檔案端點，該端點會取得並傳回儲存在上傳/草稿檔案夾中的所有 PDF 檔案清單：
+首先，在伺服器代碼內添加一個/files終結點，該終結點獲取並返回儲存在上載/草稿資料夾中的所有PDF檔案的清單：
 
 ```
 const fs = require( "fs" );
@@ -210,11 +210,11 @@ return res.json( files.filter( f =\> f.endsWith( ".pdf" ) ) );
 } );
 ```
 
-`/download/:file`新增可存取已上傳 PDF 檔案的路徑，以便嵌入至網頁。
+添加`/download/:file`路由，該路由提供對上載的PDF檔案的訪問，以嵌入到網頁中。
 
 >[!NOTE]
 >
->在生產應用程式中，您必須新增驗證和授權，以確保要求來自有效的使用者，並允許使用者存取檔。
+>在生產應用程式中，必須添加身份驗證和授權以確保請求來自有效用戶，並且允許用戶訪問文檔。
 
 ```
 app.get( "/download/:file", function( req, res ){
@@ -223,11 +223,11 @@ app.get( "/download/:file", function( req, res ){
 });
 ```
 
-使用在載入時間填滿的檔案清單元素更新index.html頁面。 每個專案都可以連結至draft.html網頁，而且您會使用查詢字串參數將檔名傳遞至頁面。
+使用在載入時填充的檔案清單元素更新index.html頁。 每個項目都可以連結到draft.html網頁，並且您使用查詢字串參數將檔案名傳遞到頁面。
 
 >[!NOTE]
 >
->您可以使用 jQuery 附加每個專案，因此您必須在網頁上載入 jQuery 資料庫，或使用其他方法附加元素。
+>您使用jQuery追加每個項，因此必須將jQuery庫載入到網頁上，或使用其他方法追加元素。
 
 ```
   <ul id="filelist">
@@ -254,25 +254,25 @@ app.get( "/download/:file", function( req, res ){
   </script>
 ```
 
-![選取要審核的檔案的螢幕擷圖](assets/reviews_2.png)
+![選擇要查看的檔案的螢幕快照](assets/reviews_2.png)
 
-## 嵌入 PDF
+## 嵌入PDF
 
-您已準備好在網頁應用程式中內嵌入和顯示 PDF 檔案。
+您已準備好在Web應用程式中嵌入和顯示PDF檔案。
 
-建立名為「draft.html」的網頁，並在頁面上為嵌入的 PDF 新增 div 元素：
+建立名為&quot;draft.html&quot;的網頁，並在頁面上為嵌入式PDF添加div元素：
 
 ```
   <div id="adobe-dc-view"></div>
 ```
 
-包含資料庫 [!DNL Acrobat Services] ：
+包括[!DNL Acrobat Services]庫：
 
 ```
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-在自定義文本標籤中，從查詢字串參數剖析檔名，讓您知道要在頁面上嵌入哪個檔案：
+在自定義指令碼標籤內，從查詢字串參數中分析檔案名，以便知道要在頁面上嵌入哪個檔案：
 
 ```
   <script type="text/javascript">
@@ -281,7 +281,7 @@ app.get( "/download/:file", function( req, res ){
   </script>
 ```
 
-針對可將指定 PDF 檔案載入 div 元素內的內嵌檢視的 adobe_dc_view_sdk.ready 事件新增檔事件聽眾。 使用 PDF 內嵌API認證中的用戶端 ID。 您想要啟用註釋和批註，所以請將檢視嵌FULL_WINDOW模式，然後將 showAnnotationsTools 選項設為 true。
+為adobe_dc_view_sdk.ready事件添加文檔事件偵聽器，該事件將指定的PDF檔案載入到div元素內的嵌入式視圖中。 使用PDF嵌入API憑據中的客戶端ID。 您要啟用注釋和注釋，因此將視圖嵌入到FULL_WINDOW模式中，並將showAnnotationsTools選項設定為true。
 
 ```
   document.addEventListener( "adobe_dc_view_sdk.ready", () => { 
@@ -301,9 +301,9 @@ app.get( "/download/:file", function( req, res ){
   });
 ```
 
-## 建立使用者配置檔
+## 建立用戶配置檔案
 
-依預設，此檢視中的註釋和批註會顯示為「訪客」。 您可以將頁面代碼中的使用者基本數據回呼註冊至 PDF 檢視，以設定註釋和批註的目前審核者名稱。 以下是範例描述檔。 在包含使用者驗證的完整應用程式中，可透過這種方式設定登入使用者會話的配置檔資訊，以識別審核工作流程中檔的每個註釋者。
+預設情況下，注釋和注釋在此視圖中顯示為「來賓」。 通過在頁面代碼中將用戶配置檔案回調註冊到PDF視圖，可以設定注釋和注釋的當前審閱者名稱。 下面是一個示例配置檔案。 在包括用戶驗證的完整應用程式中，可以以這種方式設定登錄的用戶會話的配置檔案資訊，以標識審閱工作流中文檔的每個評論者。
 
 ```
   adobeDCView.registerCallback(
@@ -326,13 +326,13 @@ app.get( "/download/:file", function( req, res ){
   );
 ```
 
-當您使用此網頁看到任何已上傳的檔並加上批注時，您的配置檔會將您識別為特定使用者。
+當您查看並注釋使用此網頁上載的任何文檔時，您的配置檔案會將您標識為特定用戶。
 
-## 儲存檔回饋
+## 保存文檔反饋
 
-使用者對文件發表評論后，他們按兩下「儲存 **」。**&#x200B;依預設，按一下「儲存&#x200B;**&#x200B;**」會下載更新後的 PDF 檔案。變更此動作以更新伺服器上目前的 PDF 檔案。
+在用戶對文檔發表評論後，他們按一下&#x200B;**「保存」。**&#x200B;預設情況下，按一下&#x200B;**保存**&#x200B;將下載更新的PDF檔案。 更改此操作以更新伺服器上的當前PDF檔案。
 
-`/save`在上傳/草稿資料夾中，將端點新增至覆寫 PDF 檔案的伺服器程式代碼：
+將`/save`終結點添加到在上載/草稿資料夾中覆蓋PDF檔案的伺服器代碼：
 
 ```
   // Overwrite the PDF file with latest PDF changes and annotations
@@ -351,7 +351,7 @@ app.get( "/download/:file", function( req, res ){
   } );
 ```
 
-針對將內容上傳至 /儲存端點的 SAVE_API 註冊 PDF 檢視回呼。 您可以變更 autoSaveFrequency 值，讓您的應用程式在定時器上自動儲存變更，並在完成時將其他元數據加入目前內嵌的檔案 （如需要）。
+為將內容上載到/save終結點的SAVE_API註冊PDF視圖回調。 如果需要，可以更改autoSaveFrequency值，使應用程式能夠自動將更改保存在計時器上，並在完成時將附加元資料包括到當前嵌入的檔案。
 
 ```
   adobeDCView.registerCallback(
@@ -383,13 +383,13 @@ app.get( "/download/:file", function( req, res ){
   );
 ```
 
-現在，伺服器上會儲存檔草稿上的註釋和附註。 您可以 [進一步瞭解回](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) 呼如何融入您的工作流程。 例如， [如果多人想要同時審閱同一份檔並加上註釋，狀態回](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) 呼有助於處理檔案衝突。
+草稿文檔上的注釋和注釋現在保存在伺服器上。 您可以[瞭解有關回調在工作流中的適用情況的詳細資訊](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows)。 例如，[狀態回調](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback)幫助處理檔案衝突，如果多個人想同時查看和評論同一文檔。
 
-在最後的步驟中，您可以使用「PDF 服務」API將所有編輯過的檔合併為一個 PDF 檔案。
+在最後一步中，您使用PDF服務API將所有編輯的文檔合併到一個PDF檔案中。
 
-## 合併 PDF 檔案
+## 組合PDF檔案
 
-PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles作，然後將每個檔案新增為輸入。
+PDF組合代碼與PDF建立代碼類似，但使用CombineFiles操作並將每個檔案添加為輸入。
 
 ```
   function combineFilesToPDF( files, outputFilename, callback ) {
@@ -413,9 +413,9 @@ PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles作，�
  }
 ```
 
-## 下載最終 PDF
+## 下載最終PDF
 
-新增名為 /finalize 的端點，呼叫功能，將資料夾內 `uploads/drafts` 的所有 PDF 檔案合併到 `Final.pdf` 檔案中，然後下載。
+添加名為/finalize的終結點，該終結點調用函式以將`uploads/drafts`資料夾內的所有PDF檔案合併到`Final.pdf`檔案中，然後下載。
 
 ```
   app.get( "/finalize", ( req, res ) => {
@@ -433,18 +433,18 @@ PDF 組合程式代碼就像 PDF 建立程式碼，但使用 CombineFiles作，�
   } );
 ```
 
-最後，在主要index.html網頁中新增連結至此 /finalize 端點。 此連結可讓使用者下載檔工作流程的結果。
+最後，在主index.html網頁中向此/finalize終結點添加一個連結。 此連結使用戶能夠下載文檔工作流的結果。
 
 ```
 <a href="/finalize">Download final PDF</a>
 ```
 
-![下載最終文件的螢幕擷圖](assets/reviews_3.png)
+![下載最終文檔的螢幕快照](assets/reviews_3.png)
 
 ## 後續步驟
 
-本實作教學課程展示了 API 如何[!DNL Acrobat Services]將檔共享和審核工作流程[&#128279;](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)整合到網頁應用程式中。此應用程式可讓遠端工作人員共用檔案並與團隊成員共同作業，這對在家工作的員工和承包商特別有説明。
+此操作教程展示了[!DNL Acrobat Services]個API如何將[文檔共用和審閱工作流](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)整合到Web應用程式中。 該應用程式允許遠程員工共用檔案並與其同事協作，這對在家工作的員工和承包商特別有幫助。
 
-您可以使用這些技術在您的應用程式中啟用共同作業，或探索 [PDF Services Node SDK 範例](https://github.com/adobe/pdftools-node-sdk-samples) 和 [PDF 內嵌API在 GitHub 上的範](https://github.com/adobe/pdf-embed-api-samples) 例，以獲得關於如何使用 Adobe API 的靈感。
+您可以使用這些技術在應用中啟用協作，或瀏覽[PDF服務節點SDK示例](https://github.com/adobe/pdftools-node-sdk-samples)和[在GitHub上PDF嵌入API示例](https://github.com/adobe/pdf-embed-api-samples)，以瞭解如何使用Adobe的API。
 
-準備好在自己的應用程式中啟用檔共享和審核了嗎？ 註冊您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 開發人員帳戶。 免費存取Adobe PDF嵌入」，並享有其他 API 的六個月免費試用版。 試用之後，您可以 [隨即付費](https://developer.adobe.com/document-services/pricing/main) ，隨著業務成長，每份檔交易只要 \$0.05。
+是否準備好在您自己的應用中啟用文檔共用和審閱？ 註冊您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)開發人員帳戶。 免費訪問Adobe PDF嵌入，享受6個月的免費試用期。 試用後，隨著業務增長，您可以[按單價](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易僅為0.05美元。
