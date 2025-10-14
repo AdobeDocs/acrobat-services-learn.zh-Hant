@@ -102,7 +102,7 @@ C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/cre
 
 ## 資源和後續步驟
 
-* 如需其他協助和支援，請造訪 Adobe [[!DNL Acrobat Services] API 社](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) 群論壇
+* 如需其他協助和支援，請造訪 Adobe [[!DNL Acrobat Services] API 社](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) 群論壇
 
 PDF 服務API [檔](https://www.adobe.com/go/pdftoolsapi_doc)
 

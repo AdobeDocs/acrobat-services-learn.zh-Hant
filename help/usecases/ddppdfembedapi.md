@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 您可以學習哪些內容
 
-在此實作教學課程中，瞭解如何使用 [免費且易於使用的Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)，在網頁中顯示嵌入的 PDF 檔。 這些範例會使用一些JavaScript、Node.js、Express.js、HTML 和 CSS。 您可以在 GitHub[&#128279;](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) 上檢視完整的項目代碼。
+在此實作教學課程中，瞭解如何使用 [免費且易於使用的Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)，在網頁中顯示嵌入的 PDF 檔。 這些範例會使用一些JavaScript、Node.js、Express.js、HTML 和 CSS。 您可以在 GitHub[&#128279;](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) 上檢視完整的項目代碼。
 
 ## 相關 API 和資源
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 * [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [項目代碼](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
+* [項目代碼](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
 ## 建立節點網頁應用程式
 
@@ -347,7 +347,7 @@ embedMode: "IN_LINE"
 
 最後，選擇一份白皮書，然後按兩下「 **檢視檔** 」，開啟內嵌 PDF 的新頁面：
 
-![PDF 白皮書螢幕擷圖 ](assets/ddp_11.png)
+![PDF 白皮書螢幕擷圖 &#x200B;](assets/ddp_11.png)
 
 請注意「下載 PDF」和「列印 PDF」選項現在是如何呈現的。
 

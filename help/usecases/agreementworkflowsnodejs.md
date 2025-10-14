@@ -302,7 +302,7 @@ combineOperation.execute(executionContext)
 
 Adobe PDF [「嵌入API」示範](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) 可讓您預覽其他各種嵌入 PDF 文件的選項。
 
-![嵌入 PDF 選項的影像 ](assets/AWNjs_7.png)
+![嵌入 PDF 選項的影像 &#x200B;](assets/AWNjs_7.png)
 
 您可以開啟和關閉各種選項，並立即查看其演算方式。 當您找到喜歡的組合時，請按兩下 *「產生代碼*」按鈕，使用這些選項產生實際的 HTML 程式代碼。
 
