@@ -1,10 +1,10 @@
 ---
-source-git-commit: 345d62fbdbe12f2c369ea073ce8e6e942bdad9c9
+source-git-commit: e3d558d753cfc578a4ebcc6b261ab47dcc5f3a54
 workflow-type: tm+mt
-source-wordcount: '14'
-ht-degree: 0%
+source-wordcount: '5'
+ht-degree: 20%
 
 ---
-# 檔服務
+# 已封存
 
-首頁的 DC SDK 檔服務檔，例如常見問題，教學課程等。
+已遷移到GitHub雲： <https://github.com/Adobe-Enterprise-Docs/acrobat-services-learn.en>
