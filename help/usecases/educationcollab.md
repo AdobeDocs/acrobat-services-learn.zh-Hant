@@ -197,7 +197,7 @@ adobeDCView.registerCallback(
 
 此螢幕擷取顯示學生開啟了作業檔案，並閱讀了第一頁 —他們不是捲動到其他頁面，或檔只有一頁 — 然後他們下載了檔案。 您可以收集這些度量，以執行分析和研究學生的行為。
 
-此外， [Adobe Analytics與 PDF 內嵌API整合，因此如果您已訂閱 Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) 套件，則可以在訂閱中發佈指標。 若要在Adobe Analytics中發佈指標，您只需要將套件ID傳遞至 PDF 內嵌API建構器。 （請注意，您必須使用 PDF 內嵌API憑證，而非API憑證使用 PDF Services）。
+此外， [Adobe Analytics與 PDF 內嵌API整合，因此如果您已訂閱 Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html) 套件，則可以在訂閱中發佈指標。 若要在Adobe Analytics中發佈指標，您只需要將套件ID傳遞至 PDF 內嵌API建構器。 （請注意，您必須使用 PDF 內嵌API憑證，而非API憑證使用 PDF Services）。
 
 以下範例程式代碼顯示如何將套件 ID 傳遞至 PDF 內嵌API建構器：
 
