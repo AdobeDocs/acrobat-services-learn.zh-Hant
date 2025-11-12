@@ -1,25 +1,26 @@
 ---
-title: 建立暫時性檔
-description: 瞭解如何建立可與 Acrobat Sign 一起使用的暫時性檔 API
+title: 建立臨時文檔
+description: 瞭解如何建立可與Acrobat SignAPI一起使用的臨時文檔
 feature: Acrobat Sign API
 role: Developer
 level: Beginner
 type: Tutorial
 thumbnail: KT-11076.jpg
 exl-id: fddd5745-afa4-4ce8-b94d-c78254d7fb00
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: d5dc54a4e5414fb5f064a4ac7bd67ea92e9f7339
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
 
 ---
 
-# 建立暫時性檔
+# 建立臨時文檔
 
-瞭解如何建立可與 Acrobat Sign API搭配使用的暫時性檔。
+瞭解如何建立可與Acrobat SignAPI一起使用的臨時文檔。
 
 >[!NOTE]
 >
->本教學課程是專為 OEM 合作夥伴所設計，這些合作夥伴正在其應用程式內建立及嵌入簽名程式。
+>本教程專門針對正在構建並嵌入其應用程式中的簽名過程的OEM合作夥伴而設計。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444781?hidetitle=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/347351?hidetitle=true)
+
