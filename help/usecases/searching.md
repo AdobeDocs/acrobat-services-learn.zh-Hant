@@ -1,6 +1,6 @@
 ---
-title: 搜尋和建立索引
-description: 瞭解如何從掃描的檔建立可搜尋的 PDF 檔案
+title: 搜索和索引
+description: 瞭解如何從掃描的文檔建立可搜索的PDF檔案
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,40 +8,40 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
 
 ---
 
-# 搜尋和建立索引
+# 搜索和索引
 
-![使用案例主打橫幅](assets/UseCaseSearchingHero.jpg)
+![使用案例英雄橫幅](assets/UseCaseSearchingHero.jpg)
 
-組織通常必須將其硬本文件和掃描的檔案數位化。 請考慮此 [情況](https://docs.google.com/document/d/11jZdVQAw-3fyE3Y-sIqFFTlZ4m02LsCC/edit)。 一家法務公司已掃描數千份法律合約，用來建立數字檔案。 他們想要判斷其中任何一份法律合約是否有特定條款或是必須修改補充。 出於合規性目的，需要精確性。 解決方案是盤點數字檔，使文字可搜尋，並建立尋找此類資訊的索引。
+組織必須經常將其硬拷貝文檔和掃描檔案數字化。 請考慮此[方案](https://docs.google.com/document/d/11jZdVQAw-3fyE3Y-sIqFFTlZ4m02LsCC/edit)。 一家律師事務所擁有數千份法律合同，他們掃描這些合同以建立數字檔案。 他們想確定這些法律合同中是否有一項特定條款或補充條款必須修訂。 為了符合要求，必須準確。 解決方案是清點數字文檔，使文本可搜索，並建立索引以查找此資訊。
 
-對於大多數組織而言，建立數位檔案以擷取編輯資訊或下游作業的挑戰是一場噩夢。
+建立數字歸檔以檢索用於編輯或下游操作的資訊是大多陣列織面臨的難題。
 
-## 您可以學習哪些內容
+## 你能學到的
 
-此實作教學課程探索 API 的功能，以及如何 [!DNL Adobe Acrobat Services] 輕鬆地用來封存和數字化檔。 您可以建立 Express NodeJS 應用程式，然後整合 [!DNL Acrobat Services] API 進行封存、數位化和文件轉換，藉此探索這些功能。
+本實踐教程探討了[!DNL Adobe Acrobat Services]個API的功能，並可以輕鬆用於存檔和數字化文檔。 您可以通過構建Express NodeJS應用程式，然後整合[!DNL Acrobat Services]個API以進行存檔、數字化和文檔轉換來探索這些功能。
 
-若要遵循，您需要 [安裝Node.js](https://nodejs.org/) 並基本瞭解Node.js和 [ES6語法](https://www.w3schools.com/js/js_es6.asp)。
+要遵循此操作，您需要安裝[Node.js](https://nodejs.org/)，並基本瞭解Node.js和[ES6語法](https://www.w3schools.com/js/js_es6.asp)。
 
-## 相關 API 和資源
+## 相關API和資源
 
-* [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [項目代碼](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)
 
 ## 項目設定
 
-首先，為應用程式設定資料夾結構。 您可以在這裡[&#128279;](https://github.com/agavitalis/AdobeDocumentAPI.git)擷取源碼。
+首先，為應用程式設定資料夾結構。 您可以在此處檢索原始碼[](https://github.com/agavitalis/AdobeDocumentAPI.git)。
 
 ## 目錄結構
 
-建立一個名為 AdobeDocumentServicesAPI 的檔案夾，然後在您選擇的編輯器中開啟這個檔案夾。 使用此資料夾結構，使用此指令建立基本 NodeJS 應用程式 `npm init` ：
+建立名為AdobeDocumentServicesAPI的資料夾，然後在您選擇的編輯器中將其開啟。 使用`npm init`命令使用此資料夾結構建立基本NodeJS應用程式：
 
 ```
 AdobeDocumentServicesAPIs
@@ -66,16 +66,16 @@ search.hbs
 index.js
 ```
 
-您使用 MongoDB 做為此應用程式的資料庫。 因此，若要進行設定，請將預設資料庫設定置入 config/資料夾中，方法是將下方的代碼段貼入此資料夾的default.json檔案中，然後新增資料庫的URL。
+您正在將MongoDB用作此應用程式的資料庫。 因此，要配置，請將預設資料庫配置置於config/資料夾中，將下面的代碼段貼上到此資料夾的default.json檔案中，然後添加資料庫的URL。
 
 ```
 ### config/default.json and config/dev.json
 { "DBHost": "YOUR_DB_URI" }
 ```
 
-## 套件安裝
+## 軟體包安裝
 
-現在，請使用 npm 安裝命令安裝部分套件，如下方代碼段所示：
+現在，使用npm install命令安裝一些軟體包，如下面的代碼段所示：
 
 ```
 {
@@ -121,39 +121,39 @@ Ensure that the content of your package.json file is similar to this code snippe
 {
 ```
 
-這些代碼段會安裝應用程式相依性，包括檢視的「控制欄」範本引擎。 在文稿標籤中，您可以設定應用程式的執行時間參數。
+這些代碼片段安裝應用程式依賴項，包括視圖的Handlebar模板引擎。 在指令碼標籤中，配置應用程式的運行時參數。
 
-## 整合 [!DNL Acrobat Services] API
+## 整合[!DNL Acrobat Services]個API
 
-[!DNL Acrobat Services] 包含三個 API：
+[!DNL Acrobat Services]包括三個API:
 
 * Adobe PDF服務API
 
-* Adobe PDF嵌入API
+* Adobe PDF嵌入式API
 
-* Adobe檔產生API
+* Adobe文檔生成API
 
-這些 API 透過一套雲端網路服務自動產生、控制和轉換 PDF 內容。
+這些API通過一組基於雲的Web服務自動生成、操作和轉換PDF內容。
 
-若要取得註冊及完成工作流程所需的[&#128279;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)認證。PDF 內嵌API可供免費使用。 PDF 服務API和文件產生API六個月免費。 試用結束時，您只需[&#128279;](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，每份檔交易只要 0.05 美元。您只需隨著公司成長而付費，並且處理更多合約。
+若要獲取憑據，您需要[註冊](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)並完成工作流。 PDF嵌入API可免費使用。 PDF服務API和文檔生成API可免費使用6個月。 試用結束時，您可以以每個文檔交易0.05 USD的價格[按使用付費](https://developer.adobe.com/document-services/pricing/main)。 只有在公司增長和處理更多合同時，您才需要支付費用。
 
-![建立認證的螢幕擷圖](assets/searching_1.png)
+![建立憑據的螢幕快照](assets/searching_1.png)
 
-完成註冊后，程式代碼範例會下載到您的計算機，其中包含您的API認證。 擷取此程式代碼範例，並將private.key和pdftools-api-credentials.json檔案放置在應用程式的根目錄。
+完成註冊後，將將代碼示例下載到包含API憑據的PC中。 提取此代碼示例，並將private.key和pdftools-api-credentials.json檔案放在應用程式的根目錄下。
 
-現在，使用應用程式根目錄中的終端機執行命令，即可Node.js SDK[&#128279;](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) ` npm install --save @adobe/documentservices-pdftools-node-sdk ` 安裝 PDF Services。
+現在，使用應用程式根目錄中的終端運行[命令，安裝](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)PDF服務Node.js SDK` npm install --save @adobe/documentservices-pdftools-node-sdk `。
 
-## 建立 PDF
+## 建立PDF
 
-[!DNL Acrobat Services] 支援從 Microsoft Office 檔 （Word、Excel 和 PowerPoint） 建立 PDF，以及其他 [支援的檔格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) ，例如 .txt、.rtf、.bmp、.jpg、.gif、.tiff 和 .png。
+[!DNL Acrobat Services]支援從MicrosoftOffice文檔（Word、Excel和PowerPoint）和其他[支援的檔案格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)&#x200B;(如.txt、.rtf、.bmp、.jpg、.gif、.tiff和.png)建立PDF。
 
-若要從支援的檔案格式建立 PDF 檔，請使用此表單來上傳檔。 您可以在 GitHub[&#128279;](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) 上存取表格的 HTML 和 CSS 檔案。
+要從支援的檔案格式建立PDF文檔，請使用此表單上載文檔。 您可以訪問[GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)上表單的HTML和CSS檔案。
 
-![網頁窗體的螢幕擷圖](assets/searching_2.png)
+![Web表單的螢幕截圖](assets/searching_2.png)
 
-現在，將下列代碼段新增至控制器/createPDFController.js檔案。 此程式代碼會擷取檔並轉換為 PDF。
+現在，將以下代碼片段添加到controllers/createPDFController.js檔案中。 此代碼將檢索文檔並將其轉換為PDF。
 
-源檔和轉換後的檔案會儲存在應用程式內的檔案夾中。
+原始檔案和轉換後的檔案將保存在應用程式內的資料夾中。
 
 ```
 const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
@@ -209,27 +209,27 @@ console.log('Exception encountered while executing operation', err);
 module.exports = { createPDF, createPDFPost };
 ```
 
-此代碼段需要 [PDF Services Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)。 使用功能：
+此代碼段需要[PDF服務Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)。 使用以下函式：
 
-* createPDF，其中顯示上傳文件表單
+* createPDF，顯示上載文檔窗體
 
-* createPDFPost，將上傳的文件轉換為 PDF
+* createPDFPost，將上載的文檔轉換為PDF
 
-轉換后的 PDF 檔案會儲存在輸出目錄中，而源檔則儲存在上傳目錄中。
+轉換後的PDF文檔將保存在輸出目錄中，而原始檔案則保存在上載目錄中。
 
-## 使用文字辨識
+## 使用文本識別
 
-光學字元識別 （OCR） 可將影像和掃描的文件轉換為可搜尋的檔案。 您可以將 API、影像和掃描的檔案轉換為 [!DNL Acrobat Services] 可搜尋的 PDF。 執行 OCR作後，檔案便會變成可編輯和搜尋。 您可以將檔案內容儲存在數據存放區，以便進行索引和其他用途。
+光學字元識別(OCR)將影像和掃描的文檔轉換為可搜索檔案。 您可以將[!DNL Acrobat Services]個API、影像和掃描的文檔轉換為可搜索的PDF。 執行OCR操作後，檔案將變為可編輯和可搜索的。 您可以將檔案的內容儲存在資料儲存中，以便進行索引和其他用途。
 
-請記得，搜尋掃描檔並建立索引對許多組織來說至關重要，因為對於檔案管理和資訊處理至關重要。 OCR 功能消除了這些挑戰。
+請記住，對於檔案管理和資訊處理至關重要的許多公司來說，搜索和索引掃描的文檔至關重要。 OCR功能消除了這些難題。
 
-若要實作此功能，您必須設計類似上述的上傳窗體。 這一次，您會將表格限制為 PDF 檔案，因為只能在 PDF 檔上使用 OCR 功能。
+要實現此功能，必須設計與上麵類似的上載表單。 此時，您將表單限制為PDF檔案，因為您只能對PDF文檔使用OCR功能。
 
-以下為上傳表單，例如：
+下面是此示例的上載表單：
 
-![用來上傳檔案的窗體螢幕擷圖](assets/searching_3.png)
+![要上載檔案的表單螢幕快照](assets/searching_3.png)
 
-現在，若要控上傳的 PDF 並執行一些 OCR作，請將下方的代碼段新增至控制器/makeOCRController.js檔案。 此程式代碼會在已上傳的檔案上實作 OCR 程式，然後將檔案儲存在應用程式的檔案系統中。
+現在，要操作上載的PDF並執行某些OCR操作，請將下面的代碼段添加到controllers/makeOCRController.js檔案中。 此代碼在上載的檔案上實現OCR進程，然後將該檔案保存在應用程式的檔案系統中。
 
 ```
 const fs = require('fs')
@@ -317,19 +317,19 @@ console.log('Exception encountered while executing operation', err);
 module.exports = { makeOCR, makeOCRPost };
 ```
 
-您需要 [!DNL Acrobat Services] Node SDK 和 mongoose、pdf-parse 和 fs 模組以及檔模型結構。 您必須使用這些模組，才能將已轉換檔案的內容儲存至 MongoDB 資料庫。
+您需要[!DNL Acrobat Services]節點SDK和mongoose、pdf-parse和fs模組以及您的文檔模型架構。 這些模組是將轉換後檔案的內容保存到MongoDB資料庫所必需的。
 
-現在建立兩個功能：讓OCR 顯示上傳的窗體，然後製作用於處理上傳檔的OCRPost。 將原始表格儲存到資料庫，然後將變形的表格儲存到應用程式的輸出資料夾。
+現在建立兩個功能：makeOCR顯示上載的表單，然後makeOCRPost處理上載的文檔。 將原始表單保存到資料庫，然後將轉換後的表單保存到應用程式的輸出資料夾中。
 
-在轉換檔案之前，每個情況下都會載入來自 pdftools-api-credentials.json 檔案的Adobe認證。
+在轉換檔案之前，將在每種情況下載入pdftools-api-credentials.json檔案中的Adobe提供的憑據。
 
 >[!NOTE]
 >
->OCR 功能僅支援 PDF 檔。
+>OCR功能僅支援PDF文檔。
 
-此外，請將下方的代碼段新增至應用程式的「模式」/「Document.js」檔案。
+另外，將下面的代碼段添加到應用程式的Modes/Document.js檔案中。
 
-在程式代碼段中，定義mongoose模型，然後描述要儲存在資料庫中的文件屬性。 此外，為 documentContent 字段建立索引，讓搜尋文字變得輕鬆有效率。
+在代碼段中，定義一個mongoose模型，然後描述要保存在資料庫中的文檔的屬性。 另外，為documentContent欄位編製索引，使文本搜索變得簡單和高效。
 
 ```
 const mongoose = require("mongoose");
@@ -357,17 +357,17 @@ documentContent: "text",
 module.exports = mongoose.model("document", DocumentSchema);
 ```
 
-## 搜尋文字
+## 搜索文本
 
-現在您可以實作簡單的搜尋功能，讓使用者執行一些簡單的文字搜尋。 您也可以新增下載功能來啟用 PDF 檔案的下載。
+現在，您實現了簡單搜索功能，使用戶能夠執行一些簡單的文本搜索。 您還可以添加下載功能以啟用PDF檔案的下載。
 
-此功能需要簡單的表單和卡片才能顯示搜尋結果。 您可以在 GitHub[&#128279;](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) 上找到表格和卡片的設計。
+此功能需要一個簡單的表單和卡來顯示搜索結果。 您可以在[GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)上找到表單和卡的設計。
 
-下方的螢幕擷圖會說明搜尋功能和搜尋結果。 您可以下載任何搜尋結果。
+下面的螢幕抓圖說明了搜索功能和搜索結果。 您可以下載任何搜索結果。
 
-![搜尋功能的螢幕擷圖](assets/searching_4.png)
+![搜索功能螢幕快照](assets/searching_4.png)
 
-若要實作搜尋功能，請在應用程式的控制器檔案夾內建立searchController.js檔案，然後將代碼段貼到下方：
+要實現搜索功能，請在應用程式的controller資料夾中建立一個searchController.js檔案，然後貼上以下代碼段：
 
 ```
 const fs = require('fs')
@@ -402,11 +402,11 @@ res.render('search', { response })
 module.exports = { search, searchPost, downloadPDF };
 ```
 
-現在可實作下載功能，以啟用下載從用戶搜尋傳回的檔。
+現在實施下載功能，以便能夠下載從用戶搜索返回的文檔。
 
-## 下載檔
+## 正在下載文檔
 
-實作下載功能類似於您已完成的工作。 在控制器/earchController.js檔案中使用搜尋貼文功能后，新增下列代碼段：
+實施下載功能與您已經完成的操作類似。 在controllers/earchController.js檔案中的searchPost函式後添加以下代碼段：
 
 ```
 /*
@@ -422,13 +422,14 @@ res.download(download.link);
 
 ## 後續步驟
 
-在此實作教學課程中，您將 API 整合 [!DNL Acrobat Services] 至Node.js應用程式，並使用API來進行將檔案轉換為 PDF 的檔案轉換。 您新增了 OCR 功能，可搜尋圖片和掃描的檔案。 然後，您將檔案儲存至資料夾，以便下載。
+在本操作教程中，您將[!DNL Acrobat Services]個API整合到Node.js應用程式中，還使用API實現將檔案轉換為PDF的文檔轉換。 您添加了OCR功能，使圖片和掃描檔案可搜索。 然後，將檔案保存到資料夾，以便下載。
 
-接著，您新增了搜尋功能，以搜尋以 OCR 轉換為文字的檔。 最後，您實作了下載功能，以便輕鬆下載這些檔案。 您完成的應用程式讓法務公司更容易找到及處理特定文字。
+接下來，您添加了搜索功能，以搜索通過OCR轉換為文本的文檔。 最後，您實現了下載功能，以便輕鬆下載這些檔案。 您完成的應用程式使法律公司能夠更輕鬆地查找和處理特定文本。
 
-[!DNL Acrobat Services]與其他服務相比，強烈建議在文件轉換中使用，因為其健全性和易用性。您可以快速建立帳戶，開始享有 API 的 [!DNL Acrobat Services] 功能，進行文件轉換和管理。
+強烈建議將[!DNL Acrobat Services]用於文檔轉換，因為與其他服務相比，它具有強大的功能和易用性。 您可以快速建立帳戶，以開始享受[!DNL Acrobat Services]個API的功能，用於文檔轉換和管理。
 
-既然您已十分瞭解如何使用 [!DNL Acrobat Services] API，便可進一步發揮實務技能。 您可以仿製此教學課程所使用的儲存庫，並嘗試一些您剛學到的技能。 更進一步，您可以嘗試重建此應用程式，同時探索 API 的 [!DNL Acrobat Services] 無限可能。
+現在您對如何使用[!DNL Acrobat Services]個API有了很深的瞭解，因此您可以通過練習來提高您的技能。 您可以克隆本教程中使用的儲存庫，並對您剛學到的一些技能進行實驗。 更妙的是，您可以嘗試重建此應用程式，同時探索[!DNL Acrobat Services]個API的無限可能性。
 
-準備好在自己的應用程式中啟用檔共享和審核了嗎？ 註冊您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-開發人員帳戶。 享受六個月免費試用，然後[&#128279;](https://developer.adobe.com/document-services/pricing/main)隨著業務成長，以每份檔交易只要 \$0.05 付費。
+是否準備好在您自己的應用中啟用文檔共用和審閱？ 註冊[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+開發者帳戶。 享受6個月的免費試用，隨著您的業務增長，[按單價支付](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易費用僅為0.05美元。
+

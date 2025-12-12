@@ -1,6 +1,6 @@
 ---
-title: 取得 Microsoft Power Automate 認證
-description: 瞭解如何取得認證，開始使用或試用 Adobe PDF Services
+title: 獲取MicrosoftPower Automate的憑據
+description: 瞭解如何獲取憑據以開始使用或試用Adobe PDF服務
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,47 +8,47 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 1%
 
 ---
 
-# 取得 Microsoft Power Automate 認證
+# 獲取MicrosoftPower Automate的憑據
 
-[Microsoft Power Automate](https://powerautomate.microsoft.com/) 為民眾開發人員和開發人員提供了一種強大的方式，可以建立強大的自動化流程，無需編寫程式代碼即可改善業務。 [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) 連接器 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)則允許使用者在 Microsoft Power Automate 內執行 Adobe PDF Services API 中可用的任何動作。
+[Microsoft電源自動化](https://powerautomate.microsoft.com/)為公民開發人員和開發人員提供了一種強大的方法，可建立功能強大的自動化流程，以改進其業務，而無需編寫代碼。 [Adobe PDF服務](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)連接器作為[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)的一部分，允許用戶執行MicrosoftPower Automate中Adobe PDF服務API中的任何可用操作。
 
-在此教學課程中，瞭解如何取得認證，以開始使用或試用 Adobe PDF Services。 視您是試用版使用者還是現有客戶而定，此教學課程會逐步完成取得認證的正確步驟。
+在本教程中，瞭解如何獲取憑據以開始使用或試用Adobe PDF服務。 根據您是試用用戶還是現有客戶，本教程將介紹獲得憑據的正確步驟。
 
-## Microsoft Power Automate 使用者如何開始使用 Adobe PDF Services 連接器？
+## MicrosoftPower Automate用戶如何開始使用Adobe PDF服務連接器？
 
-現有的 Microsoft Power Automate 使用者可以 [取得 Adobe PDF Services 的試用認證](https://www.adobe.com/go/powerautomate_getstarted_tw) 。 上方的連結是特殊的註冊連結，可協助進行此程式，特別為 Microsoft Power Automate 使用者提供協助。
+現有的MicrosoftPower Automate用戶可以[獲取Adobe PDF服務的試用憑據](https://www.adobe.com/go/powerautomate_getstarted_tw)。 上述連結是一個特殊的註冊連結，專門為MicrosoftPower Automet用戶提供幫助。
 
-![Adobe開發人員使用者登入](assets/credentials_1.png)
+![Adobe Developer用戶登錄](assets/credentials_1.png)
 
 
 >[!IMPORTANT]
-> 如果您要登入試用版，則必須使用Adobe ID而非Enterprise ID。 如果您目前不是 Adobe PDF Services API的訂閱者，並嘗試使用您的Enterprise ID登入，您可能會收到許可權錯誤，因為您的企業沒有許可權在 API 使用 Adobe PDF Services。 因此，建議您使用免費的個人Adobe ID。
+> 如果您登錄進行試用，則必須使用Adobe ID，而不是Enterprise ID。 如果您不是Adobe PDF服務API的當前訂閱者，並嘗試使用您的Enterprise ID登錄，則可能會出現權限錯誤，因為您的企業沒有權利使用Adobe PDF服務API。 因此，建議您使用免費的個人Adobe ID。
 >
 
-1. 登入后，系統會提示您選取新認證的名稱。 輸入您的 *認證名稱*。
-1. 選取複選框以同意開發人員條款。
-1. 選取「 **[!UICONTROL 建立認證」]**。
+1. 登錄後，系統將提示您選擇新憑據的名稱。 輸入&#x200B;*憑據名稱*。
+1. 選中複選框以同意開發人員條款。
+1. 選擇&#x200B;**[!UICONTROL 建立憑據]**。
 
-   ![為您的認證命名](assets/credentials_2.png)
+   ![命名您的憑據](assets/credentials_2.png)
 
-這些認證包含五個不同的值：
+這些憑據包含五個不同的值：
 
 * 用戶端 ID (API 金鑰)
 * 用戶端密碼
 * 組織 ID
 * 技術帳戶 ID
-* Base64 （編碼的私鑰）
+* Base64（編碼的私鑰）
 
-![新認證](assets/credentials_3.png)
+![新憑據](assets/credentials_3.png)
 
-包含所有這些值的 JSON 檔案也會自動下載到您的系統。 此檔案名稱 `pdfservices-api-pa-credentials.json` 與外觀如下：
+包含所有這些值的JSON檔案也會自動下載到您的系統。 此檔案名為`pdfservices-api-pa-credentials.json`，如下所示：
 
 ```json
 {
@@ -60,70 +60,71 @@ ht-degree: 1%
 }
 ```
 
-將此檔案儲存在安全的位置，因為無法再次取得私鑰副本。
+將此檔案儲存在安全位置，因為無法再次獲取私鑰的副本。
 
-### 在 Microsoft Power Automate 中新增連線
+### 在MicrosoftPower Automet中添加連接
 
-現在您已經擁有憑證，就可以開始在 Microsoft Power Automate 流程中使用。
+現在，您已擁有您的憑據，可以開始在MicrosoftPower Automate流中使用這些憑據。
 
-1. 在側邊欄選單中，開啟「 **[!UICONTROL 數據」]** 功能表並選取「 **連線」**：
+1. 在提要欄菜單中，開啟&#x200B;**[!UICONTROL 資料]**&#x200B;菜單並選擇&#x200B;**連接**:
 
-   ![Power Automate 網站中的「連線」選單Microsoft](assets/credentials_4.png)
+   ![MicrosoftPower Automate站點中的「連接」菜單](assets/credentials_4.png)
 
-1. 選取 **+ [!UICONTROL 新連線]**。
+1. 選擇&#x200B;**+ [!UICONTROL 新連接]**。
 
-1. 下一個畫面會顯示可能的連線類型清單。 在右上角輸入「adobe」以篩選選項：
+1. 下一螢幕顯示可能的連接類型清單。 在右上角，輸入「adobe」以篩選選項：
 
-   ![Adobe連線清單](assets/credentials_5.png)
+   ![Adobe連接清單](assets/credentials_5.png)
 
-1. 選 **[!UICONTROL 取「Adobe PDF服務 （預覽）」]**。
-1. 在模組視窗中，輸入您先前產生的所有五個值。 完成時，請選取「 **[!UICONTROL 建立]** 」。
+1. 選擇&#x200B;**[!UICONTROL Adobe PDF服務（預覽）]**。
+1. 在「模式」窗口中，輸入先前生成的所有五個值。 完成時選擇&#x200B;**[!UICONTROL 建立]**。
 
-   ![表格欄位以輸入認證資訊](assets/credentials_6.png)
+   ![要輸入憑據資訊的表單域](assets/credentials_6.png)
 
-您現在已準備好在 Microsoft Power Automate 中使用 Adobe PDF Services。
+您現在已準備好在MicrosoftPower Automet中使用Adobe PDF服務。
 
-### 建立認證后即可存取
+### 建立憑據後訪問憑據
 
-如果您已建立認證且錯置下載的認證，您可以在 Adobe Developer Console 中 [再次擷取憑證](https://developer.adobe.com/console)。
+如果已建立憑據並放錯了下載的憑據，則可以在[Adobe Developer Console](https://developer.adobe.com/console)中再次檢索這些憑據。
 
-1. 登入 [Adobe Developer Console](https://developer.adobe.com/console) 後，先找到專案並選取專案。
-1. 在「認證」下&#x200B;*方的左側選單中，選取「**服務帳戶 （JWT）」**：*
+1. 登錄到[Adobe Developer Console](https://developer.adobe.com/console)後，首先查找您的項目並選擇它。
+1. 在&#x200B;*憑據*&#x200B;下的左側菜單中，選擇&#x200B;**服務帳戶(JWT)**:
 
-   ![現有認證](assets/credentials_7.png)
+   ![現有憑據](assets/credentials_7.png)
 
-1. 請注意此處顯示的五個值： *用戶端 ID*、 *用戶端密碼*、 *技術帳戶 ID*、 *技術帳戶電子郵件*&#x200B;和 *組織 ID*。
+1. 請注意此處顯示的五個值： *客戶端ID*、*客戶端密碼*、*技術帳戶ID*、*技術帳戶電子郵件*&#x200B;和&#x200B;*組織ID*。
 
-很遺憾，您無法下載上一個私鑰，但您可以使用「產生公用/私人金鑰」按鈕來建立新的密鑰。
+很遺憾，您無法下載以前的私鑰，但可以使用「生成公共/私有密鑰對」按鈕建立新的私鑰。
 
-## 使用現有的「Adobe PDF服務」認證
+## 使用現有Adobe PDF服務憑據
 
-如果您有從 [!DNL Adobe Acrobat Services] 網站產生的現有 Adobe PDF Services API憑證，則可以將其與 Microsoft Power Automate 一起使用。 如果您在註冊時下載了 SDK，現有的憑證會以最有可能命名的 JSON 檔案形式出現`pdfservices-api-credentials.json`。 該 JSON 檔案包含建立連線認證時所需的五個金鑰。 將 JSON 檔案的每個值複製到對應的連線欄位中。
+如果您有從[!DNL Adobe Acrobat Services]網站生成的現有Adobe PDF服務API憑據，則可以將其與MicrosoftPower Automate一起使用。 如果您在註冊時下載了SDK，則您的現有憑據以JSON檔案的形式出現，該檔案很可能名為`pdfservices-api-credentials.json`。 該JSON檔案包含建立連接憑據時所需的五個鍵。 將每個值從JSON檔案複製到相應的連接欄位中。
 
-您的私人金鑰值來自第二個命名的 `private.key`檔案。
+您的私鑰值來自名為`private.key`的第二個檔案。
 
-您也可以如上所述，從 Adobe Developer Console 取得值。
+也可以從Adobe Developer Console中獲取上述值。
 
-## 使用者如何 [!DNL Adobe Acrobat Services] 開始使用 Microsoft Power Automate？
+## [!DNL Adobe Acrobat Services]個用戶如何開始與MicrosoftPower Automate協作？
 
-若要開始使用Power Automate，請先前往 <https://powerautomate.microsoft.com> 並使用「開始免費」按鈕。 如果您沒有Microsoft帳戶，則必須建立一個帳戶。 登入后，系統會顯示Power Automate儀錶板。
+要開始使用Power Automate，請首先轉到<https://powerautomate.microsoft.com>，然後使用「開始免費」按鈕。 如果你沒有Microsoft賬戶，你就得開一個。 登錄後，將顯示Power Automate儀表板。
 
-![PA 儀錶板，初始檢視](assets/credentials_8.png)
+![PA儀表板，初始視圖](assets/credentials_8.png)
 
-如本教學課程一開始所述，建立新流程、新增步驟，並尋找「Adobe PDF服務」。 選取動作，您可能會收到進階帳戶的警告。
+如本教程開始部分所述，建立新流，添加步驟，並查找Adobe PDF服務。 選擇一個操作，您可能會收到要求提供高級帳戶的警告。
 
-![進階帳戶警告](assets/credentials_9.png)
+![高級帳戶警告](assets/credentials_9.png)
 
-如上方螢幕截圖所示，您可以切換到工作帳戶或設定新的組織帳戶。 擁有後，您就可以新增「Adobe PDF服務」動作。
+如上圖所示，您可以切換到工作帳戶或設定新的組織帳戶。 一旦有，您就可以添加「Adobe PDF服務」操作。
 
-如需深入瞭解如何建立第一個具備 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]的功能，請參閱 [在 Microsoft Power Automate](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) 中建立您的第一個工作流程。
+有關使用[!DNL Adobe Acrobat Services]建立第一個Microsoft電源自動化流的更深入瞭解，請參閱[在Microsoft電源自動化中建立第一個工作流](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他資源
 
-為了協助您更多，以下是其他資源的清單：
+要幫助您獲得更多幫助，請列出其他資源：
 
-* 首先是 Adobe PDF Services Power Automate 檔： <https://docs.microsoft.com/en-us/connectors/adobepdftools/>。 這些資源與您在這裡學到的知識相輔相成。
-* 需要範例嗎？ 您可以找到多個 [示範 PDF 服務的 Power Automate 範本](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/) 。
-* 我們的實時視訊內容 [「剪紙片段」也包含展示Power Automate使用方式的](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)影片。
-* Adobe [技術部落格](https://medium.com/adobetech/tagged/microsoft-power-automate) 有許多關於使用 Power Automate 的文章。
-* 最後，也請務必查閱核心 [PDF 服務](https://developer.adobe.com/document-services/docs/overview/) 檔。
+* 首先是Adobe PDF服務Power Automate文檔： <https://docs.microsoft.com/en-us/connectors/adobepdftools/>。 這些資源補充了您在此所學到的知識。
+* 需要例子嗎？ 您可以找到大量[Power Automate模板](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/)演示PDF服務。
+* 我們的即時視頻內容[紙片剪輯](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)還包含演示Power Automet用法的視頻。
+* [Adobe技術部落格](https://medium.com/adobetech/tagged/microsoft-power-automate)有許多有關使用Power Automate的文章。
+* 最後，請務必查閱核心[PDF服務](https://developer.adobe.com/document-services/docs/overview/)文檔。
+

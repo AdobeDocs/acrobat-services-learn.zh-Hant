@@ -1,21 +1,22 @@
 ---
-title: 自動套用電子封印
-description: 瞭解如何大規模地將防竄改電子封印套用至 PDF
+title: 自動應用電子印章
+description: 瞭解如何將防篡改電子印章應用於規模PDF
 feature: PDF Electronic Seal API
 role: Developer
 level: Beginner
 type: Tutorial
 jira: KT-15033
 exl-id: 178cd894-cdb1-4595-a68f-20d9a14199b8
-source-git-commit: 255a2425fcde4443d8502a92aa0274fac30f7279
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
-# 自動套用電子封印
+# 自動應用電子密封
 
-瞭解如何使用雲端型第三方數字證書，在 PDF 中大規模套用防竄改電子封印。 電子封印就像紙張上的組織橡皮圖印章，但更安全。 電子封印有助於驗證官方檔 （如發票和財務報表） 的身分和完整性，藉由證明文件並未遭到竄改來降低組織的風險。 這些文件也有助於確保檔符合各種法規和法律工作流程的法律規範。
+瞭解如何使用基於雲的第三方數字證書將防篡改電子印章按規模應用於PDF。 電子印章就像組織在紙上的橡皮圖章，但更安全。 電子印章可幫助驗證發票和財務報表等正式文檔的身份和完整性 — 通過證明文檔未被篡改，降低組織中的風險。 它們還有助於確保文檔符合各種法規和法律工作流程的法律要求。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428346?hidetitle=true)
+

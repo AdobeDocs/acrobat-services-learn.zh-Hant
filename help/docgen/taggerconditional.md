@@ -1,21 +1,22 @@
 ---
-title: 設定條件式內容
-description: 瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定區段，以使用「文件產生」Adobe以數據動態納入或排除檔區段API
+title: 設定條件內容
+description: 瞭解如何使用Adobe文檔生成標誌器在MicrosoftWord模板中設定節，以便使用Adobe文檔生成API根據資料動態地包括或排除文檔的節
 feature: Document Generation API
 role: Developer
 level: Beginner
 type: Tutorial
 thumbnail: 332117.jpg
 exl-id: 53101f40-ded2-4c9a-8436-ec0ecf00972f
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
-# 設定條件式內容
+# 設定條件內容
 
-瞭解如何使用 Adobe Document Generation Tagger 在 Microsoft Word 範本中設定區段，以使用「文件產生圖層」Adobe API，根據數據動態納入或排除檔區段。
+瞭解如何使用「Adobe文檔生成標誌器」在MicrosoftWord模板中設定節，以便使用「Adobe文檔生成API」根據資料動態地包括或排除文檔的節。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332117?hidetitle=true)
+

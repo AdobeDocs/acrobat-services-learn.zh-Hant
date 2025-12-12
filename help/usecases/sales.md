@@ -1,6 +1,6 @@
 ---
-title: 管理銷售提案和合約
-description: 瞭解如何建立高效的工作流程，以自動化和簡化銷售提案
+title: 管理銷售計畫書和合同
+description: 瞭解如何構建高效的工作流以自動化和簡化銷售計畫書
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,92 +8,92 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
 
 ---
 
-# 管理銷售提案和合約
+# 管理銷售計畫書和合同
 
-![使用案例主打橫幅](assets/UseCaseSalesHero.jpg)
+![使用案例英雄橫幅](assets/UseCaseSalesHero.jpg)
 
-銷售提案是企業贏取客戶旅程的第一步。 就像一切一樣，第一印象是最後。 因此，您與客戶的第一次互動會設定他們對您的業務的期望。 您的提案必須簡潔、準確且方便。
+銷售計畫書是企業走向客戶收購的第一步。 和一切一樣，第一印象是最後的。 因此，您與客戶的首次互動為您的業務設定了他們的期望。 您的建議必須簡潔、準確、方便。
 
-合約和提案在其文件結構中包含不同類型的數據。 它們包含動態數據 （用戶端名稱、報價量等等） 和靜態數據 （如公司功能、團隊基本數據和標準 SOW 條款）。 建立範本檔 （例如銷售提案） 通常涉及單調的工作，例如手動取代樣板範本中的項目細節。 在此教學課程中，您可以使用動態數據和工作流程，建立有效的銷售提案[&#128279;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)建立程式。
+合同和提案在其檔案結構中包含不同類型的資料。 它們既包含動態資料（客戶端名稱、報價金額等），也包含靜態資料（模板文本，如固定功能、團隊配置檔案和標準SOW術語）。 建立模板文檔（如銷售建議書）通常涉及單調的任務，例如手動替換模板模板中的項目詳細資訊。 在本教程中，您使用動態資料和工作流為[建立銷售建議](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)構建一個有效的流程。
 
-## 您可以學習哪些內容
+## 你能學到的
 
-在此實作教學課程中，瞭解如何使用幾個工具來實作動態數據和工作流程，其中最重要的一個工具是 [!DNL Adobe Acrobat Services] API。 這些 API 可用來讓您和您的業務更方便銷售提案和合約。 本教學課程示範了實作技巧，以顯示如何自動建立、合併和顯示 PDF 檔。 手動執行這些工作既耗時又繁瑣。 [!DNL Acrobat Services]利用 API，您可以縮短在這些工作上花費的時間。
+在本實踐教程中，瞭解如何使用多種工具實現動態資料和工作流，其中最重要的是[!DNL Adobe Acrobat Services]個API。 這些API用於使銷售計畫書和合同更方便您和您的業務。 本教程演示了如何自動建立、合併和顯示PDF文檔的操作技巧。 手動執行這些任務既耗時又繁瑣。 通過利用[!DNL Acrobat Services]個API，您可以縮短在這些任務上花費的時間。
 
-## 相關 API 和資源
+## 相關API和資源
 
-* [Microsoft Word](https://www.office.com/)
+* [Microsoft詞](https://www.office.com/)
 
 * [Node.js](https://nodejs.org/en/)
 
 * [npm](https://www.npmjs.com/get-npm)
 
-* [[!DNL Acrobat Services] 蜜蜂屬](https://developer.adobe.com/document-services/homepage/)
+* [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/)
 
-* [Adobe檔產生API](https://developer.adobe.com/document-services/apis/doc-generation)
+* [Adobe文檔生成API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
+* [Adobe SignAPI](https://developer.adobe.com/adobesign-api/)
 
-* [Adobe檔產生記錄器](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [Adobe文檔生成標誌](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
 ## 解決問題
 
-現在您已安裝工具，就可以開始解決問題。 這些提案具有每位客戶特有的靜態內容和動態內容。 瓶頸會發生，因為每次提交建議時，兩種數據類型都是必要的。 輸入靜態文字非常耗時，因此您將自動執行該文字，並且只能手動處理來自每個客戶端的動態數據。
+現在您已安裝了工具，可以開始解決問題。 這些建議既具有每個客戶機特有的靜態內容，又具有動態內容。 出現瓶頸是因為每次您提出建議時都需要這兩種類型的資料。 輸入靜態文本非常耗時，因此您將自動執行該操作，並僅手動處理來自每個客戶端的動態資料。
 
-首先，在 Microsoft Forms[&#128279;](https://www.office.com/launch/forms?auth=1) （或您偏好的表格建立器） 中建立數據擷取表單。此表單適用於新增至銷售方案的用戶端動態數據。 填寫此表單時會提出問題，向客戶取得所需的詳細數據，例如：公司名稱、日期、位址、專案範圍、定價和其他註釋。 若要建立自己的表單，請使用此 [窗體] （https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy）。 目標是讓潛在用戶端填寫窗體，然後將其回應匯出為 JSON 檔案，這些檔案會傳遞至工作流程的下一部分。
+首先，在[MicrosoftForms](https://www.office.com/launch/forms?auth=1)（或首選表單生成器）中建立資料捕獲表單。 此表單用於添加到銷售建議書的客戶端的動態資料。 填寫此表格並提出問題，以從客戶處獲取您需要的詳細資訊，例如公司名稱、日期、地址、項目範圍、定價和附加註釋。 要構建您自己的[窗體]&#x200B;(https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavzxuISRKmUy)。 目標是讓潛在客戶端填入表單，然後將其響應導出為JSON檔案，這些檔案將傳遞到工作流的下一部分。
 
-有些表單指定只能讓您將數據匯出為CSV檔案。 因此，您可能會發現將產生的CSV檔案轉換[&#128279;](http://csvjson.com/csv2json)為 JSON 檔案很有用。
+某些表單生成器僅允許您將資料導出為CSV檔案。 因此，您可能會發現，將[生成的CSV檔案轉換為JSON檔案對](http://csvjson.com/csv2json)非常有用。
 
-靜態數據會在每一個銷售提案中重複使用。 因此，您可以使用 Microsoft Word 中的銷售提案範本來提供靜態文字。 您可以使用此 [範本，但您可以建立自己的範本](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)或使用 [Adobe範本](https://developer.adobe.com/document-services/apis/doc-generation)。
+靜態資料在每個銷售建議書中被重新使用。 因此，您可以使用MicrosoftWord中的銷售建議模板來提供靜態文本。 您可以使用此[模板](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)，但可以建立自己的模板或使用[Adobe模板](https://developer.adobe.com/document-services/apis/doc-generation)。
 
-現在，您需要一些能同時使用 JSON 格式的用戶端動態數據和 Microsoft Word 範本中的靜態文字來為客戶提出獨特的銷售建議。 API [!DNL Acrobat Services] 可用來合併兩者併產生可簽署的 PDF。
+現在，您需要同時使用JSON格式客戶端的動態資料和MicrosoftWord模板中的靜態文本，為客戶端制定唯一的銷售建議書。 [!DNL Acrobat Services]個API用於合併兩個API並生成可簽名的PDF。
 
-若要製作此作品，請使用標籤。 卷標是簡單易用的字串，可代表數位、字詞、陣列，甚至是複雜的物件。 卷標是動態數據的佔位元，在這種情況下，就是在窗體中輸入的客戶端數據。 將標籤插入範本後，您可以將表單域從 JSON 檔案對應到 Word 範本。
+要使此功能正常，請使用標籤。 標籤是易於使用的字串，可以表示數字、字、陣列，甚至複雜對象。 標籤用作動態資料的佔位符，在本例中，它是在表單中輸入的客戶端資料。 在模板中插入標籤後，可將表單域從JSON檔案映射到Word模板。
 
 ## 使用標籤
 
-開啟您的銷售提案範本，然後選取「 **插入」索** 引標籤。 在「 **囑載入巨集」** 群組中，選取「 **取得載入巨集」**。 然後，選 **Adobe文件產生載入巨集** 」加以新增。 新增後，您會在「首頁&#x200B;**」索引標籤的**「Adobe」群組中&#x200B;**看到「**&#x200B;檔世代記錄」。
+開啟銷售建議模板，然後選擇&#x200B;**插入**&#x200B;頁籤。 在&#x200B;**載入項**&#x200B;組中，選擇&#x200B;**獲取載入項**。 然後，選擇&#x200B;**Adobe文檔生成載入項**&#x200B;以添加它。 添加後，您將在&#x200B;**Adobe**&#x200B;組的&#x200B;**首頁**&#x200B;頁籤上看到文檔生成標籤。
 
-在「**Adobe群組的「首頁**」索&#x200B;**引標籤上**，選取&#x200B;**「檔產生**」以開始標記檔。實用的示範影片會出現在視窗右側的面板中。
+在&#x200B;**Adobe**&#x200B;組中的&#x200B;**首頁**&#x200B;頁籤上，選擇&#x200B;**文檔生成**&#x200B;以開始標籤文檔。 窗口右側的面板中出現一個有用的演示視頻。
 
-![Word 內 Document Tagger 載入巨集的螢幕擷圖](assets/sales_1.png)
+![Word內文檔標誌器載入項的螢幕快照](assets/sales_1.png)
 
-選 **取開始使用**。 接著，系統會要求您提供範例數據。 如以下所示，貼上或上傳表格回應 JSON 檔案。
+選擇&#x200B;**開始**。 然後要求您提供示例資料。 貼上或上載表單響應JSON檔案，如下所示。
 
-![貼上範例程式代碼的螢幕擷圖](assets/sales_2.png)
+![貼上示例代碼的螢幕快照](assets/sales_2.png)
 
-選 **取「產生標籤** 」，從您貼上或上傳的 JSON 檔案取得欄位清單。 標籤會顯示在右側邊欄的下方。
+選擇&#x200B;**生成標籤**，從您貼上或上載的JSON檔案獲取欄位清單。 標籤顯示在右側欄的下面。
 
-![可用標籤的螢幕擷圖](assets/sales_3.png)
+![可用標籤螢幕快照](assets/sales_3.png)
 
-產生標籤后，您可以將其插入檔中。 標籤會新增至文件游標位置。 如上所示，您應該將「專案範圍&#x200B;**」標籤直接新增**&#x200B;到&#x200B;**「專案範圍**」字幕下方。如此一來，當客戶在窗體中輸入專案範圍時，其回應會顯示在「專案範圍&#x200B;**」字幕下**&#x200B;方，取代您剛新增的標籤。新增標籤后，檔的一部分看起來應該像下面的螢幕擷取。
+生成標籤後，可以將標籤插入文檔。 標籤將添加到游標位置的文檔中。 如上所示，您應在&#x200B;**項目範圍**&#x200B;副標題的正下方添加&#x200B;**項目範圍**&#x200B;標籤。 這樣，當客戶端以窗體形式進入項目範圍時，其響應將低於&#x200B;**項目範圍**&#x200B;的子標題，替換您剛添加的標籤。 添加完標籤後，文檔的一部分應該看起來像下面的螢幕捕獲。
 
-![將標籤新增至 Word 檔案的螢幕擷圖](assets/sales_4.png)
+![向Word文檔添加標籤的螢幕快照](assets/sales_4.png)
 
-## 使用 API
+## 使用API
 
-前往 [!DNL Acrobat Services] API [首頁](https://developer.adobe.com/document-services/apis/doc-generation)。 若要開始使用 [!DNL Acrobat Services] API，您需要應用程式的認證。 往下卷動，然後選取 **「開始免費試** 用」以建立認證。 您可以免費使用這些服務 [6 個月，每次](https://developer.adobe.com/document-services/pricing/main) 檔交易只需支付 $0.05，因此只需支付所需的費用。
+轉到[!DNL Acrobat Services]個API [首頁](https://developer.adobe.com/document-services/apis/doc-generation)。 若要開始使用[!DNL Acrobat Services]個API，您需要應用程式的憑據。 向下滾動，然後選擇&#x200B;**開始免費試用**&#x200B;以建立憑據。 您可以[免費使用這些服務6個月，然後按單價支付](https://developer.adobe.com/document-services/pricing/main)，每單據交易僅需0.05美元，因此您只需支付所需費用。
 
-選取 **「PDF 服務」API** 做您選擇的服務，並填入如下所示的其他詳細數據。
+選擇&#x200B;**PDF服務API**&#x200B;作為您選擇的服務，並填寫下面所示的其他詳細資訊。
 
-![取得認證的螢幕擷圖](assets/sales_5.png)
+![獲取憑據的螢幕快照](assets/sales_5.png)
 
-建立認證后，您會獲得一些程式碼範例。 選取您偏好的語言 （此教學課程使用Node.js）。 您的API認證位於 zip 檔案中。 將檔案解壓縮為 PDFToolsSDK-Node.jsSamples。
+建立憑據後，將獲得一些代碼示例。 選擇首選語言（本教程使用Node.js）。 您的API憑據位於zip檔案中。 將檔案解壓到PDFToolsSDK-Node.jsSamples。
 
-首先，請建立一個名為 auto-doc\**的空白資料夾。\*\* 在檔案夾中，執行下列命令以初始化Node.js專案： `npm init`。 為您的專案命名「自動檔」*。*
+要啟動，請建立一個名為auto-doc\*\*的空資料夾。\*\*在資料夾中，運行以下命令以初始化Node.js項目： `npm init`。 將項目命名為「auto-doc」*。*
 
-在檔案夾中 。/PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples，有一個名為 pdftools-api-credentials.json 的檔案。 將其移動並private.key至自動資料夾。 其中包含您的API認證。 此外，在自動資料夾中，建立名為「resources」的子檔案夾。 它包含每次產生銷售方案時從用戶端收到的 JSON 格式數據。 在同一個資料夾中，從 Microsoft Word 儲存銷售提案範本。
+在資料夾中。/PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples，有一個名為pdftools-api-credentials.json的檔案。 將其和private.key移到自動文檔資料夾。 它包含您的API憑據。 此外，在auto-doc資料夾中，建立名為「resources」的子資料夾。 它保存在您生成銷售建議時從客戶端接收的JSON格式資料。 在同一資料夾中，保存來自MicrosoftWord的銷售建議模板。
 
-現在您可以施展魔法了！ 由於您在此教學課程中使用 Node.js，因此必須安裝 Node.js [!DNL Acrobat Services] SDK。 若要這麼做，請在「自動檔」資料夾中，執行「@adobe/documentservices-pdftools-node-sdk」
+你準備好施魔法了！ 由於您在本教程中使用Node.js，因此必須安裝Node.js [!DNL Acrobat Services] SDK。 為此，在auto-doc資料夾中，運行yarn add @adobe/documentservices-pdftools-node-sdk。
 
-現在建立一個名為「merge.js」的檔案，然後將下列程式代碼貼到檔案中。
+現在建立名為merge.js的檔案，並將以下代碼貼上到該檔案中。
 
 ```
 javascript
@@ -135,14 +135,15 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-此程序代碼會在您使用 [!DNL Acrobat Services]的標記建立的協助下，從Microsoft窗體取得 JSON 檔案。 然後，將數據與您在 Microsoft Word 中建立的銷售提案範本合併，產生全新的 PDF。 PDF 會儲存在新建立的檔案中。/輸出資料夾。
+此代碼在使用[!DNL Acrobat Services]建立的標籤的幫助下從Microsoft表單獲取您的JSON檔案。 然後，它將資料與您在MicrosoftWord中建立的銷售計畫書模板合併，以生成全新的PDF。 PDF將保存在新建立的中。/output資料夾。
 
-此外，程式代碼會使用 [Adobe Sign API](https://developer.adobe.com/adobesign-api/) 讓兩家公司簽署產生的銷售方案。 請參閱此部落格文章，深入瞭解此API。
+此外，代碼使用[Adobe SignAPI](https://developer.adobe.com/adobesign-api/)讓兩家公司簽署生成的銷售計畫書。 請查看此部落格，瞭解此API的詳細說明。
 
 ## 後續步驟
 
-您一開始是一個效率低下、冗長乏味的過程，需要自動化。 您從手動為每個客戶建立檔，到建立簡化的工作流程來自動化和簡化 [銷售提案流程](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)。
+您最初的流程效率低下，繁瑣，需要自動化。 您從為每個客戶端手動建立文檔，到建立簡化的工作流，以自動化和簡化[銷售計畫書流程](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)。
 
-使用「Microsoft窗體」時，您的客戶會收到重要數據，這些數據會包含在其獨特的提案中。 您在 Microsoft Word 中建立了銷售提案範本，以提供您每次都不想重新建立的靜態文字。 然後，您使用 [!DNL Acrobat Services] API 合併來自表單和範本的數據，以更有效率的方式為客戶建立銷售提案 PDF。
+使用Microsoft·Forms，您從客戶那裡獲得了關鍵資料，這些資料將包含在他們獨特的建議中。 您在MicrosoftWord中建立了銷售計畫書模板，以提供您不希望每次重新建立的靜態文本。 然後，您使用[!DNL Acrobat Services]個API來合併表單和模板中的資料，以更高效的方式為客戶端建立銷售建議PDF。
 
-此實作教學課程僅能一窺這些 API 是否可行。 若要探索更多解決方案，請造 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 訪 API 頁面。 所有工具均可免費使用 6 個月。 然後，根據「現成付費」計劃，每份檔只需[&#128279;](https://developer.adobe.com/document-services/pricing/main)支付 $0.05 美元，因此您只需隨著團隊增加更多潛在客戶而付費至銷售管線。
+本實踐教程僅概括介紹了這些API的可能性。 若要發現更多解決方案，請訪問[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) API頁。 所有這些工具都免費使用6個月。 然後，在[即付即付](https://developer.adobe.com/document-services/pricing/main)計畫中，每筆文檔交易只需支付0.05美元，因此只有在您的團隊向您的銷售渠道中添加更多潛在客戶時，您才支付。
+

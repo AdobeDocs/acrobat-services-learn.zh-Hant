@@ -1,6 +1,6 @@
 ---
-title: 報告建立和編輯
-description: 瞭解如何在您的網站上為客戶產生 PDF 報告
+title: 報表建立和編輯
+description: 瞭解如何在您的網站上為客戶生成PDF報告
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,60 +8,60 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
 
 ---
 
-# 建立和編輯報告
+# 報表建立和編輯
 
-![使用案例主打橫幅](assets/UseCaseReportHero.jpg)
+![使用案例英雄橫幅](assets/UseCaseReportHero.jpg)
 
-金融、教育、行銷和其他產業都使用 PDF 與客戶和利益相關者共享數據。 PDF 讓您輕鬆共用豐富的檔，並提供表格、圖形和互動式內容，這種格式每個人都能檢視。 [!DNL Adobe Acrobat Services] API 可協助這些公司從 Microsoft Word、Microsoft Excel、圖形和其他不同檔格式產生可共用的 PDF 報告。
+金融、教育、市場營銷和其他行業使用PDF與客戶和利益相關方共用資料。 PDF使用表格、圖形和互動式內容以每個人都可以查看的格式輕鬆共用富文檔。 [!DNL Adobe Acrobat Services]個API可幫助這些公司生成來自MicrosoftWord、MicrosoftExcel、圖形和其他不同文檔格式的可共用PDF報告。
 
-假設您 [經營著一家社交媒體追蹤公司](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)。 您的客戶會登入受密碼保護的網站，以檢視他們的營銷活動分析。 通常，他們想將這些統計數據與其高階主管、臨時組織、捐助者或其他利益相關者分享。 可下載的 PDF 檔是客戶共用數位、圖表等的絕佳方式。
+假設您[運行社交媒體跟蹤公司](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)。 您的客戶登錄到站點中受密碼保護的部分，以查看其市場活動分析。 通常，他們希望與高管、股東、捐贈者或其他利益相關方分享這些統計資料。 可下載的PDF文檔是您的客戶共用數字、圖表等的絕佳方式。
 
-透過將 [PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services) 整合到您的網站，您就可以隨時隨地為每位客戶產生 PDF 報告。 您可以建立 PDF，然後將它們合併為一份便利的單一報告，供客戶下載並傳遞給相關人員。
+通過將[PDF服務API](https://developer.adobe.com/document-services/apis/pdf-services)合併到您的網站中，您可以為每個客戶在旅途中生成PDF報告。 您可以建立PDF，然後將它們合併為一份單一、方便的報告，供客戶下載並傳遞給其利益相關方。
 
-## 您可以學習哪些內容
+## 你能學到的
 
-在此實作教學課程中，瞭解如何在Node.js和Express.js環境 （僅透過一些JavaScript、HTML 和 CSS） 使用 PDF Services SDK，以快速且輕鬆地將 PDF 型功能新增至現有網站。 此網站提供管理員上傳報告的頁面，客戶檢視可用報告清單並選取要轉換為 PDF 的檔案的區域，以及下載系統所產生 PDF 的實用端點。
+在本實踐教程中，瞭解如何在Node.js和Express.js環境(只帶一些JavaScript、HTML和CSS)中使用PDF服務SDK，以快速、輕鬆地將面向PDF的功能添加到現有網站。 此網站有一個頁面，管理員可在其中上載報告；一個區域，客戶可以查看可用報告清單並選擇要轉換為PDF的文檔；以及有用的終結點，可下載由系統生成的PDF。
 
-## 相關 API 和資源
+## 相關API和資源
 
-* [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF 嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-## Campaign報告客戶的儀錶板
-
->[!NOTE]
->
->此教學課程不Node.js最佳實務或如何保護您的網頁應用程式。 網站的某些區域公開供公開使用，檔命名可能不易製作。 若要討論設計這樣的系統的最佳方法，請諮詢您的架構者和工程師。
-
-這裡，您有一個基本Express.js網頁應用程式，其中包含客戶報告區域和管理員區段。 此應用程式可展示社交媒體營銷活動的報告。 例如，它可以證明廣告的點按次數。
-
-![如何取得個人化報告的螢幕擷圖](assets/report_1.png)
-
-您可以從 [GitHub 儲存庫](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools)下載此專案。
-
-現在，讓我們來探索如何發佈報告。
-
-## 上傳報告
-
-若要保持簡單，請僅使用此處的文件系統式上傳和處理。 在 Express.js 中，您可以使用 fs 模組來列出目錄下所有可用的檔案。
-
-在同一頁面上，讓管理員將報告檔案上傳至伺服器，以供客戶查看。 這些檔案可以採用許多不同格式，例如 Microsoft Word、Microsoft Excel、HTML 和其他 [數據格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) ，包括圖形檔案。 管理員頁面如下所示：
-
-![管理員功能的螢幕擷圖](assets/report_2.png)
+## 客戶的市場活動報告儀表板
 
 >[!NOTE]
 >
->使用密碼保護您的 URL，或從下午 npm 開始使用護照套件，在驗證和授權層後面保護您的應用程式。
+>本教程不涉及Node.js最佳實踐，也不涉及如何保護Web應用程式的安全。 網站的某些區域公開供公眾使用，文檔命名可能不利於生產。 要討論設計此類系統的最佳方法，請咨詢您的架構師和工程師。
 
-當管理員選取並上傳檔案時，該檔案會移至其他人可存取的公用儲存庫。 您使用相同的儲存庫從管理頁面發佈檔，並列出可供客戶使用的營銷報告。 此程式代碼為：
+這裡，您有一個基本的Express.js Web應用程式，該應用程式具有客戶報告區和管理員區。 此應用程式可顯示社交媒體活動的報告。 例如，它可以顯示廣告的按一下次數。
+
+![如何獲取個性化報告的螢幕快照](assets/report_1.png)
+
+可以從[GitHub儲存庫](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools)下載此項目。
+
+現在，讓我們來探討如何發佈這些報告。
+
+## 正在上載報告
+
+要保持其簡單性，請僅在此使用基於檔案系統的上傳和處理。 在Express.js中，可以使用fs模組列出目錄下的所有可用檔案。
+
+在同一頁上，允許管理員將報告檔案上載到伺服器，供客戶查看。 這些檔案可以採用多種不同格式，如MicrosoftWord、MicrosoftExcel、HTML和[其他資料格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)（包括圖形檔案）。 管理頁如下所示：
+
+![管理功能螢幕快照](assets/report_2.png)
+
+>[!NOTE]
+>
+>密碼保護您的URL或使用npm的護照包來保護您的應用程式在身份驗證和授權層之後的安全。
+
+當管理員選擇並上載檔案時，該檔案會被移動到其他人可以訪問的公共儲存庫。 您可以使用同一儲存庫從管理頁發佈文檔，並列出可供客戶使用的市場營銷報告。 此代碼為：
 
 ```
 router.get('/', (req, res) => {
@@ -74,37 +74,37 @@ res.status(500).render("crash", { error: error });
 });
 ```
 
-此程式代碼會列出所有檔案，並演算檔案清單的檢視。
+此代碼列出所有檔案並呈現檔案清單的視圖。
 
-## 選取報告
+## 選擇報告
 
-在使用者方面，您有一份窗體供客户在社交媒體行銷活動報告中選取要包含的文件。 簡單來說，在範例頁面上，僅顯示檔名稱和選取檔的複選框。 客戶可以選取單一報告或多個報告，以合併到單一 PDF 檔中。
+在用戶端，您有一個表單，供客戶選擇要包括在其社交媒體市場活動報告中的文檔。 為簡單起見，在示例頁面上，僅顯示文檔名稱和複選框以選擇文檔。 客戶可以選擇單個報表或多個報表以組合到單個PDF文檔中。
 
-若要獲得更進階的使用者介面，您也可以在這裡顯示報告的預覽。
+對於更高級的用戶介面，您也可以在此處顯示報告的預覽。
 
-![客戶功能螢幕擷圖](assets/report_3.png)
+![客戶功能螢幕快照](assets/report_3.png)
 
-## 產生 PDF 報告
+## 生成PDF報告
 
-使用 PDF Services SDK 從數據輸入建立 PDF 報告。 數據 （如上述螢幕擷圖所示） 可能來自各種數據格式，例如 Microsoft Word、Microsoft Excel、HTML、圖形等。 先安裝 PDF Services SDK 的 npm 套件。
+使用PDF服務SDK從資料輸入建立PDF報告。 資料（如上面的螢幕截圖所示）可以來自各種資料格式，如MicrosoftWord、MicrosoftExcel、HTML、圖形等。 首先安裝用於PDF服務SDK的npm包。
 
 ```
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-在開始之前，您必須先擁有API憑證， [Adobe免費試用](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)。 免費使用您的 [!DNL Acrobat Services] 帳戶 [6 個月，每次](https://developer.adobe.com/document-services/pricing/main) 檔交易只要 \$0.05，直接付款。
+在啟動之前，您必須具有API憑據[可以從Adobe中釋放](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)。 使用[!DNL Acrobat Services]帳戶[免費6個月，然後按時付費](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易僅為\$0.05。
 
-下載封存盤案，並擷取 JSON 檔案以取得認證和私鑰。 在範例專案中，您將檔案放置在 src 目錄中。
+下載存檔檔案並提取JSON檔案以獲取憑據和私鑰。 在示例項目中，將檔案放在src目錄中。
 
-![src 目錄螢幕擷圖](assets/report_4.png)
+![源目錄的螢幕截圖](assets/report_4.png)
 
-現在您已設定認證，就可以寫入 PDF 轉換工作。 對於此示範，您有兩個必須在應用程式中執行的作：
+現在您已設定了憑據，可以編寫PDF轉換任務。 對於此演示，您必須在應用程式中執行以下兩個操作：
 
-* 將原始檔案轉換為 PDF 檔案
+* 將原始文檔轉換為PDF檔案
 
-* 在單一報告中合併多個 PDF 檔案
+* 將多個PDF檔案合併到單個報告中
 
-整體程式與執行任何作的程式相似。 唯一的差異是您使用的服務。 在下列程式代碼中，將原始檔案轉換為 PDF 檔案：
+運行任何操作的整個過程都類似。 唯一的區別是你使用的服務。 在以下代碼中，將原始文檔轉換為PDF檔案：
 
 ```
 async function createPdf(rawFile, outputPdf) {
@@ -129,17 +129,17 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-在上面的程式代碼中，您讀取認證並建立執行內容。 PDF Services SDK 需要執行內容才能驗證您的要求。
+在上面的代碼中，您讀取憑據並建立執行上下文。 PDF服務SDK需要執行上下文來驗證您的請求。
 
-然後，執行「建立 PDF」作業，將原始文件轉換為 PDF 格式。 最後，您可以使用 `outputPdf` 參數來複製 PDF 報告。 在程式代碼範例中，您可以在 src/helpers/pdf.js 檔案下找到此代碼。 稍後在此教學課程中，您會讀入 PDF 模組並呼叫此方法。
+然後，運行「建立PDF」操作，將原始文檔轉換為PDF格式。 最後，使用`outputPdf`參數複製PDF報告。 在代碼示例中，在src/helpers/pdf.js檔案下找到此代碼。 在本教程的後面，您將導入PDF模組並調用此方法。
 
-如上一節所示，您的客戶可以前往下列頁面，選取要轉換為 PDF 的報告：
+如上節所示，您的客戶可以轉到以下頁面，以選擇要轉換為PDF的報表：
 
-![客戶功能螢幕擷圖](assets/report_3.png)
+![客戶功能螢幕快照](assets/report_3.png)
 
-當客戶選取其中一或多個報告時，您就會建立 PDF 檔案。
+當客戶選擇一個或多個這些報表時，您將建立PDF檔案。
 
-首先，讓我們看看單一 PDF 檔案的實際運作。 當使用者選取單一報告時，您只需要將其轉換為 PDF 並提供下載連結。
+首先，讓我們看一個PDF檔案正在執行中。 當用戶選擇單個報表時，您只需將其轉換為PDF並提供下載連結。
 
 ```
 try {
@@ -153,15 +153,15 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-此程式代碼會建立報告，並與客戶共用下載URL。 輸出網頁如下：
+此代碼建立報告並與客戶共用下載URL。 以下是輸出網頁：
 
-![客戶下載畫面螢幕擷圖](assets/report_5.png)
+![客戶下載螢幕截圖](assets/report_5.png)
 
-輸出 PDF 如下：
+下面是輸出PDF:
 
-![一般報告的螢幕擷圖](assets/report_6.png)
+![一般報告螢幕截圖](assets/report_6.png)
 
-客戶可以選取多個檔案來產生合併報告。 當客戶選取多個檔時，您會執行兩項作業：第一個作業會為每份檔建立部分 PDF，第二個則會將其合併為單一 PDF 報告。
+客戶可以選擇多個檔案以生成組合報表。 當客戶選擇多個文檔時，您可以執行兩個操作：第一個為每個文檔建立部分PDF，第二個將它們合併為單個PDF報表。
 
 ```
 async function combinePdf(pdfs, outputPdf) {
@@ -188,7 +188,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-此方法可在 src/helpers/pdf.js 檔案下方使用，並在模組轉存中顯示。
+此方法可在src/helpers/pdf.js檔案下找到，並作為模組導出的一部分公開。
 
 ```
 try {
@@ -209,14 +209,15 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-此程式代碼會為多個輸入檔產生編譯報告。 唯一新增的 `combinePdf` 功能是使用 PDF 檔案路徑名稱清單並傳回單一輸出 PDF 的方法。
+此代碼為多個輸入文檔生成已編譯報告。 唯一添加的函式是`combinePdf`方法，它獲取PDF檔案路徑名清單並返回單個輸出PDF。
 
-現在，您的社交媒體儀錶板客戶可以從其帳戶中選取相關報告，並將其下載為一份便利的 PDF。 此儀錶板可讓他們以普遍容易開啟的格式顯示管理活動及其他利害關係人、其營銷活動的成功與數據、表格和圖表。
+現在，您的社交媒體控制板客戶可以從其帳戶中選擇相關報告，並將其下載為一個方便的PDF。 此控制板允許他們以易於開啟的通用格式通過資料、表和圖表來顯示管理層和其他利益相關方的市場活動成功。
 
 ## 後續步驟
 
-本實作教學課程介紹如何使用 PDF Services API，協助客戶輕鬆分享 PDF 以下載相關報告。 您建立了Node.js應用程式，展示 PDF Services API PDF 報告和閱讀服務的功能。 應用程式示範了您的客戶如何下載單一報告檔，或將多個檔案合併並合併為單一 PDF 報告。
+本操作教程介紹了如何使用PDF服務API來幫助客戶將相關報告下載為易於共用的PDF。 您建立了Node.js應用程式，以展示PDF服務API的功能，用於PDF報告和讀取服務。 該應用程式演示了客戶如何下載單個報告文檔或將多個文檔合併並合併到單個PDF報告中。
 
-這個Adobe提供的應用程式可協助您的 [社交媒體儀錶板客戶](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation) 取得及分享所需的報告，而不必擔心收件者是否都已在其裝置上安裝 Microsoft Office 或其他軟體。 您可以在自己的應用程式中使用相同的技術，協助用戶檢視、合併和下載檔。 或者，查看Adobe許多其他 API 來新增和追蹤簽名等。
+此Adobe驅動的應用程式可幫助您的[社交媒體儀表板客戶](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)獲取和共用他們需要的報告，而無需擔心收件人的設備上是否都安裝了Microsoft辦公室或其他軟體。 您可以在自己的應用程式中使用相同的技術來幫助用戶查看、合併和下載文檔。 或者，查看Adobe的許多其他API以添加和跟蹤簽名等。
 
-若要開始使用，請申請免費 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 帳戶，然後為您的員工和客戶建立引人入勝的報告體驗。 免費使用帳戶 6 個月，然後 [隨著行銷工作擴展，可隨即付費](https://developer.adobe.com/document-services/pricing/main) ，每份檔交易只需 \$0.05。
+若要開始，請申請您的免費[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帳戶，然後為您的員工和客戶建立具有吸引力的報告體驗。 隨著營銷工作的擴大，您可以免費享受6個月的帳戶，然後[按使用付費](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易僅為0.05美元。
+

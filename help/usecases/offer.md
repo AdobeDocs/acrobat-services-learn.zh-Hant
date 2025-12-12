@@ -1,6 +1,6 @@
 ---
-title: 管理員工錄用信函
-description: 瞭解如何產生可傳送給新員工以索取簽名的錄用信函
+title: 管理員工聘用函
+description: 瞭解如何生成可交付給新員工以供其簽名的聘用函
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,93 +8,93 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
 
 ---
 
-# 管理員工錄用信函
+# 管理員工聘用函
 
-![使用案例主打橫幅](assets/UseCaseOfferHero.jpg)
+![使用案例英雄橫幅](assets/UseCaseOfferHero.jpg)
 
-員工錄用信函是員工在您的組織中擁有的第一批體驗之一。 因此，您想要確保錄取通知是品牌化的，但是您不需要每次都從頭開始在文字處理器中建立字母。 [!DNL Adobe Acrobat Services]API 提供快速、簡單且有效的方式處理產生和傳送錄用信函給新員工[&#128279;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)的關鍵部分。
+員工聘函是員工與您的組織最早的體驗之一。 因此，您希望確保您的優惠信是品牌上的，但您不希望每次都從頭開始在文字處理器中構建字母。 [!DNL Adobe Acrobat Services]個API提供了一種快速、簡單和有效的方法，可處理[的關鍵部分，以生成並向新員工提供聘用信](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)。
 
-## 您可以學習哪些內容
+## 你能學到的
 
-此實作教學課程逐步設定 Node Express 專案，該專案會顯示網頁表單，供使用者填入員工詳細資訊。 這些詳細數據會透過 [!DNL Acrobat Services] 網頁產生工作信函作為 PDF，並透過Adobe Sign API傳送給客戶以索取簽名。
+本實踐教程將介紹如何設定一個Node Express項目，該項目顯示一個Web表單，供用戶用僱員詳細資訊填充。 這些詳細資訊通過Web使用[!DNL Acrobat Services]生成優惠信作為PDF，可以通過Adobe SignAPI將其發送給客戶以供其簽名。
 
-## 相關 API 和資源
+## 相關API和資源
 
-* [PDF 服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe檔產生API](https://developer.adobe.com/document-services/apis/doc-generation)
+* [Adobe文檔生成API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
+* [Adobe SignAPI](https://developer.adobe.com/adobesign-api/)
 
-* [檔產生Tagger Word載入巨集](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
+* [文檔生成標籤Word載入項](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
-* [專案範例](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
+* [項目示例](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
 ## 快速入門
 
-[&#128279;](https://nodejs.org/) Node.js是程式設計平臺。隨附一組龐大的資料庫，例如 Express 網頁伺服器。 [下載Node.js](https://nodejs.org/en/download/) 並依照步驟安裝這個絕佳的開放原始碼開發環境。
+[Node.js](https://nodejs.org/)是寫程式平台。 它附帶了大量庫，如Express Web伺服器。 [下載Node.js](https://nodejs.org/en/download/)，然後按照步驟安裝此良好的開源開發環境。
 
-若要在 Node.js 中使用Adobe檔產生API，請前往 [「文件產生API](https://developer.adobe.com/document-services/apis/doc-generation) 」網站存取您的帳戶或註冊新的帳戶。 您的帳戶 [可以免費使用 6 個月，每次](https://developer.adobe.com/document-services/pricing/main) 檔交易只要 $0.05，因此您可以免風險試用，然後只會隨著公司成長支付。
+要在Node.js中使用Adobe文檔生成API，請轉到[文檔生成API](https://developer.adobe.com/document-services/apis/doc-generation)站點以訪問您的帳戶或註冊新帳戶。 您的帳戶[在6個月內免費，然後按單價支付](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易僅需0.05美元，因此您可以嘗試無風險，然後僅在公司增長時支付。
 
-登入 [Adobe Developer Console](https://developer.adobe.com/console/) 後，按兩下「 **[!UICONTROL 建立新專案」]**。 依預設，該專案命名為「專案 1」。 按兩下「 **[!UICONTROL 編輯專案」]** 按鈕，然後將名稱變更為「Offer Letter Generator」。 画面中央是「 **[!UICONTROL 使用您的新專案]** 」區段開始使用」 若要為您的項目啟用安全性，請採取下列步驟：
+登錄到[Adobe Developer Console](https://developer.adobe.com/console/)後，按一下&#x200B;**[!UICONTROL 新建項目]**。 預設情況下，項目名為「項目1」。 按一下&#x200B;**[!UICONTROL 編輯項目]**&#x200B;按鈕，將名稱更改為「提供信件生成器」。 螢幕中心是&#x200B;**[!UICONTROL 開始使用新項目]**&#x200B;節。 要啟用項目安全性，請執行以下步驟：
 
-按一下 **「新增API**」。 您會看到一些 API 可供選擇。 在「**[!UICONTROL 依產品篩選」]**&#x200B;區段中，選&#x200B;**[!UICONTROL 取「Document Cloud]**」，然後按兩下一&#x200B;**[!UICONTROL 步。]**
+按一下&#x200B;**添加API**。 您可以看到許多API可供選擇。 在&#x200B;**[!UICONTROL 按產品篩選]**&#x200B;部分，選擇&#x200B;**[!UICONTROL Document Cloud]**，然後按一下&#x200B;**[!UICONTROL 下一步]**。
 
-現在，請產生認證以存取API。 認證的格式為 JSON Web Token （[JWT](https://jwt.io/)）：安全通訊的開放標準。 如果您熟悉 JWT 且已產生金鑰，您可以在這裡上傳公鑰。 或者，請選取 **Option 1** ，讓Adobe為您產生密鑰。
+現在，生成訪問API的憑據。 憑據的形式為JSON Web令牌([JWT](https://jwt.io/))：安全通信的開放標準。 如果您熟悉JWT並且已生成密鑰，則可以在此處上載公鑰。 或者，選擇&#x200B;**選項1**&#x200B;以讓Adobe為您生成密鑰，繼續。
 
-![產生認證的螢幕擷圖](assets/offer_1.png)
+![生成憑據的螢幕快照](assets/offer_1.png)
 
-按兩下「 **[!UICONTROL 產生按鍵」]** 按鈕。 您有要下載的config.zip檔案。 解壓縮封存盤案。 其中包含兩個檔案：certificate_pub.crt 和 private.key。 確保後者安全無虞，因為後者包含您的私人認證，且可能會用於在超出您的控制範圍的情況下產生挑剔的檔。
+按一下&#x200B;**[!UICONTROL 生成密鑰對]**&#x200B;按鈕。 您可以下載config.zip檔案。 解壓縮存檔檔案。 它包含兩個檔案：certificate_pub.crt和private.key。 確保後者是安全的，因為後者包含您的私有憑據，並且可能用於在您無法控制的情況下生成虛假文檔。
 
-按&#x200B;**[!UICONTROL 「下一步」]**。否，啟用對 PDF 產生API的存取權。 在「 **[!UICONTROL 選取產品描述檔」畫面上]** ，檢查 **[!UICONTROL 「企業 PDF 服務開發人員]**」，然後按下「 **[!UICONTROL 儲存已設定的API]** 」按鈕。 現在您已準備好開始使用API。
+按&#x200B;**[!UICONTROL 「下一步」]**。否，啟用對PDF生成API的訪問。 在&#x200B;**[!UICONTROL 選擇產品配置檔案]**&#x200B;螢幕上，選中&#x200B;**[!UICONTROL 企業PDF服務開發人員]**，然後按一下&#x200B;**[!UICONTROL 保存配置的API]**&#x200B;按鈕。 現在，您已準備好開始使用API。
 
-## 設定專案
+## 設定項目
 
-設定節點專案以執行您的程序代碼。 此範例使用 [Visual Studio Code](https://code.visualstudio.com/) （VS Code） 做為編輯器。 建立名為「字母產生器」的檔案夾，然後在 VS Code 中開啟。 從「 **[!UICONTROL 檔案」選]** 單中，選取 **[!UICONTROL 「終端機]** \> **[!UICONTROL 新終端機]** 」，以在此檔案夾中開啟殼層。 輸入下列項目，檢查節點是否安裝在路徑上：
+設定節點項目以運行代碼。 此示例使用[Visual Studio代碼](https://code.visualstudio.com/)（VS代碼）作為編輯器。 建立名為「letter-generator」的資料夾，並在VS代碼中將其開啟。 從&#x200B;**[!UICONTROL 檔案]**&#x200B;菜單中，選擇&#x200B;**[!UICONTROL 終端]** \> **[!UICONTROL 新終端]**&#x200B;以在此資料夾中開啟Shell。 輸入以下命令，檢查節點是否已安裝並位於路徑上：
 
 ```
 node -v
 ```
 
-您應該會看到您安裝的節點版本。
+您應該看到已安裝的節點版本。
 
-現在您已安裝開發環境，您可以繼續建立專案。
+現在您已安裝了開發環境，您可以繼續建立項目。
 
-首先，使用節點封裝管理員 （npm） 初始化專案。 輸入下列內容：
+首先，使用節點包管理器(npm)初始化項目。 鍵入以下內容：
 
 ```
 npm init
 ```
 
-系統會詢問您關於節點專案的一些問題。 您可以略過上述大多數問題，但請確認專案名稱為「字母產生器」，且專案輸入點 **index.js**。 選取 **「是** 」以完成專案初始化。
+您會被問到一些有關節點項目的問題。 您可以跳過這些問題中的大多數，但請確保項目名稱為「letter-generator」，入口點為&#x200B;**index.js**。 選擇&#x200B;**是**&#x200B;以完成項目初始化。
 
-您現在有一個package.json檔案。 節點會使用此檔案來組織您的專案。 在建立index.js之前，您必須先新增下列Adobe資料庫
+您現在擁有package.json檔案。 節點使用此檔案來組織項目。 在建立index.js之前，必須添加具有以下內容的Adobe庫
 命令：
 
 ```
 npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-項目中應該會新增一個名為「node_modules的新資料夾。 此檔案夾是下載所有資料庫 （在節點中稱為相依性） 的地方。 系統也會更新package.json檔案，並參照「Adobe PDF服務」。
+應將名為node_modules的新資料夾添加到項目中。 此資料夾是下載所有庫（在「節點」中稱為依賴項）的位置。 還將使用對Adobe PDF服務的引用更新package.json檔案。
 
-現在，您想要將 Express 安裝為輕量網頁架構。 輸入下列命令：
+現在，您希望將Express作為輕量級Web框架進行安裝。 輸入下列命令：
 
 ```
 npm install express –save
 ```
 
-和以前一樣，package.json的相依性區段也會隨之更新。
+與以前一樣，將相應更新package.json的dependencies部分。
 
-## 建立錄取通知範本
+## 建立聘用函模板
 
-現在，在專案根目錄中，建立一個名為「app.js」的檔案。 讓我們將下列入門代碼放入其中：
+現在，在項目根目錄中，建立一個名為&quot;app.js&quot;的檔案。 讓我們在其中放入以下起始代碼：
 
 ```
 const express = require('express');
@@ -116,7 +116,7 @@ console.log(`Candidate offer letter app listening on port ${port}!`)
 });
 ```
 
-請注意，取得路由會傳回 **index.html** 檔案。 讓我們建立一個具有該名稱和以下簡單表格的 HTML 檔案。 您可以在稍後看到適合的 CSS 樣式和其他設計元素。 此窗體會提供應聘者產生歡迎信的基本詳細資訊：
+請注意，獲取路由返回&#x200B;**index.html**&#x200B;檔案。 讓我們使用該名稱和以下簡單格式建立HTML檔案。 您以後可以根據需要添加CSS樣式和其他設計元素。 此表格包含候選人生成歡迎信的基本詳細資訊：
 
 ```
 <!DOCTYPE html>
@@ -154,17 +154,17 @@ console.log(`Candidate offer letter app listening on port ${port}!`)
 </html>
 ```
 
-使用下列命令執行網頁伺服器：
+使用以下命令運行Web伺服器：
 
 ```
 node app.js
 ```
 
-您應該會看到「應聘者錄取通知應用程式在埠 8000 上聆聽」訊息。 如果您開啟瀏覽器， <http://localhost:8000/>表單應如下所示：
+您應該看到「Candiate offer letter app listening on port 8000（在埠8000上偵聽候選項提供信函應用）」的消息。 如果將瀏覽器開啟到<http://localhost:8000/>，表單應如下所示：
 
-![網頁窗體的螢幕擷圖](assets/offer_2.png)
+![Web表單螢幕截圖](assets/offer_2.png)
 
-請注意，窗體貼文會自行顯示。 如果填寫資料並按兩下 **列資訊，** 您應該會在控制臺上看到下列資訊：
+請注意，表單將自行發佈。 如果填寫資料並按一下&#x200B;**生成字母，**&#x200B;應在控制台上看到以下資訊：
 
 ```
 Got body: { firstname: 'John',
@@ -173,7 +173,7 @@ salary: '887888',
 startdate: '2021-04-01' }
 ```
 
-您會使用網頁服務呼叫來取代此控制台記錄。[!DNL Acrobat Services]首先，您必須根據 JSON 建立資訊模型。 此模型格式如下所示：
+您將此控制台日誌記錄替換為對[!DNL Acrobat Services]的Web服務調用。 首先，必須建立基於JSON的資訊模型。 此模型的格式如下：
 
 ```
 {
@@ -186,7 +186,7 @@ startdate: '2021-04-01' }
 }
 ```
 
-您可以視需要讓這個模型更加精緻，但是對於這個教學課程，請使用這個簡單範例。 此窗體沒有驗證，因為這超出本文的範疇。 若要將表格內文轉換為上述數據模型，請變更 app.post 處理程式方法，以擁有下列程式代碼：
+如果您願意，可以使此模型更加詳細，但在本教程中，請繼續使用此簡單示例。 此表單沒有驗證，因為此表單不在本文的範圍內。 要將表單主體轉換為上述資料模型，請將app.post處理程式方法更改為具有以下代碼：
 
 ```
 app.post('/', (req, res) => {
@@ -196,7 +196,7 @@ res.sendStatus(200);
 });
 ```
 
-第一行可將 JSON 資料轉換為所需的格式。 現在，您將此數據傳遞至 generateLetter 函式。 停止伺服器並在app.js結尾貼上下列程序代碼。 此程式代碼會將 Word 檔作為範本，並以 JSON 檔中的資訊填入佔位元。
+第一行將JSON資料置於所需格式。 現在，您將此資料傳遞給generateLetter函式。 停止伺服器並在app.js的末尾貼上以下代碼。 此代碼將Word文檔作為模板，並用JSON文檔中的資訊填充佔位符。
 
 ```
 // Letter generation function
@@ -239,31 +239,31 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那裡有許多解封程序代碼。 我們先做主控一部分：、`documentMergeOperation`本區段可讓您擷取 JSON 數據，並將其與 Word 檔範本合併。 您可以在 Adobe 網站上[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)使用範例做為參考，但是讓我們建立您自己的簡單範例。開啟 Word 並建立新的空白檔。 您可以根據需要自訂，但至少具有以下功能：
+要解包那兒的代碼很多。 我們先看主要部分： `documentMergeOperation`。 此部分是您獲取JSON資料並將其與Word文檔模板合併的位置。 您可以將Adobe站點[上的](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)示例用作引用，但讓我們製作您自己的簡單示例。 開啟Word並建立新的空白文檔。 您可以隨心所欲地定制它，但至少有這樣的功能：
 
-親愛的 X，
+親愛的X:
 
-我們很樂意為您提供$X一年的位置。 您的起始日期為 X。
+我們很高興能以每年X美元的價格為您提供一個職位。 你的起始日期是X。
 
 歡迎
 
-將檔另存為「OfferLetter-Template.docx」資料夾中名為「resources」的根目錄。 請注意檔中的三個 X。 這些 X 是 JSON 資訊的臨時佔位元。 雖然您可以使用特殊語法來取代這些佔位元，Adobe提供可簡化此任務的 Word 載入巨集。 若要安裝載入巨集，請前往 Adobe [Document Generation Tagger Word 増載入巨集](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) 網站。
+將文檔保存為「OfferLetter-Template.docx」，位於項目根目錄中名為「resources」的資料夾中。 注意文檔中的三個X。 這些X是JSON資訊的臨時佔位符。 雖然可以使用特殊語法來替換這些佔位符，但Adobe提供了可簡化此任務的Word載入項。 要安裝載入項，請轉到Adobe[文檔生成標籤Word載入項](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)站點。
 
-在 OfferLetter-Template 中，按下新的 **「文件產生」** 按鈕。 側邊面板隨即開啟。 按一下 **「開始使用**」。 系統會為您提供要貼上範例 JSON 數據的文字區域。 從上方將 JSON 的「offer-data」片段複製到文字區域。 其看起來應如下所示：
+在您的OfferLetter-Template中，按一下新的&#x200B;**文檔生成**&#x200B;按鈕。 側面板開啟。 按一下&#x200B;**開始**。 您有一個要貼上到示例JSON資料中的文本區域。 將JSON的「offer-data」代碼段從上複製到文本區域。 它應如下所示：
 
-![字母和程式代碼的螢幕擷圖](assets/offer_3.png)
+![字母和代碼螢幕快照](assets/offer_3.png)
 
-按兩下「 **產生標籤」** 按鈕。 您有標籤的下拉式選單，可插入檔案中的適當點。 反白標示檔中的第一個 X，然後選取 **[!UICONTROL 第一個名稱]**。 按兩下 **[!UICONTROL 「插入文字]** 」，「親愛的 X」變更為「親愛的 ```{{`offer_letter`.firstname}}```」。 此標籤為正確格式， 適用於 `documentMergeOperation`。 請繼續進行，並在適當的 X 上新增其餘三個標籤。 不要忘記儲存OfferLetter-template.docx。 看起來應該像這樣：
+按一下&#x200B;**生成標籤**&#x200B;按鈕。 您將獲得一個標籤下拉菜單，以插入文檔中的適當點中。 突出顯示文檔中的第一個X，然後選擇&#x200B;**[!UICONTROL 名字]**。 按一下&#x200B;**[!UICONTROL 插入文本]**，「親愛的X，」更改為「親愛的```{{`offer_letter`.firstname}}```，」。 此標籤是`documentMergeOperation`的正確格式。 繼續，在相應的X上添加其餘三個標籤。 不要忘記保存OfferLetter-template.docx。 它應該是這樣的：
 
 親愛的 ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```，
 
-我們很樂意為您提供每年 $ ```{{`offer_letter`.salary}}``` 的優惠方案。 您的開始日期為 ```{{`offer_letter`.startdate}}```。
+我們很高興為您提供一年$ ```{{`offer_letter`.salary}}```的職位。 您的開始日期為```{{`offer_letter`.startdate}}```。
 
 歡迎
 
-現在 Word 範本的標記符合 JSON 格式。 例如， ```{{`offer_letter`.`firstname`}}``` 在 Word 檔的開頭，會被 JSON 數據的「firstname」區段中的值所取代。
+現在，Word模板具有與JSON格式匹配的標籤。 例如，Word文檔開頭的```{{`offer_letter`.`firstname`}}```被JSON資料的「firstname」部分中的值替換。
 
-回到您的 `generateLetter` 功能。 若要保護 REST 呼叫的安全，請在專案根目錄中建立標題為pdftools-api-credentials.json的新檔案。 貼上下列 JSON 數據，並從開發[&#128279;](https://developer.adobe.com/console/)人員控制台的服務帳戶 （JWT） 區段進行詳細數據調整。
+返回到`generateLetter`函式。 要保護REST調用的安全，請在項目根目錄中建立一個名為pdftools-api-credentials.json的新檔案。 貼上以下JSON資料，並使用[開發人員控制台](https://developer.adobe.com/console/)的「服務帳戶(JWT)」部分的詳細資訊調整它。
 
 ```
 {
@@ -279,20 +279,21 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-* 您可直接從主控台的 **[!UICONTROL 「認證詳細數據]** 」區段複製用戶端 ID、用戶端密碼和組織 ID。
+* 可以從控制台的&#x200B;**[!UICONTROL 憑據詳細資訊]**&#x200B;部分直接複製客戶端ID、客戶端密碼和組織ID。
 
-* 帳戶 ID 是 **技術帳戶 ID**。
+* 帳戶ID是&#x200B;**技術帳戶ID**。
 
-* 複製您先前在專案中產生的private.key檔案，並在專案private_key_file區段中輸入其名稱
-pdftools-api-credentials.json檔案。 如有希望，您可以在這裡放置私鑰檔案的路徑。 請記得確保安全，因為一旦超出您的控制範圍，可能會使用錯誤。
+* 將先前生成的private.key檔案複製到項目中，並在項目的private_key_file部分中輸入其名稱
+pdftools-api-credentials.json檔案。 如果您願意，可以在此處放置私鑰檔案的路徑。 請記住要保持安全，因為一旦失控，它就會被誤用。
 
-若要產生含有已填寫 JSON 數據的 PDF，請返回「 **[!UICONTROL 輸入應聘者詳細數據]** 」網頁窗體，然後發佈一些數據。 由於必須從Adobe下載檔，因此需要一點時間，但您應該將標題為OfferLetter.pdf的檔案放入標題為輸出的新檔案夾中。
+要生成已填入JSON資料的PDF，請返回&#x200B;**[!UICONTROL 輸入候選詳細資訊]** Web表單並發佈一些資料。 由於文檔必須從Adobe下載，因此需要一些時間，但您應該在標題為「輸出」的新資料夾中有一個名為OfferLetter.pdf的檔案。
 
 ## 後續步驟
 
-就是這樣！ 這隻是一個開始。 如果您研究 Word 載入巨集「檔產生」索引標籤標的「進階」區段，您會注意到並非所有佔位元標記都來自相關的 JSON 數據。 您也可以新增簽名標籤。 這些標籤可讓您將產生的檔上傳至 [Adobe Sign](https://www.adobe.com/ca/sign.html) ，以傳送給新員工並進行簽署。 閱讀 Adobe Sign 快速入門API瞭解如何進行。 此程式很類似，因為您使用的是以 JWT 字元保護的 REST 呼叫。
+就這樣！ 這只是個開始。 如果您研究Word載入項的「文檔生成」頁籤的「高級」部分，您會注意到並非所有佔位符標籤都來自關聯的JSON資料。 您還可以添加簽名標籤。 這些標籤允許您將生成的文檔上載到[Adobe Sign](https://www.adobe.com/ca/sign.html)，以便交付並簽名到新員工。 閱讀Adobe SignAPI入門以瞭解如何操作。 此過程類似，因為您使用的是使用JWT令牌保護的REST調用。
 
-當組織必須 [跨多個地點僱用](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) 季節性員工時，可以將上述的單一檔範例作為申請的基礎。 如所示，主要流程是透過在線應用程式從求職者獲取數據。 數據用於填入錄用信函的欄位，並傳送以索取電子簽名。
+上面提供的單個文檔示例可用作應用程式的基礎，因為組織必須[跨多個地點增加季節性雇用](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)名員工。 如圖所示，主要流程是通過線上應用程式從候選者處獲取資料。 該資料用於填充聘用函的欄位，並將其發出以進行電子簽名。
 
-[!DNL Adobe Acrobat Services]可免費使用 6 個月，每[&#128279;](https://developer.adobe.com/document-services/pricing/main)份檔交易只需支付 $0.05，因此您可以隨業務成長嘗試並擴充錄取通知工作流程。開始 [使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-建立您自己的範本， [註冊您的開發人員帳戶](https://developer.adobe.com/)。
+[!DNL Adobe Acrobat Services]可免費使用6個月，然後[按單次付費](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易只需0.05美元，因此您可以嘗試它，並隨著業務增長擴展您的優惠信工作流。 到[開始](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+正在構建您自己的模板，[註冊您的開發人員帳戶](https://developer.adobe.com/)。
+
