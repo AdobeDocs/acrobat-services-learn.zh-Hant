@@ -23,5 +23,5 @@ ht-degree: 0%
 >
 >本教程專門針對正在構建並嵌入其應用程式中的簽名過程的OEM合作夥伴而設計。
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445419?captions=chi_hant&hidetitle=true){transcript=true}
 

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 瞭解如何使用AI在規模上自動標籤輔助功能。 自動標籤可減少達到法規遵從性所需的時間和成本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446270?captions=chi_hant&hidetitle=true)
 
