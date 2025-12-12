@@ -189,7 +189,7 @@ ht-degree: 0%
 1. 在&#x200B;*[!UICONTROL 選擇計算類型]*&#x200B;下，選擇&#x200B;**[!UICONTROL 聚合]**。
 1. 在&#x200B;*[!UICONTROL 選擇類型]*&#x200B;下，選擇&#x200B;**[!UICONTROL 總和]**。
 1. 在&#x200B;*[!UICONTROL 選擇記錄]*&#x200B;下，選擇&#x200B;**[!UICONTROL ReferencesOrder]**。
-1. 在*[!UICONTROL 選擇要執行聚合的項]**下，選擇&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
+1. 在&#x200B;*[!UICONTROL 選擇要執行聚合的項]&#x200B;**下，選擇&#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]**。
 1. 選擇&#x200B;**[!UICONTROL 插入計算]**。
 
 此過程插入一個計算標籤，該標籤提供值之和。 可以使用JSONata計算進行更高級的計算。 例如：

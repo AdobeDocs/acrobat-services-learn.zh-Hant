@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ### 獲取練習代碼
 
-我們為您建立了代碼。 雖然您可以使用自己的代碼，但演示將位於教程資源的上下文中。 在此處下載示例代碼[](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)。
+我們為您建立了代碼。 雖然您可以使用自己的代碼，但演示將位於教程資源的上下文中。 在此處下載示例代碼[&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)。
 
 1. 轉到[[!DNL Adobe Acrobat Services] 網站](https://developer.adobe.com/document-services/homepage/)。
 

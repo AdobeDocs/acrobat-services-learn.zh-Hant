@@ -113,5 +113,5 @@ PDF服務API [文檔](https://www.adobe.com/go/pdftoolsapi_doc)
 * 相關文章：
   [新PDF服務API為文檔工作流提供了更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [ [!DNL Adobe Acrobat Services]的7月版：PDF嵌入和PDF服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [&#x200B; [!DNL Adobe Acrobat Services]的7月版：PDF嵌入和PDF服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
 

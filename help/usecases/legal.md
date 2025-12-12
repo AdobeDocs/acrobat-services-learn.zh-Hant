@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ## 項目設定
 
-首先，為Node.js應用程式設定資料夾結構。 在本示例中，調用此簡單應用程式AdobeLegalContractAPI。 您可以在此處檢索原始碼[](https://github.com/agavitalis/adobe_legal_contracts.git)。
+首先，為Node.js應用程式設定資料夾結構。 在本示例中，調用此簡單應用程式AdobeLegalContractAPI。 您可以在此處檢索原始碼[&#128279;](https://github.com/agavitalis/adobe_legal_contracts.git)。
 
 ### 目錄結構
 
