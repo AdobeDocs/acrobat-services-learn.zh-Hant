@@ -116,7 +116,7 @@ ht-degree: 1%
 
 如上圖所示，您可以切換到工作帳戶或設定新的組織帳戶。 一旦有，您就可以添加「Adobe PDF服務」操作。
 
-有關使用[!DNL Adobe Acrobat Services]建立第一個Microsoft電源自動化流的更深入瞭解，請參閱[在Microsoft電源自動化中建立第一個工作流](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
+有關使用[!DNL Adobe Acrobat Services]建立第一個Microsoft電源自動化流的更深入瞭解，請參閱[在Microsoft電源自動化中建立第一個工作流](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他資源
 

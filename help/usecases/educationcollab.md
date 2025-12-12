@@ -171,7 +171,7 @@ PDF嵌入API使用的憑據與PDF服務API不同，因此您必須[建立憑據]
 
 教師和學校瞭解學生如何使用線上平台非常重要。 這有助於教師為學生提供資源，幫助他們更好地完成作業。 PDF嵌入API與分析整合，您可以使用分析來衡量發生的所有事件，如用戶開啟、閱讀和關閉文檔時。 使用PDF服務API，教師還可以禁用打印、下載和檔案修改，以幫助維護學術完整性。
 
-如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)許可證，則可以使用其[現成整合](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回叫將您的PDF服務與其他分析提供程式整合，如[Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)。
+如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)許可證，則可以使用其[現成整合](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回叫將您的PDF服務與其他分析提供程式整合，如[Google](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)。
 
 要啟用文檔事件的度量，請使用帶有AdobeDC視圖實例的`registerCallback`方法附加事件處理程式。 您可以在控制台上顯示基本度量，如開啟文檔或讀取頁面。 您還可以將度量保存到日誌中，或將其發佈到其他分析儲存中。
 
@@ -197,7 +197,7 @@ adobeDCView.registerCallback(
 
 此螢幕捕獲顯示學生開啟了分配檔案，他們閱讀了第一頁 — 他們要麼沒有滾動到其他頁面，要麼文檔只有一頁 — 然後他們下載了該檔案。 您可以收集這些指標來執行分析和研究學生的行為。
 
-此外，[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)與PDF嵌入API整合，因此，如果您有對Adobe Analytics套件的訂閱，則可以在訂閱中發佈您的度量。 要在Adobe Analytics發佈度量，您只需將套件ID傳遞給PDFEmbed API建構子。 (請注意，您必須使用PDF嵌入API憑據，而不是PDF服務API憑據)。
+此外，[Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html)與PDF嵌入API整合，因此，如果您有對Adobe Analytics套件的訂閱，則可以在訂閱中發佈您的度量。 要在Adobe Analytics發佈度量，您只需將套件ID傳遞給PDFEmbed API建構子。 (請注意，您必須使用PDF嵌入API憑據，而不是PDF服務API憑據)。
 
 下面是示例代碼，說明如何將套件ID傳遞給PDFEmbed API建構子：
 
