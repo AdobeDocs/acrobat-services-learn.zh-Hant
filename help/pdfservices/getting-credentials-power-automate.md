@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 1%
@@ -116,7 +116,7 @@ ht-degree: 1%
 
 如上圖所示，您可以切換到工作帳戶或設定新的組織帳戶。 一旦有，您就可以添加「Adobe PDF服務」操作。
 
-有關使用[!DNL Adobe Acrobat Services]建立第一個Microsoft電源自動化流的更深入瞭解，請參閱[在Microsoft電源自動化中建立第一個工作流](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
+有關使用[!DNL Adobe Acrobat Services]建立第一個Microsoft電源自動化流的更深入瞭解，請參閱[在Microsoft電源自動化中建立第一個工作流](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他資源
 
@@ -127,4 +127,3 @@ ht-degree: 1%
 * 我們的即時視頻內容[紙片剪輯](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)還包含演示Power Automet用法的視頻。
 * [Adobe技術部落格](https://medium.com/adobetech/tagged/microsoft-power-automate)有許多有關使用Power Automate的文章。
 * 最後，請務必查閱核心[PDF服務](https://developer.adobe.com/document-services/docs/overview/)文檔。
-

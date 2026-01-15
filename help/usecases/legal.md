@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ## 項目設定
 
-首先，為Node.js應用程式設定資料夾結構。 在本示例中，調用此簡單應用程式AdobeLegalContractAPI。 您可以在此處檢索原始碼[&#128279;](https://github.com/agavitalis/adobe_legal_contracts.git)。
+首先，為Node.js應用程式設定資料夾結構。 在本示例中，調用此簡單應用程式AdobeLegalContractAPI。 您可以在此處檢索原始碼[](https://github.com/agavitalis/adobe_legal_contracts.git)。
 
 ### 目錄結構
 
@@ -429,4 +429,3 @@ module.exports = {listFiles, previewPDF, downloadPDF };
 組織使用[!DNL Adobe Acrobat Services]個API以實現其完整性和易用性。 最棒的是，您可以享受[6個月免費試用，然後按時付費](https://developer.adobe.com/document-services/pricing/main)。 你只付你用的錢。 此外，PDF嵌入API始終是免費的。
 
 準備好通過改進文檔流來提高生產效率嗎？ [立即開始](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。
-

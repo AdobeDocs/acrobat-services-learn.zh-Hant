@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 ### 您需要的
 
 * **Adobe PDF服務的試用或生產憑據**
-瞭解有關如何在MicrosoftPower Automate中獲取和配置憑據的詳細資訊[此處](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
+瞭解有關如何在MicrosoftPower Automate中獲取和配置憑據的詳細資訊[此處](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 * **Microsoft電源自動化，帶高級連接器**
 瞭解如何檢查Power Automate的許可級別[此處](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)。
 * **OneDrive**
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ### 正在獲取憑據
 
-要完成本教程，您需要已在MicrosoftPower Automate中為Adobe PDF服務配置的憑據。 如果尚未完成此步驟，請參閱[此處的說明](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
+要完成本教程，您需要已在MicrosoftPower Automate中為Adobe PDF服務配置的憑據。 如果尚未完成此步驟，請參閱[此處的說明](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 
 ## 第1部分：建立新流並將Word轉換為PDF
 
@@ -315,4 +315,3 @@ ht-degree: 1%
 * 查看MicrosoftPower Automet中提供的預建立模板。
 * 從「Adobe技術部落格」上的[文章](https://medium.com/adobetech/tagged/microsoft-power-automate)中瞭解。
 * 查看[文檔](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)以獲取Adobe文檔生成API。
-

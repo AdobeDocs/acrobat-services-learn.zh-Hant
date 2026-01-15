@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -146,4 +146,3 @@ console.log('Exception encountered while executing operation', err);
 使用Microsoft·Forms，您從客戶那裡獲得了關鍵資料，這些資料將包含在他們獨特的建議中。 您在MicrosoftWord中建立了銷售計畫書模板，以提供您不希望每次重新建立的靜態文本。 然後，您使用[!DNL Acrobat Services]個API來合併表單和模板中的資料，以更高效的方式為客戶端建立銷售建議PDF。
 
 本實踐教程僅概括介紹了這些API的可能性。 若要發現更多解決方案，請訪問[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) API頁。 所有這些工具都免費使用6個月。 然後，在[即付即付](https://developer.adobe.com/document-services/pricing/main)計畫中，每筆文檔交易只需支付0.05美元，因此只有在您的團隊向您的銷售渠道中添加更多潛在客戶時，您才支付。
-

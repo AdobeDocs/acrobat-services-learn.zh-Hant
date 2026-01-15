@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -171,7 +171,7 @@ PDF嵌入API使用的憑據與PDF服務API不同，因此您必須[建立憑據]
 
 教師和學校瞭解學生如何使用線上平台非常重要。 這有助於教師為學生提供資源，幫助他們更好地完成作業。 PDF嵌入API與分析整合，您可以使用分析來衡量發生的所有事件，如用戶開啟、閱讀和關閉文檔時。 使用PDF服務API，教師還可以禁用打印、下載和檔案修改，以幫助維護學術完整性。
 
-如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)許可證，則可以使用其[現成整合](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回叫將您的PDF服務與其他分析提供程式整合，如[Google](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)。
+如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)許可證，則可以使用其[現成整合](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回叫將您的PDF服務與其他分析提供程式整合，如[Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)。
 
 要啟用文檔事件的度量，請使用帶有AdobeDC視圖實例的`registerCallback`方法附加事件處理程式。 您可以在控制台上顯示基本度量，如開啟文檔或讀取頁面。 您還可以將度量保存到日誌中，或將其發佈到其他分析儲存中。
 
@@ -197,7 +197,7 @@ adobeDCView.registerCallback(
 
 此螢幕捕獲顯示學生開啟了分配檔案，他們閱讀了第一頁 — 他們要麼沒有滾動到其他頁面，要麼文檔只有一頁 — 然後他們下載了該檔案。 您可以收集這些指標來執行分析和研究學生的行為。
 
-此外，[Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html)與PDF嵌入API整合，因此，如果您有對Adobe Analytics套件的訂閱，則可以在訂閱中發佈您的度量。 要在Adobe Analytics發佈度量，您只需將套件ID傳遞給PDFEmbed API建構子。 (請注意，您必須使用PDF嵌入API憑據，而不是PDF服務API憑據)。
+此外，[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)與PDF嵌入API整合，因此，如果您有對Adobe Analytics套件的訂閱，則可以在訂閱中發佈您的度量。 要在Adobe Analytics發佈度量，您只需將套件ID傳遞給PDFEmbed API建構子。 (請注意，您必須使用PDF嵌入API憑據，而不是PDF服務API憑據)。
 
 下面是示例代碼，說明如何將套件ID傳遞給PDFEmbed API建構子：
 
@@ -215,5 +215,4 @@ var adobeDCView = new AdobeDC.View({
 
 現在，您知道如何對PDF報告進行批注、歸檔批注並跟蹤PDF報告的使用，因此可以開始在自己的項目中實施這些解決方案。
 
-您可以使用[!DNL Adobe Acrobat Services]個API在您的網站上建立用戶友好的互動式PDF體驗。 使用Adobe PDF服務API免費6個月，然後只需[按需付費](https://developer.adobe.com/document-services/pricing/main)&#x200B;(通過AWS或直接協定)，每個文檔交易費用僅為\$0.05。 使用無時間限制的「Adobe PDF嵌入自由」。 建立免費帳戶以立即開始[&#128279;](https://www.adobe.com/go/dcsdks_credentials)。
-
+您可以使用[!DNL Adobe Acrobat Services]個API在您的網站上建立用戶友好的互動式PDF體驗。 使用Adobe PDF服務API免費6個月，然後只需[按需付費](https://developer.adobe.com/document-services/pricing/main)&#x200B;(通過AWS或直接協定)，每個文檔交易費用僅為\$0.05。 使用無時間限制的「Adobe PDF嵌入自由」。 建立免費帳戶以立即開始[](https://www.adobe.com/go/dcsdks_credentials)。

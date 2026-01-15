@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 項目設定
 
-首先，為應用程式設定資料夾結構。 您可以在此處檢索原始碼[&#128279;](https://github.com/agavitalis/AdobeDocumentAPI.git)。
+首先，為應用程式設定資料夾結構。 您可以在此處檢索原始碼[](https://github.com/agavitalis/AdobeDocumentAPI.git)。
 
 ## 目錄結構
 
@@ -432,4 +432,3 @@ res.download(download.link);
 
 是否準備好在您自己的應用中啟用文檔共用和審閱？ 註冊[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 開發者帳戶。 享受6個月的免費試用，隨著您的業務增長，[按單價支付](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易費用僅為0.05美元。
-

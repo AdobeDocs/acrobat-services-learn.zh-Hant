@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -191,4 +191,3 @@ res.status(500).render("crash", { error: error });
 
 您可以使用這些技術動態建立您自己的NDA或其他文檔，從而騰出您團隊的時間專注於高效工作。 瀏覽[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services)以查找所選語言和運行時的API和SDK，以便您可以直接向應用程式添加PDF函式以快速建立PDF文檔。 [開始](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，試用期為6個月
 [按使用付費](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易僅0.05 USD。
-

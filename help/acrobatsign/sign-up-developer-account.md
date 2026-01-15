@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-11072
 thumbnail: KT-11072.jpg
 exl-id: cf5f36bd-f96a-4f38-8da5-82a3a4d12958
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -23,5 +23,4 @@ ht-degree: 0%
 >
 >本教程專門針對正在構建並嵌入其應用程式中的簽名過程的OEM合作夥伴而設計。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445929?captions=chi_hant&hidetitle=true)
-
+>[!VIDEO](https://video.tv.adobe.com/v/347347?hidetitle=true)
