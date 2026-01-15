@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
@@ -441,4 +441,3 @@ Acrobat SignAPI可通過[個單電子簽名計畫和多用戶電子簽名計畫]
 查看[按使用付費定價](https://developer.adobe.com/document-services/pricing/main)，瞭解您的6個月免費Adobe PDF服務API試用期何時結束以及免費Adobe PDF嵌入式API。
 
 若要將諸如自動文檔建立和文檔簽名等令人興奮的功能添加到你的應用中，請開始使用[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。
-

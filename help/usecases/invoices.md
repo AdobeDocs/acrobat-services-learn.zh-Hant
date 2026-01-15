@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -232,4 +232,3 @@ async function applyPassword(password, inputFile, outputFile) {
 
 若要探索所有可能性，並開始構建自己的方便應用程式，請建立一個免費[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帳戶，以便立即開始。 享受6個月的免費試用期，然後[按使用付費](https://developer.adobe.com/document-services/pricing/main)
 在您的業務擴展中，每筆文檔交易只需0.05美元。
-

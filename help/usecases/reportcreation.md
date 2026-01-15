@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -220,4 +220,3 @@ res.status(500).render("crash", { error: error });
 此Adobe驅動的應用程式可幫助您的[社交媒體儀表板客戶](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)獲取和共用他們需要的報告，而無需擔心收件人的設備上是否都安裝了Microsoft辦公室或其他軟體。 您可以在自己的應用程式中使用相同的技術來幫助用戶查看、合併和下載文檔。 或者，查看Adobe的許多其他API以添加和跟蹤簽名等。
 
 若要開始，請申請您的免費[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帳戶，然後為您的員工和客戶建立具有吸引力的報告體驗。 隨著營銷工作的擴大，您可以免費享受6個月的帳戶，然後[按使用付費](https://developer.adobe.com/document-services/pricing/main)，每個文檔交易僅為0.05美元。
-

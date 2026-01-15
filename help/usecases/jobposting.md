@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 0%
@@ -283,4 +283,3 @@ router.get('/job/:id', async function(req, res, next) {
 * [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 若要開始向網站添加用戶友好的文檔處理功能，請[註冊免費試用版](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF嵌入式API始終是免費使用的，Adobe PDF服務API是6個月免費的，而且每個文檔交易只有\$0.05，因此您可以隨著業務增長[按需付費](https://developer.adobe.com/document-services/pricing/main)。
-

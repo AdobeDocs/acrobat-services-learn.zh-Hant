@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -216,4 +216,3 @@ var adobeDCView = new AdobeDC.View({
 現在，您知道如何對PDF報告進行批注、歸檔批注並跟蹤PDF報告的使用，因此可以開始在自己的項目中實施這些解決方案。
 
 您可以使用[!DNL Adobe Acrobat Services]個API在您的網站上建立用戶友好的互動式PDF體驗。 使用Adobe PDF服務API免費6個月，然後只需[按需付費](https://developer.adobe.com/document-services/pricing/main)&#x200B;(通過AWS或直接協定)，每個文檔交易費用僅為\$0.05。 使用無時間限制的「Adobe PDF嵌入自由」。 建立免費帳戶以立即開始[&#128279;](https://www.adobe.com/go/dcsdks_credentials)。
-

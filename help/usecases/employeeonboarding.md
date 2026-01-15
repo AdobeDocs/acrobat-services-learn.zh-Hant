@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -209,4 +209,3 @@ combineFilesOperation.execute(executionContext)
 本文所描述的一切都可以立即進行測試。 [!DNL Adobe Acrobat Services] API [免費試用](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)當前在六個月期間為您提供了1,000個免費請求。 Acrobat Sign的[免費試用](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial)允許您發送加水印的協定以用於測試目的。
 
 有問題嗎？[支援論壇](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK)每天都由Adobe開發人員和支援人員監視。 最後，為了獲得更多靈感，請務必收看下一集[回形針](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)。 定期與新聞、演示和客戶談話進行現場會議。
-

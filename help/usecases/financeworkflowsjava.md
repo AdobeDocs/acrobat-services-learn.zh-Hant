@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -200,4 +200,3 @@ PDF嵌入API提供了預覽PDF和為報告添加批注所需的所有工具。
 瀏覽[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)並查看Adobe PDF服務可為您的業務做些什麼。 要瞭解SDK中可用的更多功能，請參考[GitHub儲存庫](https://github.com/adobe/pdftools-java-sdk-samples)以獲取示例，並瞭解[PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)如何幫助您快速顯示應用程式內部的PDF。
 
 要輕鬆組合和操作文檔，為財務客戶建立有用的PDF報告，請立即註冊免費[Adobe開發人員帳戶](https://developer.adobe.com/document-services/homepage/)。
-

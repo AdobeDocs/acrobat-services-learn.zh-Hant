@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -560,4 +560,3 @@ console.log(event);
 Adobe使您能夠利用創新的解決方案構建端到端的客戶體驗。 免費簽出[Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed/)。 若要瞭解您還能做什麼，請使用[按次付費](https://developer.adobe.com/document-services/pricing/main) [冰](https://developer.adobe.com/document-services/pricing/main)嘗試Adobe PDF服務API。
 
 [立即使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)個API開始[!DNL Adobe Acrobat Services]。
-
