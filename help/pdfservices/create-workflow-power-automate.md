@@ -31,7 +31,7 @@ ht-degree: 1%
 ### 您需要的
 
 * **Adobe PDF服務的試用或生產憑據**
-瞭解有關如何在MicrosoftPower Automate中獲取和配置憑據的詳細資訊[此處](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
+瞭解有關如何在MicrosoftPower Automate中獲取和配置憑據的詳細資訊[此處](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 * **Microsoft電源自動化，帶高級連接器**
 瞭解如何檢查Power Automate的許可級別[此處](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)。
 * **OneDrive**
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ### 正在獲取憑據
 
-要完成本教程，您需要已在MicrosoftPower Automate中為Adobe PDF服務配置的憑據。 如果尚未完成此步驟，請參閱[此處的說明](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
+要完成本教程，您需要已在MicrosoftPower Automate中為Adobe PDF服務配置的憑據。 如果尚未完成此步驟，請參閱[此處的說明](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)。
 
 ## 第1部分：建立新流並將Word轉換為PDF
 
