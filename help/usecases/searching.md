@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 項目設定
 
-首先，為應用程式設定資料夾結構。 您可以在此處檢索原始碼[](https://github.com/agavitalis/AdobeDocumentAPI.git)。
+首先，為應用程式設定資料夾結構。 您可以在此處檢索原始碼[&#128279;](https://github.com/agavitalis/AdobeDocumentAPI.git)。
 
 ## 目錄結構
 
