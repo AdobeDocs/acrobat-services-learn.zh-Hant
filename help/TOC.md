@@ -1,82 +1,82 @@
 ---
-user-guide-title: Adobe Acrobat服務
-breadcrumb-title: Acrobat服務
-user-guide-description: 瞭解有關 [!DNL Adobe Acrobat Services]的詳細資訊
+user-guide-title: Adobe Acrobat 服務
+breadcrumb-title: 雜技服務
+user-guide-description: 了解更多 [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Accessibility Auto-Tag API, PDF Electronic Seal API, PDF Extract API
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 2b989e4de21881476330b8085636d8335f34f172
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 5%
 
 ---
 
 
-# [!DNL Adobe Acrobat Services]個APITutorials {#tutorials}
+# [!DNL Adobe Acrobat Services] API 教學 {#tutorials}
 
-+ [概覽](/help/overview.md)
-+ PDF服務API {#pdfservices}
-   + [概覽](/help/pdfservices/overview-pdfservices.md)
-   + [獲取MicrosoftPower Automate的憑據](/help/pdfservices/getting-credentials-power-automate.md)
-   + [在MicrosoftPower Automet中建立您的第一個流](/help/pdfservices/create-workflow-power-automate.md)
-   + [從PDF建立HTML](/help/pdfservices/createpdffromhtml.md)
-   + [使用PDF服務API將PDF導出到Word、PowerPoint等](/help/pdfservices/exportpdf.md)
-   + [Adobe PDF服務API和Java入門](/help/pdfservices/gettingstartedjava.md)
-   + [Adobe PDF服務API和.Net入門](/help/pdfservices/gettingstartednet.md)
-   + [使用Adobe PDF服務API對OCRPDF檔案](/help/pdfservices/ocr.md)
-+ 文檔生成API {#docgen}
-   + [概覽](/help/docgen/overview-docgen.md)
-   + [自動生成文檔](/help/docgen/automate-doc-gen.md)
++ [概觀](/help/overview.md)
++ PDF 服務 API {#pdfservices}
+   + [概觀](/help/pdfservices/overview-pdfservices.md)
+   + [取得 Microsoft Power Automate 的憑證](/help/pdfservices/getting-credentials-power-automate.md)
+   + [在 Microsoft Power Automate 建立你的第一個流程](/help/pdfservices/create-workflow-power-automate.md)
+   + [從 HTML 建立 PDF](/help/pdfservices/createpdffromhtml.md)
+   + [使用 PDF 服務 API 將 PDF 匯出到 Word、PowerPoint 等格式](/help/pdfservices/exportpdf.md)
+   + [開始使用 Adobe PDF 服務 API 與 Java](/help/pdfservices/gettingstartedjava.md)
+   + [開始使用 Adobe PDF Services API 與 .Net](/help/pdfservices/gettingstartednet.md)
+   + [使用 Adobe PDF 服務 API 來進行 OCR PDF 檔案](/help/pdfservices/ocr.md)
++ 文件產生 API {#docgen}
+   + [概觀](/help/docgen/overview-docgen.md)
+   + [自動化文件產生](/help/docgen/automate-doc-gen.md)
    + 建立範本 {#docgentemplates}
-      + [Adobe文檔生成標籤概覽](/help/docgen/taggeroverview.md)
-      + [添加文本標籤](/help/docgen/taggeraddtexttags.md)
-      + [添加影像標籤](/help/docgen/taggeraddimagetags.md)
-      + [添加表和清單標籤](/help/docgen/taggertables.md)
+      + [Adobe 文件產生標註器概述](/help/docgen/taggeroverview.md)
+      + [新增文字標籤](/help/docgen/taggeraddtexttags.md)
+      + [新增圖片標籤](/help/docgen/taggeraddimagetags.md)
+      + [新增資料表與清單標籤](/help/docgen/taggertables.md)
       + [設定數值計算標籤](/help/docgen/taggercalculations.md)
       + [設定條件內容](/help/docgen/taggerconditional.md)
-+ PDF輔助功能自動標籤API {#pdfaccessibility}
-   + [概覽](/help/pdfaccessibility/overview-accessibility.md)
-   + [自動為文檔添加輔助功能標籤](/help/pdfaccessibility/automatically-add-tags.md)
-+ PDF提取API {#pdfextract}
-   + [概覽](/help/pdfextract/overview-extract.md)
-   + [自動化內容提取](/help/pdfextract/automate-content-extraction.md)
-+ PDF電子印章API {#eseal}
-   + [概覽](/help/pdfelectronicseal/overview-electronic-seal.md)
-   + [自動應用電子密封](/help/pdfelectronicseal/automatically-apply-electronic-seal.md)
-+ PDF嵌入API {#pdfembed}
-   + [概覽](/help/pdfembed/overview-embed.md)
-   + [控制PDF線上體驗並收集分析](/help/pdfembed/controlpdfexperience.md)
++ PDF 無障礙自動標籤 API {#pdfaccessibility}
+   + [概觀](/help/pdfaccessibility/overview-accessibility.md)
+   + [自動為文件標記以提升無障礙性](/help/pdfaccessibility/automatically-add-tags.md)
++ PDF 擷取 API {#pdfextract}
+   + [概觀](/help/pdfextract/overview-extract.md)
+   + [自動化內容擷取](/help/pdfextract/automate-content-extraction.md)
++ PDF 電子封條 API {#eseal}
+   + [概觀](/help/pdfelectronicseal/overview-electronic-seal.md)
+   + [自動套用電子封條](/help/pdfelectronicseal/automatically-apply-electronic-seal.md)
++ PDF 嵌入 API {#pdfembed}
+   + [概觀](/help/pdfembed/overview-embed.md)
+   + [掌控您的 PDF 線上體驗並蒐集分析數據](/help/pdfembed/controlpdfexperience.md)
 + Acrobat Sign API {#acrobatsign}
-   + [概覽](/help/acrobatsign/overview-sign.md)
-   + [Adobe SignAPI入門](/help/acrobatsign/signapi.md)
+   + [概觀](/help/acrobatsign/overview-sign.md)
+   + [開始使用 Adobe Sign API](/help/acrobatsign/signapi.md)
    + OEM/嵌入式合作夥伴 {#oem}
-      + [註冊開發人員帳戶](/help/acrobatsign/sign-up-developer-account.md)
-      + [建立應用程式](/help/acrobatsign/creating-your-application.md)
+      + [註冊開發者帳號](/help/acrobatsign/sign-up-developer-account.md)
+      + [建立您的應用程式](/help/acrobatsign/creating-your-application.md)
       + [建立嵌入連結](/help/acrobatsign/creating-an-embed-link.md)
-      + [生成訪問令牌](/help/acrobatsign/generating-an-access-token.md)
-      + [建立臨時文檔](/help/acrobatsign/creating-a-transient-document.md)
+      + [產生存取權杖](/help/acrobatsign/generating-an-access-token.md)
+      + [建立臨時文件](/help/acrobatsign/creating-a-transient-document.md)
 + 使用案例 {#usecases}
-   + [概覽](/help/usecases/overview-usecases.md)
-   + [自動化法律工作流](/help/usecases/automatelegalworkflows.md)
-   + [員工入職現代化](/help/usecases/employeeonboarding.md)
-   + [加快銷售流程](/help/usecases/acceleratesales.md)
-   + [管理銷售計畫書和合同](/help/usecases/sales.md)
-   + [建立NDA](/help/usecases/nda.md)
-   + [管理法律合同](/help/usecases/legal.md)
-   + [管理員工聘用函](/help/usecases/offer.md)
-   + [搜索和索引](/help/usecases/searching.md)
-   + [審查和批准](/help/usecases/reviews.md)
-   + [報表建立和編輯](/help/usecases/reportcreation.md)
-   + [職務過帳](/help/usecases/jobposting.md)
-   + [學生 — 教師協作](/help/usecases/educationcollab.md)
-   + [Node.js中的協定工作流](/help/usecases/agreementworkflowsnodejs.md)
-   + [Java中的HR文檔工作流](/help/usecases/hragreementworkflowsjava.md)
-   + [在Java中管理財務文檔工作流](/help/usecases/financeworkflowsjava.md)
-   + [處理髮票](/help/usecases/invoices.md)
-   + [數字文檔發佈](/help/usecases/ddppdfembedapi.md)
-+ [用於測試的隱藏檔案](/help/hidden-file.md)
+   + [概觀](/help/usecases/overview-usecases.md)
+   + [自動化法律工作流程](/help/usecases/automatelegalworkflows.md)
+   + [現代化員工入職流程](/help/usecases/employeeonboarding.md)
+   + [加速您的銷售流程](/help/usecases/acceleratesales.md)
+   + [管理銷售提案與合約](/help/usecases/sales.md)
+   + [制定保密協議](/help/usecases/nda.md)
+   + [法律合約管理](/help/usecases/legal.md)
+   + [管理員工聘用信](/help/usecases/offer.md)
+   + [搜尋與索引](/help/usecases/searching.md)
+   + [審查與批准](/help/usecases/reviews.md)
+   + [報告建立與編輯](/help/usecases/reportcreation.md)
+   + [職缺公告](/help/usecases/jobposting.md)
+   + [師生合作](/help/usecases/educationcollab.md)
+   + [Node.js 中的協議工作流程](/help/usecases/agreementworkflowsnodejs.md)
+   + [Java 中的人力資源文件工作流程](/help/usecases/hragreementworkflowsjava.md)
+   + [在 Java 中管理財務文件工作流程](/help/usecases/financeworkflowsjava.md)
+   + [處理發票](/help/usecases/invoices.md)
+   + [數位文件發佈](/help/usecases/ddppdfembedapi.md)
++ {hide-from-toc}[用於測試的隱藏檔案](/help/hidden-file.md)
 
