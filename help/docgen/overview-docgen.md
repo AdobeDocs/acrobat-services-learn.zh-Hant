@@ -8,13 +8,20 @@ type: Tutorial
 jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
+TQID: https://experienceleague.adobe.com/eOaC3JiRZgpJYzecoow7GP-g7-EDo-nEkd2Qdg-x7Rk
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: 587
 ht-degree: 0%
 
 ---
-
 
 # 文件產生 API 教學
 
@@ -55,11 +62,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" title="自動化文件產生">自動化文件產生</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" title="自動化文件產生">自動化文件產生</a>
                     </p>
                     <p class="is-size-6">學習如何大規模自動產生文件</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>
@@ -70,7 +77,7 @@ CARDS
 
 ## 建立範本
 
-文件生成 API 接受文件範本（帶有模板標籤）及輸入資料以產生最終文件。最終文件是透過將文件範本中所有模板標籤替換為根據資料輸入實際值的動態內容所產生。
+文件生成 API 接受文件範本（帶有模板標籤）及輸入資料以產生最終文件。 最終文件是透過將文件範本中所有模板標籤替換為根據資料輸入實際值的動態內容所產生。
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -87,11 +94,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" title="Adobe 文件產生標註器概述">Adobe 文件產生標註器概述</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" title="Adobe 文件產生標註器概述">Adobe 文件產生標註器概述</a>
                     </p>
                     <p class="is-size-6">了解專為 Adobe 文件產生 API 設計的 Adobe 文件產生標註器</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>
@@ -110,11 +117,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" title="新增文字標籤">新增文字標籤</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" title="新增文字標籤">新增文字標籤</a>
                     </p>
                     <p class="is-size-6">學習如何使用 Adobe 文件產生標註器為 Microsoft Word 範本添加文字標籤</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>
@@ -133,11 +140,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" title="新增圖片標籤">新增圖片標籤</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" title="新增圖片標籤">新增圖片標籤</a>
                     </p>
                     <p class="is-size-6">學習如何使用 Adobe 文件產生標註器，將圖片動態推送到 Microsoft Word 範本中，將圖片推送到文件中</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>
@@ -156,11 +163,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" title="新增資料表與清單標籤">新增資料表與清單標籤</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" title="新增資料表與清單標籤">新增資料表與清單標籤</a>
                     </p>
                     <p class="is-size-6">學習如何使用 Adobe 文件產生標註器，將表格和列表標籤加入 Microsoft Word 範本，根據資料動態新增表格或列表列</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>
@@ -179,11 +186,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" title="設定數值計算標籤">設定數值計算標籤</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" title="設定數值計算標籤">設定數值計算標籤</a>
                     </p>
                     <p class="is-size-6">學習如何使用 Adobe 文件產生標註器在 Microsoft Word 範本中設定數值計算標籤，以計算資料值的彙總或算術</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>
@@ -202,11 +209,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" title="設定條件內容">設定條件內容</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" title="設定條件內容">設定條件內容</a>
                     </p>
                     <p class="is-size-6">學習如何利用 Adobe 文件產生標註器在 Microsoft Word 範本中設定區段，根據資料動態包含或排除文件中的區段</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">看</span>
                 </a>
             </div>

@@ -1,6 +1,6 @@
 ---
-title: 使用PDF服務API將PDF導出到Word、PowerPoint等
-description: 瞭解如何使用Node.js、Java和.Net語言的示例檔案運行PDF服務API導出操作
+title: 使用 PDF 服務 API 將 PDF 匯出到 Word、PowerPoint 等格式
+description: 學習如何使用範例檔案執行 PDF Services API 的匯出操作，支援 Node.js、Java 和 .Net 語言
 feature: PDF Services API
 role: Developer
 level: Intermediate
@@ -8,103 +8,117 @@ type: Tutorial
 jira: KT-6674
 thumbnail: KT-6674.jpg
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/CV-KH0fg1Tjnr7eCmNaFMtttWO1QUCyjfyIfwg1Vqm0
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 0%
+source-wordcount: 524
+ht-degree: 2%
 
 ---
 
-# 使用PDF服務API將PDF導出到Word、PowerPoint等
+# 使用 PDF 服務 API 將 PDF 匯出到 Word、PowerPoint 等格式
 
-![建立PDF英雄影像](assets/ExportPDF_hero.jpg)
+![建立 PDF 英雄圖片](assets/ExportPDF_hero.jpg)
 
-Adobe PDF服務API使用API將PDF檔案轉換為MS Office、文本和影像。 有許多常用用例可解鎖現有PDF以進行內容編輯和分析，而且PDF服務API開發人員可以輕鬆地將此功能整合到現有系統和應用程式中。 將PDF檔案轉換為MS Word以編輯內容、批准，然後發送簽名以建立自定義合同工作流。 或將PDF內容導出為MS Excel格式，用於發票和財務計算或資料分析。
+Adobe PDF 服務 API 可將 PDF 檔案轉換為 MS Office、文字及圖片，使用 API 進行。 解鎖現有 PDF 進行內容編輯與分析有許多常見的使用案例，透過 PDF 服務 API，開發者可以輕鬆將此功能整合到現有系統與應用程式中。 將 PDF 檔案轉為 MS Word，以便內容編輯、核准，之後再發送簽名以建立自訂合約工作流程。 或將 PDF 內容匯出成 MS Excel 格式，用於發票、財務計算或資料分析。
 
-導出操作支援以下PDF檔案轉換：
+匯出操作支援以下 PDF 檔案轉換：
 
-* PDF到MicrosoftWord(DOC、DOCX)
-* PDF到MicrosoftPowerPoint(PPTX)
-* PDF到MicrosoftExcel(XLSX)
-* PDF到文本(RTF)
-* PDF到影像(JPEG、PNG)
+* PDF 轉 Microsoft Word（DOC，DOCX）
+* PDF 轉 Microsoft PowerPoint（PPTX）
+* PDF 轉 Microsoft Excel （XLSX）
+* PDF 轉文字（RTF）
+* PDF 轉影像（JPEG、PNG）
 
-在本教程中，瞭解如何使用Node.js、Java和.Net語言的示例檔案運行第一個PDF服務API導出操作的基礎知識。
+在這個教學中，學習如何使用範例檔案執行你的第一個 PDF Services API 匯出操作，支援 Node.js、Java 和 .Net 語言。
 
-## 步驟1：建立憑據並設定環境：
+## 步驟一：建立你的憑證並建立你的環境：
 
-使用下面的入門教程建立API憑據、下載示例檔案和設定環境。
+請使用以下入門教學建立 API 憑證、下載範例檔案並設定環境。
 
-[PDF服務API和Java入門](gettingstartedjava.md)
+[開始使用 PDF Services API 與 Java](gettingstartedjava.md)
 
-[PDF服務API和.Net入門](gettingstartednet.md)
+[開始使用 PDF Services API 與 .NET](gettingstartednet.md)
 
-[PDF服務API和Node.js入門](createpdffromhtml.md)
+[如何開始使用 PDF 服務 API 與Node.js](createpdffromhtml.md)
 
-## 步驟2：使用示例檔案運行導出pdf操作
+## 步驟 2：使用範例檔案執行匯出 PDF 操作
 
-**Java**
+**爪哇**
 
-1. 開啟命令提示符。
+1. 開啟「命令提示字元」。
 
-1. 將目錄更改為示例代碼目錄。
+1. 將目錄改成你的範例程式碼目錄。
 
-   例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples
+   例如，C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples
 
-1. 運行以下命令：
+1. 執行以下指令：
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.exportpdf.ExportPDFToDOCX`
 
-您的PDF在src/main/resources目錄中建立。
+你的 PDF 是在 src/main/resources 目錄中建立的。
 
 **.Net**
 
-1. 開啟命令提示符。
+1. 開啟「命令提示字元」。
 
-1. 將目錄更改為示例代碼目錄。
+1. 將目錄改成你的範例程式碼目錄。
 
-   例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-NetSamples
+   例如，C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-NetSamples
 
-1. 再次將目錄更改為ExportPDFtoDocx目錄。
+1. 再把目錄改成 ExportPDFtoDocx 目錄。
 
-1. 運行以下命令：
+1. 執行以下指令：
 
    `dotnet run ExportPDFToDocx.csproj`
 
-您的PDF建立在同一目錄下。
+你的 PDF 也是在同一個目錄裡建立的。
 
 **Node.js**
 
-1. 開啟命令提示符。
+1. 開啟「命令提示字元」。
 
-1. 將目錄更改為示例代碼目錄。
+1. 將目錄改成你的範例程式碼目錄。
 
-   例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
+   例如，C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. 運行以下命令：
+1. 執行以下指令：
 
    `node src/ocr/ocr-pdf.js`
 
-您的PDF是在輸出中指定的位置建立的，預設為pdfServicesSdkResult目錄。
+你的 PDF 會建立在輸出中指定的位置，預設是 pdfServicesSdkResult 目錄。
 
-## 最後的想法
+## 總結感想
 
-現在，您應該有一個工作示例，可以導入到現有應用程式中，以開始概念驗證。 在每個示例目錄中，您都可以看到另一個示例將PDF檔案導出為影像格式。 上面的相同步驟也允許您運行該示例。 要更改為其他格式，可以將代碼更新為所需的新格式：
+你現在應該有一個可運作的範例，可以匯入現有應用程式，開始概念驗證。 在每個範例目錄中，你可以看到另一個範例，用來匯出 PDF 檔案成影像格式。 上述步驟同樣允許你執行該樣本。 若要更改格式，您可以將程式碼更新為您想要的新格式：
 
 SupportedTargetFormats.PPTX
 
-目標結果是：
+而目的地的結果是：
 
-output/exportPdfOutput.PPTX
+輸出/exportPdfOutput.PPTX
 
-轉到其他格式。
+換成另一種格式。
 
-## 資源和後續步驟
+## 資源與後續步驟
 
-* 有關其他幫助和支援，請訪問[[!DNL Adobe Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)社區論壇
+* 如需更多協助與支持，請造訪 [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) 社群論壇
 
-* PDF服務API [文檔](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF 服務 API [文件](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [FAQ](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197)以瞭解PDF服務API問題
+* [&#128279;](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) PDF 服務 API 常見問題
 
-* [請與我們聯繫](https://www.adobe.com/go/pdftoolsapi_requestform)以瞭解有關許可和定價的問題
+* [如有關於授權與價格的問題，歡迎聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)

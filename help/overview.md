@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Acrobat Services] API 教學'
-description: ' [!DNL Adobe Acrobat Services] 的概覽頁面'
+description: 概覽頁面 [!DNL Adobe Acrobat Services]
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Electronic Seal API, PDF Extract API, PDF Accessibility Auto-Tag API
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -8,16 +8,36 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
+TQID: https://experienceleague.adobe.com/ybG7xD9KSXaS4blMesQieOT4Z2RpqwnD5haRPxBfFKo
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: ab4ae87a-aa37-4da4-8f10-14bcd836549e
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+  - id: e9471a2b-a51d-459f-8642-038a8fd76a8b
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 607
 ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API 教學
 
-[!DNL Adobe Acrobat Services] 有六個主要 API：
+[!DNL Adobe Acrobat Services] 擁有六個主要 API：
 
 * [!DNL Adobe PDF Services API]
 * [!DNL Adobe PDF Embed API]
@@ -26,7 +46,7 @@ ht-degree: 1%
 * [!DNL Adobe PDF Extract API]
 * [!DNL Adobe PDF Accessibility Auto-Tag API]
 
-後面兩個 API 及其 SDK 會以付費服務的形式捆綁在 [!DNL Adobe PDF Services API] 中。[!DNL PDF Embed API]是免費奉獻。這些 API 透過一套現代雲端網路服務，自動化文件內容的產生、操作與轉換。它們幫助您提供更簡單、更快速且具品牌特色的體驗，讓您掌控使用者與文件的互動，簡化 PDF 工作流程，並促進使用與保留。這些教學幫助你掌握使用 [!DNL Adobe Acrobat Services] API 提供更簡單、更快且具品牌特色的體驗。
+後面兩個 API 及其 SDK 會作為付費方案的一部分捆綁使用 [!DNL Adobe PDF Services API] 。 [!DNL PDF Embed API] 是免費奉獻。 這些 API 透過一套現代雲端網路服務，自動化文件內容的產生、操作與轉換。 它們幫助您提供更簡單、更快速且具品牌特色的體驗，讓您掌控使用者與文件的互動，簡化 PDF 工作流程，並促進使用與保留。 這些教學能幫助你跟上提供更簡單、更快、品牌 [!DNL Adobe Acrobat Services] 化的 API 體驗。
 
 <!-- Comment -->
 <!--
@@ -99,11 +119,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" title="PDF 服務 API">PDF 服務 API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" title="PDF 服務 API">PDF 服務 API</a>
                     </p>
                     <p class="is-size-6">PDF API 包含 node.js、.Net 和 Java 的 SDK，可創建、轉換、OCR PDF 等</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -122,11 +142,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" title="文件產生 API">文件產生 API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" title="文件產生 API">文件產生 API</a>
                     </p>
                     <p class="is-size-6">從 Word 範本和 JSON 資料產生 PDF 和 Word 文件</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -145,11 +165,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" title="Adobe PDF 無障礙自動標籤 API 教學">Adobe PDF 無障礙自動標籤 API 教學</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" title="Adobe PDF 無障礙自動標籤 API 教學">Adobe PDF 無障礙自動標籤 API 教學</a>
                     </p>
                     <p class="is-size-6">這個由 AI 驅動的 API 自動標記文件，讓 PDF 可存取性更容易擴展</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -168,11 +188,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" title="PDF 擷取 API">PDF 擷取 API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" title="PDF 擷取 API">PDF 擷取 API</a>
                     </p>
                     <p class="is-size-6">透過由 Adobe Sensi 機器學習驅動的網路服務，解鎖任何 PDF 的結構與內容元素</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -191,11 +211,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" title="PDF 電子封條 API">PDF 電子印章 API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" title="PDF 電子封條 API">PDF 電子封條 API</a>
                     </p>
                     <p class="is-size-6">學習如何在大規模列印 PDF 上貼上防篡改電子封條</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -214,11 +234,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" title="PDF 嵌入 API">PDF Embed API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" title="PDF 嵌入 API">PDF 嵌入 API</a>
                     </p>
                     <p class="is-size-6">免費 Javascript API 可嵌入高保真度 PDF、促進協作並查看分析</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -237,11 +257,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" title="Acrobat Sign API">Acrobat Sign API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" title="Acrobat Sign API">Acrobat Sign API</a>
                     </p>
                     <p class="is-size-6">將電子簽名整合到你的平台或應用程式中</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>
@@ -260,11 +280,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" title="Adobe Acrobat 服務 API 使用案例">Adobe Acrobat 服務 API 使用案例</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" title="Adobe Acrobat 服務 API 使用案例">Adobe Acrobat 服務 API 使用案例</a>
                     </p>
                     <p class="is-size-6">各種 Acrobat Services API 的使用情境</p>
                 </div>
-<a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">瀏覽教學</span>
                 </a>
             </div>

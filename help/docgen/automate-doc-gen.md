@@ -1,21 +1,28 @@
 ---
-title: 自動生成文檔
-description: 瞭解如何按比例自動生成文檔
+title: 自動化文件產生
+description: 學習如何大規模自動產生文件
 feature: Document Generation API
 role: Developer
 level: Beginner
 type: Tutorial
 jira: KT-15030
 exl-id: fca9c193-0d0c-4775-98b4-cd048fc97969
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/7srtpogADZxV2MlhroBMj2tzFS5--fg7gNEKRSPmjlc
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: 38
 ht-degree: 0%
 
 ---
 
-# 自動生成文檔
+# 自動化文件產生
 
-瞭解如何通過使用MicrosoftPower Automate中的Adobe PDF服務連接器調用文檔生成API來大規模自動生成文檔。
+學習如何透過 Microsoft Power Automate 中的 Adobe PDF 服務連接器呼叫文件生成 API，自動大規模產生文件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428227?hidetitle=true)

@@ -1,6 +1,6 @@
 ---
-title: 學生 — 教師協作
-description: 瞭解如何建立線上學習平台，使教師和學生能夠輕鬆地在PDF中共用資源
+title: 師生合作
+description: 學習如何建立一個線上學習平台，讓教師與學生能輕鬆分享PDF資源
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,76 +8,90 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/POsohxFP16AENPclwoaNwxcW0xmPP0iWmGUaKX4H0P4
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: 1543
 ht-degree: 0%
 
 ---
 
-# 學生 — 教師協作
+# 師生合作
 
-![使用案例英雄橫幅](assets/UseCaseStudentHero.jpg)
+![使用案例英雄卡池](assets/UseCaseStudentHero.jpg)
 
-教育機構使用PDF檔案與學生共用學習材料。 PDF為教師提供可互換的文檔格式。
+教育機構使用 PDF 文件與學生分享學習資料。 PDF 為教師提供了可互換的文件格式。
 
-將[Adobe PDF服務API](https://developer.adobe.com/document-services/apis/pdf-services)和[Adobe PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)整合到應用中，為教師和學生提供了可在其上進行教學和學習的單一平台。 例如，您的應用可以讓學生就他們的作業和報告卡提出問題，並在組作業上進行協作。
+將 Adobe PDF 服務 API[&#128279;](https://developer.adobe.com/document-services/apis/pdf-services) 與 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed) 整合進應用程式，為教師與學生提供單一教學與學習平台。例如，你的應用程式可以讓學生對作業和成績表提問，並能在小組作業中協作。
 
-Node.js應用程式有正式的SDK可訪問PDF服務API。 這使您能夠將MicrosoftWord或MicrosoftExcel等文檔轉換為
-PDF。 此外，您還可以執行更高級的操作，如組合多個報告、重新排列頁面和保護PDF。 有關詳細資訊，請查看[產品文檔](https://developer.adobe.com/document-services/homepage/)。
+有官方的 SDK 可供 Node.js 應用程式存取 PDF 服務 API。 這讓你能將像 Microsoft Word 或 Microsoft Excel 這類文件轉換成PDF。 此外，你還可以執行更進階的操作，例如合併多個報告、重新排列頁面以及保護 PDF 檔案。 欲了解更多細節，請參閱 [產品文件](https://developer.adobe.com/document-services/homepage/)。
 
-## 你能學到的
+## 你可以學到什麼
 
-在本實踐教程中，學習如何建立一個線上學習平台，該平台[使教師和學生能夠輕鬆地在PDF中共用資源](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)。 本教程使用使用Node.js JavaScript運行時(Node.js)和PDF服務建立的[學習門戶](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。
+在這個實作教學中，學習如何建立一個線上學習平台，讓 [教師和學生能輕鬆分享PDF資源](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration) 。 本教學使用 [Node.js JavaScript執行環境（Node.js）與 PDF 服務建立的學習入口](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) 網站。
 
-學習門戶具有以下功能：
+學習入口網站具備以下功能：
 
-* 使教師能夠上載資源
+* 讓教師能夠上傳資源
 
-* 使學生能夠選擇多個文檔以轉換為PDF
+* 讓學生能選擇多份文件轉為 PDF
 
-* 啟用文檔到PDF的轉換
+* 支援文件轉換成 PDF
 
-* 在Web瀏覽器中為學生提供PDF預覽，並允許他們在不使用其他軟體的情況下對文檔進行批注
+* 提供學生在網頁瀏覽器中的 PDF 預覽，並允許他們無需額外軟體即可為文件做註解
 
-* 使學生能夠留下注釋並將其下載到其電腦
+* 讓學生能夠留下評論並下載到電腦
 
-瞭解[!DNL Adobe Acrobat Services]如何為學生提供豐富的PDF體驗。 [!DNL Acrobat Services]個API可無縫整合到您的現有應用程式中，因此學生可以上傳、轉換和查看檔案，然後生成和保存注釋 — 所有這些都在您當前的設定中。
+學習如何 [!DNL Adobe Acrobat Services] 透過 PDF 為學生提供豐富的體驗。 [!DNL Acrobat Services] API 能無縫整合到你現有的應用程式中，讓學生能上傳、轉換、查看檔案，還能在你目前的環境中製作和儲存註解。
 
-## 相關API和資源
+## 相關 API 與資源
 
-* [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [項目代碼](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)
+* [專案程式碼](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)
 
-## 正在將資源上載到學習門戶
+## 將資源上傳至學習入口網站
 
-在學習門戶的教師部分，教師可以上傳作業和測試等文檔。 文檔可以採用任何格式，如MicrosoftWord、MicrosoftExcel、HTML、各種影像格式等。
+在學習入口網站的教師區，教師可上傳作業與考試等文件。 這些文件可以是任何格式，例如 Microsoft Word、Microsoft Excel、HTML、各種圖片格式等等。
 
-![學習門戶的教師節截圖](assets/edu_1.png)
+![學習入口網站教師區的截圖](assets/edu_1.png)
 
-上載的文檔被儲存並在學生開啟其網頁時呈現給他們。
+上傳的文件會被儲存，並在學生開啟網頁時呈現。
 
-要瞭解應用程式如何上載檔案，請參閱[項目代碼](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。
+欲了解應用程式如何上傳檔案，請參閱專案程式碼[&#128279;](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。
 
-## 將文檔轉換為PDF
+## 文件轉換成 PDF
 
-學生可以將任何類型的單個或多個文檔轉換為PDF，如MicrosoftWord、Excel和PowerPoint，以及其他常用文本和影像檔案類型。 學習門戶使用PDF服務執行檔案到PDF的轉換。
+學生可以將單一或多份文件轉換成 PDF，如 Microsoft Word、Excel 和 PowerPoint，以及其他常見的文字和圖片檔案格式。 學習入口網站使用 PDF 服務來執行檔案轉換成 PDF 的作業。
 
-要建立自己的學習門戶，必須首先建立自己的憑據。 [註冊](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)至
-使用PDF服務API，可免費處理6個月和最多1,000個文檔事務。 之後，當類增加其分配時，[按單價付款](https://developer.adobe.com/document-services/pricing/main)的每個文檔交易僅為\$0.05。
+要建立自己的學習入口網站，首先必須建立自己的憑證。 [註冊](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 至可免費使用 PDF 服務 API，期限六個月，最多可交易 1,000 筆。 之後，隨著課堂作業增加，則以[&#128279;](https://developer.adobe.com/document-services/pricing/main)每筆文件僅付0.05美元的價格隨用付費。
 
-當學生從儀表板中選擇文檔時，他們會看到以下內容：
+當學生從儀表板選擇文件時，會看到以下內容：
 
-![學習門戶的學生部分螢幕快照](assets/edu_2.png)
+![學習入口網站學生區截圖](assets/edu_2.png)
 
-學生只需選擇要轉換的文檔，然後按一下&#x200B;**獲取報告**。
+學生只需選擇文件進行轉換，並點擊「 **取得報告**」。
 
-學習門戶將文檔轉換為PDF，並顯示報告頁面以及PDF檔案的預覽。
+學習入口會將文件轉換成 PDF，並顯示報告頁面及 PDF 檔案預覽。
 
-下面是此步驟的示例代碼：
+以下是此步驟的範例程式碼：
 
 ```
 async function createPdf(rawFile, outputPdf) {
@@ -105,22 +119,21 @@ async function createPdf(rawFile, outputPdf) {
 }
 ```
 
-示例代碼調用Express路由處理程式內的`createPdf`方法以生成PDF。
+範例程式碼會呼叫 Express 路由處理器中的 該 `createPdf` 方法來產生 PDF。
 
-要瞭解如何調用此方法，請參閱[項目代碼](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers/blob/master/src/helpers/pdf.js)。
+想了解此方法的呼叫方式，請參閱 [專案程式碼](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers/blob/master/src/helpers/pdf.js)。
 
 ## 預覽學習資源
 
-用戶介面使用PDF嵌入API在Web瀏覽器中呈現PDF。 此API可免費使用。
+使用者介面使用 PDF 嵌入 API，在網頁瀏覽器中渲染 PDF。 此 API 可免費使用。
 
-PDF嵌入API使用的憑據與PDF服務API不同，因此您必須[建立憑據](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-才能使用它。 然後，您可以使用「嵌入PDF」完全自由。
+PDF 嵌入 API 使用的憑證與 PDF 服務 API 不同，因此您必須 [建立憑證](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)在你能使用之前。 接著，你可以完全免費使用 PDF 嵌入。
 
-確保在令牌中輸入正確的網站URL。 否則，您可能無法使用令牌呈現PDF。
+務必在令牌中輸入正確的網站網址。 否則，你可能無法用 token 來渲染 PDF。
 
-用戶介面使用[Handlebars](https://handlebarsjs.com/)模板語言。 它在Web瀏覽器中顯示PDF。
+使用者介面使用 [Handlebars](https://handlebarsjs.com/) 範本語言。 它會在網頁瀏覽器中顯示 PDF。
 
-下面是此步驟的代碼：
+這是這一步的程式碼：
 
 ```
 <div id="adobe-dc-view" style="height: 750px; width: 700px;"></div>
@@ -143,39 +156,39 @@ PDF嵌入API使用的憑據與PDF服務API不同，因此您必須[建立憑據]
 </p>
 ```
 
-此代碼顯示PDF輸出和下載PDF報告的連結，如下面的螢幕捕獲所示：
+此程式碼顯示 PDF 輸出及下載該報告的連結，如下圖所示：
 
-![學生PDF預覽螢幕截圖](assets/edu_3.png)
+![學生 PDF 預覽截圖](assets/edu_3.png)
 
-學生應該能夠下載報告或在此處處理材料。
+學生應該可以下載報告或在這裡進行相關資料的作業。
 
-## 注釋PDF文檔
+## 註解 PDF 文件
 
-學習平台應支援基本的PDF注釋、注釋和討論。 PDF嵌入API提供了所有這些功能。 它使用`showAnnotationTools`激活批注支援，使教師和學生能夠對文檔發表評論，並將評語作為PDF的一部分存檔。
+學習平台應支援基本的註解、評論與討論，並包含PDF格式。 PDF 嵌入 API 提供所有這些功能。 它啟動了使用註 `showAnnotationTools`解支援，使教師與學生能對文件發表評論，並將評論存檔為 PDF 的一部分。
 
-若要在PDF文檔中啟用批注，您只需將參數`showAnnotationTools` :true傳遞給`previewFile`方法。 這將在PDF預覽器中顯示注釋工具。 從預覽右上角的三點菜單訪問此工具。
+要在 PDF 文件中啟用註解，你只需傳遞 `showAnnotationTools` ： true to the `previewFile` method。 這會在 PDF 預覽器中顯示註解工具。 可從預覽右上角的三點選單存取此工具。
 
-![PDF中注釋工具的螢幕快照](assets/edu_4.png)
+![PDF 中留言工具截圖](assets/edu_4.png)
 
-在教師上傳的文檔中，學生可以突出顯示文本、添加註釋等。
+在老師上傳的文件中，學生可以選取文字、添加註解等功能。
 
-![在PDF中添加註釋的螢幕快照](assets/edu_5.png)
+![PDF中新增註解的截圖](assets/edu_5.png)
 
-在上面的螢幕捕獲中，用戶被標籤為「來賓」，但您可以為用戶（如學生和教師）配置配置檔案。
+在上方的截圖中，使用者標示為「訪客」，但你可以為使用者設定個人檔案，例如學生和老師。
 
-當學生應用批注時，PDF嵌入API將在頂部橫幅上顯示&#x200B;**保存**&#x200B;按鈕。 保存會將注釋添加到檔案。 嘗試按一下&#x200B;**保存**，查看檔案如何使用報表中嵌入的注釋進行保存。
+當學生套用註解時，PDF 嵌入 API 會在頂部橫幅顯示一個 **儲存** 按鈕。 儲存會將註解加入檔案。 試著點選 **儲存** ，看看檔案在報告中嵌入註解後的儲存情況。
 
-學生可以使用注釋來提出問題或分享他們對學習材料的評論。
+學生可以使用註解來提問或分享對學習材料的意見。
 
-## 跟蹤文檔使用
+## 追蹤文件使用
 
-教師和學校瞭解學生如何使用線上平台非常重要。 這有助於教師為學生提供資源，幫助他們更好地完成作業。 PDF嵌入API與分析整合，您可以使用分析來衡量發生的所有事件，如用戶開啟、閱讀和關閉文檔時。 使用PDF服務API，教師還可以禁用打印、下載和檔案修改，以幫助維護學術完整性。
+教師和學校了解學生如何使用線上平台非常重要。 這有助於教師提供資源，幫助學生在作業上表現更好。 PDF Embed API 整合了分析工具，你可以用來衡量所有發生的事件，例如使用者何時開啟、閱讀和關閉文件。 透過 PDF Services API，教師也能關閉列印、下載及檔案修改功能，以維持學術誠信。
 
-如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)許可證，則可以使用其[現成整合](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否則，請使用回叫將您的PDF服務與其他分析提供程式整合，如[Google](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)。
+如果你有 [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/) 授權，可以使用其 [開箱即用的整合](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)功能。 否則，請利用回調功能將你的 PDF 服務與其他分析服務整合，例如 [Google](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)。
 
-要啟用文檔事件的度量，請使用帶有AdobeDC視圖實例的`registerCallback`方法附加事件處理程式。 您可以在控制台上顯示基本度量，如開啟文檔或讀取頁面。 您還可以將度量保存到日誌中，或將其發佈到其他分析儲存中。
+要啟用文件事件的測量，你可以使用 `registerCallback` Adobe DC View 實例的方法附加事件處理程序。 你可以在主控台上顯示基本指標，例如開啟文件或閱讀頁面。 你也可以把指標存成日誌，或發佈到其他分析商店。
 
-以下是用於附加事件處理程式的示例代碼：
+以下是附加事件處理器的範例程式碼：
 
 ```
 adobeDCView.registerCallback(
@@ -189,17 +202,17 @@ adobeDCView.registerCallback(
 );
 ```
 
-老師可以看到多少學生看過這個作業，有多少學生翻閱了他們所有的筆記，還有其他有價值的細節。
+老師可以看到有多少學生看過作業、有多少人看過所有筆記頁面，以及其他有價值的細節。
 
-下面是Web瀏覽器控制台的螢幕捕獲：
+以下是網頁瀏覽器主控台的截圖：
 
-![Web瀏覽器控制台螢幕快照](assets/edu_6.png)
+![網頁瀏覽器主控台截圖](assets/edu_6.png)
 
-此螢幕捕獲顯示學生開啟了分配檔案，他們閱讀了第一頁 — 他們要麼沒有滾動到其他頁面，要麼文檔只有一頁 — 然後他們下載了該檔案。 您可以收集這些指標來執行分析和研究學生的行為。
+這張截圖顯示學生打開作業檔案，閱讀第一頁——要麼沒有捲動到其他頁面，要麼文件只有一頁——然後下載了檔案。 你可以收集這些指標來進行分析並研究學生的行為。
 
-此外，[Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html)與PDF嵌入API整合，因此，如果您有對Adobe Analytics套件的訂閱，則可以在訂閱中發佈您的度量。 要在Adobe Analytics發佈度量，您只需將套件ID傳遞給PDFEmbed API建構子。 (請注意，您必須使用PDF嵌入API憑據，而不是PDF服務API憑據)。
+此外， [Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html) 整合了 PDF Embed API，如果你訂閱了 Adobe Analytics 套件，可以在訂閱中發布你的指標。 要將指標發佈到 Adobe Analytics，您只需將套房 ID 傳入 PDF 嵌入 API 建構器。 （請注意，您必須使用您的 PDF 嵌入 API 憑證，而非 PDF Services API 憑證。）
 
-下面是示例代碼，說明如何將套件ID傳遞給PDFEmbed API建構子：
+以下是示範如何將套件 ID 傳入 PDF 嵌入 API 建構器的範例程式碼：
 
 ```
 var adobeDCView = new AdobeDC.View({
@@ -211,8 +224,8 @@ var adobeDCView = new AdobeDC.View({
 
 ## 後續步驟
 
-本實踐教程介紹了如何使用PDF服務API和PDF嵌入API建立學習門戶，從而幫助學生和教師之間進行有效的[協作](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)。 使用此門戶，教師可以以任何格式上傳學習資料，並使用PDF服務API將其轉換為PDF。 然後，學生可以使用PDF嵌入API預覽這些PDF。
+這份實作教學回顧了如何使用 PDF Services API 和 PDF 嵌入 API 建立學習入口網站，促進師生[&#128279;](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)間的有效合作。透過此入口網站，教師可上傳任何格式的學習資料，並使用 PDF 服務 API 轉為 PDF。 學生可利用 PDF 嵌入 API 預覽這些 PDF。
 
-現在，您知道如何對PDF報告進行批注、歸檔批注並跟蹤PDF報告的使用，因此可以開始在自己的項目中實施這些解決方案。
+現在你已經知道如何註解 PDF 報告、歸檔註解並追蹤 PDF 報告的使用情況，就可以開始在自己的專案中實作這些解決方案。
 
-您可以使用[!DNL Adobe Acrobat Services]個API在您的網站上建立用戶友好的互動式PDF體驗。 使用Adobe PDF服務API免費6個月，然後只需[按需付費](https://developer.adobe.com/document-services/pricing/main)&#x200B;(通過AWS或直接協定)，每個文檔交易費用僅為\$0.05。 使用無時間限制的「Adobe PDF嵌入自由」。 建立免費帳戶以立即開始[&#128279;](https://www.adobe.com/go/dcsdks_credentials)。
+你可以使用 [!DNL Adobe Acrobat Services] API 在網站上建立使用者友善且互動式的 PDF 體驗。 享受免費使用 Adobe PDF Services API 六個月後 [，透過 AWS 或直接協議，按需](https://developer.adobe.com/document-services/pricing/main) 付費，每筆文件交易只需 \$0.05。 免費使用 Adobe PDF 嵌入，且無時間限制。 立即註冊免費帳號開始 [吧](https://www.adobe.com/go/dcsdks_credentials) 。

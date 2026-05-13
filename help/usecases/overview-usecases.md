@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Adobe Acrobat Services]個API使用案例'
-description: ' [!DNL Adobe Acrobat Services] API使用案例的概述頁'
+title: '[!DNL Adobe Acrobat Services] API 使用案例'
+description: API 使用案例概述 [!DNL Adobe Acrobat Services] 頁面
 feature: Use Cases
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -8,20 +8,36 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/V3g1PfMzYZsCT1lnRRCUBiN5qF2gd1YeAKSlpXsPRJw
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: 791
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Acrobat Services]個API使用案例
+# [!DNL Adobe Acrobat Services] API 使用案例
 
-## [!DNL Adobe Acrobat Services] API可以為我做什麼？
+## API [!DNL Adobe Acrobat Services] 能為我做什麼？
 
-瞭解[!DNL Adobe Acrobat Services]個API如何通過這些實際操作使用案例來更改您的業務。
+了解這些 API 如何 [!DNL Adobe Acrobat Services] 透過這些實務應用案例改變你的業務。
 
-### [!DNL Acrobat Services]個API
+### [!DNL Acrobat Services] API
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -29,8 +45,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" title="自動化法律工作流" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_11d45ac52221eb0279a687861908ee87f8b9071fd.png?width=400&format=webply&optimize=medium" alt="自動化法律工作流"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" title="自動化法律工作流程" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_11d45ac52221eb0279a687861908ee87f8b9071fd.png?width=400&format=webply&optimize=medium" alt="自動化法律工作流程"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -38,12 +54,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" target="_self" rel="referrer" title="自動化法律工作流">自動化法律工作流</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" target="_self" rel="referrer" title="自動化法律工作流程">自動化法律工作流程</a>
                     </p>
-                    <p class="is-size-6">瞭解如何使用條件內容自動化法律工作流</p>
+                    <p class="is-size-6">學習如何以條件內容自動化法律工作流程</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -52,8 +68,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" title="員工入職現代化" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_132a84764b759671006b4508a187b91ce708b060a.png?width=400&format=webply&optimize=medium" alt="員工入職現代化"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" title="現代化員工入職流程" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_132a84764b759671006b4508a187b91ce708b060a.png?width=400&format=webply&optimize=medium" alt="現代化員工入職流程"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,12 +77,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" target="_self" rel="referrer" title="員工入職現代化">員工入職培訓現代化</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" target="_self" rel="referrer" title="現代化員工入職流程">現代化員工入職流程</a>
                     </p>
-                    <p class="is-size-6">瞭解如何實現員工入職現代化</p>
+                    <p class="is-size-6">學習如何現代化員工入職流程</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -75,8 +91,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" title="加快銷售流程" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1ce553da02229c4a25bcf679ca8eb2b165e0b9019.png?width=400&format=webply&optimize=medium" alt="加快銷售流程"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" title="加速您的銷售流程" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1ce553da02229c4a25bcf679ca8eb2b165e0b9019.png?width=400&format=webply&optimize=medium" alt="加速您的銷售流程"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,12 +100,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" target="_self" rel="referrer" title="加快銷售流程">加快銷售進程</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" target="_self" rel="referrer" title="加速您的銷售流程">加速您的銷售流程</a>
                     </p>
-                    <p class="is-size-6">瞭解如何通過整合文檔體驗來加快銷售</p>
+                    <p class="is-size-6">學習如何透過整合文件體驗加速銷售</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -98,8 +114,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/sales" title="管理銷售計畫書和合同" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_179ae58be6f2a7a0fba8e0a76bd9f5099619f61b0.png?width=400&format=webply&optimize=medium" alt="管理銷售計畫書和合同"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/sales" title="管理銷售提案與合約" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_179ae58be6f2a7a0fba8e0a76bd9f5099619f61b0.png?width=400&format=webply&optimize=medium" alt="管理銷售提案與合約"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,12 +123,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/sales" target="_self" rel="referrer" title="管理銷售計畫書和合同">管理銷售計畫書和合同</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/sales" target="_self" rel="referrer" title="管理銷售提案與合約">管理銷售提案與合約</a>
                     </p>
-                    <p class="is-size-6">瞭解如何構建高效的工作流以自動化和簡化銷售計畫書</p>
+                    <p class="is-size-6">學習如何建立高效的工作流程，以自動化並簡化銷售提案</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/sales" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -121,8 +137,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/nda" title="建立NDA" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_12b38eafbf76bee920fa3ab873d392432cdcae963.png?width=400&format=webply&optimize=medium" alt="建立NDA"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/nda" title="制定保密協議" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_12b38eafbf76bee920fa3ab873d392432cdcae963.png?width=400&format=webply&optimize=medium" alt="制定保密協議"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,12 +146,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/nda" target="_self" rel="referrer" title="建立NDA">建立NDA</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/nda" target="_self" rel="referrer" title="制定保密協議">制定保密協議</a>
                     </p>
-                    <p class="is-size-6">瞭解如何建立動態NDAPDF以進行協作</p>
+                    <p class="is-size-6">學習如何建立動態的保密協議 PDF 以促進協作</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/nda" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -144,8 +160,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/legal" title="管理法律合同" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_175eb5e0acbeb769b4f69aa4ae5cf24ed55489d87.png?width=400&format=webply&optimize=medium" alt="管理法律合同"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/legal" title="法律合約管理" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_175eb5e0acbeb769b4f69aa4ae5cf24ed55489d87.png?width=400&format=webply&optimize=medium" alt="法律合約管理"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -153,12 +169,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/legal" target="_self" rel="referrer" title="管理法律合同">管理法律合同</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/legal" target="_self" rel="referrer" title="法律合約管理">法律合約管理</a>
                     </p>
-                    <p class="is-size-6">瞭解如何通過自定義資料輸入自動生成和保護法律文檔</p>
+                    <p class="is-size-6">學習如何透過自訂資料輸入自動產生並保護法律文件</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/legal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -167,8 +183,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/jobposting" title="職務過帳" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1487ad3b5c3c12b24a1c44420ac612f7a5b06d16a.png?width=400&format=webply&optimize=medium" alt="職務過帳"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/jobposting" title="職缺公告" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1487ad3b5c3c12b24a1c44420ac612f7a5b06d16a.png?width=400&format=webply&optimize=medium" alt="職缺公告"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -176,12 +192,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/jobposting" target="_self" rel="referrer" title="職務過帳">作業發佈</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/jobposting" target="_self" rel="referrer" title="職缺公告">職缺公告</a>
                     </p>
-                    <p class="is-size-6">瞭解如何為求職者和雇主開發平穩、一致的Web體驗</p>
+                    <p class="is-size-6">學習如何為求職者和雇主打造順暢且一致的網路體驗</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/jobposting" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -190,8 +206,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/educationcollab" title="學生 — 教師協作" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1746197c35f5bd2d66f8cd58e090c5e4fa7a3b5f2.png?width=400&format=webply&optimize=medium" alt="學生 — 教師協作"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/educationcollab" title="師生合作" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1746197c35f5bd2d66f8cd58e090c5e4fa7a3b5f2.png?width=400&format=webply&optimize=medium" alt="師生合作"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -199,12 +215,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" title="學生 — 教師協作">學生與教師協作</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" title="師生合作">師生合作</a>
                     </p>
-                    <p class="is-size-6">瞭解如何建立線上學習平台，使教師和學生能夠輕鬆地在PDF中共用資源</p>
+                    <p class="is-size-6">學習如何建立一個線上學習平台，讓教師與學生能輕鬆分享PDF資源</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -213,8 +229,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" title="Node.js中的協定工作流" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1a1148ebfe4641258d91065e83c2d39be0e918c38.png?width=400&format=webply&optimize=medium" alt="Node.js中的協定工作流"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" title="Node.js 中的協議工作流程" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1a1148ebfe4641258d91065e83c2d39be0e918c38.png?width=400&format=webply&optimize=medium" alt="Node.js 中的協議工作流程"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -222,12 +238,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" target="_self" rel="referrer" title="Node.js中的協定工作流">Node.js</a>中的協定工作流
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" target="_self" rel="referrer" title="Node.js 中的協議工作流程">Node.js 中的協議工作流程</a>
                     </p>
-                    <p class="is-size-6">Adobe Acrobat服務API可輕鬆將PDF功能納入您的Web應用程式</p>
+                    <p class="is-size-6">Adobe Acrobat 服務 API 輕鬆將 PDF 功能整合到您的網頁應用程式中</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -236,8 +252,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" title="Java中的HR文檔工作流" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_16549bea7754eaa4cfefb538aa4589ff68530a1fd.png?width=400&format=webply&optimize=medium" alt="Java中的HR文檔工作流"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" title="Java 中的人力資源文件工作流程" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_16549bea7754eaa4cfefb538aa4589ff68530a1fd.png?width=400&format=webply&optimize=medium" alt="Java 中的人力資源文件工作流程"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -245,12 +261,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" target="_self" rel="referrer" title="Java中的HR文檔工作流">Java中的HR文檔工作流</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" target="_self" rel="referrer" title="Java 中的人力資源文件工作流程">Java 中的人力資源文件工作流程</a>
                     </p>
-                    <p class="is-size-6">Adobe Acrobat服務API可輕鬆將PDF功能納入您的HR Web應用程式</p>
+                    <p class="is-size-6">Adobe Acrobat 服務 API 輕鬆將 PDF 功能整合到您的人力資源網頁應用程式中</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -259,8 +275,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" title="在Java中管理財務文檔工作流" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_14763e77cca336e72797a4b6964a94311623df148.png?width=400&format=webply&optimize=medium" alt="在Java中管理財務文檔工作流"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" title="在 Java 中管理財務文件工作流程" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_14763e77cca336e72797a4b6964a94311623df148.png?width=400&format=webply&optimize=medium" alt="在 Java 中管理財務文件工作流程"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -268,12 +284,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" target="_self" rel="referrer" title="在Java中管理財務文檔工作流">在Java中管理財務文檔工作流</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" target="_self" rel="referrer" title="在 Java 中管理財務文件工作流程">在 Java 中管理財務文件工作流程</a>
                     </p>
-                    <p class="is-size-6">Adobe Acrobat服務提供處理和提取PDF財務檔案中資料的所有必要工具、服務和功能</p>
+                    <p class="is-size-6">Adobe Acrobat Services 提供所有必要的工具、服務與功能，以處理及擷取 PDF 財務文件中的資料</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -282,7 +298,7 @@ ht-degree: 0%
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
-### 文檔生成API
+### 文件產生 API
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -290,8 +306,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/invoices" title="處理髮票" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1ff9a75e31fa990e15e1010e05fd751371eaf0a8c.png?width=400&format=webply&optimize=medium" alt="處理髮票"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/invoices" title="處理發票" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1ff9a75e31fa990e15e1010e05fd751371eaf0a8c.png?width=400&format=webply&optimize=medium" alt="處理發票"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -299,12 +315,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/invoices" target="_self" rel="referrer" title="處理髮票">處理髮票</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/invoices" target="_self" rel="referrer" title="處理發票">處理發票</a>
                     </p>
-                    <p class="is-size-6">瞭解如何自動生成、密碼保護和交付客戶發票</p>
+                    <p class="is-size-6">學習如何自動產生、設密碼保護並交付客戶發票</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/invoices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
@@ -312,7 +328,7 @@ ht-degree: 0%
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-### PDF嵌入API
+### PDF 嵌入 API
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -320,8 +336,8 @@ ht-degree: 0%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" title="數字文檔發佈" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1d8ea2c326af9b7ee0af2fe969a594108bf01b97b.png?width=400&format=webply&optimize=medium" alt="數字文檔發佈"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" title="數位文件發佈" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/media_1d8ea2c326af9b7ee0af2fe969a594108bf01b97b.png?width=400&format=webply&optimize=medium" alt="數位文件發佈"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -329,12 +345,12 @@ ht-degree: 0%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" target="_self" rel="referrer" title="數字文檔發佈">數字文檔發佈</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" target="_self" rel="referrer" title="數位文件發佈">數位文件發佈</a>
                     </p>
-                    <p class="is-size-6">瞭解如何使用Adobe PDF嵌入式API在網頁內顯示嵌入式PDF文檔</p>
+                    <p class="is-size-6">學習如何使用 Adobe PDF 嵌入 API 在網頁中顯示嵌入的 PDF 文件</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">讀取</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">閱讀</span>
                 </a>
             </div>
         </div>
