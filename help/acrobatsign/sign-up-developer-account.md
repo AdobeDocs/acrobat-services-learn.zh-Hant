@@ -32,4 +32,4 @@ ht-degree: 0%
 >
 >本教學專為 OEM 合作夥伴設計，協助他們在應用程式中建立並嵌入簽章流程。
 
->[!VIDEO](https://video.tv.adobe.com/v/347347?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3445929?captions=chi_hant&hidetitle=true)

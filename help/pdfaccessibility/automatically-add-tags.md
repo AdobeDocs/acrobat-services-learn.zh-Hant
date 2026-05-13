@@ -27,4 +27,4 @@ ht-degree: 0%
 
 學習如何利用 AI 自動大規模標註無障礙。 自動標記可縮短達成合規所需的時間與成本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446270?captions=chi_hant&hidetitle=true)
