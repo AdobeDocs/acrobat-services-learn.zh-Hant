@@ -9,12 +9,21 @@ jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
 TQID: https://experienceleague.adobe.com/TrET5NQJUcvJYGDJgfTJ6fSfQxjz-l2rFj-D5zQygw0
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1220
@@ -188,7 +197,7 @@ res.status(500).render("crash", { error: error });
 
 [!DNL Adobe Acrobat Services] API 插入內容以建立 PDF 文件。 沒有這些工具，你可能得寫程式碼來處理 Office 文件，並處理原始 PDF 格式。 借助 Adobe PDF 服務，您只需一個 API 呼叫即可完成所有這些步驟。
 
-現在使用 [Adobe Sign API](https://developer.adobe.com/adobesign-api/) 要求 NDA 簽名，並將最終簽署的文件交付給所有相關方。 Adobe Sign 會透過 Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md) 通知你[。透過這個網路鉤子，你可以取得保密協議的狀態。
+現在使用 [Adobe Sign API](https://developer.adobe.com/adobesign-api/) 要求 NDA 簽名，並將最終簽署的文件交付給所有相關方。 Adobe Sign 會透過 Webhook[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md) 通知你。透過這個網路鉤子，你可以取得保密協議的狀態。
 
 想更深入了解 Adobe Sign 流程，請參閱 [文件](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) 或閱讀這篇深入的部落格文章。
 

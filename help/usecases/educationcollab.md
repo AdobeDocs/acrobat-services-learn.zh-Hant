@@ -9,12 +9,21 @@ jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
 TQID: https://experienceleague.adobe.com/POsohxFP16AENPclwoaNwxcW0xmPP0iWmGUaKX4H0P4
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1543
@@ -28,7 +37,7 @@ ht-degree: 0%
 
 教育機構使用 PDF 文件與學生分享學習資料。 PDF 為教師提供了可互換的文件格式。
 
-將 Adobe PDF 服務 API](https://developer.adobe.com/document-services/apis/pdf-services) 與 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed) 整合[進應用程式，為教師與學生提供單一教學與學習平台。例如，你的應用程式可以讓學生對作業和成績表提問，並能在小組作業中協作。
+將 Adobe PDF 服務 API[&#128279;](https://developer.adobe.com/document-services/apis/pdf-services) 與 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed) 整合進應用程式，為教師與學生提供單一教學與學習平台。例如，你的應用程式可以讓學生對作業和成績表提問，並能在小組作業中協作。
 
 有官方的 SDK 可供 Node.js 應用程式存取 PDF 服務 API。 這讓你能將像 Microsoft Word 或 Microsoft Excel 這類文件轉換成PDF。 此外，你還可以執行更進階的操作，例如合併多個報告、重新排列頁面以及保護 PDF 檔案。 欲了解更多細節，請參閱 [產品文件](https://developer.adobe.com/document-services/homepage/)。
 
@@ -66,13 +75,13 @@ ht-degree: 0%
 
 上傳的文件會被儲存，並在學生開啟網頁時呈現。
 
-欲了解應用程式如何上傳檔案，請參閱專案程式碼](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。[
+欲了解應用程式如何上傳檔案，請參閱專案程式碼[&#128279;](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。
 
 ## 文件轉換成 PDF
 
 學生可以將單一或多份文件轉換成 PDF，如 Microsoft Word、Excel 和 PowerPoint，以及其他常見的文字和圖片檔案格式。 學習入口網站使用 PDF 服務來執行檔案轉換成 PDF 的作業。
 
-要建立自己的學習入口網站，首先必須建立自己的憑證。 [註冊](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 至可免費使用 PDF 服務 API，期限六個月，最多可交易 1,000 筆。 之後，隨著課堂作業增加，則以[](https://developer.adobe.com/document-services/pricing/main)每筆文件僅付0.05美元的價格隨用付費。
+要建立自己的學習入口網站，首先必須建立自己的憑證。 [註冊](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 至可免費使用 PDF 服務 API，期限六個月，最多可交易 1,000 筆。 之後，隨著課堂作業增加，則以[&#128279;](https://developer.adobe.com/document-services/pricing/main)每筆文件僅付0.05美元的價格隨用付費。
 
 當學生從儀表板選擇文件時，會看到以下內容：
 
@@ -215,7 +224,7 @@ var adobeDCView = new AdobeDC.View({
 
 ## 後續步驟
 
-這份實作教學回顧了如何使用 PDF Services API 和 PDF 嵌入 API 建立學習入口網站，促進師生](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)間的有效[合作。透過此入口網站，教師可上傳任何格式的學習資料，並使用 PDF 服務 API 轉為 PDF。 學生可利用 PDF 嵌入 API 預覽這些 PDF。
+這份實作教學回顧了如何使用 PDF Services API 和 PDF 嵌入 API 建立學習入口網站，促進師生[&#128279;](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)間的有效合作。透過此入口網站，教師可上傳任何格式的學習資料，並使用 PDF 服務 API 轉為 PDF。 學生可利用 PDF 嵌入 API 預覽這些 PDF。
 
 現在你已經知道如何註解 PDF 報告、歸檔註解並追蹤 PDF 報告的使用情況，就可以開始在自己的專案中實作這些解決方案。
 

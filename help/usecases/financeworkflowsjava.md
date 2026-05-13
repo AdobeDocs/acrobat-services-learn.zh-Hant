@@ -9,12 +9,21 @@ jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
 TQID: https://experienceleague.adobe.com/In-JxFG4Fe8Ui-BBgqChVNfr4-MsagnLlMAQYQVfiZM
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1302
@@ -44,7 +53,7 @@ ht-degree: 0%
 
 ## 設定
 
-[!DNL Adobe Acrobat Services] 使用認證系統來控制資源存取。 要存取這些服務，您必須向 Adobe 申請您組織或應用程式的 API 金鑰。 如果你有 API 金鑰，請繼續閱讀下一節。 要建立新的 API 金鑰，請造訪[網站的「入門](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)[!DNL Acrobat Services]」頁面。你可以使用他們的免費試用來建立金鑰，該試用版提供 1,000 筆文件交易，且可使用長達六個月。
+[!DNL Adobe Acrobat Services] 使用認證系統來控制資源存取。 要存取這些服務，您必須向 Adobe 申請您組織或應用程式的 API 金鑰。 如果你有 API 金鑰，請繼續閱讀下一節。 要建立新的 API 金鑰，請造訪[網站的「入門](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Acrobat Services]」頁面。你可以使用他們的免費試用來建立金鑰，該試用版提供 1,000 筆文件交易，且可使用長達六個月。
 
 要跟著這個教學操作，你需要兩組 API 金鑰：
 
@@ -90,7 +99,7 @@ ExecutionContext executionContext = ExecutionContext.create(credentials);
 
 所有這些範例都可以在 [GitHub](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) 範例倉庫中找到。
 
-接著，在 [!DNL Spring Boot]中，你可以透過 String 路徑或上傳檔案的串流取得檔案。 你執行的每個操作都必須初始化，並且必須設定輸入檔案路徑。 在這個教學中，你會使用Blackrock](https://www.blackrock.com/us/individual/products/investment-funds)公開提供的PDF報告[。你可以使用任何其他來源，包括你自己的報告。
+接著，在 [!DNL Spring Boot]中，你可以透過 String 路徑或上傳檔案的串流取得檔案。 你執行的每個操作都必須初始化，並且必須設定輸入檔案路徑。 在這個教學中，你會使用Blackrock[&#128279;](https://www.blackrock.com/us/individual/products/investment-funds)公開提供的PDF報告。你可以使用任何其他來源，包括你自己的報告。
 
 首先從檔案中擷取 FileRef 物件。 為了簡化，請以字串路徑的檔案為主。 以下，你建立一個操作，將路徑中的檔案從 PDF 轉換成 Excel：
 
@@ -204,6 +213,6 @@ PDF 嵌入 API 提供所有必要的工具，讓您可以預覽 PDF 並註解報
 
 這段實作教學探討了 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) API，並討論如何利用這些服務處理 PDF 資料及產生財務決策報告。 它示範了如何將 API 整合進系統，並以 [!DNL Java Spring Boot] 範例框架為例，展示快速處理 PDF 文件的簡單性。
 
-探索 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並了解 Adobe PDF 服務能為您的企業帶來什麼。 想了解更多 SDK 的功能，請參考 [GitHub 倉庫](https://github.com/adobe/pdftools-java-sdk-samples)取得範例，並探索 PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed) 如何[幫助你快速在應用程式中顯示 PDF。
+探索 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) 並了解 Adobe PDF 服務能為您的企業帶來什麼。 想了解更多 SDK 的功能，請參考 [GitHub 倉庫](https://github.com/adobe/pdftools-java-sdk-samples)取得範例，並探索 PDF 嵌入 API[&#128279;](https://developer.adobe.com/document-services/apis/pdf-embed) 如何幫助你快速在應用程式中顯示 PDF。
 
 想要輕鬆合併與操作文件，為你的財務客戶製作有用的 PDF 報告，請從今天就註冊免費 [的 Adobe 開發者帳號](https://developer.adobe.com/document-services/homepage/) 開始。

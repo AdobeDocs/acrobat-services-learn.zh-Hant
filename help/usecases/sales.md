@@ -9,12 +9,20 @@ jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
 TQID: https://experienceleague.adobe.com/Jj-xhGUcWVWOMooS2fOPcYmELcH70cG1eRRaPPy66Yk
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1442
@@ -28,7 +36,7 @@ ht-degree: 0%
 
 銷售提案是企業邁向客戶獲取旅程的第一步。 就像所有事情一樣，第一印象會持久。 因此，你與顧客的第一次互動，會設定他們對你事業的期望。 您的提案必須簡潔、準確且方便。
 
-合約與提案的文件結構中包含不同類型的資料。 它們包含動態資料（客戶名稱、報價金額等）與靜態資料（如公司能力、團隊簡介及標準工作工作說明詞等標準文字）。 製作範本文件，例如銷售提案，通常涉及單調的工作，例如手動替換模板中的專案細節。 在這個教學中，你會運用動態資料和工作流程，建立一個高效的銷售提案](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)製作流程[。
+合約與提案的文件結構中包含不同類型的資料。 它們包含動態資料（客戶名稱、報價金額等）與靜態資料（如公司能力、團隊簡介及標準工作工作說明詞等標準文字）。 製作範本文件，例如銷售提案，通常涉及單調的工作，例如手動替換模板中的專案細節。 在這個教學中，你會運用動態資料和工作流程，建立一個高效的銷售提案[&#128279;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)製作流程。
 
 ## 你可以學到什麼
 
@@ -56,7 +64,7 @@ ht-degree: 0%
 
 首先，在 [Microsoft Forms](https://www.office.com/launch/forms?auth=1) （或你偏好的表單建包器）中建立資料擷取表單。 此表單用於客戶動態資料，並加入銷售提案中。 填寫此表單以獲取客戶所需資訊——例如公司名稱、日期、地址、專案範圍、價格及額外意見。 要建立自己的表格，請使用此 [表單]（https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy）。 目標是讓潛在客戶填寫表單，然後將回應匯出成 JSON 檔案，再傳遞到你工作流程的下一階段。
 
-有些表單建構器只能讓你匯出 CSV 檔案。 所以，你可能會覺得將產生的 CSV 檔案轉換](http://csvjson.com/csv2json)成 JSON 檔案很有用[。
+有些表單建構器只能讓你匯出 CSV 檔案。 所以，你可能會覺得將產生的 CSV 檔案轉換[&#128279;](http://csvjson.com/csv2json)成 JSON 檔案很有用。
 
 靜態資料會在每個銷售提案中重複使用。 所以，你可以在 Microsoft Word 中使用銷售提案範本來提供靜態文字。 你可以使用這個 [範本](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)，但你也可以自己建立或使用 [Adobe 範本](https://developer.adobe.com/document-services/apis/doc-generation)。
 
@@ -152,4 +160,4 @@ console.log('Exception encountered while executing operation', err);
 
 使用 Microsoft Forms，你可以從客戶那裡獲得關鍵資料，這些資料會被納入他們獨特的提案中。 你在 Microsoft Word 裡建立了銷售提案範本，提供你不想每次都重複的靜態文字。 接著你使用 [!DNL Acrobat Services] API 將表單與範本的資料合併，更有效率地為客戶製作銷售提案 PDF。
 
-這個實作教學只是這些 API 能做到的一瞥。 想了解更多解決方案，請造訪 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) API 頁面。 使用這些工具六個月免費。 接著，在隨用隨付](https://developer.adobe.com/document-services/pricing/main)計畫中，每筆文件交易[只需支付0.05美元，這樣你只需隨著團隊為銷售管道增加更多潛在客戶而付費。
+這個實作教學只是這些 API 能做到的一瞥。 想了解更多解決方案，請造訪 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) API 頁面。 使用這些工具六個月免費。 接著，在隨用隨付[&#128279;](https://developer.adobe.com/document-services/pricing/main)計畫中，每筆文件交易只需支付0.05美元，這樣你只需隨著團隊為銷售管道增加更多潛在客戶而付費。

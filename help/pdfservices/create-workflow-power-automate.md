@@ -9,10 +9,14 @@ jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
 TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 2046
@@ -34,8 +38,8 @@ ht-degree: 1%
 
 ### 你需要什麼
 
-* **Adobe PDF 服務的試用或製作憑證**&#x200B;在這裡了解更多如何在 Microsoft Power Automate [](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)中取得及設定憑證。
-* **Microsoft Power Automate with Premium connectors**&#x200B;在這裡了解如何查詢 Power Automate [](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)的授權等級。
+* **Adobe PDF 服務的試用或製作憑證**&#x200B;在這裡了解更多如何在 Microsoft Power Automate [&#128279;](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)中取得及設定憑證。
+* **Microsoft Power Automate with Premium connectors**&#x200B;在這裡了解如何查詢 Power Automate [&#128279;](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)的授權等級。
 * **OneDrive**&#x200B;本教學使用了 OneDrive 儲存接頭，但任何儲存接頭都可以替代。
 
 ### 範例檔案
@@ -90,7 +94,7 @@ ht-degree: 1%
 1. 在搜尋欄搜尋 *Adobe PDF 服務* 。
 1. 選擇 **[!UICONTROL Adobe PDF 服務]**。
 1. 在搜尋欄搜尋「 *Convert Word to PDF* 」。
-1. 在檔案名稱&#x200B;]**中**[!UICONTROL ，依照你的設定名稱，但必須以 *.docx* 結尾。此擴充功能是將文件從 Word 轉換成 PDF 所必需的。
+1. 在檔案名稱&#x200B;**中**，依照你的設定名稱，但必須以 *.docx* 結尾。此擴充功能是將文件從 Word 轉換成 PDF 所必需的。
 1. 將游標置於「 **[!UICONTROL 檔案內容]** 」欄位。
 1. 使用 **[!UICONTROL 動態內容]** 面板，選擇 **[!UICONTROL 檔案內容]**。
 
@@ -107,7 +111,7 @@ ht-degree: 1%
 1. 在搜尋欄搜尋「 *建立檔案* 」即可。
 1. 選擇 **[!UICONTROL 建立檔案]**。
 1. 在 **[!UICONTROL 資料夾路徑]** 欄位，選擇資料夾圖示，指定檔案在 OneDrive 中儲存的位置。
-1. 在檔案名稱&#x200B;]**中**[!UICONTROL ，依照你的設定名稱，但必須以 *.docx* 結尾。此擴充功能是將文件從 Word 轉換成 PDF 所必需的。
+1. 在檔案名稱&#x200B;**中**，依照你的設定名稱，但必須以 *.docx* 結尾。此擴充功能是將文件從 Word 轉換成 PDF 所必需的。
 1. 在 **[!UICONTROL 檔案內容]** 欄位，使用 **[!UICONTROL 動態內容]** 面板插入 PDF 檔案內容變數。
 
 ### 試試 flow
@@ -115,7 +119,7 @@ ht-degree: 1%
 1. 在左上角選擇 **[!UICONTROL 「Untitled]** 」以重新命名流程。
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選擇 **[!UICONTROL 測試]**。
-1. 選擇&#x200B;**[!UICONTROL 手動，然後**[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]**]**。
+1. 選擇&#x200B;**[!UICONTROL 手動，然後**&#x200B;[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]&#x200B;**]**。
 1. 選取「**[!UICONTROL 繼續]**」。
 1. 選擇 **[!UICONTROL 「運行流程]**」。
 
@@ -155,7 +159,7 @@ ht-degree: 1%
 1. 在搜尋欄搜尋 *OneDrive* 。
 1. 選擇你的工作或個人 OneDrive 帳號，請選擇 **[!UICONTROL OneDrive for Business]** 或 **[!UICONTROL OneDrive]**。
 1. 在搜尋欄搜尋「 *取得檔案內容* 」。
-1. 在檔案&#x200B;****&#x200B;欄位，選擇資料夾圖示，前往 *OneDrive 的WordDocument02.docx*&#x200B;檔案。
+1. 在檔案&#x200B;**&#x200B;**&#x200B;欄位，選擇資料夾圖示，前往 *OneDrive 的WordDocument02.docx*&#x200B;檔案。
 
 ![在 Microsoft Power Automate 中從 OneDrive 取得檔案內容動作](assets/getFileContentAction02.png)
 
@@ -218,7 +222,7 @@ ht-degree: 1%
 
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選擇 **[!UICONTROL 測試]**。
-1. 選擇&#x200B;**[!UICONTROL 手動，然後**[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]**]**。
+1. 選擇&#x200B;**[!UICONTROL 手動，然後**&#x200B;[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]&#x200B;**]**。
 1. 選取「**[!UICONTROL 繼續]**」。
 1. 輸入名字&#x200B;*、姓氏*&#x200B;和&#x200B;*薪資*&#x200B;的數值&#x200B;**。
 1. 選擇 **[!UICONTROL 「運行流程]**」。
@@ -241,7 +245,7 @@ ht-degree: 1%
 1. 選擇 **[!UICONTROL Adobe PDF 服務]**。
 1. 選擇 **[!UICONTROL 合併 PDF]** 的操作。
 1. 在&#x200B;**[!UICONTROL 合併 PDF 檔案名稱]**&#x200B;欄位，輸入你想要的檔案名稱（例如 CombinedDocument.pdf **）。
-1. 在&#x200B;**[!UICONTROL 檔案內容 -1]** 欄位中，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入 *Convert Word to PDF ]**步驟中的**[!UICONTROL PDF 檔案內容值*。
+1. 在&#x200B;**[!UICONTROL 檔案內容 -1]** 欄位中，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入 *Convert Word to PDF **步驟中的**&#x200B;PDF 檔案內容值*。
 1. 要新增下一份文件，請選擇 **+ [!UICONTROL 新增項目]**。
 1. 在「**[!UICONTROL 檔案內容 - 2]**」欄位，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;**[!UICONTROL 「從 Word 範本&#x200B;*產生文件」步驟中的*輸出檔案內容]**&#x200B;值。
 
@@ -258,7 +262,7 @@ ht-degree: 1%
 1. 選擇 **[!UICONTROL 建立檔案]**。
 1. 在 **[!UICONTROL 資料夾路徑]** 欄位，選擇資料夾圖示，指定檔案在 OneDrive 中儲存的位置。
 1. 在檔案 **[!UICONTROL 名稱]** 欄位中，設定檔案名稱。 因為輸出是 PDF，檔案名稱必須以 .pdf 結尾。
-1. 在&#x200B;**[!UICONTROL 檔案內容]**&#x200B;欄位，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;*合併 PDF ]**步驟中的**[!UICONTROL PDF 檔案內容*&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 檔案內容]**&#x200B;欄位，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;*合併 PDF **步驟中的**&#x200B;PDF 檔案內容*&#x200B;值。
 
    ![Microsoft Power Automate 的流程概覽](assets/flowOverviewSavedMergedDocument.png)
 
@@ -266,7 +270,7 @@ ht-degree: 1%
 
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選擇 **[!UICONTROL 測試]**。
-1. 選擇&#x200B;**[!UICONTROL 手動，然後**[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]**]**。
+1. 選擇&#x200B;**[!UICONTROL 手動，然後**&#x200B;[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]&#x200B;**]**。
 1. 選取「**[!UICONTROL 繼續]**」。
 1. 輸入名字&#x200B;*、姓氏*&#x200B;和&#x200B;*薪資*&#x200B;的數值&#x200B;**。
 1. 選擇 **[!UICONTROL 「運行流程]**」。
@@ -288,21 +292,21 @@ ht-degree: 1%
 1. 選擇 **[!UICONTROL Adobe PDF 服務]**。
 1. 選擇 **[!UICONTROL 「從檢視]** 中保護 PDF」的動作。
 1. 在檔案 **[!UICONTROL 名稱]** 欄位，將名稱設為你想要的名稱，只要以.pdf副檔名結尾即可。
-1. 將密碼&#x200B;]**欄位設**[!UICONTROL &#x200B;為你指定的密碼以開啟文件。
-1. 在&#x200B;**[!UICONTROL 檔案內容]**&#x200B;欄位，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;*合併 PDF ]**步驟中的**[!UICONTROL PDF 檔案內容*&#x200B;值。
+1. 將密碼&#x200B;**欄位設**&#x200B;為你指定的密碼以開啟文件。
+1. 在&#x200B;**[!UICONTROL 檔案內容]**&#x200B;欄位，使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;*合併 PDF **步驟中的**&#x200B;PDF 檔案內容*&#x200B;值。
 
 ### 更新存檔到 OneDrive
 
 文件受保護後，你可以把檔案存回 OneDrive。 在這個例子中，你是用新的&#x200B;*檔案內容*&#x200B;值更新了先前的&#x200B;**「建立檔案 3**」動作。
 
 1. 在「**[!UICONTROL 建立檔案 3]**」動作的&#x200B;**[!UICONTROL 檔案內容]**&#x200B;欄位選擇游標。
-1. 使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;*「保護 PDF 從檢視&#x200B;**中」步驟中**取得的 PDF 檔案內容*&#x200B;值。
+1. 使用&#x200B;**[!UICONTROL 動態內容]**&#x200B;面板插入&#x200B;*「保護 PDF 從檢視&#x200B;**中」步驟中**&#x200B;取得的 PDF 檔案內容*&#x200B;值。
 
 ### 試試 flow
 
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選擇 **[!UICONTROL 測試]**。
-1. 選擇&#x200B;**[!UICONTROL 手動，然後**[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]**]**。
+1. 選擇&#x200B;**[!UICONTROL 手動，然後**&#x200B;[!UICONTROL &#x200B;選擇儲存與測試&#x200B;]&#x200B;**]**。
 1. 選取「**[!UICONTROL 繼續]**」。
 1. 輸入名字&#x200B;*、姓氏*&#x200B;和&#x200B;*薪資*&#x200B;的數值&#x200B;**。
 1. 選擇 **[!UICONTROL 「運行流程]**」。
@@ -315,4 +319,4 @@ ht-degree: 1%
 
 * 查看 Microsoft Power Automate 中可用的預先建立範本。
 * 請參考 [Adobe Tech Blog 上的文章](https://medium.com/adobetech/tagged/microsoft-power-automate) 。
-* 請檢視 [](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) Adobe 文件生成 API 的文件。
+* 請檢視 [&#128279;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) Adobe 文件生成 API 的文件。

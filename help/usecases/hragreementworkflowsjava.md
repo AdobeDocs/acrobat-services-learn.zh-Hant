@@ -9,11 +9,17 @@ jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
 TQID: https://experienceleague.adobe.com/3XG9hVuP8EXiHP19m-werP4yFx8ae-VIPuS7N0V2jpQ
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1960
@@ -398,9 +404,9 @@ PDF 在網頁瀏覽器中渲染後，呈現如下樣貌。 也就是說，您輸
 
 首先，註冊一個 [開發者帳號](https://acrobat.adobe.com/tw/zh-Hant/acrobat/contact.html)。
 
-在 Adobe Sign 入口網站](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)建立 CLIENT 應用程式[。
+在 Adobe Sign 入口網站[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)建立 CLIENT 應用程式。
 
-請依照這裡](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)描述[的配置 OAuth 來設定應用程式。請註明您的客戶識別碼與客戶機密。 接著，你可以使用 `https://www.google.com` 重定向 URI 及以下範圍：
+請依照這裡[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[這裡](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)描述的配置 OAuth 來設定應用程式。請註明您的客戶識別碼與客戶機密。 接著，你可以使用 `https://www.google.com` 重定向 URI 及以下範圍：
 
 * user_login：自我
 
@@ -460,7 +466,7 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 
 ## 使用 Adobe Sign Java SDK
 
-一旦你拿到存取權杖，就可以向 Adobe Sign 發送 REST API 呼叫。 為了簡化這個流程，可以使用 Adobe Sign Java SDK。 原始碼可在 Adobe GitHub 倉庫](https://github.com/adobe-sign/AdobeSignJavaSdk)取得[。
+一旦你拿到存取權杖，就可以向 Adobe Sign 發送 REST API 呼叫。 為了簡化這個流程，可以使用 Adobe Sign Java SDK。 原始碼可在 Adobe GitHub 倉庫[&#128279;](https://github.com/adobe-sign/AdobeSignJavaSdk)取得。
 
 要將此套件整合到你的應用程式中，你必須複製該程式碼。 接著，建立 Maven 套件（mvn 套件），並將以下檔案安裝到專案中（你可以在 adobe-sign-sdk 資料夾的伴隨程式碼中找到）：
 

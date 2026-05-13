@@ -9,12 +9,21 @@ jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
 TQID: https://experienceleague.adobe.com/ZfvtA3o-CQ28V-HdyzMR2TWgw-DpddXoh3zMOAUAqhY
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1851
@@ -26,7 +35,7 @@ ht-degree: 1%
 
 ![使用案例英雄卡池](assets/UseCaseOfferHero.jpg)
 
-員工聘用信是員工與貴組織接觸的最初經驗之一。 因此，你要確保你的聘書符合品牌形象，但又不想每次都必須從零在文字處理器中撰寫信件。 [!DNL Adobe Acrobat Services] API 提供了一種快速、簡單且有效的方法，來處理產生及交付聘用信給新員工](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)的關鍵環節[。
+員工聘用信是員工與貴組織接觸的最初經驗之一。 因此，你要確保你的聘書符合品牌形象，但又不想每次都必須從零在文字處理器中撰寫信件。 [!DNL Adobe Acrobat Services] API 提供了一種快速、簡單且有效的方法，來處理產生及交付聘用信給新員工[&#128279;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)的關鍵環節。
 
 ## 你可以學到什麼
 
@@ -64,7 +73,7 @@ ht-degree: 1%
 
 ## 專案設立
 
-建立一個 Node 專案來執行你的程式碼。 此範例使用 [Visual Studio Code](https://code.visualstudio.com/) （VS Code）作為編輯器。 建立一個叫做「letter-generator」的資料夾，然後用 VS Code 打開。 從檔案&#x200B;]**選單中**[!UICONTROL ，選擇&#x200B;**[!UICONTROL 終端]**&#x200B;機 \> **[!UICONTROL 新終端機]**，即可在此資料夾中開啟一個 shell。請輸入以下輸入，確認節點已安裝並進入您的路徑：
+建立一個 Node 專案來執行你的程式碼。 此範例使用 [Visual Studio Code](https://code.visualstudio.com/) （VS Code）作為編輯器。 建立一個叫做「letter-generator」的資料夾，然後用 VS Code 打開。 從檔案&#x200B;**選單中**，選擇&#x200B;**[!UICONTROL 終端]**&#x200B;機 \> **[!UICONTROL 新終端機]**，即可在此資料夾中開啟一個 shell。請輸入以下輸入，確認節點已安裝並進入您的路徑：
 
 ```
 node -v
@@ -245,7 +254,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那裡有很多程式碼需要拆解。 我們先從主要部分來看：。`documentMergeOperation`這個區塊是你將 JSON 資料與 Word 文件範本合併的地方。 你可以用 Adobe 網站上](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)的[範例作為參考，但我們先做一個簡單的例子。打開 Word，建立一個新的空白文件。 你可以隨意自訂，但至少要有像這樣的功能：
+那裡有很多程式碼需要拆解。 我們先從主要部分來看：。`documentMergeOperation`這個區塊是你將 JSON 資料與 Word 文件範本合併的地方。 你可以用 Adobe 網站上[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)的範例作為參考，但我們先做一個簡單的例子。打開 Word，建立一個新的空白文件。 你可以隨意自訂，但至少要有像這樣的功能：
 
 親愛的X，
 
@@ -269,7 +278,7 @@ console.log('Exception encountered while executing operation', err);
 
 現在 Word 範本的標記與 JSON 格式相符。 例如， ```{{`offer_letter`.`firstname`}}``` Word 開頭的文件會被 JSON 資料中「firstname」區塊的值取代。
 
-回到你的 `generateLetter` 工作上。 為了保護你的 REST 呼叫，請在專案根目錄中建立一個名為 pdftools-api-credentials.json 的新檔案。 貼上以下 JSON 資料，並根據開發者主控台](https://developer.adobe.com/console/)服務帳號（JWT）區塊[的細節調整。
+回到你的 `generateLetter` 工作上。 為了保護你的 REST 呼叫，請在專案根目錄中建立一個名為 pdftools-api-credentials.json 的新檔案。 貼上以下 JSON 資料，並根據開發者主控台[&#128279;](https://developer.adobe.com/console/)服務帳號（JWT）區塊的細節調整。
 
 ```
 {
@@ -299,4 +308,4 @@ console.log('Exception encountered while executing operation', err);
 
 上述單一文件範例可作為申請基礎，當組織必須 [在多個地點加強季節性員工聘用](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) 時。 如前所述，主要流程是透過線上申請從應徵者那裡取得資料。 這些資料用來填入聘書欄位，並送出電子簽名。
 
-[!DNL Adobe Acrobat Services] 免費使用六個月，之後 [以](https://developer.adobe.com/document-services/pricing/main) 每筆文件交易 0.05 美元付費，讓你試用並隨著業務成長擴展聘用函工作流程。 開始[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)建立自己的範本，註冊 [你的開發者帳號](https://developer.adobe.com/)。
+[!DNL Adobe Acrobat Services] 免費使用六個月，之後 [以](https://developer.adobe.com/document-services/pricing/main) 每筆文件交易 0.05 美元付費，讓你試用並隨著業務成長擴展聘用函工作流程。 開始[&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)建立自己的範本，註冊 [你的開發者帳號](https://developer.adobe.com/)。

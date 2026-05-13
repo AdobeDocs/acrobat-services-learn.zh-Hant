@@ -9,11 +9,18 @@ jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
 TQID: https://experienceleague.adobe.com/cRSC1vIKbwdoQhwz8HkU-L6sO7ENukJhOqgw2C1O-6Y
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: c4d07275-6387-4756-8bf7-681e581ffd27
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1487
@@ -27,7 +34,7 @@ ht-degree: 0%
 
 當生意興隆時這很好，但當準備大量發票時，生產力就會下降。 手動產生發票耗時，且有犯錯風險，可能損失金錢或因錯誤金額而惹怒客戶。
 
-舉例來說，丹妮爾在一家醫療用品公司的](https://developer.adobe.com/document-services/use-cases/financial/invoices)會計部門[](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作[。月底了，她正在從多個系統調取資料，反覆確認準確性，並格式化發票。 經過這麼多努力，她終於準備好將文件轉換成 PDF（讓任何人不用購買特定軟體即可查看），並將個人化發票寄給每位客戶。
+舉例來說，丹妮爾在一家醫療用品公司的[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)會計部門[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作。月底了，她正在從多個系統調取資料，反覆確認準確性，並格式化發票。 經過這麼多努力，她終於準備好將文件轉換成 PDF（讓任何人不用購買特定軟體即可查看），並將個人化發票寄給每位客戶。
 
 即使每月開具都完成了，Danielle 也無法擺脫那些發票。 有些客戶的帳單週期不是每月，所以她總是在幫某人開發票。 偶爾，客戶會編輯發票並少付錢。 Danielle 隨後花時間排除發票不符的問題。 照這樣下去，她得請助理來應付所有工作！
 
@@ -224,13 +231,13 @@ async function applyPassword(password, inputFile, outputFile) {
 }
 ```
 
-使用此代碼時，系統會以密碼保護你的文件，並上傳新發票到系統。 想了解更多關於此程式碼的使用方式，或想嘗試使用，請參閱範例[](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation)程式碼。
+使用此代碼時，系統會以密碼保護你的文件，並上傳新發票到系統。 想了解更多關於此程式碼的使用方式，或想嘗試使用，請參閱範例[&#128279;](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation)程式碼。
 
 發票完成後，你可能會想自動寄送給客戶。 有幾種方法可以自動寄信給客戶。 最快的方法是使用第三方電子郵件 API 搭配像 [sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs) 這樣的輔助函式庫。 或者，如果你已經有 SMTP 伺服器的存取權，也可以使用 [nodemailer](https://www.npmjs.com/package/nodemailer) 透過 SMTP 發送電子郵件。
 
 ## 後續步驟
 
-在這個實作教學中，你製作了一個簡單的應用程式，幫助 Danielle 在會計上處理 [發票](https://developer.adobe.com/document-services/use-cases/financial/invoices)。 利用 PDF Services API 和文件生成 SDK，你將客戶訂單資訊從 JSON 文件填入 Microsoft Word 範本，建立 PDF 發票。 接著，利用 PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html) 的密碼保護服務[為每份文件設置密碼保護。
+在這個實作教學中，你製作了一個簡單的應用程式，幫助 Danielle 在會計上處理 [發票](https://developer.adobe.com/document-services/use-cases/financial/invoices)。 利用 PDF Services API 和文件生成 SDK，你將客戶訂單資訊從 JSON 文件填入 Microsoft Word 範本，建立 PDF 發票。 接著，利用 PDF Services API[&#128279;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html) 的密碼保護服務為每份文件設置密碼保護。
 
 由於 Danielle 能自動產生發票，且不必擔心客戶會編輯發票，她不需要聘請助理來協助所有手動工作。 她可以利用多餘的時間在應付帳款檔案中尋找節省成本的方案。
 

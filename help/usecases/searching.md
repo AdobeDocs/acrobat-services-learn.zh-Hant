@@ -9,12 +9,21 @@ jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
 TQID: https://experienceleague.adobe.com/ceJsh2lv-S4b6mScT7DF83x1C85BAu-bPa5ju4JcYu4
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1389
@@ -44,7 +53,7 @@ ht-degree: 0%
 
 ## 專案設定
 
-首先，為應用程式設定資料夾結構。 你可以在這裡](https://github.com/agavitalis/AdobeDocumentAPI.git)取得原始碼[。
+首先，為應用程式設定資料夾結構。 你可以在這裡[&#128279;](https://github.com/agavitalis/AdobeDocumentAPI.git)取得原始碼。
 
 ## 目錄結構
 
@@ -142,7 +151,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 這些 API 透過一組雲端網路服務自動化產生、操作及轉換 PDF 內容。
 
-要取得憑證，你需要註冊[](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)並完成整個工作流程。PDF 嵌入 API 是免費使用的。 PDF 服務 API 與文件產生 API 免費提供六個月。 試用期結束後，您可以 [以每筆文件交易僅需 0.05 美元的價格按需](https://developer.adobe.com/document-services/pricing/main) 付費。 你只有在公司成長和處理更多合約時才會付費。
+要取得憑證，你需要註冊[&#128279;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)並完成整個工作流程。PDF 嵌入 API 是免費使用的。 PDF 服務 API 與文件產生 API 免費提供六個月。 試用期結束後，您可以 [以每筆文件交易僅需 0.05 美元的價格按需](https://developer.adobe.com/document-services/pricing/main) 付費。 你只有在公司成長和處理更多合約時才會付費。
 
 ![建立憑證的截圖](assets/searching_1.png)
 
