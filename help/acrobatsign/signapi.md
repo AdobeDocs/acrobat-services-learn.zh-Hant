@@ -293,7 +293,7 @@ Company Name","","","2021-03-07 19:32:59"
 
 將文件送給指定的收件人以供簽署或批准，即構成協議。 你可以利用 API 追蹤協議的狀態與完成狀況。
 
-您可以使用臨時文件[&#128279;](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)、[函式庫文件](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或網址來建立協議。在這個例子中，協議是基於 `transientDocumentId`，就像前面建立的網頁表單一樣。
+您可以使用臨時文件[&#128279;](https://helpx.adobe.com/tw/sign/kb/how-to-send-an-agreement-through-REST-API.html)、[函式庫文件](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或網址來建立協議。在這個例子中，協議是基於 `transientDocumentId`，就像前面建立的網頁表單一樣。
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
