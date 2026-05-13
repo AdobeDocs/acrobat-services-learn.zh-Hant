@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe PDF服務API進行OCRPDF檔案
-description: 使用OCR（光學字元識別），您可以解鎖掃描的PDF，以提取文本並建立可搜索的檔案
+title: 使用 Adobe PDF 服務 API 來進行 OCR PDF 檔案
+description: 利用光學字元辨識（OCR），你可以解鎖掃描後的 PDF，提取文字並建立可搜尋的檔案
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,101 +8,107 @@ type: Tutorial
 jira: KT-6677
 thumbnail: KT-6677.jpg
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/5FjC4a9OBqfo7jiA1lHFkN5r1w2PtrG13T1qhpBJjis
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 0%
+source-wordcount: 626
+ht-degree: 1%
 
 ---
 
-# 使用Adobe PDF服務API對OCRPDF檔案
+# 使用 Adobe PDF 服務 API 來進行 OCR PDF 檔案
 
-![建立PDF英雄影像](assets/OCR_hero.jpg)
+![建立 PDF 英雄圖片](assets/OCR_hero.jpg)
 
-使用OCR（光學字元識別），您可以解鎖掃描的PDF，以提取文本並建立可搜索的檔案。 使用我們功能強大的基於雲的API，將OCR整合到任何文檔工作流中，從而為歸檔、複製文本和建立可搜索的文檔索引提供完美的解決方案。 從掃描的PDF儲存庫建立可搜索的存檔，以解鎖重要資訊並通過快速搜索節省時間。 或者將OCR應用於上載的PDF，以便編輯掃描，以在上載工作流中使用。
+利用 OCR（光學字元辨識），你可以解鎖掃描後的 PDF，提取文字並建立可搜尋的檔案。 利用我們強大的雲端 API，將 OCR 整合進任何文件工作流程，成為檔案歸檔、文字複製及建立可搜尋文件索引的完美解決方案。 從掃描的 PDF 資料庫建立可搜尋的檔案庫，解鎖重要資訊並節省時間，並以快速搜尋功能。 或者對上傳掃描的 PDF 套用 OCR，讓它們能編輯以便用於入職流程。
 
-開發人員只需幾分鐘就可以開始使用為OCR提供的示例檔案。
+開發者只需幾分鐘即可開始使用提供的 OCR 範例檔案。
 
-在本教程中介紹了如何使用Node.js、Java和.Net語言的示例檔案運行第一個PDF服務API OCR操作的基本知識。
+本教學將介紹如何使用Node.js、Java 和 .Net 語言的範例檔案，執行你的第一個 PDF Services API OCR 操作的基礎。
 
-## 步驟1：建立憑據並設定環境
+## 步驟一：建立你的憑證並設定環境
 
-使用下面的入門教程建立API憑據、下載示例檔案和設定環境。
+請使用以下入門教學建立您的 API 憑證、下載範例檔案並設定環境。
 
-[PDF服務API和Java入門](gettingstartedjava.md)
+[開始使用 PDF Services API 與 Java](gettingstartedjava.md)
 
-[PDF服務API和.Net入門](gettingstartednet.md)
+[開始使用 PDF Services API 與 .NET](gettingstartednet.md)
 
-[PDF服務API和Node.js入門](createpdffromhtml.md)
+[如何開始使用 PDF 服務 API 與Node.js](createpdffromhtml.md)
 
-## 運行示例檔案中提供的OCR示例
+## 請執行範例檔案中提供的 OCR 範例
 
-預設情況下，我們的OCR操作允許使用英語語言環境，但也支援德語、法語、丹麥語和[其他語言](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language)。 預設為en-us語言環境。
+我們的 OCR 服務預設支援英文地點，同時也支援德語、法語、丹麥語及 [其他語言](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language)。 預設是 en-us locale。
 
-在將選項與包括特定區域設定的OCR操作一起傳入時，該方法還接受「type」參數，該參數具有兩個選項：
+當你輸入包含特定地點的 OCR 選項時，方法也會接受「類型」參數，該參數有兩個選項：
 
-* SEARCHABLE_IMAGE：在清除過程中修改原始影像（例如，解析它），然後將不可見的文本層置於其上。 此類型會刪除不需要的對象，並且在某些情況下可能會生成更易讀的文檔。
+* SEARCHABLE_IMAGE：在清理過程中修改原始影像（例如，deskew），然後在上方放置隱形文字圖層。 這種類型能去除不必要的雜訊，在某些情況下可能使文件更易閱讀。
 
-* SEARCHABLE_IMAGE_EXACT：確保文本可搜索和選擇。 此選項保留原始影像，並在其上放置不可見的文本圖層。 建議用於要求原始影像保真度最高的情況。
+* SEARCHABLE_IMAGE_EXACT：確保文字可搜尋且可選取。 這個選項會保留原始圖片，並在上面放置一個隱形的文字圖層。 建議用於需要最高原始影像真實度的機種。
 
-**Java**
+**爪哇**
 
-1. 開啟命令提示符。
+1. 開啟「命令提示字元」。
 
-1. 將目錄更改為示例代碼目錄。
+1. 將目錄改成你的範例程式碼目錄。
 
-   例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples>。
+   例如，C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples>。
 
-1. 運行以下命令：
+1. 執行以下指令：
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.ocrpdf.OcrPDF`
 
-您的PDF將在src/main/resources目錄中建立。
+你的 PDF 會建立在 src/main/resources 目錄中。
 
 **.Net**
 
-1. 開啟命令提示符。
+1. 開啟「命令提示字元」。
 
-1. 將目錄更改為示例代碼目錄。
+1. 將目錄改成你的範例程式碼目錄。
 
-   例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-NetSamples
+   例如，C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-NetSamples
 
-1. 再次將目錄更改為OcrPDF目錄。
+1. 再次將目錄切換到 OcrPDF 目錄。
 
-1. 運行以下命令：
+1. 執行以下指令：
 
    `dotnet run OcrPDF.csproj`
 
-您的PDF將建立在同一目錄中。
+你的 PDF 也會在同一個目錄中建立。
 
 **Node.js**
 
-1. 開啟命令提示符。
+1. 開啟「命令提示字元」。
 
-1. 將目錄更改為示例代碼目錄。
+1. 將目錄改成你的範例程式碼目錄。
 
-   例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
+   例如，C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. 運行以下命令：
+1. 執行以下指令：
 
    `node src/ocr/ocr-pdf.js`
 
-您的PDF將在輸出中指定的位置建立，該位置預設為輸出目錄。
+你的 PDF 會建立在輸出中指定的位置，預設是輸出目錄。
 
-## 最後的想法
+## 總結感想
 
-使用示例檔案執行這些簡單步驟後，您應該有一個可以構建的工作示例。 除了本教程中使用的OCR示例外，還有一個使用前面討論的支援類型和區域設定選項的OCR示例。
+透過這些簡單的範例檔案，你應該就有一個可以繼續發展的範例。 除了本教學中使用的 OCR 範例外，還有另一個使用先前討論的支援類型與區域選項進行 OCR 的範例。
 
-在此，您只需替換示例中的輸入和輸出檔案，即可使用您自己的PDF完成您自己的使用案例的概念驗證。
+接著你可以簡單地替換範例中的輸入和輸出檔案，使用自己的 PDF 來完成你自己的概念驗證。
 
 ![概念驗證](assets/OCR_poc.png)
 
-## 資源和後續步驟
+## 資源與後續步驟
 
-* 有關其他幫助和支援，請訪問Adobe[[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)社區論壇
+* 如需更多協助與支援，請造訪 Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) 社群論壇
 
-* PDF服務API [文檔](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF 服務 API [文件](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [FAQ](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197)以瞭解PDF服務API問題
+* [](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) PDF 服務 API 常見問題
 
-* [請與我們聯繫](https://www.adobe.com/go/pdftoolsapi_requestform)以瞭解有關許可和定價的問題
+* [如有關於授權與價格的問題，歡迎聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)

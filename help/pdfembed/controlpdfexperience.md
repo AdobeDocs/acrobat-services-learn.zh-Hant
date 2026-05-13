@@ -1,6 +1,6 @@
 ---
-title: 控制您的PDF線上體驗和收集分析
-description: 在本實踐教程中，您將學習如何使用Adobe PDF嵌入API控制外觀、啟用協作並收集有關用戶與PDF交互方式的分析，包括在頁面上花費的時間和搜索
+title: 掌控您的 PDF 線上體驗並蒐集分析數據
+description: 在這個實作教學中，你將學習如何使用 Adobe PDF 嵌入 API 來控制外觀、促進協作，並收集使用者如何與 PDF 互動的分析數據，包括在頁面上停留的時間和搜尋
 feature: PDF Embed API
 role: Developer
 level: Intermediate
@@ -8,179 +8,186 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/fsD7hB9-yEhVElQUFkM1RmUB1aVJq6C9USXa3Ru9lks
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: 1549
 ht-degree: 0%
 
 ---
 
-# 控制PDF線上體驗並收集分析
+# 掌控您的 PDF 線上體驗並蒐集分析數據
 
-您的組織是否在您的網站上發佈PDF? 瞭解如何使用Adobe PDF嵌入API控制外觀、啟用協作並收集有關用戶與PDF交互方式的分析，包括在頁面上花費的時間和搜索。 若要開始此4部分的操作教程，請選擇&#x200B;*使用PDF嵌入API入門*。
+你們組織會在網站上發布 PDF 嗎？ 學習如何使用 Adobe PDF 嵌入 API，來控制外觀、促進協作，並收集使用者如何與 PDF 互動的分析數據，包括在頁面上的停留時間和搜尋結果。 要開始這個四部分的實作教學，請選擇 *「開始使用 PDF 嵌入 API*」。
 
 <table style="table-layout:fixed">
 <tr>
   <td>
     <a href="controlpdfexperience.md#part1">
-        <img alt="第1部分：PDF嵌入API入門" src="assets/ControlPDFPart1_thumb.png" />
+        <img alt="第一部分：開始使用 PDF 嵌入 API" src="assets/ControlPDFPart1_thumb.png" />
     </a>
     <div>
-    <a href="controlpdfexperience.md#part1"><strong>第1部分：PDF嵌入API入門</strong></a>
+    <a href="controlpdfexperience.md#part1"><strong>第一部分：開始使用 PDF 嵌入 API</strong></a>
     </div>
   </td>
   <td>
     <a href="controlpdfexperience.md#part2">
-        <img alt="第2部分：將PDF嵌入API添加到網頁" src="assets/ControlPDFPart2_thumb.png" />
+        <img alt="第二部分：將 PDF 嵌入 API 加入網頁" src="assets/ControlPDFPart2_thumb.png" />
     </a>
     <div>
-    <a href="controlpdfexperience.md#part2"><strong>第2部分：將PDF嵌入API添加到網頁</strong></a>
+    <a href="controlpdfexperience.md#part2"><strong>第二部分：將 PDF 嵌入 API 加入網頁</strong></a>
     </div>
   </td>
   <td>
    <a href="controlpdfexperience.md#part3">
-      <img alt="第3部分：訪問分析API" src="assets/ControlPDFPart3_thumb.png" />
+      <img alt="第三部分：存取分析 API" src="assets/ControlPDFPart3_thumb.png" />
    </a>
     <div>
-    <a href="controlpdfexperience.md#part3"><strong>第3部分：訪問分析API</strong></a>
+    <a href="controlpdfexperience.md#part3"><strong>第三部分：存取分析 API</strong></a>
     </div>
   </td>
   <td>
    <a href="controlpdfexperience.md#part4">
-      <img alt="第4部分：根據事件添加交互性" src="assets/ControlPDFPart4_thumb.png" />
+      <img alt="第四部分：根據事件增加互動性" src="assets/ControlPDFPart4_thumb.png" />
    </a>
     <div>
-    <a href="controlpdfexperience.md#part4"><strong>第4部分：添加基於事件的交互性</strong></a>
+    <a href="controlpdfexperience.md#part4"><strong>第四部分：根據事件增加互動性</strong></a>
     </div>
   </td>
 </tr>
 </table>
 
-## 第1部分：PDF嵌入API入門 {#part1}
+## 第一部分：開始使用 PDF 嵌入 API {#part1}
 
-在第1部分，瞭解如何開始使用第1至3部分所需的一切。 您將從獲取API憑據開始。
+在第一部分，學習如何開始準備第一到第三部分所需的一切。 你會從取得 API 憑證開始。
 
-**您需要的內容**
+**你需要什麼**
 
-* 教程資源[下載](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
-* Adobe ID[在此處獲取一個](https://account.adobe.com/)
-* Web伺服器（節點JS、PHP等）
-* HTML/JavaScript/CSS的工作知識
+* 教學資源 [下載](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
+* Adobe ID [在這裡取得](https://account.adobe.com/)
+* 網頁伺服器（Node JS、PHP 等）
+* 具備 HTML / JavaScript / CSS 的基本知識
 
-**我們使用的內容**
+**我們正在使用什麼**
 
-* 基本Web伺服器（節點）
-* Visual Studio代碼
+* 一個基本的網頁伺服器（Node）
+* Visual Studio 程式碼
 * GitHub
 
-### 正在獲取憑據
+### 取得資格認證
 
-1. 轉到[Adobe.io網站](https://developer.adobe.com/)。
-1. 按一下「生成參與文檔體驗」下的「瞭解更多資訊」**[!UICONTROL 。]**
+1. 請前往 [Adobe.io 官網](https://developer.adobe.com/)。
+1. 點擊 **[!UICONTROL 「建立引人入勝的文件體驗中的了解更多]** 」。
 
-   ![「瞭解更多」按鈕的螢幕截圖](assets/ControlPDF_1.png)
+   ![「了解更多」按鈕截圖](assets/ControlPDF_1.png)
 
-   這將帶您進入[!DNL Adobe Acrobat Services]首頁。
+   這會帶你到 [!DNL Adobe Acrobat Services] 首頁。
 
-1. 在導航欄中按一下&#x200B;**[!UICONTROL 開始]**。
+1. 在導航欄點擊 **[!UICONTROL 「開始]** 使用」。
 
-   在&#x200B;**使用[!DNL Acrobat Services]個API開始**&#x200B;到&#x200B;**建立新憑據**&#x200B;或&#x200B;**管理現有憑據**&#x200B;中，您將看到一個選項。
+   你會在 **「開始使用 [!DNL Acrobat Services] API」** 中看到一個選項，可以建立 **新的憑證** 或 **管理現有憑證**。
 
-1. 按一下&#x200B;**[!UICONTROL 新建憑據]**&#x200B;下的&#x200B;**[!UICONTROL 開始]**&#x200B;按鈕。
+1. 點擊&#x200B;**[!UICONTROL 「建立新憑證]**」下的&#x200B;**[!UICONTROL 「開始]**」按鈕。
 
-   ![「開始」按鈕的螢幕快照](assets/ControlPDF_2.png)
+   ![開始按鈕截圖](assets/ControlPDF_2.png)
 
-1. 選擇&#x200B;**[!UICONTROL PDF嵌入API]**&#x200B;單選按鈕，並在下一個窗口中添加您選擇的憑據名稱和應用程式域。
+1. 選擇 **[!UICONTROL PDF 嵌入 API]** 單選按鈕，並在下一個視窗新增你選擇的憑證名稱和應用程式網域。
 
    >[!NOTE]
    >
-   >這些憑據只能用於此處列出的應用程式域。 您可以使用您選擇的任何域。
+   >這些憑證只能用於此處列出的應用程式域。 你可以使用任何你選擇的網域。
 
-   ![憑據螢幕快照](assets/ControlPDF_3.png)
+   ![憑證截圖](assets/ControlPDF_3.png)
 
-1. 按一下&#x200B;**[!UICONTROL 建立憑據]**。
+1. 點擊 **[!UICONTROL 建立憑證]**。
 
-   嚮導的最後一頁為您提供了客戶端憑據詳細資訊。 保持此窗口開啟，以便您可以返回到該窗口並複製客戶端ID（API密鑰）以供以後使用。
+   嚮導的最後一頁會提供你的客戶憑證資訊。 請保持這個視窗開啟，這樣你就可以回來複製客戶端 ID（API 金鑰）以便日後使用。
 
-1. 按一下&#x200B;**[!UICONTROL 查看文檔]**&#x200B;以轉到文檔，其中包含有關如何使用此API的詳細資訊。
+1. 點擊 **[!UICONTROL 「檢視文件]** 」即可前往詳細說明如何使用此 API 的文件。
 
-   ![建立憑據按鈕的螢幕快照](assets/ControlPDF_4.png)
+   ![建立憑證按鈕的截圖](assets/ControlPDF_4.png)
 
-## 第2部分：將PDF嵌入API添加到網頁 {#part2}
+## 第二部分：將 PDF 嵌入 API 加入網頁 {#part2}
 
-在第2部分，您將學習如何輕鬆將PDF嵌入API嵌入到網頁中。 您將使用Adobe PDF嵌入API線上演示建立我們的代碼來執行此操作。
+在第二部分，你將學習如何輕鬆地將 PDF Embed API 嵌入網頁。 你將透過使用 Adobe PDF 嵌入 API 線上示範來建立我們的程式碼來完成這件事。
 
-### 獲取練習代碼
+### 取得運動代碼
 
-我們為您建立了代碼。 雖然您可以使用自己的代碼，但演示將位於教程資源的上下文中。 在此處下載示例代碼[&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)。
+我們為你創建了程式碼供你使用。 雖然你可以使用自己的程式碼，但示範會在教學資源的脈絡中進行。 請在此](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下載範例程式碼[。
 
-1. 轉到[[!DNL Adobe Acrobat Services] 網站](https://developer.adobe.com/document-services/homepage/)。
+1. 前往 [[!DNL Adobe Acrobat Services] 網站](https://developer.adobe.com/document-services/homepage/)。
 
-   ![[!DNL Adobe Acrobat Services]網站的螢幕截圖](assets/ControlPDF_6.png)
+   ![網站截圖[!DNL Adobe Acrobat Services]](assets/ControlPDF_6.png)
 
-1. 在導航欄中按一下&#x200B;**[!UICONTROL API]**，然後轉到下拉連結中的&#x200B;**[!UICONTROL PDF嵌入API]**&#x200B;頁。
+1. 在導覽欄點選 **[!UICONTROL API]** ，然後在下拉連結中前往 **[!UICONTROL PDF 嵌入 API]** 頁面。
 
-   ![「PDF嵌入API」下拉清單的螢幕快照](assets/ControlPDF_7.png)
+   ![PDF 嵌入 API 下拉選單截圖](assets/ControlPDF_7.png)
 
-1. 按一下&#x200B;**[!UICONTROL 嘗試演示]**。
+1. 點擊 **[!UICONTROL 「試用試玩版]**」。
 
-   隨PDF嵌入API的開發人員沙盒彈出一個新窗口。
+   會跳出一個新視窗，顯示 PDF 嵌入 API 的開發者沙盒。
 
-   ![嘗試演示的螢幕截圖](assets/ControlPDF_8.png)
+   ![試玩試玩版截圖](assets/ControlPDF_8.png)
 
-   在這裡，您可以看到不同查看模式的選項。
+   這裡可以看到不同觀看模式的選項。
 
-1. 按一下「全窗口」(Full Window)、「尺寸容器」(Signed Container)、「線上」(In-Line)和「燈箱」(Lightbox)的不同查看模式。
+1. 點選不同的觀賞模式，分別是全視窗、尺寸容器、線上和Lightbox。
 
-   ![查看模式的螢幕快照](assets/ControlPDF_9.png)
+   ![觀看模式截圖](assets/ControlPDF_9.png)
 
-1. 按一下&#x200B;**[!UICONTROL 全窗口]**&#x200B;查看模式，然後按一下&#x200B;**[!UICONTROL 自定義]**&#x200B;按鈕以開啟和關閉選項。
+1. 點選 **[!UICONTROL 「全視窗]** 觀看模式」，然後點擊 **[!UICONTROL 「自訂]** 」按鈕來切換選項的開關。
 
-   ![「自定義」按鈕的螢幕快照](assets/ControlPDF_10.png)
+   ![自訂按鈕截圖](assets/ControlPDF_10.png)
 
-1. 禁用&#x200B;**[!UICONTROL 下載]** PDF選項。
-1. 按一下&#x200B;**[!UICONTROL 生成代碼]**&#x200B;按鈕以查看代碼預覽。
-1. 從第1部分的「客戶端憑據」窗口複製&#x200B;**[!UICONTROL 客戶端ID]**。
+1. 關閉 **[!UICONTROL 下載]** PDF 選項。
+1. 點擊 **[!UICONTROL 「產生程式碼]** 」按鈕可查看程式碼預覽。
+1. 從第一部分的客戶憑證視窗複製 **[!UICONTROL 客戶 ID]** 。
 
-   ![客戶端ID的螢幕快照](assets/ControlPDF_11.png)
+   ![客戶 ID 截圖](assets/ControlPDF_11.png)
 
-1. 在代碼編輯器中開啟&#x200B;**[!UICONTROL Web]** -> **[!UICONTROL 資源]** -> **[!UICONTROL js]** -> **[!UICONTROL dc-config.js]**&#x200B;檔案。
+1. 在你的程式碼編輯器中開啟 **** Web -> **[!UICONTROL resources]** -> **[!UICONTROL js]** -> dc-config.js **** 檔案。
 
-   您將看到clientID變數在其中。
+   你會看到 clientID 變數存在。
 
-1. 將客戶端憑據貼上到雙引號之間，以將clientID設定為憑據。
+1. 把你的客戶憑證貼在雙引號之間，讓 clientID 變成你的憑證。
 
-1. 返回到開發人員沙盒代碼預覽。
+1. 回到開發者沙盒程式碼預覽。
 
-1. 複製具有Adobe指令碼的第二行：
+1. 複製第二行包含 Adobe 腳本的行：
 
    ```
    <script src=https://documentccloud.adobe.com/view-sdk/main.js></script>
    ```
 
-   ![指令碼螢幕快照](assets/ControlPDF_12.png)
+   ![劇本截圖](assets/ControlPDF_12.png)
 
-1. 轉到代碼編輯器並開啟&#x200B;**[!UICONTROL Web]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]**&#x200B;檔案。
+1. 到你的程式碼編輯器，打開 **[!UICONTROL Web]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]** 檔案。
 
-1. 將指令碼代碼貼上到檔案的`<head>`中的注釋下，該注釋標籤為： **TODO: EXERCISE 1: INSERT EMBED API指令碼標籤**。
+1. 將腳本程式碼貼到 `<head>` 第 18 行檔案的註解下，註解內容為： **TODO： EXERCISE 1： 插入 EMBED API SCRIPT TAG**。
 
-   ![要貼上指令碼代碼的位置螢幕快照](assets/ControlPDF_13.png)
+   ![腳本程式碼貼上位置的截圖](assets/ControlPDF_13.png)
 
-1. 返回到開發人員沙盒代碼預覽並複製第一行代碼，該代碼具有：
+1. 回到開發者沙盒程式碼預覽，複製第一行包含：
 
    ```
    <div id="adobe-dc-view"></div>
    ```
 
-   ![要複製代碼的位置螢幕快照](assets/ControlPDF_14.png)
+   ![截圖顯示程式碼要複製哪裡](assets/ControlPDF_14.png)
 
-1. 轉到代碼編輯器，然後再次開啟&#x200B;**[!UICONTROL Web]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]**&#x200B;檔案。
+1. 回到你的程式碼編輯器，再次打開 **[!UICONTROL 網頁]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]** 檔案。
 
-1. 將`<div>`代碼貼上到檔案的`<body>`中，檔案的&#x200B;**TODO: EXERCISE 1: INSERTPDFEMBED API CODE**&#x200B;下面。
+1. 將程式碼貼 `<div>` 到 `<body>` 檔案第 67 行註解 **下的 TODO：練習 1：插入 PDF 嵌入 API 程式碼**。
 
-   ![要貼上代碼的位置螢幕快照](assets/ControlPDF_15.png)
+   ![截圖顯示程式碼要貼在哪裡](assets/ControlPDF_15.png)
 
-1. 返回到開發人員沙盒代碼預覽並複製下面`<script>`的代碼行：
+1. 回到開發者沙盒程式碼預覽，複製以下程式碼行數：`<script>`
 
    ```
    <script type="text/javascript">
@@ -194,40 +201,40 @@ ht-degree: 0%
    </script>
    ```
 
-1. 轉到代碼編輯器，然後再次開啟&#x200B;**[!UICONTROL Web]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]**&#x200B;檔案。
+1. 回到你的程式碼編輯器，再次打開 **[!UICONTROL 網頁]** -> **[!UICONTROL 練習]** -> **[!UICONTROL index.html]** 檔案。
 
-1. 將`<script>`代碼貼上到`<body>`標籤下第68行檔案的`<div>`中。
+1. 把程式碼貼 `<script>` 到 檔案的 in 中 `<body>` ，在第 68 行的標籤下 `<div>` 。
 
-1. 修改相同&#x200B;**index.html**&#x200B;檔案的第70行，以包括以前建立的clientID變數。
+1. 修改同一 **index.html** 檔案的第 70 行，加入先前建立的 clientID 變數。
 
-   ![行70的螢幕截圖](assets/ControlPDF_16.png)
+   ![第70行的截圖](assets/ControlPDF_16.png)
 
-1. 修改相同&#x200B;**index.html**&#x200B;檔案的第72行，以更新PDF檔案的位置以使用本地檔案。
+1. 修改同一 **index.html** 檔案的第 72 行，以更新 PDF 檔案的位置，以使用本地檔案。
 
-   **/resources/pdfs/whitepaper.pdf**&#x200B;中的教程檔案中提供了一個。
+   教學檔 **裡有 /resources/pdfs/whitepaper.pdf** 裡有一份。
 
-1. 通過瀏覽&#x200B;**`<your domain>`/summit21/web/exercise/**&#x200B;來保存已修改的檔案並預覽網站。
+1. 儲存修改過的檔案，並瀏覽 **`<your domain>`/summit21/web/exercise/** 預覽你的網站。
 
-   您應在瀏覽器中以「全窗口」模式查看「技術白皮書」呈現。
+   你應該會在瀏覽器中看到技術白皮書以全視窗模式呈現。
 
-## 第3部分：訪問分析API {#part3}
+## 第三部分：存取分析 API {#part3}
 
-現在，您已成功建立了具有PDF嵌入API呈現PDF的網頁，在第3部分，您現在可以探討如何使用JavaScript事件度量分析，以瞭解用戶如何使用PDF。
+現在你已經成功建立一個包含 PDF 嵌入 API 呈現 PDF 的網頁，在第三部分你可以探索如何利用 JavaScript 事件來衡量分析，了解使用者如何使用 PDF。
 
-### 查找文檔
+### 尋找文件
 
-作為PDF嵌入API的一部分，有許多不同的JavaScript事件可用。 您可以從[!DNL Adobe Acrobat Services]文檔訪問它們。
+PDF Embed API 包含許多不同的 JavaScript 事件。 你可以從 [!DNL Adobe Acrobat Services] 文件中取得它們。
 
-1. 導航到[文檔](https://developer.adobe.com/document-services/docs/overview)站點。
-1. 查看作為API一部分可用的不同事件類型。 這些對於參考很有幫助，並且對您的未來項目也有幫助。
+1. 前往 [文件](https://developer.adobe.com/document-services/docs/overview) 網站。
+1. 檢視 API 中可用的不同事件類型。 這些資料對參考很有幫助，對你未來的專案也很有幫助。
 
-   ![參考指南螢幕快照](assets/ControlPDF_17.png)
+   ![參考指南截圖](assets/ControlPDF_17.png)
 
-1. 複製網站上列出的示例代碼。
+1. 複製網站上列出的範例程式碼。
 
-   將此作為代碼的基礎並對其進行修改。
+   以此為基礎，並修改程式碼。
 
-   ![要複製示例代碼的位置螢幕快照](assets/ControlPDF_18.png)
+   ![範例程式碼的截圖](assets/ControlPDF_18.png)
 
    ```
    const eventOptions = {
@@ -247,83 +254,83 @@ ht-degree: 0%
    );
    ```
 
-1. 在&#x200B;**index.html**&#x200B;中，查找前面添加的類似於下面的代碼部分，並在此代碼之後添加上面的代碼：
+1. 找到你之前加的程式碼區塊，看起來像下面，然後在index.html **的這段程式碼**&#x200B;後面加上上面的程式碼：
 
-   ![要貼上代碼的位置螢幕快照](assets/ControlPDF_19.png)
+   ![截圖顯示程式碼要貼在哪裡](assets/ControlPDF_19.png)
 
-1. 在Web瀏覽器中載入該頁，並開啟控制台，以在您與PDF查看器交互時查看不同事件的控制台輸出。
+1. 在瀏覽器中載入該頁面，並開啟主控台，查看不同事件在與 PDF 檢視器互動時的主控台輸出。
 
-   ![載入頁面的螢幕快照](assets/ControlPDF_20.png)
+   ![載入頁面的截圖](assets/ControlPDF_20.png)
 
-   ![用於載入頁面的代碼的螢幕快照](assets/ControlPDF_21.png)
+   ![載入頁面的程式碼截圖](assets/ControlPDF_21.png)
 
-### 添加用於捕獲事件的交換機
+### 新增捕捉事件的開關
 
-現在已將事件輸出到console.log ，讓我們根據哪些事件更改行為。 為此，您將使用交換機示例。
+既然你已經把事件輸出到console.log，讓我們根據事件的行為來改變。 為此，你會用一個開關的例子。
 
-1. 導航到&#x200B;**snippets/eventsSwitch.js**&#x200B;並複製教程代碼中檔案的內容。
+1. 請前往 **教學程式碼中的片段/eventsSwitch.js** ，複製檔案內容。
 
-   ![要複製代碼的位置螢幕快照](assets/ControlPDF_22.png)
+   ![截圖顯示程式碼要複製哪裡](assets/ControlPDF_22.png)
 
-1. 將代碼貼上到事件偵聽器函式中。
+1. 把程式碼貼到事件監聽器函式裡。
 
-   ![要貼上代碼的位置螢幕快照](assets/ControlPDF_23.png)
+   ![截圖顯示程式碼要貼在哪裡](assets/ControlPDF_23.png)
 
-1. 確認載入頁面時控制台輸出正確，並且您與PDF查看器交互。
+1. 確認頁面載入並操作 PDF 檢視器時，主控台是否正確輸出。
 
 ### Adobe Analytics
 
-如果要向查看者添加Adobe Analytics支援，可以按照網站上記錄的說明進行操作。
+如果你想在檢視器中加入 Adobe Analytics 支援，可以依照網站上的說明操作。
 
 >[!IMPORTANT]
 >
->您的網頁需要已將Adobe Analytics載入到頁眉的頁面上。
+>你的網頁標頭頁面上必須已經載入了 Adobe Analytics。
 
-導航到[Adobe Analytics文檔](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics)並查看您的網頁上是否已啟用Adobe Analytics。 按照說明設定reportSuite。
+請前往 [Adobe Analytics 文件](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) ，檢視你是否已在網頁上啟用 Adobe Analytics。 依照指示設定 reportSuite。
 
 ### Google Analytics
 
-![如何與Google Analytics整合的螢幕快照](assets/ControlPDF_24.png)
+![如何整合 Google Analytics 的截圖](assets/ControlPDF_24.png)
 
-Adobe PDF嵌入式API提供與Adobe Analytics的現成整合。 但是，由於所有事件都可以作為JavaScript事件使用，因此可以通過捕獲Google Analytics事件並使用ga()函式將事件添加到Adobe Analytics來與PDF整合。
+Adobe PDF 嵌入 API 提供與 Adobe Analytics 的開箱即用整合。 然而，由於所有事件皆以 JavaScript 事件形式提供，可透過擷取 PDF 事件並使用 ga（） 函式將事件加入 Adobe Analytics 與 Google Analytics 整合。
 
-1. 導航至&#x200B;**snippets/eventsSwitchGA.js**，瞭解如何與Google Analytics整合。
-1. 如果您的網頁是使用Adobe Analytics跟蹤的，並且已嵌入到網頁中，請查看並使用此代碼作為示例。
+1. 請瀏覽 **片段/eventsSwitchGA.js** ，看看如何整合 Google Analytics。
+1. 如果你的網頁被 Adobe Analytics 追蹤，且已經嵌入在網頁上，請檢視並使用這段程式碼作為範例。
 
-   ![Adobe Analytics代碼螢幕截圖](assets/ControlPDF_25.png)
+   ![Adobe Analytics 程式碼截圖](assets/ControlPDF_25.png)
 
-## 第4部分：根據事件添加交互性 {#part4}
+## 第四部分：根據事件增加互動性 {#part4}
 
-在第4部分中，您將瞭解如何在PDF查看器的頂部鋪設付款牆，在滾動到第二頁後顯示該付款牆。
+在第四部分，你將一步步說明如何在 PDF 檢視器上方疊加付費牆，該牆會在你滑過第二頁後顯示。
 
-### Paywall示例
+### 付費牆範例
 
-導航到此[付費牆後PDF示例](https://www3.technologyevaluation.com/research/white-paper/the-forrester-wave-digital-decisioning-platforms-q4-2020.html)。 在本示例中，您將學習在PDF查看體驗的基礎上添加交互性。
+請瀏覽這個 [付費牆](https://www3.technologyevaluation.com/research/white-paper/the-forrester-wave-digital-decisioning-platforms-q4-2020.html)後的PDF範例。 在這個範例中，你會學到如何在 PDF 瀏覽體驗之上加入互動性。
 
-### 添加付款牆代碼
+### 新增付費牆代碼
 
-1. 請訪問snippets/paywallCode.html並複製內容。
-1. 在exercise/index.html中搜索`<!-- TODO: EXERCISE 3: INSERT PAYWALL CODE -->`。
+1. 到 snippets/paywallCode.html 複製內容。
+1. 在 exercise/index.html 中搜尋。`<!-- TODO: EXERCISE 3: INSERT PAYWALL CODE -->`
 
-   ![要複製代碼的位置螢幕快照](assets/ControlPDF_26.png)
+   ![截圖顯示程式碼要複製哪裡](assets/ControlPDF_26.png)
 
-1. 在注釋後貼上複製的代碼。
-1. 轉到&#x200B;**snippets/paywallCode.js**&#x200B;並複製內容。
+1. 把複製的程式碼貼到註解後面。
+1. 到 **片段/paywallCode.js** 複製內容。
 
-   ![要貼上代碼的位置螢幕快照](assets/ControlPDF_27.png)
+   ![截圖顯示程式碼要貼在哪裡](assets/ControlPDF_27.png)
 
-1. 將代碼貼上到該位置。
+1. 把程式碼貼到那個位置。
 
-### 試用Paywall演示
+### 試試付費牆的試玩版
 
-現在您可以查看演示。
+現在你可以觀看試玩版。
 
-1. 在網站上重新載入&#x200B;**index.html**。
-1. 向下滾動到> 2的頁面。
-1. 顯示第二頁後的對話框，詢問用戶。
+1. 在你的網站上重新index.html **。**
+1. 往下捲動到> 2.
+1. 在第二頁後，顯示對話框會顯示給挑戰使用者。
 
-   ![查看演示的螢幕快照](assets/ControlPDF_28.png)
+   ![觀看示範的截圖](assets/ControlPDF_28.png)
 
 ## 其他資源
 
-在[此處](https://developer.adobe.com/document-services/docs/overview)可找到其他資源。
+更多資源可在此](https://developer.adobe.com/document-services/docs/overview)處找到[。

@@ -1,6 +1,6 @@
 ---
-title: 職務過帳
-description: 瞭解如何為求職者和雇主開發平穩、一致的Web體驗
+title: 職缺公告
+description: 學習如何為求職者和雇主打造順暢且一致的網路體驗
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,50 +8,57 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/5QKJELbrD1HA89U5E7m-3ekce2YXSqigek23mqrre2c
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e9001ce2-5245-4a8e-8601-dd958009072f
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: 1565
 ht-degree: 0%
 
 ---
 
-# 職務過帳
+# 職缺公告
 
-![使用案例英雄橫幅](assets/UseCaseJobHero.jpg)
+![使用案例英雄卡池](assets/UseCaseJobHero.jpg)
 
-在操作具有多個用戶的網站時，設計一種能夠確保每個人都能獲得流暢體驗的體驗至關重要。
+經營多用戶網站時，設計一個能讓所有人都能順暢使用體驗至關重要。
 
-想像一下以下情形：您有一個允許雇主[上傳職務發佈](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting)的網站。 對於求職者來說，以一致的格式輕鬆查看與帖子相關的所有文檔是非常方便的。 但是，雇主可以方便地以他們碰巧擁有的任何檔案格式附加資訊。 為方便這兩類用戶，您可以自動將所有上載的文檔轉換為PDF，並將它們嵌入到電子公告中。
+想像以下情境：你有一個網站允許雇主 [上傳職缺公告](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting)。 對求職者來說，能以一致格式輕鬆瀏覽所有與職缺相關的文件，非常方便。 不過，雇主附上他們手邊的檔案格式資訊很方便。 為了方便這兩種使用者，你可以自動將所有上傳的文件轉成 PDF，並嵌入在發佈中。
 
-## 你能學到的
+## 你可以學到什麼
 
-本操作教程將介紹一個Node.js示例，該示例使用[!DNL Adobe Acrobat Services]及其[Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)將這些功能添加到作業發佈站點。 這創造了一個更易於使用、對雇主和求職者都更有吸引力的網站。 這是[完成](https://github.com/contentlab-io/adobe_job_posting) [項目代碼](https://github.com/contentlab-io/adobe_job_posting)，以備您在閱讀時繼續操作。
+這個實作教學帶你了解一個Node.js範例，利用 [!DNL Adobe Acrobat Services] 其 [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) 將這些功能加入職缺網站。 這會打造一個更容易使用且對雇主和求職者更具吸引力的網站。 這裡是[完整的](https://github.com/contentlab-io/adobe_job_posting)[專案程式碼](https://github.com/contentlab-io/adobe_job_posting)，如果你想邊閱讀邊跟著看。
 
-要啟動，請設定一個簡單的基於Express的Node.js Web應用程式。 [Express](https://expressjs.com/)是極簡的Web應用程式框架，提供路由和模板等功能。 應用程式的代碼在[GitHub](https://github.com/contentlab-io/adobe_job_posting)上可用。 另外，請安裝[PostgreSQL資料庫](https://www.postgresql.org/)，並將其設定為儲存PDF。
+首先，建立一個簡單的 Express 網頁應用程式Node.js。 [Express](https://expressjs.com/) 是一個極簡的網頁應用程式框架，提供路由與模板等功能。 應用程式的程式碼可在 GitHub](https://github.com/contentlab-io/adobe_job_posting) 上取得[。另外，安裝 [PostgreSQL 資料庫](https://www.postgresql.org/) 並設定它來儲存 PDF。
 
-## 相關[!DNL Acrobat Services]個API
+## 相關 [!DNL Acrobat Services] API
 
-* [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-## 建立AdobeAPI憑據
+## 建立 Adobe API 憑證
 
-首先，您必須[為Adobe PDF嵌入API（免費使用）和Adobe PDF服務API（免費6個月）建立憑據](https://www.adobe.com/go/dcsdks_credentials)，然後[按使用付費](https://developer.adobe.com/document-services/pricing/main)為每個文檔交易僅\$0.05)。 為PDF服務API建立憑據時，選擇「建立個性化代碼示例」選項。 保存ZIP檔案，並將pdftools-api-credentials.json和private.key解壓到Node.js Express項目的根目錄。
+首先，您必須[建立 Adobe PDF 嵌入 API（免費使用）和 Adobe PDF 服務 API（免費六個月，之後[按需](https://developer.adobe.com/document-services/pricing/main)付費，每筆文件交易僅需 \$0.05）的憑證](https://www.adobe.com/go/dcsdks_credentials)。在建立 PDF Services API 的憑證時，請選擇「建立個人化程式碼範例」選項。 儲存 ZIP 檔案，並將 pdftools-api-credentials.json 和 private.key 解壓到 Node.js Express 專案的根目錄。
 
-您還需要API密鑰，以便免費使用Embed API。 從[項目](https://developer.adobe.com/console/projects)，轉到您建立的項目。 然後，按一下&#x200B;**添加到項目**，然後選擇&#x200B;**API**。 最後，按一下&#x200B;**PDF嵌入API**。
+你還需要一個免費取得的 Embed API 的 API 金鑰。 從 [專案](https://developer.adobe.com/console/projects)，切換到你建立的專案。 然後，點選 **「新增到專案** 」並選擇 **API**。 最後，點選 **PDF 嵌入 API**。
 
-指定PDF嵌入API的域。 API密鑰必須是公共的（在瀏覽器執行的代碼中查找）。 通過指定域，可確保其他域中的其他人無法使用API密鑰。
+請指定 PDF 嵌入 API 的網域名稱。 API 金鑰必須是公開的（在瀏覽器執行的程式碼中找到）。 透過指定網域，你確保其他網域的人無法使用該 API 金鑰。
 
-不能將&quot;localhost&quot;用作域。 指定域（如「testing.local」），並編輯電腦上的hosts檔案以將該域重定向到127.0.0.1（即您的電腦）。 然後，您可以在testing.local:3000上測試應用程式，而不是在localhost:3000上測試應用程式。 完成後，在項目頁上查找PDFEmbed API的API鍵。
+你不能把「localhost」當作網域使用。 指定一個網域，例如「testing.local」，並在電腦上編輯主機檔案，將該網域 127.0.0.1重新導向到 ，也就是你的電腦。 然後，你可以在 testing.local:3000 上測試，而不是在 localhost:3000 上測試你的應用程式。完成後，請在專案頁面找到 PDF 嵌入 API 的 API 金鑰。
 
-## 添加上載表單和處理程式
+## 新增上傳表單與處理程式
 
-使用工作的Express應用程式和API憑據，您還需要一個表單，使用戶能夠將其文檔上載到網站。 為此目的編輯index.jade模板。
+有了運作中的 Express 應用程式和 API 憑證，你還需要一個表單讓使用者能夠將文件上傳到網站。 請編輯 index.jade 範本以達成此目的。
 
-為上載的作業過帳的名稱和包含詳細資訊的文檔建立輸入欄位。
+建立輸入欄位，輸入已上傳的職缺名稱及包含更多資訊的文件。
 
-在模板的內容塊內，添加以下表單：
+在範本的內容區塊內，請新增以下表單：
 
 ```
 extends layout
@@ -71,7 +78,7 @@ block content
     input(type="submit", value="Submit job posting")
 ```
 
-接下來，將POST請求的處理程式添加到/upload操作。 然後，將/upload的路由添加到routes/index.js檔案。 您可以為此路由建立新檔案，但必須更新app.js檔案以反映新檔案。 在此路由處理程式內，可以訪問給定名稱和上載的檔案。
+接著，在 /upload 動作中加入 POST 請求的處理程序。 接著，將 /upload 路由加入 routes/index.js 檔案。 你可以為這條路徑建立新檔案，但必須更新app.js檔案以反映新檔案。 在這個路由處理程序中，你可以存取名稱和上傳的檔案。
 
 ```
 router.post('/upload', async function (req, res, next) {
@@ -82,20 +89,20 @@ router.post('/upload', async function (req, res, next) {
   });
 ```
 
-該函式是非同步的，因此您可以在函式中使用await關鍵字，這在調用執行API調用的方法時非常方便。
+這個函式是非同步的，所以你可以在函式中使用 await 關鍵字，這在呼叫執行 API 呼叫的方法時很方便。
 
-![作業發佈網站的螢幕截圖](assets/jobs_1.png)
+![職缺公告網站截圖](assets/jobs_1.png)
 
-## 使用PDF服務API
+## 使用 PDF 服務 API
 
-在使用PDF服務API之前，必須將以下導入添加到路由檔案的頂部：
+在使用 PDF Services API 之前，您必須在路由檔案頂端新增以下匯入項目：
 
 ```
 const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   const { Readable } = require('stream');
 ```
 
-在導入下，您可以載入API憑據並建立[執行內容](https://www.javascripttutorial.net/javascript-execution-context/)。 由於您可以為不同的操作重新使用執行上下文，因此只執行一次是合理的。
+在匯入頁面下方，你可以載入 API 憑證並建立 [執行內容](https://www.javascripttutorial.net/javascript-execution-context/)。 因為你可以為不同操作重複使用執行上下文，所以只做一次比較合理。
 
 ```
   const credentials = PDFToolsSdk.Credentials
@@ -106,7 +113,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   const executionContext = PDFToolsSdk.ExecutionContext.create(credentials);
 ```
 
-現在，返回到在`router.post`塊中的注釋處在請求處理程式中寫入代碼。 首先將文檔轉換為PDF。
+現在，回到請求處理器裡的區塊註解 `router.post` 處寫程式碼。 首先將文件轉換成 PDF。
 
 ```
   const createPdfOperation = PDFToolsSdk.CreatePDF.Operation.createNew();
@@ -122,13 +129,13 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   return res.send('success!');
 ```
 
-大多數操作都採取相同的四個步驟。 首先，使用相應類的createNew方法初始化操作類型。 然後，為操作建立輸入，即FileRef。 後續操作可跳過此步驟，因為操作的結果也是FileRef。 對於此初始操作，從上載檔案的位元組建立FileRef。 第三，必須將輸入分配給操作。 最後，執行該操作，該執行上下文作為執行方法中的參數。 此方法返回Promise，以便您可以等待結果。
+大多數操作都遵循相同的四個步驟。 首先，使用相應類別的 createNew 方法初始化操作類型。 接著，建立操作的輸入，也就是 FileRef。 後續操作可以跳過此步驟，因為操作結果同時也是 FileRef。 在此初始操作中，從上傳檔案的位元組建立 FileRef。 第三，你必須將輸入指派給操作。 最後，操作執行，執行上下文作為執行方法中的參數。 此方法會回傳 Promise，讓你可以等待結果。
 
-代碼將返回的PDF保存到檔案，並向瀏覽器發送簡單的「成功」響應。 檔案名的「日期」部分保證唯一的檔案名。 如果目標檔案存在，則saveAsFile將返回錯誤。
+程式碼會將回傳的 PDF 儲存為檔案，並向瀏覽器發送簡單的「成功」回應。 檔名中的「Date」部分保證檔名是唯一的。 如果目標檔案存在，saveAsFile 會回傳錯誤。
 
-## 將影像轉換為文本並壓縮PDF
+## 將圖片轉換成文字並壓縮 PDF
 
-現在，使用光學字元識別(OCR)將影像轉換為文本，然後壓縮結果。 使用與CreatePDF操作類似的OCR和CompressPDF操作執行此操作。 在`router.post`中將以下內容添加到路由檔案：
+現在，使用光學字元辨識（OCR）將影像轉換成文字，然後再壓縮結果。 你可以用類似 CreatePDF 的 OCR 和 CompressPDF 操作來完成這件事。 在路由檔案中新增以下內容：`router.post`
 
 ```
   const name = req.body.name;
@@ -153,33 +160,33 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   return res.send('success!');
 ```
 
-只需執行一次此操作，因為結果是FileRef，代碼可以傳遞給setInput。
+這個操作只需要做一次，因為結果是一個檔案參考，程式碼可以把它傳給 setInput。
 
-最好的選擇是將檔案保存在硬碟上並返回過度簡化的HTTP響應。 相反，將PDF儲存在資料庫中，並顯示一個網頁，該網頁使用Adobe的免費PDF嵌入API嵌入PDF。 這樣，雇主的招聘帖子或手冊就可以在網站上看到，供求職者查找和查看，並附上公司徽標和其他設計要素。
+有比將檔案儲存在硬碟並回傳過於簡化的 HTTP 回應更好的替代方案。 相反地，請將 PDF 儲存在資料庫中，並透過 Adobe 免費的 PDF 嵌入 API 顯示一個嵌入 PDF 的網頁。 如此一來，雇主的職缺公告或手冊就能在網站上顯示，讓求職者能找到並瀏覽，並附有公司標誌及其他設計元素。
 
-## 將PDF儲存在資料庫中
+## 將 PDF 儲存在資料庫中
 
-將PDF儲存在PostgreSQL資料庫中。 獲取要連接到Node.js中Postgres的node-postgres包。 安裝流緩衝區包，因為在某個時刻，必須將PDF的內容儲存在緩衝區中，而FileRef只適用於流。 因此，使用流緩衝區包將內容寫入緩衝區。
+將 PDF 儲存在 PostgreSQL 資料庫中。 取得 node-postgres 套件以連接 Postgres Node.js。 安裝 stream-buffers 套件，因為你必須在某個時候將 PDF 內容存入緩衝區，而 FileRef 只適用於串流。 所以，使用 stream-buffers 套件將內容寫入緩衝區。
 
 ```
 npm install pg stream-buffers
 ```
 
-現在，為職務發佈建立資料庫表。 它需要一列作為唯一標識符，一列作為名稱，一列作為附加PDF。 可以通過Postgres命令行介面(CLI)建立資料庫表：
+現在建立一個職缺資料庫表。 它需要一欄來表示唯一識別碼，一欄代表名稱，以及一欄來顯示附帶的 PDF。 你可以從 Postgres 命令列介面（CLI）建立資料庫資料表：
 
 ```
 CREATE TABLE job_postings (id TEXT PRIMARY KEY, name TEXT NOT NULL, attachment
 BYTEA NOT NULL);
 ```
 
-返回到Node.js檔案。 在檔案頂部添加一些導入：
+回去看Node.js檔案。 在檔案頂端新增一些匯入功能：
 
 ```
   const { Client } = require('pg');
   const streamBuffers = require('stream-buffers');
 ```
 
-要將PDF儲存在資料庫表中，請修改上載函式。 將最後兩行（saveAsFile和send）替換為此代碼段：
+要將 PDF 儲存在資料庫資料表中，請修改上傳功能。 將最後兩行（saveAsFile 和 send）替換成以下程式碼片段：
 
 ```
   const pgClient = new Client();
@@ -200,9 +207,9 @@ BYTEA NOT NULL);
   result.writeToStream(writableStream);
 ```
 
-要寫入內容，請建立WritableStreamBuffer。 使用完成事件，是時候執行SQL查詢了。 node-postgres包自動將Buffer參數轉換為BYTEA格式。 查詢將用戶重定向到稍後建立的終結點/job/{id}。
+要寫入內容，請建立 WritableStreamBuffer。 完成事件後，就該執行 SQL 查詢了。 node-postgres 套件會自動將 Buffer 參數轉換成 BYTEA 格式。 查詢會將使用者導引到 /job/{id}，一個後續建立的端點。
 
-對於PDF嵌入API，您還需要一個僅返回PDF內容的終結點：
+對於 PDF 嵌入 API，你也需要一個端點只回傳 PDF 內容：
 
 ```
   router.get('/pdf/:id', async function (req, res, next) {
@@ -219,9 +226,9 @@ BYTEA NOT NULL);
   });
 ```
 
-## 嵌入PDF
+## 嵌入 PDF
 
-現在，建立/job/{id}終結點，該終結點呈現包含請求的作業過帳名稱的模板和嵌入的PDF。
+接著建立 /job/{id} 端點，它會呈現包含請求職缺名稱及嵌入 PDF 的範本。
 
 ```
 router.get('/job/:id', async function(req, res, next) {
@@ -238,7 +245,7 @@ router.get('/job/:id', async function(req, res, next) {
   });
 ```
 
-在views/目錄中，建立包含以下內容的job.jade檔案：
+在 views/ 目錄中，建立一個包含以下內容的 job.jade 檔案：
 
 ```
   extends layout
@@ -252,7 +259,7 @@ router.get('/job/:id', async function(req, res, next) {
     script(src='/javascripts/embed-pdf.js')
 ```
 
-第一個指令碼是Adobe的View SDK，它使嵌入PDF變得容易。 第二個指令碼是一個串聯單行，它將window.embedUrl的值設定為Express路由處理程式提供的PDF的URL。 自行建立第三個指令碼，如下所示：
+第一個腳本是 Adobe 的 View SDK，讓嵌入 PDF 變得很簡單。 第二個腳本是一個內嵌一行腳本，將 window.embedUrl 的值設為 Express 路由處理器提供的 PDF 網址。 你可以自己創建第三個腳本，方法如下：
 
 ```
   document.addEventListener("adobe_dc_view_sdk.ready", function () {
@@ -266,20 +273,20 @@ router.get('/job/:id', async function(req, res, next) {
   });
 ```
 
-現在，您可以測試上載文檔、重定向到/job/id頁以及查看嵌入PDF的整個過程。 您的用戶將通過相同步驟將職務發佈或其他文檔添加到您的網站。
+現在，你可以測試整個上傳文件、被導向 /job/id 頁面，以及查看嵌入的 PDF。 你的用戶也會按照相同的步驟，將職缺公告或其他文件加入你的網站。
 
-![測試已上載PDF文檔的螢幕快照](assets/jobs_2.png)
+![測試上傳 PDF 文件的截圖](assets/jobs_2.png)
 
-若要查看操作中的內嵌，請查看此[即時演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf)。
+想看內嵌的實況，請觀看這個 [現場示範](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf)。
 
 ## 後續步驟
 
-本操作教程詳細介紹了如何將Node.js與[!DNL Acrobat Services]一起使用，將以各種格式上傳的[作業發佈](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting)轉換為PDF。 隨後，生成的PDF被嵌入到網頁中。 現在，您可以將相同的功能添加到您的網站中，使雇主能夠更輕鬆地上傳工作說明、手冊等，供求職者查找。 這些能力可以幫助每個人獲得找到夢寐以求的工作所需的資訊。
+這個實作教學教你如何利用Node.js with [!DNL Acrobat Services] 將上傳 [的各種職缺](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting) 公告轉換成PDF。 所得的 PDF 隨後被嵌入網頁中。 現在你可以在網站上新增同樣的功能，讓雇主更容易上傳職缺說明、手冊等資訊，讓求職者更容易找到。 這些功能幫助每個人獲得找到夢想工作的必要資訊。
 
-[!DNL Acrobat Services]幫助您將密鑰文檔處理功能添加到網站或應用。 如果您想更深入地瞭解這些API可以做什麼，請參閱以下快速入門文檔：
+[!DNL Acrobat Services] 幫助你為網站或應用程式新增關鍵的文件處理功能。 如果你想更深入了解這些 API 能做什麼，請參考以下快速入門文件：
 
-* [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF服務API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-若要開始向網站添加用戶友好的文檔處理功能，請[註冊免費試用版](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF嵌入式API始終是免費使用的，Adobe PDF服務API是6個月免費的，而且每個文檔交易只有\$0.05，因此您可以隨著業務增長[按需付費](https://developer.adobe.com/document-services/pricing/main)。
+想開始為您的網站新增使用者友善的文件處理功能，請 [註冊免費試用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF 嵌入 API 永遠免費使用，Adobe PDF 服務 API 免費六個月，之後每筆文件交易只需 \$0.05，隨著業務成長，你可以 [隨使用](https://developer.adobe.com/document-services/pricing/main) 付費。

@@ -1,6 +1,6 @@
 ---
-title: Adobe PDF服務API和Java入門
-description: 開發人員只需幾分鐘就可以開始使用，即可運行提供用於訪問所有可用Web服務的示例檔案
+title: 開始使用 Adobe PDF 服務 API 與 Java
+description: 開發者只需幾分鐘即可開始使用，並提供可使用的所有網路服務範例檔案
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,68 +8,74 @@ type: Tutorial
 jira: KT-6676
 thumbnail: KT-6676.jpg
 exl-id: 4a8f2119-c464-496b-bdc8-35dd387bef25
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/ikQahJSwQ9NQPSB1m-DoaTAOHObGXTBr0mZYDMGu3QI
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: 541
 ht-degree: 0%
 
 ---
 
-# Adobe PDF服務API和Java入門
+# 開始使用 Adobe PDF 服務 API 與 Java
 
-![建立PDF英雄影像](assets/GettingStartedJava_hero.jpg)
+![建立 PDF 英雄圖片](assets/GettingStartedJava_hero.jpg)
 
-開發人員只需幾分鐘就可以開始工作，隨時可以運行為訪問所有可用Web服務而提供的示例檔案。 本教程將指導您完成使用PDF服務Java SDK開始運行示例的所有步驟：
+開發者只需幾分鐘即可開始使用，提供可執行的範例檔案，方便存取所有可用的網路服務。 本教學將帶你一步步開始使用 PDF Services Java SDK 執行範例：
 
-## 步驟1：獲取憑據並下載示例檔案
+## 步驟 1：取得憑證並下載範例檔案
 
-第一步是獲取憑據（API密鑰）以解鎖使用。 [在此處註冊免費試用版](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，然後按一下「開始」以建立新憑據。
+第一步是取得憑證（API 金鑰）以解鎖使用權限。 [請在此](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 註冊免費試用，並點擊「開始使用」以建立您的新憑證。
 
-![步驟1](assets/GettingStartedJava_step1.png)
+![步驟一](assets/GettingStartedJava_step1.png)
 
-選擇「個人帳戶」註冊免費試用非常重要：
+選擇「個人帳號」以註冊免費試用非常重要：
 
-![個人](assets/GettingStartedJava_personal.png)
+![個人生活](assets/GettingStartedJava_personal.png)
 
-在下一步中，您將選擇PDF服務API服務，然後為憑據添加名稱和說明。
+下一步你會選擇 PDF 服務 API 服務，然後為你的憑證加上名稱和描述。
 
-此時會出現「建立個性化代碼示例」複選框。 選擇此選項可將新憑據自動添加到示例檔案中，這將保存將其添加到項目中的手動步驟。
+有一個「建立個人化程式碼範例」的勾選框。 選擇此選項，即可自動將新憑證加入範例檔案，省去手動將憑證加入專案的步驟。
 
-接下來，選擇Java作為接收Java特定示例的語言，然後按一下「建立憑據」按鈕。
+接著，選擇 Java 作為你的語言以接收 Java 專屬範例，然後點擊「建立憑證」按鈕。
 
-![憑據](assets/GettingStartedJava_credentials.png)
+![資歷](assets/GettingStartedJava_credentials.png)
 
-您將收到一個名為PDFToolsSDK-JavaSamples.zip的.zip檔案，該檔案可保存到您的本地檔案系統。
+你會收到一個名為 PDFToolsSDK-JavaSamples.zip 的.zip檔案，可以儲存到你本地的檔案系統。
 
-## 步驟2：設定Java環境
+## 步驟 2：設定你的 Java 環境
 
-1. 安裝[Java 8或更高版本](https://www.oracle.com/java/technologies/javase-downloads.html)（如果尚未安裝）。
-1. 運行`javac -version`以驗證您的安裝。
-1. 驗證PATH變數中是否包含JDK bin資料夾（方法因作業系統而異）。
-1. 如果尚未使用首選工具安裝[Maven](https://maven.apache.org/install.html)。
+1. 如果你還沒安裝 Java 8 或更高](https://www.oracle.com/java/technologies/javase-downloads.html)版本，建議[安裝。
+1. 跑去 `javac -version` 驗證你的安裝。
+1. 確認 JDK bin 資料夾是否包含在 PATH 變數中（方法依作業系統而異）。
+1. 如果你還沒安裝 Maven](https://maven.apache.org/install.html)，請[用你偏好的工具安裝。
 
-個性化的示例提供從準備運行的示例代碼、嵌入的憑據json檔案以及預配置到依賴項的連接等一切。
+個人化範例涵蓋從現成範例程式碼、嵌入的憑證 json 檔案，到預先設定的連線與相依關係。
 
-1. 下載[示例項目](https://github.com/adobe/pdftools-java-sdk-samples)。
-1. 使用Maven: mvn全新安裝構建示例項目。
-1. 在命令行或首選IDE中測試示例代碼。
+1. 下載 [示範專案](https://github.com/adobe/pdftools-java-sdk-samples)。
+1. 用 Maven 建立範例專案：mvn clean install。
+1. 在命令列或你偏好的 IDE 上測試範例程式碼。
 
-## 最後的想法
+## 總結感想
 
-PDF服務API可通過自動化常見工作流和將處理負擔轉移到雲來幫助您消除手動流程。 在每個瀏覽器都以不同方式處理PDF的世界中，利用Adobe PDF嵌入式API和PDF服務API，您可以建立流線型、可靠且可預測的進程，這些進程每次&#x200B;**運行並正確顯示**，而不考慮平台或設備。
+PDF 服務 API 能幫助您自動化常見工作流程，將處理負擔轉移至雲端，從而消除手動流程。 在每個瀏覽器對 PDF 的處理方式都不一樣的世界裡，利用 Adobe PDF 嵌入 API 與 PDF 服務 API，你可以打造流暢、可靠且可預測的流程，無論平台或裝置如何，都能&#x200B;**每次正確**&#x200B;執行與顯示。
 
-## 資源和後續步驟
+## 資源與後續步驟
 
-* 有關其他幫助和支援，請訪問Adobe[[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)社區論壇
+* 如需更多協助與支援，請造訪 Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) 社群論壇
 
-* PDF服務API [文檔](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF 服務 API [文件](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [FAQ](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197)以瞭解PDF服務API問題
+* [](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) PDF 服務 API 常見問題
 
-* [請與我們聯繫](https://www.adobe.com/go/pdftoolsapi_requestform)以瞭解有關許可和定價的問題
+* [如有關於授權與價格的問題，歡迎聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)
 
 * 相關文章
 
-  [新PDF服務API為文檔工作流提供了更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [新的 PDF 服務 API 為文件工作流程提供更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [&#x200B; [!DNL Adobe Acrobat Services]的7月版：PDF嵌入和PDF服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [七月發布 [!DNL Adobe Acrobat Services]：PDF 嵌入與 PDF 服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

@@ -1,6 +1,6 @@
 ---
-title: 使用PDF服務API和Node.js在幾分鐘內從HTML或MS Office建立PDF
-description: 在PDF服務API中，有幾種可用的服務可建立和操作PDF，或從PDF導出到MS Office和其他格式
+title: 利用 PDF 服務 API 和 Node.js，幾分鐘內就能從 HTML 或 MS Office 製作 PDF。
+description: 在 PDF 服務 API 中，有多種可用服務可用於建立與操作 PDF，或從 PDF 匯出至 MS Office 及其他格式
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,67 +8,74 @@ type: Tutorial
 jira: KT-6673
 thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/OibugZuWT-ZRo0gUnqtvvdSkBqJqTikIs0ARCTF91qs
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: 770
 ht-degree: 0%
 
 ---
 
-# 使用PDF服務API和Node.js在幾分鐘內從HTML或MS Office建立PDF
+# 利用 PDF 服務 API 和 Node.js，幾分鐘內就能從 HTML 或 MS Office 製作 PDF。
 
-![建立PDF英雄影像](assets/createpdffromhtml_hero.jpg)
+![建立 PDF 英雄圖片](assets/createpdffromhtml_hero.jpg)
 
-新的Adobe PDF服務API為開發人員提供了自由選擇範圍，可在多種功能強大的PDF處理服務中進行選擇，以滿足複雜業務工作流的需要，使文檔工作流數字化從未像現在這樣容易。 借助這些易於使用的基於雲的Web服務，可以簡化複雜的體系結構、實施策略和技術升級。
+隨著全新的 Adobe PDF 服務 API 讓開發者自由選擇多種強大的 PDF 處理服務，以滿足複雜商業工作流程的需求，將文件工作流程數位化變得前所未有的簡單。 複雜的架構、實施策略與技術升級，都能透過這些現成的雲端網路服務來簡化。
 
-在PDF服務API中，有幾種可用的服務可建立和操作PDF，或從PDF導出到MS Office和其他格式。
+在 PDF 服務 API 中，有多種可用服務可用於建立與操作 PDF，或將 PDF 匯出至 MS Office 及其他格式。
 
-* 從靜態或動態PDF、MS Word、PowerPoint、Excel等建立HTML檔案
-* Export PDF到MS Word、PowerPoint、Excel等
-* OCR識別PDF檔案中的文本並啟用文檔搜索
-* ProtectPDF開啟文檔時使用密碼
-* 將PDF頁或PDF文檔合併為單個PDF
-* 壓縮PDF，以減少通過電子郵件或線上共用的大小
-* 線性化以優化PDF以在Web上快速查看
-* 使用插入、替換、重新排序、刪除和旋轉服務來組織PDF頁
+* 從靜態或動態 HTML、MS Word、PowerPoint、Excel 等工具製作 PDF 檔案
+* 將 PDF 匯出至 MS Word、PowerPoint、Excel 等
+* OCR 可辨識 PDF 檔案中的文字並啟用文件搜尋
+* 開啟文件時請用密碼保護 PDF。
+* 將 PDF 頁面或 PDF 文件合併成單一 PDF
+* 壓縮 PDF 以縮小大小，方便透過電子郵件或線上分享
+* 線性化以優化 PDF 以快速瀏覽網頁
+* 組織包含插入、替換、重新排序、刪除及旋轉服務的 PDF 頁面
 
-開發人員只需幾分鐘就可以開始工作，隨時可以運行為訪問所有可用Web服務而提供的示例檔案。 這是如何開始的。
+開發者只需幾分鐘即可開始使用，提供可執行的範例檔案，方便存取所有可用的網路服務。 以下是開始的方法。
 
-## 獲取憑據並下載示例檔案
+## 取得憑證與下載範例檔案
 
-第一步是獲取憑據（API密鑰）以解鎖使用。 [在此處註冊免費試用版](https://www.adobe.com/go/dcsdks_credentials)，然後按一下「開始」以建立新憑據。
+第一步是取得憑證（API 金鑰）以解鎖使用權限。 [請在此](https://www.adobe.com/go/dcsdks_credentials) 註冊免費試用，並點擊「開始使用」以建立您的新憑證。
 
-![API密鑰](assets/apikey.png)
+![API 金鑰](assets/apikey.png)
 
-選擇「個人帳戶」註冊免費試用非常重要：
+選擇「個人帳號」以註冊免費試用非常重要：
 
 ![個人帳戶](assets/personalaccount.png)
 
-在下一步中，您將選擇PDF服務API服務，然後為憑據添加名稱和說明。
+下一步你會選擇 PDF 服務 API 服務，然後為你的憑證加上名稱和描述。
 
-此時會出現「建立個性化代碼示例」複選框。 選擇此選項可將新憑據自動添加到示例檔案中，跳過手動步驟。
+有一個「建立個人化程式碼範例」的勾選框。 選擇此選項即可讓您的新憑證自動加入範例檔案，跳過手動步驟。
 
-接下來，選擇Node.js作為接收Node.js特定示例的語言，然後按一下「建立憑據」按鈕。
+接著，選擇Node.js語言以接收Node.js特定範例，並點擊「建立憑證」按鈕。
 
-![建立憑據](assets/createcredentials.png)
+![建立憑證](assets/createcredentials.png)
 
-您將收到一個名為PDFToolsSDK-Node.jsSamples.zip的.zip檔案下載，該檔案可保存到您的本地檔案系統。
+你會收到一個名為 PDFToolsSDK-Node.jsSamples.zip 的.zip檔案，可以儲存到你的本地檔案系統。
 
-## 將憑據添加到代碼示例
+## 將你的憑證加入程式碼範例
 
-如果選擇「建立個性化代碼示例」選項，則不必手動將客戶端ID添加到代碼示例檔案，並可以跳過下一步，直接轉到下面的「運行代碼示例」部分。
+如果您選擇「建立個人化程式碼範例」選項，則不必手動將客戶 ID 加入程式碼範例檔案，且可跳過下一步，直接前往下方執行程式碼範例區。
 
-如果未選擇「建立個性化代碼示例」選項，則必須從Adobe.io控制台複製客戶端ID（API密鑰）:
+如果您未選擇「建立個人化程式碼範例」，則必須從 Adobe.io 控制台複製客戶端 ID（API 金鑰）：
 
-![代碼示例](assets/codesample.png)
+![程式碼範例](assets/codesample.png)
 
-解壓縮PDFToolsSDK-Node.jsSamples.zip的內容。
+把PDFToolsSDK-Node.jsSamples.zip裡的東西拉開。
 
-轉到adobe-dc-pdf-tools-sdk-node-samples資料夾下的根目錄。
+請前往 adobe-dc-pdf-tools-sdk-node-samples 資料夾的根目錄。
 
-使用任何文本編輯器或IDE開啟pdftools-api-credentials.json。
+用任何文字編輯器或 IDE 開啟pdftools-api-credentials.json。
 
-將憑據貼上到代碼中客戶端ID的欄位中：
+將憑證貼上到程式碼中的客戶 ID 欄位：
 
 ```javascript
 {
@@ -76,39 +83,39 @@ ht-degree: 0%
   "client_id": "abcdefghijklmnopqrstuvwxyz",
 ```
 
-保存檔案，然後繼續執行下一步以運行代碼示例。
+儲存檔案後，繼續執行程式碼範例。
 
-## 運行第一個代碼示例
+## 執行你的第一個程式碼範例
 
-使用命令提示符，轉到adobe-dc-pdf-tools-sdk-node-samples資料夾下的根目錄。
+使用命令提示字元，前往 adobe-dc-pdf-tools-sdk-node-samples 資料夾下的根目錄。
 
-鍵入npm install:
+輸入 npm 安裝：
 
-C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>npm安裝
+C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>npm install
 
-現在，您已準備好運行示例檔案！
+現在你準備好執行樣本檔案了！
 
-對於第一個示例，請建立PDF:
+你的第一個範例，請建立一份PDF：
 
-仍在命令提示符下，使用以下命令運行createPDF示例：
+在仍處於命令提示字元時，請用以下指令執行建立 PDF 範例：
 
-C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>節點src/createpdf/create-pdf-from-docx.js
+C：\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/create-pdf-from-docx.js
 
-輸出示例：
+範例輸出：
 
-![示例輸出](assets/exampleoutput.png)
+![範例輸出](assets/exampleoutput.png)
 
-您的PDF將在輸出中指定的位置建立，預設為pdfServicesSdkResult目錄。
+你的 PDF 會建立在輸出中指定的位置，預設是 pdfServicesSdkResult 目錄。
 
-## 資源和後續步驟
+## 資源與後續步驟
 
-* 有關其他幫助和支援，請訪問Adobe[[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)社區論壇
+* 如需更多協助與支援，請造訪 Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) 社群論壇
 
-PDF服務API [文檔](https://www.adobe.com/go/pdftoolsapi_doc)
+PDF 服務 API [文件](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [FAQ](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197)以瞭解PDF服務API問題
-* [請與我們聯繫](https://www.adobe.com/go/pdftoolsapi_requestform)以瞭解有關許可和定價的問題
+* [](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) PDF 服務 API 常見問題
+* [如有關於授權與價格的問題，歡迎聯絡我們](https://www.adobe.com/go/pdftoolsapi_requestform)
 * 相關文章：
 
-   * [新PDF服務API為文檔工作流提供了更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
-   * [&#x200B; [!DNL Adobe Acrobat Services]的7月版：PDF嵌入和PDF服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+   * [新的 PDF 服務 API 為文件工作流程提供更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+   * [七月發布 [!DNL Adobe Acrobat Services]：PDF 嵌入與 PDF 服務](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
