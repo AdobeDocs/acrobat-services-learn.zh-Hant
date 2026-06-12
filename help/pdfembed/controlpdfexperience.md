@@ -9,12 +9,18 @@ jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
 TQID: https://experienceleague.adobe.com/fsD7hB9-yEhVElQUFkM1RmUB1aVJq6C9USXa3Ru9lks
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1549
@@ -119,7 +125,7 @@ ht-degree: 0%
 
 ### 取得運動代碼
 
-我們為你創建了程式碼供你使用。 雖然你可以使用自己的程式碼，但示範會在教學資源的脈絡中進行。 請在此](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下載範例程式碼[。
+我們為你創建了程式碼供你使用。 雖然你可以使用自己的程式碼，但示範會在教學資源的脈絡中進行。 請在此[&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下載範例程式碼。
 
 1. 前往 [[!DNL Adobe Acrobat Services] 網站](https://developer.adobe.com/document-services/homepage/)。
 
@@ -151,7 +157,7 @@ ht-degree: 0%
 
    ![客戶 ID 截圖](assets/ControlPDF_11.png)
 
-1. 在你的程式碼編輯器中開啟 **** Web -> **[!UICONTROL resources]** -> **[!UICONTROL js]** -> dc-config.js **** 檔案。
+1. 在你的程式碼編輯器中開啟 **&#x200B;**&#x200B;Web -> **[!UICONTROL resources]** -> **[!UICONTROL js]** -> dc-config.js **&#x200B;**&#x200B;檔案。
 
    你會看到 clientID 變數存在。
 
@@ -333,4 +339,4 @@ Adobe PDF 嵌入 API 提供與 Adobe Analytics 的開箱即用整合。 然而�
 
 ## 其他資源
 
-更多資源可在此](https://developer.adobe.com/document-services/docs/overview)處找到[。
+更多資源可在此[&#128279;](https://developer.adobe.com/document-services/docs/overview)處找到。
