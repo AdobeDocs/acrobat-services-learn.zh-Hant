@@ -9,21 +9,12 @@ jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
 TQID: https://experienceleague.adobe.com/5QKJELbrD1HA89U5E7m-3ekce2YXSqigek23mqrre2c
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e9001ce2-5245-4a8e-8601-dd958009072f
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1565
@@ -41,9 +32,9 @@ ht-degree: 0%
 
 ## 你可以學到什麼
 
-這個實作教學帶你了解一個Node.js範例，利用 [!DNL Adobe Acrobat Services] 其 [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) 將這些功能加入職缺網站。 這會打造一個更容易使用且對雇主和求職者更具吸引力的網站。 這裡是[完整的](https://github.com/contentlab-io/adobe_job_posting) [專案程式碼](https://github.com/contentlab-io/adobe_job_posting)，如果你想邊閱讀邊跟著看。
+這個實作教學帶你了解一個Node.js範例，利用 [!DNL Adobe Acrobat Services] 其 [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) 將這些功能加入職缺網站。 這會打造一個更容易使用且對雇主和求職者更具吸引力的網站。 這裡是[完整的](https://github.com/contentlab-io/adobe_job_posting)[專案程式碼](https://github.com/contentlab-io/adobe_job_posting)，如果你想邊閱讀邊跟著看。
 
-首先，建立一個簡單的 Express 網頁應用程式Node.js。 [Express](https://expressjs.com/) 是一個極簡的網頁應用程式框架，提供路由與模板等功能。 應用程式的程式碼可在 GitHub[&#128279;](https://github.com/contentlab-io/adobe_job_posting) 上取得。另外，安裝 [PostgreSQL 資料庫](https://www.postgresql.org/) 並設定它來儲存 PDF。
+首先，建立一個簡單的 Express 網頁應用程式Node.js。 [Express](https://expressjs.com/) 是一個極簡的網頁應用程式框架，提供路由與模板等功能。 應用程式的程式碼可在 GitHub](https://github.com/contentlab-io/adobe_job_posting) 上取得[。另外，安裝 [PostgreSQL 資料庫](https://www.postgresql.org/) 並設定它來儲存 PDF。
 
 ## 相關 [!DNL Acrobat Services] API
 
@@ -53,7 +44,7 @@ ht-degree: 0%
 
 ## 建立 Adobe API 憑證
 
-首先，您必須[&#128279;](https://www.adobe.com/go/dcsdks_credentials)建立 Adobe PDF 嵌入 API（免費使用）和 Adobe PDF 服務 API（免費六個月，之後[按需](https://developer.adobe.com/document-services/pricing/main)付費，每筆文件交易僅需 \$0.05）的憑證。在建立 PDF Services API 的憑證時，請選擇「建立個人化程式碼範例」選項。 儲存 ZIP 檔案，並將 pdftools-api-credentials.json 和 private.key 解壓到 Node.js Express 專案的根目錄。
+首先，您必須[建立 Adobe PDF 嵌入 API（免費使用）和 Adobe PDF 服務 API（免費六個月，之後[按需](https://developer.adobe.com/document-services/pricing/main)付費，每筆文件交易僅需 \$0.05）的憑證](https://www.adobe.com/go/dcsdks_credentials)。在建立 PDF Services API 的憑證時，請選擇「建立個人化程式碼範例」選項。 儲存 ZIP 檔案，並將 pdftools-api-credentials.json 和 private.key 解壓到 Node.js Express 專案的根目錄。
 
 你還需要一個免費取得的 Embed API 的 API 金鑰。 從 [專案](https://developer.adobe.com/console/projects)，切換到你建立的專案。 然後，點選 **「新增到專案** 」並選擇 **API**。 最後，點選 **PDF 嵌入 API**。
 
@@ -268,7 +259,7 @@ router.get('/job/:id', async function(req, res, next) {
     script(src='/javascripts/embed-pdf.js')
 ```
 
-第一個腳本是 Adobe 的 View SDK，讓嵌入 PDF 變得很簡單。 第二個腳本是一個內嵌一行腳本，將 window.embedUrl 的值設為 Express 路由處理器提供的 PDF 網址。 你可以自己創建第三個腳本，方法如下：
+第一個腳本是 Adobe 的 View SDK，讓嵌入 PDF 變得很簡單。 第二個腳本是一個內嵌一行腳本，將 window.embedUrl 的值設為 Express 路由處理器提供的 PDF URL。 你可以自己創建第三個腳本，方法如下：
 
 ```
   document.addEventListener("adobe_dc_view_sdk.ready", function () {
