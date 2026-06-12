@@ -9,21 +9,12 @@ jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
 TQID: https://experienceleague.adobe.com/ps-wxzaqHNuBwOlfWDDEmOamM3ZOmP-4Ys1H4X--Gk0
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1968
@@ -135,7 +126,7 @@ let papers = JSON.parse(rawdata);
 res.render('index', { title: 'Embedding PDF', papers: papers });
 ```
 
-要在首頁呈現白皮書集合，打開 \\views\\index.ejs 檔案，將現有程式碼替換成你專案索引檔[&#128279;](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs)的程式碼。
+要在首頁呈現白皮書集合，打開 \\views\\index.ejs 檔案，將現有程式碼替換成你專案索引檔](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs)的[程式碼。
 
 現在，重新執行 NPM 開始並開啟 <http://localhost:3000> ，查看你所有可用的白皮書收藏。
 
@@ -362,7 +353,7 @@ embedMode: "IN_LINE"
 
 最後，選擇一份白皮書並點擊 **「檢視文件** 」開啟新頁面，內嵌 PDF：
 
-![PDF 白皮書截圖 &#x200B;](assets/ddp_11.png)
+![PDF 白皮書截圖 ](assets/ddp_11.png)
 
 請注意現在已經有下載PDF和列印PDF選項了。
 
@@ -572,6 +563,6 @@ console.log(event);
 
 如果你是 Angular 或 React 開發者，可能會喜歡嘗試 [更多](https://github.com/adobe/pdf-embed-api-samples) 範例，介紹如何將 PDF 嵌入 API 整合到 React 和 Angular 專案中。
 
-Adobe 讓你能透過創新解決方案打造端到端的客戶體驗。 免費試用 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed/) 。 想探索還能做什麼，可以試試 Adobe PDF Services API 搭配 [付費（Pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main) [）糖霜](https://developer.adobe.com/document-services/pricing/main)。
+Adobe 讓你能透過創新解決方案打造端到端的客戶體驗。 免費試用 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed/) 。 想探索還能做什麼，可以試試 Adobe PDF Services API 搭配 [付費（Pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main)[）糖霜](https://developer.adobe.com/document-services/pricing/main)。
 
 [今天就開始](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 使用 [!DNL Adobe Acrobat Services] API。
