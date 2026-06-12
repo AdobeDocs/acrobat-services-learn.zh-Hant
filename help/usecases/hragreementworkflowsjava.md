@@ -434,7 +434,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 請注意 \ 和 api_access_point 的給出&lt;YOUR_CODE\> 值。&lt;/YOUR_CODE\>
 
-要發送提供存取權杖的 HTTP POST 請求，請使用 client ID、\ &lt;YOUR_CODE\>和 api_access_point 值。 &lt;/YOUR_CODE\>你可以使用 [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) 或 cURL：
+要發送提供存取權杖的 HTTP POST 請求，請使用 client ID、\ &lt;YOUR_CODE\>和 api_access_point 值。 &lt;/YOUR_CODE\>你可以使用 [Postman](https://helpx.adobe.com/tw/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) 或 cURL：
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
