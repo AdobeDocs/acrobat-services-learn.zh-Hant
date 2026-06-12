@@ -10,21 +10,12 @@ thumbnail: KT-7473.jpg
 keywords: 特色
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
 TQID: https://experienceleague.adobe.com/8SQivYwIRQxLqcHWCvrZ7b4t2BOqGyWKZvvNSpomrlo
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 2187
@@ -310,7 +301,7 @@ combineOperation.execute(executionContext)
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-你需要的最後一段程式碼是，當 Adobe PDF 嵌入 API JavaScript 載入後，會顯示文件的函式。 當你收到腳本透過 adobe_dc_view\_sdk.ready 事件載入的通知時，請建立一個新的 AdobeDC.View 物件。 這個物件需要你的客戶端 ID 以及先前建立元素的 ID。 在 [Adobe 開發者主控台](https://developer.adobe.com/console/)中找到你的客戶 ID。 當你查看先前產生憑證時所建立應用程式的設定時，會顯示客戶端 ID。
+你需要的最後一段程式碼是，當 Adobe PDF 嵌入 API JavaScript 載入後，會顯示文件的函式。 當你收到腳本透過 adobe_dc_view\_sdk.ready 事件載入的通知時，請建立一個新的 AdobeDC.View 物件。 這個物件需要你的客戶端 ID 以及先前建立的元素的 ID。 在 [Adobe 開發者主控台](https://developer.adobe.com/console/)中找到你的客戶 ID。 當你查看先前產生憑證時所建立應用程式的設定時，會顯示客戶端 ID。
 
 ![API 用戶端金鑰的映像檔](assets/AWNjs_6.png)
 
@@ -318,7 +309,7 @@ combineOperation.execute(executionContext)
 
 [Adobe PDF 嵌入 API 示範](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)讓你預覽其他嵌入 PDF 文件的選項。
 
-![嵌入 PDF 選項的圖片 &#x200B;](assets/AWNjs_7.png)
+![嵌入 PDF 選項的圖片 ](assets/AWNjs_7.png)
 
 你可以開啟或關閉各種選項，立刻看到它們的渲染方式。 當你找到喜歡的組合時，點擊 *\ 生成程式碼*&#x200B;按鈕，利用這些選項產生實際的 HTML 程式碼。
 
