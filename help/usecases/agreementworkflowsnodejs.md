@@ -310,7 +310,7 @@ combineOperation.execute(executionContext)
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-你需要的最後一段程式碼是，當 Adobe PDF 嵌入 API JavaScript 載入後，會顯示文件的函式。 當你收到腳本透過 adobe_dc_view\_sdk.ready 事件載入的通知時，請建立一個新的 AdobeDC.View 物件。 這個物件需要你的客戶端 ID 以及先前建立元素的 ID。 在 [Adobe 開發者主控台](https://developer.adobe.com/console/)中找到你的客戶 ID。 當你查看先前產生憑證時所建立應用程式的設定時，會顯示客戶端 ID。
+你需要的最後一段程式碼是，當 Adobe PDF 嵌入 API JavaScript 載入後，會顯示文件的函式。 當你收到腳本透過 adobe_dc_view\_sdk.ready 事件載入的通知時，請建立一個新的 AdobeDC.View 物件。 這個物件需要你的客戶端 ID 以及先前建立的元素的 ID。 在 [Adobe 開發者主控台](https://developer.adobe.com/console/)中找到你的客戶 ID。 當你查看先前產生憑證時所建立應用程式的設定時，會顯示客戶端 ID。
 
 ![API 用戶端金鑰的映像檔](assets/AWNjs_6.png)
 

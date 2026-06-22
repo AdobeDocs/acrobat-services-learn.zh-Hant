@@ -23,7 +23,7 @@ topic_v2:
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 2933
+source-wordcount: 2911
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Adobe 文件產生 API 也允許你在頁頭和頁尾以及簽名標題的最後
 
 ![在頁尾新增 COMPANY 和 CUSTOMER 標籤的截圖](assets/automatelegal_6.png)
 
-最後，你需要&#x200B;**重複步驟 1-4**，將簽名頁 Customer 區塊下的 FIRST Name 和 LAST NAME 分別替換成`{{customer.signer.firstName}}` `{{customer.signer.lastName}}`標籤。不用擔心標籤太長且會重複到下一行，因為文件產生時標籤會被替換。
+最後，你需要&#x200B;**重複步驟 1-4**，將簽名頁 Customer 區塊下的 FIRST Name 和 LAST NAME 分別替換成`{{customer.signer.firstName}}`&#x200B;`{{customer.signer.lastName}}`標籤。不用擔心標籤太長且會重複到下一行，因為文件產生時標籤會被替換。
 
 文件開頭和頁尾應該是這樣：
 
@@ -439,7 +439,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
    ![選擇 OAUTH ACCESS-TOKEN 的截圖](assets/automatelegal_36.png)
 
-1. 請檢查 OAUTH 的權限，涵蓋 *agreement_write*、 *agreement_sign*、 *widget_write* 和 *library_write*。
+1. 請檢查 OAUTH 的 agreement_write *、* agreement_sign *、* widget_write *和* library_write *權限*。
 1. 選擇 **[!UICONTROL 授權]**。
 1. 你會透過彈出視窗，要求你用 Acrobat Sign 帳號登入。 登入，使用管理員的使用者名稱和密碼。
 1. 系統會提示您允許存取 REST 文件。 選取「**[!UICONTROL 允許存取]**」。
@@ -459,7 +459,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 1. 選擇 **[!UICONTROL 「試用！]**」。
 1. 在回應主體&#x200B;**中**，複製 *transientDocumentId* 值。
 
-*transientDocumentID* 用於參考暫時儲存在 Acrobat Sign 的文件，以便後續 API 呼叫時能被引用。
+*transientDocumentID* 用於參考暫時儲存在 Acrobat Sign 的文件，以便在後續的 API 呼叫中被引用。
 
 ## 傳送以供簽署
 

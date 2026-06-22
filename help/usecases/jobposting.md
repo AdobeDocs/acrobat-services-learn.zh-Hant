@@ -268,7 +268,7 @@ router.get('/job/:id', async function(req, res, next) {
     script(src='/javascripts/embed-pdf.js')
 ```
 
-第一個腳本是 Adobe 的 View SDK，讓嵌入 PDF 變得很簡單。 第二個腳本是一個內嵌一行腳本，將 window.embedUrl 的值設為 Express 路由處理器提供的 PDF 網址。 你可以自己創建第三個腳本，方法如下：
+第一個腳本是 Adobe 的 View SDK，讓嵌入 PDF 變得很簡單。 第二個腳本是一個內嵌一行腳本，將 window.embedUrl 的值設為 Express 路由處理器提供的 PDF URL。 你可以自己創建第三個腳本，方法如下：
 
 ```
   document.addEventListener("adobe_dc_view_sdk.ready", function () {

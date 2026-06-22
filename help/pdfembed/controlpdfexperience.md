@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ## 第二部分：將 PDF 嵌入 API 加入網頁 {#part2}
 
-在第二部分，你將學習如何輕鬆地將 PDF Embed API 嵌入網頁。 你將透過使用 Adobe PDF 嵌入 API 線上示範來建立我們的程式碼來完成這件事。
+在第二部分，你將學習如何輕鬆地將 PDF Embed API 嵌入網頁。 你將透過使用 Adobe PDF Embed API 線上示範來建立我們的程式碼來完成這件事。
 
 ### 取得運動代碼
 
@@ -260,7 +260,7 @@ PDF Embed API 包含許多不同的 JavaScript 事件。 你可以從 [!DNL Adob
    );
    ```
 
-1. 找到你之前加的程式碼區塊，看起來像下面，然後在index.html **的這段程式碼**&#x200B;後面加上上面的程式碼：
+1. 找到你之前加的程式碼區塊，看起來像下面，然後在index.html **的這段程式碼**&#x200B;後加上上面的程式碼：
 
    ![截圖顯示程式碼要貼在哪裡](assets/ControlPDF_19.png)
 

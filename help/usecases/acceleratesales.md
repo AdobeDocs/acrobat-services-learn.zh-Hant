@@ -22,7 +22,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 1789
+source-wordcount: 1767
 ht-degree: 0%
 
 ---
@@ -253,8 +253,7 @@ ht-degree: 0%
    ![佔位圖片的截圖](assets/accsales_13.png)
 
 1. 選擇 **[!UICONTROL 編輯替代文字]**。
-1. 在面板中複製看起來像這樣的文字：
-   `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
+1. 在面板中複製看起來像這樣的文字：   `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. 在文件中選擇你想要動態的另一張圖片。
 
    ![文件中新圖片的截圖](assets/accsales_14.png)

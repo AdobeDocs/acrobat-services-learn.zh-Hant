@@ -220,7 +220,7 @@ public class PersonController {
 
 首先，你必須準備包含靜態和動態內容的 HTML 頁面。 動態部分是透過 JavaScript 更新的。 也就是說，PDF Services API 會將 JSON 物件注入你的 HTML。
 
-接著你會透過 HTML 文件載入時呼叫的 JavaScript 函式取得 JSON 屬性。 此 JavaScript 函式會更新所選的 DOM 元素。 以下是填充 span 元素的範例，該元素包含使用者的資料（參見伴隨程式碼的 src\\main\resources\\contract\\index.html）：
+接著你會透過 HTML 文件載入時呼叫的 JavaScript 函式取得 JSON 屬性。 此 JavaScript 函式會更新所選的 DOM 元素。 以下是填充跨度元素的範例，該元素包含個人資料（參見伴隨程式碼的 src\\main\resources\\contract\\index.html）：
 
 ```
 <html>

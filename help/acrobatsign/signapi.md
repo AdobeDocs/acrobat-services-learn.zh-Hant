@@ -38,9 +38,9 @@ ht-degree: 0%
 
 ## 你可以學到什麼
 
-這個實作教學說明了開發者如何利用 Sign API 來強化使用 [!DNL Adobe Acrobat Services]Sign 所建立的應用程式與工作流程。 [!DNL Acrobat Services] 包含 [Adobe PDF 服務 API](https://developer.adobe.com/document-services/apis/pdf-services)、 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed/) （免費）及 [Adobe 文件產生 API](https://developer.adobe.com/document-services/apis/doc-generation)。
+這個實作教學說明開發者如何利用 Sign API 來強化使用 [!DNL Adobe Acrobat Services]Sign 所建立的應用程式與工作流程。 [!DNL Acrobat Services] 包含 [Adobe PDF 服務 API](https://developer.adobe.com/document-services/apis/pdf-services)、 [Adobe PDF 嵌入 API](https://developer.adobe.com/document-services/apis/pdf-embed/) （免費）及 [Adobe 文件產生 API](https://developer.adobe.com/document-services/apis/doc-generation)。
 
-更具體來說，學習如何在申請中加入 Acrobat Sign API，以收集簽名及其他資訊，例如保險表格上的員工資訊。 使用簡化的 HTTP 請求與回應的通用步驟。 你可以用你喜歡的語言實作這些請求。 你可以使用多種 [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/) 組合製作 PDF，將它作為 [臨時](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) 文件上傳到 Sign API，並透過協議或 [小工具](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流程請求最終使用者簽名。
+更具體來說，學習如何在申請中加入 Acrobat Sign API，以收集簽名及其他資訊，例如保險表格上的員工資訊。 使用簡化的 HTTP 請求與回應的通用步驟。 你可以用你喜歡的語言實作這些請求。 你可以使用多種 [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/) 組合製作 PDF，將它作為 [臨時](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) 文件上傳到 Sign API，並透過協議或 [小工具](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流程請求最終用戶簽名。
 
 ## 建立 PDF 文件
 
@@ -152,7 +152,7 @@ Adobe Sign 讓你能建立不同的流程，準備文件以進行簽名或資料
   }
 ```
 
-你可以建立一個網頁表單，格式為`DRAFT` `AUTHORING`或，然後在表單通過你的應用程式管線時改變其狀態。要更改網頁表單狀態，請參考 [PUT /widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) 端點。
+你可以建立一個網頁表單，格式為`DRAFT`&#x200B;`AUTHORING`或，然後在表單通過你的應用程式管線時改變其狀態。要更改網頁表單狀態，請參考 [PUT /widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) 端點。
 
 ## 閱讀網頁表單主機網址
 
@@ -326,7 +326,7 @@ Request Body:
   }
 ```
 
-在這個例子中，協議是以IN_PROCESS方式建立，但你可以在三種不同狀態中建立：
+在這個例子中，協議是以IN_PROCESS方式建立，但你可以在三種不同狀態之一建立：
 
 * 草稿——在寄出前逐步建立協議
 

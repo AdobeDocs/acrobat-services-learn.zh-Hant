@@ -17,14 +17,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 160
+source-wordcount: 159
 ht-degree: 5%
 
 ---
 
 # Adobe PDF 電子封條 API 教學
 
-Adobe PDF 電子封條 API 利用 Adobe 核准信託名單（AATL）[&#128279;](https://helpx.adobe.com/tw/acrobat/kb/approved-trust-list1.html)上的特定 TSP（信託服務提供者）所簽發的證書，大規模使用電子封條。電子印章有助於驗證文件的身份與完整性。 此功能可用於大規模電子封印文件，並包含在 PDF 服務 API 中。
+Adobe PDF 電子封條 API 利用 Adobe 核准信託名單（AATL）[&#128279;](https://helpx.adobe.com/tw/acrobat/kb/approved-trust-list1.html)上的特定 TSP（信託服務提供者）所簽發的證書，大規模對文件進行電子封條。電子印章有助於驗證文件的身份與完整性。 此功能可用於大規模電子封印文件，並包含在 PDF 服務 API 中。
 
 <!-- Comment -->
 <!--
