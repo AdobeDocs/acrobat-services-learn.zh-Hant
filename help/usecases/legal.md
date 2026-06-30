@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: a02d17d88a2fb822f7715556b097767cb7f49ad5
 workflow-type: tm+mt
 source-wordcount: 2045
 ht-degree: 0%
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ### 目錄結構
 
-建立一個名為 AdobeLegalContractAPI 的資料夾，並用你喜歡的編輯器打開。 請使用以下資料夾結構，使用 ```npm init``` 該指令建立一個基本的Node.js應用程式：
+建立一個名為 AdobeLegalContractAPI 的資料夾，並用你喜歡的編輯器打開。 請使用以下資料夾結構，使用 `npm init` 該指令建立一個基本的Node.js應用程式：
 
 ```
 ###Directory Structure
@@ -210,7 +210,7 @@ npm install express body-parser morgan multer hbs path config mongoose
 
 註冊流程完成後，程式碼範例會自動下載到你的電腦，幫助你開始。 你可以擷取這個程式碼範例並跟著操作。 別忘了將解壓出來的程式碼範例中的pdftools-api-credentials.json和private.key檔案複製到 Node.js 專案的根目錄。 登入憑證是你才能存取 [!DNL Acrobat Services] API 端點的必要條件。 你也可以下載帶有個人化憑證的 SDK 範例，這樣就不用更新範例程式碼中的金鑰。
 
-現在，透過應用程式根目錄中的終端機執行 ```npm install \--save @adobe/documentservices-pdftools-node-sdk``` 指令，安裝 Adobe PDF Services Node SDK。 成功安裝後，你可以使用 [!DNL Acrobat Services] API 來操作應用程式中的文件。
+現在，透過應用程式根目錄中的終端機執行 `npm install \--save @adobe/documentservices-pdftools-node-sdk` 指令，安裝 Adobe PDF Services Node SDK。 成功安裝後，你可以使用 [!DNL Acrobat Services] API 來操作應用程式中的文件。
 
 ## 建立 PDF 文件
 

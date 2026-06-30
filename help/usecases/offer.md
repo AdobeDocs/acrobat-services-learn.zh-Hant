@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -268,15 +268,15 @@ console.log('Exception encountered while executing operation', err);
 
 ![字母與代碼截圖](assets/offer_3.png)
 
-點擊 **產生標籤** 按鈕。 你會看到一個下拉選單，裡面有標籤，可以插入文件中對應的點。 選取文件中的第一個 X，並選擇 **[!UICONTROL 名字]**。 點擊 **[!UICONTROL 插入文字]** ，「Dear X」會變成「Dear ```{{`offer_letter`.firstname}}```，」。 此標籤為正確的格式。`documentMergeOperation`請在適當的 X 位置加上剩下的三個標籤。 別忘了保存OfferLetter-template.docx。 它應該長這樣：
+點擊 **產生標籤** 按鈕。 你會看到一個下拉選單，裡面有標籤，可以插入文件中對應的點。 選取文件中的第一個 X，並選擇 **[!UICONTROL 名字]**。 點擊 **[!UICONTROL 插入文字]** ，「Dear X」會變成「Dear ``{{`offer_letter`.firstname}}``，」。 此標籤為正確的格式。`documentMergeOperation`請在適當的 X 位置加上剩下的三個標籤。 別忘了保存OfferLetter-template.docx。 它應該長這樣：
 
-親愛的 ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```，
+親愛的 ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``，
 
-我們很高興能以年薪 ```{{`offer_letter`.salary}}``` 提供您一份職位。 你的起始日期將是 ```{{`offer_letter`.startdate}}```。
+我們很高興能以年薪 ``{{`offer_letter`.salary}}`` 提供您一份職位。 你的起始日期將是 ``{{`offer_letter`.startdate}}``。
 
 歡迎
 
-現在 Word 範本的標記與 JSON 格式相符。 例如， ```{{`offer_letter`.`firstname`}}``` Word 開頭的文件會被 JSON 資料中「firstname」區塊的值取代。
+現在 Word 範本的標記與 JSON 格式相符。 例如， ``{{`offer_letter`.`firstname`}}`` Word 開頭的文件會被 JSON 資料中「firstname」區塊的值取代。
 
 回到你的 `generateLetter` 工作上。 為了保護你的 REST 呼叫，請在專案根目錄中建立一個名為 pdftools-api-credentials.json 的新檔案。 貼上以下 JSON 資料，並根據開發者主控台[&#128279;](https://developer.adobe.com/console/)服務帳號（JWT）區塊的細節調整。
 
@@ -308,4 +308,4 @@ console.log('Exception encountered while executing operation', err);
 
 上述單一文件範例可作為申請基礎，當組織必須 [在多個地點加強季節性員工聘用](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) 時。 如前所述，主要流程是透過線上申請從應徵者那裡取得資料。 這些資料用來填入聘書欄位，並送出電子簽名。
 
-[!DNL Adobe Acrobat Services] 免費使用六個月，之後 [以](https://developer.adobe.com/document-services/pricing/main) 每筆文件交易 0.05 美元付費，讓你試用並隨著業務成長擴展聘用函工作流程。 開始[&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)建立自己的範本，註冊 [你的開發者帳號](https://developer.adobe.com/)。
+[!DNL Adobe Acrobat Services] 免費使用六個月，之後 [以](https://developer.adobe.com/document-services/pricing/main) 每筆文件交易 0.05 美元付費，讓您能試用並隨著業務成長擴展聘書工作流程。 開始[&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)建立自己的範本，註冊 [你的開發者帳號](https://developer.adobe.com/)。
