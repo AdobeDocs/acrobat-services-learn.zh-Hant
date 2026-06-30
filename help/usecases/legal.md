@@ -9,23 +9,13 @@ jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
 TQID: https://experienceleague.adobe.com/Gd7B7jUfhZPSRujwKVp7hRzb2Nj9-VJFKLYxqwO-GFM
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: a02d17d88a2fb822f7715556b097767cb7f49ad5
 workflow-type: tm+mt
 source-wordcount: 2045
 ht-degree: 0%
@@ -116,11 +106,11 @@ ht-degree: 0%
 
 ## 專案設定
 
-首先，你要為 Node.js 應用程式設定資料夾結構。 在此範例中，將這個簡單的應用程式稱為 AdobeLegalContractAPI。 你可以在這裡[&#128279;](https://github.com/agavitalis/adobe_legal_contracts.git)取得原始碼。
+首先，你要為 Node.js 應用程式設定資料夾結構。 在此範例中，將這個簡單的應用程式稱為 AdobeLegalContractAPI。 你可以在這裡](https://github.com/agavitalis/adobe_legal_contracts.git)取得原始碼[。
 
 ### 目錄結構
 
-建立一個名為 AdobeLegalContractAPI 的資料夾，並用你喜歡的編輯器打開。 請使用以下資料夾結構，使用 ```npm init``` 該指令建立一個基本的Node.js應用程式：
+建立一個名為 AdobeLegalContractAPI 的資料夾，並用你喜歡的編輯器打開。 請使用以下資料夾結構，使用 `npm init` 該指令建立一個基本的Node.js應用程式：
 
 ```
 ###Directory Structure
@@ -210,7 +200,7 @@ npm install express body-parser morgan multer hbs path config mongoose
 
 註冊流程完成後，程式碼範例會自動下載到你的電腦，幫助你開始。 你可以擷取這個程式碼範例並跟著操作。 別忘了將解壓出來的程式碼範例中的pdftools-api-credentials.json和private.key檔案複製到 Node.js 專案的根目錄。 登入憑證是你才能存取 [!DNL Acrobat Services] API 端點的必要條件。 你也可以下載帶有個人化憑證的 SDK 範例，這樣就不用更新範例程式碼中的金鑰。
 
-現在，透過應用程式根目錄中的終端機執行 ```npm install \--save @adobe/documentservices-pdftools-node-sdk``` 指令，安裝 Adobe PDF Services Node SDK。 成功安裝後，你可以使用 [!DNL Acrobat Services] API 來操作應用程式中的文件。
+現在，透過應用程式根目錄中的終端機執行 `npm install \--save @adobe/documentservices-pdftools-node-sdk` 指令，安裝 Adobe PDF Services Node SDK。 成功安裝後，你可以使用 [!DNL Acrobat Services] API 來操作應用程式中的文件。
 
 ## 建立 PDF 文件
 
@@ -301,7 +291,7 @@ module.exports = { createPDF, createPDFPost };
 
 這些功能會將轉換後的 PDF 文件儲存在檢視/輸出目錄中，你可以下載到電腦。
 
-您也可以使用免費的 PDF 嵌入 API 預覽轉換後的 PDF 檔案。 使用 PDF 嵌入 API，你可以在這裡[&#128279;](https://www.adobe.com/go/dcsdks_credentials)產生 Adobe 憑證（與你的[!DNL Acrobat Services]憑證不同），並註冊允許的網域以存取 API。請依照流程產生 PDF 嵌入 API 憑證，為你的應用程式提供憑證。 你也可以在這裡[&#128279;](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)查看示範，輕鬆產生代碼幫助你快速開始。
+您也可以使用免費的 PDF 嵌入 API 預覽轉換後的 PDF 檔案。 使用 PDF 嵌入 API，你可以在這裡](https://www.adobe.com/go/dcsdks_credentials)產生 Adobe 憑證[（與你的[!DNL Acrobat Services]憑證不同），並註冊允許的網域以存取 API。請依照流程產生 PDF 嵌入 API 憑證，為你的應用程式提供憑證。 你也可以在這裡[](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)查看示範，輕鬆產生代碼幫助你快速開始。
 
 回到應用程式，在應用程式的檢視資料夾建立 list.hbs 和 preview.hbs 檔案，並將下方的程式碼片段分別貼到 list.hbs 和 preview.hbs 檔案中。
 
