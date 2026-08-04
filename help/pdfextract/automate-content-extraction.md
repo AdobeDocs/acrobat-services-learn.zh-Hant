@@ -27,4 +27,4 @@ ht-degree: 0%
 
 學習如何使用 PDF Extract API 自動從 PDF 文件中擷取內容。 擷取 PDF 內容有助於解鎖關鍵的商業資料，這些資料可用於各種下游流程。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428294?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446689?captions=chi_hant&hidetitle=true)
