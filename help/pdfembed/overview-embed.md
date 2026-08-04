@@ -57,7 +57,7 @@ PDF 嵌入 API 是一個免費的 JavaScript API，可嵌入高保真 PDF、促�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/zh-hant/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" title="像專業一樣整理網頁上的 PDF 檔案" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337602/?quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="像專業一樣整理網頁上的 PDF 檔案"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3456152/?captions=chi_hant&quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="像專業一樣整理網頁上的 PDF 檔案"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
