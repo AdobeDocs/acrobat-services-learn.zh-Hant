@@ -43,4 +43,4 @@ submitting a pull request!
 
 ## 安全議題
 
-安全問題不應在此問題追蹤器中報告。 請向 [我們的資安專家提出問題](https://helpx.adobe.com/security/alertus.html)
+安全問題不應在此問題追蹤器中報告。 請向 [我們的資安專家提出問題](https://helpx.adobe.com/tw/security/alertus.html)
