@@ -8,23 +8,30 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+TQID: 'https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: '930'
 ht-degree: 2%
-
 ---
-
 # 取得 Microsoft Power Automate 的憑證
 
-[Microsoft Power Automate](https://powerautomate.microsoft.com/) 為公民開發者和開發者提供了一種強大的自動化流程，讓他們能在不寫程式碼的情況下，建立強大的自動化流程來改善他們的業務。 [&#128279;](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)Adobe [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)PDF Services 連接器作為 的一部分，允許使用者執行 Microsoft Power Automate 中 Adobe PDF Services API 中提供的任何動作。
+[Microsoft Power Automate](https://powerautomate.microsoft.com/) 為公民開發者和開發者提供了一種強大的自動化流程，讓他們能在不寫程式碼的情況下，建立強大的自動化流程來改善他們的業務。 [Adobe [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) 連接器作為 的一部分，允許使用者執行 Microsoft Power Automate 中 Adobe PDF Services API 中提供的任何動作。
 
 在這個教學中，學習如何取得憑證以開始使用或試用 Adobe PDF 服務。 根據你是試用用戶還是現有客戶，這個教學會一步步說明如何取得憑證。
 
@@ -123,7 +130,7 @@ ht-degree: 2%
 
 如上方截圖所示，你可以切換到工作帳號或建立新的組織帳號。 完成後，你就可以新增 Adobe PDF 服務的操作。
 
-想深入了解如何建立您的第一個 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]，請參閱 [「在 Microsoft Power Automate](https://experienceleague.adobe.com/zh-hant/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) 建立您的第一個工作流程」。
+想深入了解如何建立您的第一個 Microsoft Power Automate 流程 [!DNL Adobe Acrobat Services]，請參閱 [「在 Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) 建立您的第一個工作流程」。
 
 ## 其他資源
 
@@ -133,4 +140,4 @@ ht-degree: 2%
 * 需要範例嗎？ 你可以找到許多 [Power Automate](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/) 範本來示範 PDF 服務。
 * 我們的直播影片內容《 [迴紋針](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)》也包含示範 Power Automate 使用情況的影片。
 * [Adobe 技術部落格](https://medium.com/adobetech/tagged/microsoft-power-automate)有許多關於使用 Power Automate 的文章。
-* 最後，務必參考 PDF 服務[&#128279;](https://developer.adobe.com/document-services/docs/overview/)的核心文件。
+* 最後，務必參考 PDF 服務](https://developer.adobe.com/document-services/docs/overview/)的核心[文件。
