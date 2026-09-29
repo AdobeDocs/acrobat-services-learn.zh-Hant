@@ -8,20 +8,27 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+TQID: 'https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: '930'
 ht-degree: 2%
-
 ---
-
 # 取得 Microsoft Power Automate 的憑證
 
 [Microsoft Power Automate](https://powerautomate.microsoft.com/) 為公民開發者和開發者提供了一種強大的自動化流程，讓他們能在不寫程式碼的情況下，建立強大的自動化流程來改善他們的業務。 [&#128279;](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)Adobe [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)PDF Services 連接器作為 的一部分，允許使用者執行 Microsoft Power Automate 中 Adobe PDF Services API 中提供的任何動作。
