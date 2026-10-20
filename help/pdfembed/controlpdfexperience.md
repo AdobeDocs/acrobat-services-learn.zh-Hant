@@ -292,7 +292,7 @@ PDF Embed API 包含許多不同的 JavaScript 事件。 你可以從 [!DNL Adob
 >
 >你的網頁標頭頁面上必須已經載入了 Adobe Analytics。
 
-請前往 [Adobe Analytics 文件](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) ，檢視你是否已在網頁上啟用 Adobe Analytics。 依照指示設定 reportSuite。
+請前往 [Adobe Analytics 文件](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) ，檢視你是否已在網頁上啟用 Adobe Analytics。 依照指示設定 reportSuite。
 
 ### Google Analytics
 

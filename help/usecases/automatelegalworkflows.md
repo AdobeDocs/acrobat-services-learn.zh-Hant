@@ -375,7 +375,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## 寄出協議以供簽署
 
-[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) 允許你將協議寄送給一位或多位收件人，讓他們查看並簽署文件。 除了簡便的使用者體驗，方便你將文件送交簽名外，還有 REST API，讓你能將 Word、PDF、HTML 及其他格式送出簽名。
+[Adobe Acrobat Sign](https://www.adobe.com/tw/acrobat/business/sign.html) 允許你將協議寄送給一位或多位收件人，讓他們查看並簽署文件。 除了簡便的使用者體驗，方便你將文件送交簽名外，還有 REST API，讓你能將 Word、PDF、HTML 及其他格式送出簽名。
 
 以下範例說明如何使用 REST API 文件頁面，將先前產生的文件送去簽名。 首先，學習如何透過 Acrobat Sign 網頁介面來操作，然後再學習如何使用 REST API。
 

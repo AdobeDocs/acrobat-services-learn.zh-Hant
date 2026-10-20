@@ -48,9 +48,9 @@ ht-degree: 1%
 
 ## 什麼是雜技手語？
 
-[Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) 是電子簽章服務的全球領導者。 你可以用各種不同的工作流程——包括多重簽名——將文件送去簽名。 Acrobat Sign 也支援需要簽名及額外資訊的工作流程。 所有這些功能都由強大的儀表板與靈活的創作系統所支援。
+[Acrobat Sign](https://www.adobe.com/tw/acrobat/business/sign.html) 是電子簽章服務的全球領導者。 你可以用各種不同的工作流程——包括多重簽名——將文件送去簽名。 Acrobat Sign 也支援需要簽名及額外資訊的工作流程。 所有這些功能都由強大的儀表板與靈活的創作系統所支援。
 
-與 [!DNL Acrobat Services]，Acrobat Sign 有 [免費試用](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) ，讓開發者能透過儀表板及易於使用的 REST API 測試簽署流程。
+與 [!DNL Acrobat Services]，Acrobat Sign 有 [免費試用](https://www.adobe.com/tw/acrobat/business/sign.html#sign_free_trial) ，讓開發者能透過儀表板及易於使用的 REST API 測試簽署流程。
 
 ## 入職情境
 
@@ -205,7 +205,7 @@ combineFilesOperation.execute(executionContext)
 
 ## 簽署流程
 
-在入職流程的最後階段，員工必須簽署一份協議，表示他們已閱讀並同意所有政策。 [Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) 支援多種工作流程與整合，包括透過 [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) 自動化的整合。 大致來說，劇本的最後部分可以如下完成：
+在入職流程的最後階段，員工必須簽署一份協議，表示他們已閱讀並同意所有政策。 [Acrobat Sign](https://www.adobe.com/tw/acrobat/business/sign.html) 支援多種工作流程與整合，包括透過 [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) 自動化的整合。 大致來說，劇本的最後部分可以如下完成：
 
 首先，設計包含需要簽署表格的文件。 有多種方式可以做到這一點，包括在 Adobe Sign 使用者儀表板中設計的視覺化。 另一個選擇是使用 Document Generation Word 外掛替你插入標籤。 此範例要求簽名與日期。
 
@@ -219,6 +219,6 @@ combineFilesOperation.execute(executionContext)
 
 ## 自己去體驗
 
-本文所述的所有內容現在都可以進行測試。 [!DNL Adobe Acrobat Services] [API 免費試用](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)目前在六個月內提供 1,000 筆免費請求。Acrobat Sign 的 [免費試用](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) 讓你可以傳送帶有浮水印的協議作為測試用途。
+本文所述的所有內容現在都可以進行測試。 [!DNL Adobe Acrobat Services] [API 免費試用](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)目前在六個月內提供 1,000 筆免費請求。Acrobat Sign 的 [免費試用](https://www.adobe.com/tw/acrobat/business/sign.html#sign_free_trial) 讓你可以傳送帶有浮水印的協議作為測試用途。
 
 有問題嗎？ [支援論壇](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK)每天都由 Adobe 開發者和支援人員監控。最後，想要更多靈感，記得去看下一 [集《迴紋針](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) 》。 定期舉辦現場會議，包含新聞、示範與與客戶的對談。
