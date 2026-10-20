@@ -61,7 +61,7 @@ ht-degree: 0%
 
 * [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [專案代碼](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
@@ -399,7 +399,7 @@ app.get( "/download/:file", function( req, res ){
   );
 ```
 
-草稿文件上的註解與註解現在會儲存在伺服器上。 你可以 [閱讀更多關於回撥](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) 如何融入你的工作流程。 例如， [狀態回](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) 撥有助於處理多個人同時檢視和評論同一文件時的檔案衝突。
+草稿文件上的註解與註解現在會儲存在伺服器上。 你可以 [閱讀更多關於回撥](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) 如何融入你的工作流程。 例如， [狀態回](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) 撥有助於處理多個人同時檢視和評論同一文件時的檔案衝突。
 
 最後一步，你會使用 PDF Services API 將所有編輯過的文件合併成一個 PDF 檔案。
 

@@ -46,7 +46,7 @@ ht-degree: 0%
 
 * [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 

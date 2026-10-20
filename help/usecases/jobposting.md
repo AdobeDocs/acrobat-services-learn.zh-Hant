@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 相關 [!DNL Acrobat Services] API
 
-* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
@@ -294,7 +294,7 @@ router.get('/job/:id', async function(req, res, next) {
 
 [!DNL Acrobat Services] 幫助你為網站或應用程式新增關鍵的文件處理功能。 如果你想更深入了解這些 API 能做什麼，請參考以下快速入門文件：
 
-* [PDF 嵌入 API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF 嵌入 API](https://www.adobe.com/tw/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [PDF 服務 API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
