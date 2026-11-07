@@ -32,4 +32,4 @@ ht-degree: 0%
 
 了解如何利用雲端第三方數位憑證大規模對 PDF 貼上防篡改電子封條。 電子印章就像組織在紙上蓋的橡皮章，但更牢固。 電子印章有助於驗證發票和財務報表等官方文件的身份與完整性，藉由證明文件未被竄改，降低組織風險。 他們也協助確保文件符合各種法規及法律工作流程的法律要求。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428346?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3506396?captions=chi_hant&hidetitle=true)
