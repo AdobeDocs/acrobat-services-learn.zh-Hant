@@ -32,4 +32,4 @@ ht-degree: 0%
 
 學習如何透過 Microsoft Power Automate 中的 Adobe PDF 服務連接器呼叫文件生成 API，自動大規模產生文件。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428227?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3506387?captions=chi_hant&hidetitle=true)
